@@ -1,0 +1,30 @@
+Git Commands for updating all code: 
+1. git checkout -b DansbyBot_Alpha_V_0.3 (or whatever branch im working on...)
+2. git add .
+3. git commit -m "Your commit message here"
+4. git push -u origin DansbyBot_Alpha_V_0.2
+
+Git Commands: 
+
+1. Initialize a Git Repository: git init
+2. Clone a Repository: git clone <repository-url>
+3. Check Status of Your Repository: git status
+4. Stage Changes: git add <file-name>
+               git add . (This adds all files)
+5. Commit Changes: git commit -m "Commit message"
+6. View Commit History: git log
+7. Create a New Branch: git branch <branch-name>
+8. Switch to a Branch: git checkout <branch-name>
+9. Create and Switch to a New Branch: git checkout -b <branch-name>
+10. Merge Changes from Another Branch: git merge <branch-name>
+11. Fetch Changes from Remote Repository: git fetch
+12. Pull Changes from Remote Repository: git pull <remote> <branch>
+13. Push Changes to Remote Repository: git push <remote> <branch>
+14. Add a Remote Repository: git remote add <name> <url>
+15. Remove a Remote Repository: git remote remove <name>
+16. View Remote Repositories: git remote -v
+17. Undo Changes in the Working Directory: git checkout -- <file-name>
+18. Undo Staged Changes: git reset HEAD <file-name>
+19. Reset to a Previous Commit: git reset --hard <commit-hash>
+20. Discard Uncommitted Changes: git reset --hard
+21. View Differences Between Branches, Commits, etc.: git diff

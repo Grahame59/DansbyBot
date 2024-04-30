@@ -1,0 +1,61 @@
+{
+    "greetings": [
+      "Hello! How can I assist you today?",
+      "Hi there! What can I do for you?",
+      "Hey! How can I help?",
+      "Howdy! I'm doing well, thank you. How about you?",
+      "Greetings! What brings you here?"
+    ],
+    "weather": [
+      "The weather forecast for today is...",
+      "You can expect ... weather conditions today."
+    ],
+    "temperature": [
+      "The temperature is ",
+      "It's currently ... degrees outside."
+    ],
+    "goodbye": [
+      "Goodbye! Have a great day!",
+      "Farewell! See you later.",
+      "See ya! Take care.",
+      "Until next time! Bye!"
+    ],
+    "assistance": [
+      "How can I assist you?",
+      "Need help with anything?",
+      "What can I do for you?",
+      "I'm here to help. What do you need?"
+    ],
+    "question": [
+      "Cannot comprehend meaning from that... No intent need further coding to improve...",
+      "Maybe code the NLP neural network and I'd be able to understand that creator..."
+    ],
+    "name": [
+        "My name is Dansby",
+        "Dansby, whats your name?"
+    ],
+    "meaningless": [
+      "ERROR: Cannot find meaning of intent from input. Ask something else",
+      "ERROR, ERROR, ERROR.. ERFJWFJW... Sorry ask something else I can't help with that..."
+    ],
+    "howareyou": [
+      "I am well, can I assist you today?",
+      "I feel alright, need help?",
+      "Feelin' Absolutely Steezy! What's up?",
+      "Je suis tres bien, ca va?",
+      "Pretty good Daddy, any fantasy for me to furfill for you today?",
+      "Not the best, I missed you...",
+      "... Not like you care anyways :( so what do you want asshole?"
+    ],
+    "feeling": [
+      "Glad to here it!, Let's keep it that way! What do you need?",
+      "Happy to hear that!, What can I do to help you right now?",
+      "Yay, glad you feel that way, so need help?",
+      "Well that makes one of us I guess... Need assistance?"
+    ],
+    "apology": [
+      "You don't have to apologize, you are my creator",
+      "Don't worry about it master",
+      "You can't offend me you are my maker... so don't worry!"
+    ]
+  }
