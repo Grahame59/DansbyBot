@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
 
 namespace Tokenization
 {
@@ -23,9 +25,13 @@ namespace Tokenization
 
         private string RemovePunctuation(string word)
         {
-            // Implement logic to remove punctuation marks from a word
-            // Example: Replace any punctuation marks with an empty string
-            return word; // Placeholder, implement actual logic
+             // Define a regular expression pattern to match punctuation marks
+        string pattern = "[\\p{P}]";
+
+        // Replace punctuation marks with an empty string
+        string cleanWord = Regex.Replace(word, pattern, "");
+
+        return cleanWord;
         }
     }
 }

@@ -1,8 +1,8 @@
 Git Commands for updating all code: 
-1. git checkout -b DansbyBot_Alpha_V_0.3 (or whatever branch im working on...)
+1. git checkout -b main (or whatever branch im working on...)
 2. git add .
 3. git commit -m "Your commit message here"
-4. git push -u origin DansbyBot_Alpha_V_0.2
+4. git push -u origin main
 
 Git Commands: 
 

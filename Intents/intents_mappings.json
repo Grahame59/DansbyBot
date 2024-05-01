@@ -1,0 +1,487 @@
+[
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "hello",
+        "Tokens": [
+          "hello"
+        ]
+      },
+      {
+        "Utterance": "hi",
+        "Tokens": [
+          "hi"
+        ]
+      },
+      {
+        "Utterance": "hey",
+        "Tokens": [
+          "hey"
+        ]
+      },
+      {
+        "Utterance": "hola",
+        "Tokens": [
+          "hola"
+        ]
+      },
+      {
+        "Utterance": "bonjour",
+        "Tokens": [
+          "bonjour"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "weather",
+    "Examples": [
+      {
+        "Utterance": "weather forecast",
+        "Tokens": [
+          "weather",
+          "forecast"
+        ]
+      },
+      {
+        "Utterance": "what's the weather like?",
+        "Tokens": [
+          "what's",
+          "the",
+          "weather",
+          "like"
+        ]
+      },
+      {
+        "Utterance": "How is it outside?",
+        "Tokens": [
+          "how",
+          "is",
+          "it",
+          "outside"
+        ]
+      },
+      {
+        "Utterance": "weather",
+        "Tokens": [
+          "weather"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "temperature",
+    "Examples": [
+      {
+        "Utterance": "temperature",
+        "Tokens": [
+          "temperature"
+        ]
+      },
+      {
+        "Utterance": "Should I dress warm?",
+        "Tokens": [
+          "should",
+          "I",
+          "dress",
+          "warm"
+        ]
+      },
+      {
+        "Utterance": "hot out?",
+        "Tokens": [
+          "hot",
+          "out"
+        ]
+      },
+      {
+        "Utterance": "Can I wear shorts?",
+        "Tokens": [
+          "can",
+          "I",
+          "wear",
+          "shorts"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "goodbye",
+    "Examples": [
+      {
+        "Utterance": "bye",
+        "Tokens": [
+          "bye"
+        ]
+      },
+      {
+        "Utterance": "see you later",
+        "Tokens": [
+          "see",
+          "you",
+          "later"
+        ]
+      },
+      {
+        "Utterance": "farewell",
+        "Tokens": [
+          "farewell"
+        ]
+      },
+      {
+        "Utterance": "goodbye",
+        "Tokens": [
+          "goodbye"
+        ]
+      },
+      {
+        "Utterance": "see ya",
+        "Tokens": [
+          "see",
+          "ya"
+        ]
+      },
+      {
+        "Utterance": "talk later",
+        "Tokens": [
+          "talk",
+          "later"
+        ]
+      },
+      {
+        "Utterance": "peace out",
+        "Tokens": [
+          "peace",
+          "out"
+        ]
+      },
+      {
+        "Utterance": "later",
+        "Tokens": [
+          "later"
+        ]
+      },
+      {
+        "Utterance": "later loser",
+        "Tokens": [
+          "later",
+          "loser"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "assistance",
+    "Examples": [
+      {
+        "Utterance": "help",
+        "Tokens": [
+          "help"
+        ]
+      },
+      {
+        "Utterance": "assistance?",
+        "Tokens": [
+          "assistance"
+        ]
+      },
+      {
+        "Utterance": "assistance",
+        "Tokens": [
+          "assistance"
+        ]
+      },
+      {
+        "Utterance": "i need help",
+        "Tokens": [
+          "i",
+          "need",
+          "help"
+        ]
+      },
+      {
+        "Utterance": "I'm so lost",
+        "Tokens": [
+          "i'm",
+          "so",
+          "lost"
+        ]
+      },
+      {
+        "Utterance": "confused",
+        "Tokens": [
+          "confused"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "question",
+    "Examples": [
+      {
+        "Utterance": "how are you today?",
+        "Tokens": [
+          "how",
+          "are",
+          "you",
+          "today"
+        ]
+      },
+      {
+        "Utterance": "can you do 1 + 1 for me?",
+        "Tokens": [
+          "can",
+          "you",
+          "do",
+          "1",
+          "+",
+          "1",
+          "for",
+          "me"
+        ]
+      },
+      {
+        "Utterance": "what day is it?",
+        "Tokens": [
+          "what",
+          "day",
+          "is",
+          "it"
+        ]
+      },
+      {
+        "Utterance": "how is your day?",
+        "Tokens": [
+          "how",
+          "is",
+          "your",
+          "day"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "name",
+    "Examples": [
+      {
+        "Utterance": "Whats your name?",
+        "Tokens": [
+          "whats",
+          "your",
+          "name"
+        ]
+      },
+      {
+        "Utterance": "what is your name",
+        "Tokens": [
+          "what",
+          "is",
+          "your",
+          "name"
+        ]
+      },
+      {
+        "Utterance": "whats your name",
+        "Tokens": [
+          "whats",
+          "your",
+          "name"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "meaningless",
+    "Examples": [
+      {
+        "Utterance": "i",
+        "Tokens": [
+          "i"
+        ]
+      },
+      {
+        "Utterance": "hmmm",
+        "Tokens": [
+          "hmmm"
+        ]
+      },
+      {
+        "Utterance": "q",
+        "Tokens": [
+          "q"
+        ]
+      },
+      {
+        "Utterance": "hmm",
+        "Tokens": [
+          "hmm"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "how are you",
+        "Tokens": [
+          "how",
+          "are",
+          "you"
+        ]
+      },
+      {
+        "Utterance": "just checking up on you",
+        "Tokens": [
+          "just",
+          "checking",
+          "up",
+          "on",
+          "you"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "feeling",
+    "Examples": [
+      {
+        "Utterance": "good",
+        "Tokens": [
+          "good"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "apology",
+    "Examples": [
+      {
+        "Utterance": "sorry",
+        "Tokens": [
+          "sorry"
+        ]
+      },
+      {
+        "Utterance": "my bad",
+        "Tokens": [
+          "my",
+          "bad"
+        ]
+      },
+      {
+        "Utterance": "I am sorry",
+        "Tokens": [
+          "i",
+          "am",
+          "sorry"
+        ]
+      },
+      {
+        "Utterance": "I'm sorry",
+        "Tokens": [
+          "i'm",
+          "sorry"
+        ]
+      },
+      {
+        "Utterance": "My fault",
+        "Tokens": [
+          "my",
+          "fault"
+        ]
+      },
+      {
+        "Utterance": "whoops",
+        "Tokens": [
+          "whoops"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "statement",
+    "Examples": [
+      {
+        "Utterance": "you don't have any functions yet so you can't help me",
+        "Tokens": [
+          "you",
+          "don't",
+          "have",
+          "any",
+          "functions",
+          "yet",
+          "so",
+          "you",
+          "can't",
+          "help"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "whats up",
+        "Tokens": [
+          "whats",
+          "up"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "temperature",
+    "Examples": [
+      {
+        "Utterance": "got out?",
+        "Tokens": [
+          "got",
+          "out"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "temperature",
+    "Examples": [
+      {
+        "Utterance": "Can I wear shorts?",
+        "Tokens": [
+          "Can",
+          "I",
+          "wear",
+          "shorts"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "name",
+    "Examples": [
+      {
+        "Utterance": "Whats your name",
+        "Tokens": [
+          "Whats",
+          "your",
+          "name"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "affection",
+    "Examples": [
+      {
+        "Utterance": "I love you ",
+        "Tokens": [
+          "I",
+          "love",
+          "you"
+        ]
+      }
+    ]
+  }
+]

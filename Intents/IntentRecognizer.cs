@@ -2,82 +2,109 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
+using Tokenization;
 
 namespace Intents
 {
     public class IntentRecognizer
     {
-        private Dictionary<string, List<string>> intentMappings;
+        private List<Intent> intents;
+        private Tokenizer tokenizer;
 
         public IntentRecognizer()
         {
             // Initialize intent mappings
-            intentMappings = LoadIntentMappings();
+            intents = LoadIntents();
+            tokenizer = new Tokenizer();
         }
 
-        public void AddIntent(string intentName, List<string> exampleUtterances)
+        public void AddIntent(Intent intent)
         {
-            // Check if the intent already exists
-            if (intentMappings.ContainsKey(intentName))
-            {
-                // If the intent exists, append the new utterances to the existing ones
-                intentMappings[intentName].AddRange(exampleUtterances);
-            }
-            else
-            {
-                // If the intent doesn't exist, add it with the new utterances
-                intentMappings[intentName] = exampleUtterances;
-            }
-            // Save intent mappings to the file
-            SaveIntentMappings(intentMappings);
+            // Add the new intent
+            intents.Add(intent);
+            // Save intents to the file
+            SaveIntents(intents);
         }
 
-        private Dictionary<string, List<string>> LoadIntentMappings()
+        private List<Intent> LoadIntents()
         {
-            // Load intent mappings from file
-            if (File.Exists("intent_mappings.json"))
+            // Load intents from file
+            if (File.Exists("intents_mappings.json")) //   file : (intent_mappings.json)
             {
-                string json = File.ReadAllText("intent_mappings.json");
-                return (Dictionary<string, List<string>>)JsonConvert.DeserializeObject(json, typeof(Dictionary<string, List<string>>));
+                string json = File.ReadAllText("intents_mappings.json");
+                return JsonConvert.DeserializeObject<List<Intent>>(json);
             }
-            return new Dictionary<string, List<string>>();
+            return new List<Intent>();
         }
 
-
-        private void SaveIntentMappings(Dictionary<string, List<string>> mappings)
+        private void SaveIntents(List<Intent> intents)
         {
-            // Serialize intent mappings to JSON and save to file
-            string json = JsonConvert.SerializeObject(mappings, Formatting.Indented);
-            File.WriteAllText("intent_mappings.json", json);
+            // Serialize intents to JSON and save to file
+            string json = JsonConvert.SerializeObject(intents, Formatting.Indented);
+            File.WriteAllText("intents_mappings.json", json);
         }
 
         public string RecognizeIntent(string userInput)
         {
-            // Convert user input to lowercase for case-insensitive matching
-            userInput = userInput.ToLower();
+            // Tokenize user input
+            List<string> userTokens = tokenizer.Tokenize(userInput);
 
-            // Match user input to intents based on predefined mappings
-            foreach (var mapping in intentMappings)
+            // Match tokenized input to intents based on predefined mappings
+            foreach (var intent in intents)
             {
-                foreach (var utterance in mapping.Value)
+                foreach (var example in intent.Examples)
                 {
-                    if (userInput.Contains(utterance))
+                    // Check if all tokens in example are present in user input
+                    bool match = true;
+                    foreach (var token in example.Tokens)
                     {
-                        return mapping.Key; // Return the recognized intent
+                        if (!userTokens.Contains(token))
+                        {
+                            match = false;
+                            break;
+                        }
+                    }
+                    if (match)
+                    {
+                        return intent.Name; // Return the recognized intent
                     }
                 }
             }
 
             // If intent is not recognized, prompt user to provide meaning
-            Console.WriteLine($"I didn't understand what you meant by: \"{userInput}\"." +  " Please provide the meaning (intent) for this input:");
-            string newIntent = Console.ReadLine().ToLower().Trim();
+            Console.WriteLine($"I didn't understand what you meant by: \"{userInput}\". Please provide the meaning (intent) for this input:");
+            string newIntentName = Console.ReadLine().ToLower().Trim();
 
-            // Add the new intent and example utterance
-            AddIntent(newIntent, new List<string> { userInput });
+            // Create a new intent with the user input as an example
+            Intent newIntent = new Intent
+            {
+                Name = newIntentName,
+                Examples = new List<Example>
+                {
+                    new Example
+                    {
+                        Utterance = userInput,
+                        Tokens = userTokens
+                    }
+                }
+            };
 
-            return newIntent; // Return the newly added intent
+            // Add the new intent
+            AddIntent(newIntent);
+
+            return newIntentName; // Return the newly added intent
         }
-
     }
-} //end of Intents namespace
-    
+
+    public class Intent
+    {
+        public string Name { get; set; }
+        public List<Example> Examples { get; set; }
+    }
+
+    public class Example
+    {
+        public string Utterance { get; set; }
+        public List<string> Tokens { get; set; }
+    }
+}

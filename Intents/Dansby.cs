@@ -22,9 +22,11 @@ public class Driver
         ResponseRecognizer ResponseRecog = new ResponseRecognizer();
         
         // Test intent recognition
+        Console.WriteLine("Welecome to your chat interface. I am Dansby also known as Dansby bot. May I assist you?");
         while (true)
         {
             //prompts User for input and scans it
+            Console.WriteLine(); //convo flow format
             Console.WriteLine("USER:");
             string userInput = Console.ReadLine();
 
@@ -35,6 +37,7 @@ public class Driver
 
             Console.WriteLine(); //convo flow format
             string returnResponse = ResponseRecog.RecognizeResponse(userInput);
+            Console.WriteLine(); //convo format
             Console.WriteLine($"DANSBY: {returnResponse}");
             //
 
