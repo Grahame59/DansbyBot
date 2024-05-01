@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj",
+      "projectUniqueName": "E:\\CODES\\DansbyBot\\DansbyBot\\Intents\\DansbyBot.csproj",
       "projectName": "DansbyBot",
-      "projectPath": "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj",
+      "projectPath": "E:\\CODES\\DansbyBot\\DansbyBot\\Intents\\DansbyBot.csproj",
       "packagesPath": "C:\\Users\\Kj Grahame\\.nuget\\packages\\",
-      "outputPath": "E:\\CODES\\DansbyBot\\DansbyBot\\obj\\",
+      "outputPath": "E:\\CODES\\DansbyBot\\DansbyBot\\Intents\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 
 //------------------------------------------------------------------------------------------------//
-//  cd E:\CODES\DansbyChatBot\DansbyBot\DansbyBot\NaturalLanguageProcessing
+//  cd E:\CODES\DansbyBot\DansbyBot\Intents
 //  dotnet build
 //  dotnet run
 //------------------------------------------------------------------------------------------------//
