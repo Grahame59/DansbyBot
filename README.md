@@ -35,7 +35,7 @@ A chatbot that can grow with me and doing many things I want it to in my prefere
 - improved the map database with more maps and variety in responses and some more intent... Gonna have to make a neural network if I want to advance the 
 fluid convo of Dansby... spent 3 hours debugging because I mismatched the intent json database names to the response database json names... It's always the simple mistakes that you spend hours on...............................
 
-#
-- 
+# 5/1/24 - 4:11 pm
+- update tokenizer... explain when back from work...
 
 
