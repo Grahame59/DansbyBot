@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Tokenization;
+using Functions;
+
+
 
 namespace Intents
 {
@@ -10,7 +13,7 @@ namespace Intents
     {
         private List<Intent> intents;
         private Tokenizer tokenizer;
-
+        functionHoldings FunctionScript = new functionHoldings(); //Instiate functions class
         public IntentRecognizer()
         {
             // Initialize intent mappings
@@ -107,7 +110,7 @@ namespace Intents
             {   
                 //Functions/methods under the cases
                 case "performexitdansby":
-                    PerformExitDansby();
+                    FunctionScript.PerformExitDansby();
                     return "exiting application...";
 
                 //case "method2":
@@ -120,18 +123,7 @@ namespace Intents
             }
         }    
         
-        //Exit function
-        private void PerformExitDansby()
-        {
-            //text explanation for convo flow w/ the exit method
-            Console.WriteLine();
-            Console.WriteLine("DANSBY: I feel so cold... don't leave me creator... goodbye");
-            Console.WriteLine(" -> SUCCESFULLY EXITING DANSBYCHATBOT");
-            Console.WriteLine();
-
-            Environment.Exit(0);
-
-        }
+        
     } //end of class IntentRecognizer
 
     public class Intent
