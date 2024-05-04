@@ -43,6 +43,9 @@ through a json mapping I made same as the intent mapping. Dansby has gotten slig
 - Implemented the first function the chatbot can complete through recognized intents under a switch case... therefore can implement all future intents under the switch case at the moment... I can see this making the intent Recognition class kinda messy and long but I
 also don't know what is considered to be a long script as the longest scipt I have made is like 300 lines so not that long... The function he can completed now is very simple and is just exiting the dotnet build and reentering the cd path by using (Environment.Exit(0);).
 
-#5/ /24 - 
+# 5/4/24 - 12:21 pm
+- Ended up just adding a function holder script to keep the functions out of the IntentRecog. script so now to add functions I can code them in there and then add the Intents to the switch that they identify under. 
+
+#
 
 
