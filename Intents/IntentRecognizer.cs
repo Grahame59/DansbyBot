@@ -46,6 +46,7 @@ namespace Intents
 
         public string RecognizeIntent(string userInput)
         {
+            
             // Tokenize user input
             List<string> userTokens = tokenizer.Tokenize(userInput);
 
@@ -66,7 +67,10 @@ namespace Intents
                     }
                     if (match)
                     {
-                        return intent.Name; // Return the recognized intent
+                        // Call PerformIntentAction
+                        PerformIntentAction(intent.Name);
+                        // Return the recognized intent name
+                        return intent.Name;
                     }
                 }
             }
@@ -94,7 +98,41 @@ namespace Intents
 
             return newIntentName; // Return the newly added intent
         }
-    }
+
+        //functions from intents if an intentName is recognized that is not mapped to a response
+        private string PerformIntentAction(string intentName)
+        {
+            // Perform specific action based on recognized intent
+            switch (intentName)
+            {   
+                //Functions/methods under the cases
+                case "performexitdansby":
+                    PerformExitDansby();
+                    return "exiting application...";
+
+                //case "method2":
+                    //... ; 
+                    //return "whatever happens "; 
+
+                //if intent is not defined
+                default:
+                    return $"Action for {intentName} not defined.";
+            }
+        }    
+        
+        //Exit function
+        private void PerformExitDansby()
+        {
+            //text explanation for convo flow w/ the exit method
+            Console.WriteLine();
+            Console.WriteLine("DANSBY: I feel so cold... don't leave me creator... goodbye");
+            Console.WriteLine(" -> SUCCESFULLY EXITING DANSBYCHATBOT");
+            Console.WriteLine();
+
+            Environment.Exit(0);
+
+        }
+    } //end of class IntentRecognizer
 
     public class Intent
     {
@@ -107,4 +145,6 @@ namespace Intents
         public string Utterance { get; set; }
         public List<string> Tokens { get; set; }
     }
+
+    
 }

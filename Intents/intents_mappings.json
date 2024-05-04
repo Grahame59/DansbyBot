@@ -483,5 +483,93 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "hows your day",
+        "Tokens": [
+          "hows",
+          "your",
+          "day"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "name",
+    "Examples": [
+      {
+        "Utterance": "Dansby",
+        "Tokens": [
+          "Dansby"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "creatorname",
+    "Examples": [
+      {
+        "Utterance": "Kyler",
+        "Tokens": [
+          "Kyler"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performexitdansby",
+    "Examples": [
+      {
+        "Utterance": "exit the program dansby",
+        "Tokens": [
+          "exit",
+          "the",
+          "program",
+          "dansby"
+        ]
+      },
+      {
+        "Utterance": "close the environment",
+        "Tokens": [
+          "close",
+          "the",
+          "environment"
+        ]
+      },
+      {
+        "Utterance": "exit the application",
+        "Tokens": [
+          "exit",
+          "the",
+          "application"
+        ]
+      },
+      {
+        "Utterance": "exit the program",
+        "Tokens": [
+          "exit",
+          "the",
+          "program"
+        ]
+      },
+      {
+        "Utterance": "close the program",
+        "Tokens": [
+          "close",
+          "the",
+          "program"
+        ]
+      },{
+        "Utterance": "close the application",
+        "Tokens": [
+          "close",
+          "the",
+          "application"
+        ]
+      }
+    ]
   }
 ]
