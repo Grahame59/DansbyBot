@@ -1,5 +1,5 @@
 
-# DansbyBot
+# DansbyBot - Devlog
 A chatbot that can grow with me and doing many things I want it to in my preference. Like Jarvis from Iron Man
 
 # 4/28/24 - 1:45pm 
@@ -35,7 +35,10 @@ A chatbot that can grow with me and doing many things I want it to in my prefere
 - improved the map database with more maps and variety in responses and some more intent... Gonna have to make a neural network if I want to advance the 
 fluid convo of Dansby... spent 3 hours debugging because I mismatched the intent json database names to the response database json names... It's always the simple mistakes that you spend hours on...............................
 
+# 5/1/24 - 4:11 pm
+- implemented the tokenizer into the driver as well as my intentRecognizer script... It now breaks up sentences or an "utterance" into word based tokenizers and matchs the tokens under a intent for it. It still just reguritates random responses I personally wrote
+through a json mapping I made same as the intent mapping. Dansby has gotten slight smarter, going to focus on preprocessing and developing the NLP pipeline so I can train it on data for speech patterns but I am learning as I go. Don't want to dive into concepts I don't fully understand so I am really trying to build off the intentRecognizer logic but it seems like the rough for this complexity won't be all that high. Will most likely end up rebuilding and refactoring all the codes later than sooner.
+
 #
-- 
 
 

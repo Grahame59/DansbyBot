@@ -10,7 +10,7 @@ Git Commands:
 2. Clone a Repository: git clone <repository-url>
 3. Check Status of Your Repository: git status
 4. Stage Changes: git add <file-name>
-               git add . (This adds all files)
+                  git add . (This adds all files)
 5. Commit Changes: git commit -m "Commit message"
 6. View Commit History: git log
 7. Create a New Branch: git branch <branch-name>
