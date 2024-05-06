@@ -49,6 +49,9 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5/6/24 - 6:18 pm
 - I added a function to called ListAllFunctions that lists all the functions that are user created on the functions script. I also added a sub function called GetFunctionDescription that uses a switch case and variables to essentially map functions to descriptions if they have a written description. Also added some more intents for responses and recognition as well as implementing some intent recog for the functions and a help intent that explains a little bit about what Dansby can do... Had a quick coding sess but will dive in a lot the next few months on this project as I have just finished my 3rd year of University today ;)... 
 
-# 5/ /24 - 
+# 5/6/24 - 6:22pm 
+- NOTE TO SELF: Do some .Net tutorials off this link... https://learn.microsoft.com/en-us/dotnet/core/tutorials/
+
+  
 
 
