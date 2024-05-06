@@ -46,6 +46,9 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5/4/24 - 12:21 pm
 - Ended up just adding a function holder script to keep the functions out of the IntentRecog. script so now to add functions I can code them in there and then add the Intents to the switch that they identify under. 
 
-#
+# 5/6/24 - 6:18 pm
+- I added a function to called ListAllFunctions that lists all the functions that are user created on the functions script. I also added a sub function called GetFunctionDescription that uses a switch case and variables to essentially map functions to descriptions if they have a written description. Also added some more intents for responses and recognition as well as implementing some intent recog for the functions and a help intent that explains a little bit about what Dansby can do... Had a quick coding sess but will dive in a lot the next few months on this project as I have just finished my 3rd year of University today ;)... 
+
+# 5/ /24 - 
 
 

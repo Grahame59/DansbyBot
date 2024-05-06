@@ -68,7 +68,7 @@ namespace Intents
                             break;
                         }
                     }
-                    if (match)
+                    if (match) //this is the intent match to the functions script, implement functions below in the switch case
                     {
                         // Call PerformIntentAction
                         PerformIntentAction(intent.Name);
@@ -116,6 +116,10 @@ namespace Intents
                 //case "method2":
                     //... ; 
                     //return "whatever happens "; 
+                
+                case "listallfunctions" : 
+                    FunctionScript.ListAllFunctions();
+                    return "Listing All Functions: ";
 
                 //if intent is not defined
                 default:

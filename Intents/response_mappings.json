@@ -20,12 +20,7 @@
       "See ya! Take care.",
       "Until next time! Bye!"
     ],
-    "assistance": [
-      "How can I assist you?",
-      "Need help with anything?",
-      "What can I do for you?",
-      "I'm here to help. What do you need?"
-    ],
+    
     "question": [
       "Cannot comprehend meaning from that... No intent need further coding to improve...",
       "Maybe code the NLP neural network and I'd be able to understand that creator..."
@@ -66,10 +61,22 @@
       "I love you mostesteresteresterester",
       "You programmed me to love you so I do"
     ],
-    "CreatorName" : [
+    "creatorname" : [
       "I know your name master.",
       "All hail the creator!",
       "Death to all that are not by thy name of Kyler",
       "KYLER KYLER KYLER KYLER, sorry was just chanting the name of my holy creator."
+    ],
+
+    "help" : [
+      "I am Dansby and am capable of conversational flow. I can perform functions (tasks) for you and am forever growing as I accept and adapt prompts. \n If you ask me to list all my functions I will give a list of all current functions I can complete with detailed explanations."
+    ],
+    "assistance": [
+      "How can I assist you?",
+      "Need help with anything?",
+      "What can I do for you?",
+      "I'm here to help. What do you need?"
     ]
+
+
   }

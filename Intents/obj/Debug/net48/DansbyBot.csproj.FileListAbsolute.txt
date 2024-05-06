@@ -4,3 +4,10 @@ E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.AssemblyInfoInput
 E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.AssemblyInfo.cs
 E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.csproj.CoreCompileInputs.cache
 E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.sourcelink.json
+E:\CODES\DansbyBot\DansbyBot\Intents\bin\Debug\net48\DansbyBot.exe.config
+E:\CODES\DansbyBot\DansbyBot\Intents\bin\Debug\net48\DansbyBot.exe
+E:\CODES\DansbyBot\DansbyBot\Intents\bin\Debug\net48\DansbyBot.pdb
+E:\CODES\DansbyBot\DansbyBot\Intents\bin\Debug\net48\Newtonsoft.Json.dll
+E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.csproj.Up2Date
+E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.exe
+E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.pdb

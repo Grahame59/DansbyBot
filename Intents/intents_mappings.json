@@ -172,7 +172,7 @@
     ]
   },
   {
-    "Name": "assistance",
+    "Name": "help",
     "Examples": [
       {
         "Utterance": "help",
@@ -562,12 +562,94 @@
           "the",
           "program"
         ]
-      },{
+      },
+      {
         "Utterance": "close the application",
         "Tokens": [
           "close",
           "the",
           "application"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "list all the functions",
+        "Tokens": [
+          "list",
+          "all",
+          "the",
+          "functions"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "List all functions",
+        "Tokens": [
+          "List",
+          "all",
+          "functions"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "List all Functions",
+        "Tokens": [
+          "List",
+          "all",
+          "Functions"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "help",
+    "Examples": [
+      {
+        "Utterance": "what are you capable of?",
+        "Tokens": [
+          "what",
+          "are",
+          "you",
+          "capable",
+          "of"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "list all your functions dansby ",
+        "Tokens": [
+          "list",
+          "all",
+          "your",
+          "functions",
+          "dansby"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performexitdansby",
+    "Examples": [
+      {
+        "Utterance": "exit",
+        "Tokens": [
+          "exit"
         ]
       }
     ]
