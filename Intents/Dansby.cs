@@ -3,8 +3,6 @@ using Intents;
 using Responses;
 using System.Collections.Generic;
 
-
-
 //------------------------------------------------------------------------------------------------//
 //  cd E:\CODES\DansbyBot\DansbyBot\Intents
 //  dotnet build

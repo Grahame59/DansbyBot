@@ -1,14 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4gHGcDYxmwS/WkLw+YVp6sG6NE9PTLZWcDlE9cpoQsm04AE/WJJpn0/AEFU8alL9KhIZ+5hXS5ENe9yOKQuh2w==",
+  "dgSpecHash": "IogBPJ/jBIuclW2YgVa57fXxNGTAl9rjwikDdiAea8AaeUqX933hKlaEQIuJU1mO/6xwCD47D6mpX46CmmK9lw==",
   "success": true,
   "projectFilePath": "E:\\CODES\\DansbyBot\\DansbyBot\\Intents\\DansbyBot.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

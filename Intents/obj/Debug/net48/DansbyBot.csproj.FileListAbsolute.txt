@@ -1,0 +1,6 @@
+E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.csproj.AssemblyReference.cache
+E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.GeneratedMSBuildEditorConfig.editorconfig
+E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.AssemblyInfoInputs.cache
+E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.AssemblyInfo.cs
+E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.csproj.CoreCompileInputs.cache
+E:\CODES\DansbyBot\DansbyBot\Intents\obj\Debug\net48\DansbyBot.sourcelink.json
