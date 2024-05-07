@@ -123,7 +123,11 @@ namespace Intents
 
                 case "time" :
                     FunctionScript.GetTime(); 
-                    return "The time."
+                    return "The time.";
+
+                case "date" :
+                    FunctionScript.GetDate();
+                    return " The date.";
 
                 //if intent is not defined
                 default:

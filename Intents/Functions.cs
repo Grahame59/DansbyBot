@@ -32,6 +32,17 @@ namespace Functions
 
         }
 
+        public void GetDate()
+        {
+            
+        // Get the current date and format it as a string
+        DateTime currentDate = DateTime.Today;
+
+        Console.WriteLine();
+        Console.WriteLine("Dansby: The current date is: " + currentDate.ToString("MMMM dd, yyyy"));
+        Console.WriteLine();
+        }
+
         public void ListAllFunctions()
         {
             Console.WriteLine();
@@ -63,6 +74,9 @@ namespace Functions
 
                 case "GetTime" :
                     return "This function gives the current time of your time zone";
+
+                case "GetDate" : 
+                    return "This function gives you the current";
 
                 default:
                     return "No description available.";

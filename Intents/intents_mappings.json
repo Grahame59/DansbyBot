@@ -242,15 +242,6 @@
         ]
       },
       {
-        "Utterance": "what day is it?",
-        "Tokens": [
-          "what",
-          "day",
-          "is",
-          "it"
-        ]
-      },
-      {
         "Utterance": "how is your day?",
         "Tokens": [
           "how",
@@ -294,12 +285,6 @@
   {
     "Name": "meaningless",
     "Examples": [
-      {
-        "Utterance": "i",
-        "Tokens": [
-          "i"
-        ]
-      },
       {
         "Utterance": "hmmm",
         "Tokens": [
@@ -691,6 +676,129 @@
           "the",
           "current",
           "time"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "What's todays Date?",
+        "Tokens": [
+          "Whats",
+          "todays",
+          "Date"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "whats todays date",
+        "Tokens": [
+          "whats",
+          "todays",
+          "date"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "what day is it today",
+        "Tokens": [
+          "what",
+          "day",
+          "is",
+          "it",
+          "today"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "whats the date of today",
+        "Tokens": [
+          "whats",
+          "the",
+          "date",
+          "of",
+          "today"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "whats the date?",
+        "Tokens": [
+          "whats",
+          "the",
+          "date"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "is today the ",
+        "Tokens": [
+          "is",
+          "today",
+          "the"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "affection",
+    "Examples": [
+      {
+        "Utterance": "do you love me?",
+        "Tokens": [
+          "do",
+          "you",
+          "love",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "creatorname",
+    "Examples": [
+      {
+        "Utterance": "whats my name ",
+        "Tokens": [
+          "whats",
+          "my",
+          "name"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "creatorname",
+    "Examples": [
+      {
+        "Utterance": "my name is kyler",
+        "Tokens": [
+          "my",
+          "name",
+          "is",
+          "kyler"
         ]
       }
     ]
