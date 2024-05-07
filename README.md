@@ -52,6 +52,10 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5/6/24 - 6:22pm 
 - NOTE TO SELF: Do some .Net tutorials off this link... https://learn.microsoft.com/en-us/dotnet/core/tutorials/
 
+# 5/7/24 - 12:11am
+- Added a function that returns the current time of your time zone based of the system time. Also added crosscompatibility for multiple OS in the .NET configs... specifically for my MacOS so I can code when not home. 
+
+
   
 
 
