@@ -121,6 +121,10 @@ namespace Intents
                     FunctionScript.ListAllFunctions();
                     return "Listing All Functions: ";
 
+                case "time" :
+                    FunctionScript.GetTime(); 
+                    return "The time."
+
                 //if intent is not defined
                 default:
                     return $"Action for {intentName} not defined.";

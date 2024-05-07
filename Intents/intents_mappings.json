@@ -653,5 +653,46 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "time",
+    "Examples": [
+      {
+        "Utterance": "what time is it",
+        "Tokens": [
+          "what",
+          "time",
+          "is",
+          "it"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "list all functions ",
+        "Tokens": [
+          "list",
+          "all",
+          "functions"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "time",
+    "Examples": [
+      {
+        "Utterance": "whats the current time?",
+        "Tokens": [
+          "whats",
+          "the",
+          "current",
+          "time"
+        ]
+      }
+    ]
   }
 ]

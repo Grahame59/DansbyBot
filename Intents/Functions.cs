@@ -18,6 +18,20 @@ namespace Functions
 
         }
 
+        public void GetTime()
+        {
+            // Get the current system time
+            DateTime currentTime = DateTime.Now;
+
+            // Format the time as a string
+            string formattedTime = currentTime.ToString("hh:mm:ss tt"); // Example format: "03:15:27 PM"
+
+            Console.WriteLine();
+            Console.WriteLine(" Dansby: The time is: " + formattedTime);
+            Console.WriteLine();
+
+        }
+
         public void ListAllFunctions()
         {
             Console.WriteLine();
@@ -47,6 +61,8 @@ namespace Functions
                 case "GetFunctionDescription" : 
                     return "This is a sub function that assists ListAllFunctions by mapping explanations to the functions when they are listed.";
 
+                case "GetTime" :
+                    return "This function gives the current time of your time zone";
 
                 default:
                     return "No description available.";
