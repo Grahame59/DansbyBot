@@ -3,7 +3,8 @@
   <PropertyGroup>
     <LangVersion>10.0</LangVersion>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net48</TargetFramework> <!-- Updated to target .NET Framework 4.8 -->
+    <TargetFramework>net6.0</TargetFramework> <!-- Target .NET 5 -->
+    <Platforms>AnyCPU;x64</Platforms> <!-- Specify target platforms -->
   </PropertyGroup>
 
   <ItemGroup>
