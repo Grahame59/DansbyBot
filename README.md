@@ -55,6 +55,7 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5/7/24 - 1:22am
 - Added a function that returns the current time of your time zone based of the system time. Also added crosscompatibility for multiple OS in the .NET configs... specifically for my MacOS so I can code when not home. Also added a function for the date as well. Want to implement a calender, dayOfTheWeek function, etc... and have it keep track of things. Think I need to work on an interface outside of the console next as well.
 
-  
+# 5/8/24 - 11:56pm
+- Added some random updates for some polsihing... much work needed... Want to work on building a much stronger response/intent script but should probably focus on NLP and having the bot understand info... Want to add more functions as well will try to make up a framework plan instead of jumping all over the place as I currently am. Want to make all the scripts more modular and refernceable and less dependent on one another and certain inputs etc... 
 
 
