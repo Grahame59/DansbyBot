@@ -220,15 +220,6 @@
     "Name": "question",
     "Examples": [
       {
-        "Utterance": "how are you today?",
-        "Tokens": [
-          "how",
-          "are",
-          "you",
-          "today"
-        ]
-      },
-      {
         "Utterance": "can you do 1 + 1 for me?",
         "Tokens": [
           "can",
@@ -239,15 +230,6 @@
           "1",
           "for",
           "me"
-        ]
-      },
-      {
-        "Utterance": "how is your day?",
-        "Tokens": [
-          "how",
-          "is",
-          "your",
-          "day"
         ]
       }
     ]
@@ -329,12 +311,12 @@
     ]
   },
   {
-    "Name": "feeling",
+    "Name": "mood",
     "Examples": [
       {
-        "Utterance": "good",
+        "Utterance": "what's up",
         "Tokens": [
-          "good"
+          "what's", "up"
         ]
       }
     ]
@@ -406,24 +388,12 @@
     ]
   },
   {
-    "Name": "howareyou",
-    "Examples": [
-      {
-        "Utterance": "whats up",
-        "Tokens": [
-          "whats",
-          "up"
-        ]
-      }
-    ]
-  },
-  {
     "Name": "temperature",
     "Examples": [
       {
-        "Utterance": "got out?",
+        "Utterance": "hot out?",
         "Tokens": [
-          "got",
+          "hot",
           "out"
         ]
       }
@@ -465,19 +435,6 @@
           "I",
           "love",
           "you"
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "howareyou",
-    "Examples": [
-      {
-        "Utterance": "hows your day",
-        "Tokens": [
-          "hows",
-          "your",
-          "day"
         ]
       }
     ]
@@ -707,7 +664,7 @@
     ]
   },
   {
-    "Name": "date",
+    "Name": "dayofweek",
     "Examples": [
       {
         "Utterance": "what day is it today",
