@@ -316,7 +316,8 @@
       {
         "Utterance": "what's up",
         "Tokens": [
-          "what's", "up"
+          "what's",
+          "up"
         ]
       }
     ]
@@ -832,6 +833,31 @@
           "of",
           "the",
           "week"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "mood",
+    "Examples": [
+      {
+        "Utterance": "whats up",
+        "Tokens": [
+          "whats",
+          "up"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "how are u",
+        "Tokens": [
+          "how",
+          "are",
+          "u"
         ]
       }
     ]
