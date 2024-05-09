@@ -802,5 +802,32 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "time",
+    "Examples": [
+      {
+        "Utterance": "whats the time",
+        "Tokens": [
+          "whats",
+          "the",
+          "time"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "what date is it ",
+        "Tokens": [
+          "what",
+          "date",
+          "is",
+          "it"
+        ]
+      }
+    ]
   }
 ]
