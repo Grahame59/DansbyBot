@@ -829,5 +829,54 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "what day is it ",
+        "Tokens": [
+          "what",
+          "day",
+          "is",
+          "it"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "what is the day of the week dansby ",
+        "Tokens": [
+          "what",
+          "is",
+          "the",
+          "day",
+          "of",
+          "the",
+          "week",
+          "dansby"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "what is the day of the week ",
+        "Tokens": [
+          "what",
+          "is",
+          "the",
+          "day",
+          "of",
+          "the",
+          "week"
+        ]
+      }
+    ]
   }
 ]

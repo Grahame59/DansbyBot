@@ -127,7 +127,11 @@ namespace Intents
 
                 case "date" :
                     FunctionScript.GetDate();
-                    return " The date.";
+                    return "The date.";
+
+                case "dayofweek" :
+                    FunctionScript.GetDayOfTheWeek();
+                    return "The day of the week. ";   
 
                 //if intent is not defined
                 default:

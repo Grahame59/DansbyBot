@@ -35,14 +35,26 @@ namespace Functions
         public void GetDate()
         {
             
-        // Get the current date and format it as a string
-        DateTime currentDate = DateTime.Today;
+            // Get the current date and format it as a string
+            DateTime currentDate = DateTime.Today;
 
-        Console.WriteLine();
-        Console.WriteLine("Dansby: The current date is: " + currentDate.ToString("MMMM dd, yyyy"));
-        Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Dansby: The current date is: " + currentDate.ToString("MMMM dd, yyyy"));
+            Console.WriteLine();
         }
 
+        public void GetDayOfTheWeek()
+        {
+        
+            
+            // Determine the day of the week for the given date
+            string[] daysOfWeek = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+
+
+            Console.WriteLine();
+            Console.WriteLine("Dansby: The date of the week is " + DateTime.Today.DayOfWeek);
+            Console.WriteLine();
+        }
         public void ListAllFunctions()
         {
             Console.WriteLine();
@@ -77,6 +89,9 @@ namespace Functions
 
                 case "GetDate" : 
                     return "This function gives you the current";
+
+                case "GetDayOfTheWeek" :
+                    return "This function gives you the day of the week";
 
                 default:
                     return "No description available.";
