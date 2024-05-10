@@ -1,5 +1,7 @@
 using System;
 using System.Reflection;
+using Intents;
+using Tokenization;
 
 namespace Functions
 {
@@ -96,7 +98,14 @@ namespace Functions
                 default:
                     return "No description available.";
             }
-        }
+        } //end of GetFunctionDescriptions method
+
+        
+
+    
+
+
+
 
 
     } //end of class functionHoldings

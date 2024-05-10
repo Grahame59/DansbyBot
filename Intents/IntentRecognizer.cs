@@ -71,7 +71,7 @@ namespace Intents
                     if (match) //this is the intent match to the functions script, implement functions below in the switch case
                     {
                         // Call PerformIntentAction
-                        PerformIntentAction(intent.Name);
+                        PerformIntentAction(intent.Name, userInput);
                         // Return the recognized intent name
                         return intent.Name;
                     }
@@ -103,7 +103,7 @@ namespace Intents
         }
 
         //functions from intents if an intentName is recognized that is not mapped to a response
-        private string PerformIntentAction(string intentName)
+        private string PerformIntentAction(string intentName, string userInput)
         {
             // Perform specific action based on recognized intent
             switch (intentName)

@@ -58,4 +58,8 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5/8/24 - 11:56pm
 - Added some random updates for some polsihing... much work needed... Want to work on building a much stronger response/intent script but should probably focus on NLP and having the bot understand info... Want to add more functions as well will try to make up a framework plan instead of jumping all over the place as I currently am. Want to make all the scripts more modular and refernceable and less dependent on one another and certain inputs etc... 
 
+# 5/10/24 - 5:06 pm 
+- Reworked the Intent classifications a bit and tried to implement a PerformSimpleMath() Function but crashed and burned trying to seperate the tokens from userInput into the function need to work on a better way to implement... Might switch focus over right now just gonna revert the code pre- mtah function and save it all to github so I can play around with some more features wanna implement as much as possible today! 
 
+# 5.10.24 - : pm 
+- 

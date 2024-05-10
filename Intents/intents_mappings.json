@@ -217,24 +217,6 @@
     ]
   },
   {
-    "Name": "question",
-    "Examples": [
-      {
-        "Utterance": "can you do 1 + 1 for me?",
-        "Tokens": [
-          "can",
-          "you",
-          "do",
-          "1",
-          "+",
-          "1",
-          "for",
-          "me"
-        ]
-      }
-    ]
-  },
-  {
     "Name": "name",
     "Examples": [
       {
@@ -311,7 +293,7 @@
     ]
   },
   {
-    "Name": "mood",
+    "Name": "currenttask",
     "Examples": [
       {
         "Utterance": "what's up",
@@ -441,7 +423,7 @@
     ]
   },
   {
-    "Name": "name",
+    "Name": "calledname",
     "Examples": [
       {
         "Utterance": "Dansby",
@@ -452,12 +434,15 @@
     ]
   },
   {
-    "Name": "creatorname",
+    "Name": "whoiscreatorname",
     "Examples": [
       {
-        "Utterance": "Kyler",
+        "Utterance": "Whats your creators name",
         "Tokens": [
-          "Kyler"
+          "whats",
+          "your",
+          "creators",
+          "name"
         ]
       }
     ]
@@ -735,13 +720,15 @@
     ]
   },
   {
-    "Name": "creatorname",
+    "Name": "whoiscreatorname",
     "Examples": [
       {
-        "Utterance": "whats my name ",
+        "Utterance": "whats is your creators name ",
         "Tokens": [
           "whats",
-          "my",
+          "is",
+          "your",
+          "creators",
           "name"
         ]
       }
@@ -838,7 +825,7 @@
     ]
   },
   {
-    "Name": "mood",
+    "Name": "currenttask",
     "Examples": [
       {
         "Utterance": "whats up",
@@ -858,6 +845,95 @@
           "how",
           "are",
           "u"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "Hello",
+        "Tokens": [
+          "Hello"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "Hey",
+        "Tokens": [
+          "Hey"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "How are you ",
+        "Tokens": [
+          "How",
+          "are",
+          "you"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what are you up too",
+        "Tokens": [
+          "what",
+          "are",
+          "you",
+          "up",
+          "too"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "Whatcha doing",
+        "Tokens": [
+          "Whatcha",
+          "doing"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "whatcha doing",
+        "Tokens": [
+          "whatcha",
+          "doing"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what you been up too ",
+        "Tokens": [
+          "what",
+          "you",
+          "been",
+          "up",
+          "too"
         ]
       }
     ]
