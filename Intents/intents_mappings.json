@@ -937,5 +937,33 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "calledname",
+    "Examples": [
+      {
+        "Utterance": "Dasnby",
+        "Tokens": [
+          "Dasnby"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "simplifiedradicals",
+    "Examples": [
+      {
+        "Utterance": "Can you simplify two radicals for me?",
+        "Tokens": [
+          "Can",
+          "you",
+          "simplify",
+          "two",
+          "radicals",
+          "for",
+          "me"
+        ]
+      }
+    ]
   }
 ]
