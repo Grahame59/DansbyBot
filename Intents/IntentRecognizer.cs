@@ -5,8 +5,6 @@ using Newtonsoft.Json;
 using Tokenization;
 using Functions;
 
-
-
 namespace Intents
 {
     public class IntentRecognizer
@@ -131,7 +129,11 @@ namespace Intents
 
                 case "dayofweek" :
                     FunctionScript.GetDayOfTheWeek();
-                    return "The day of the week. ";   
+                    return "The day of the week. "; 
+
+                case "addition" :
+                    FunctionScript.DoAddition();
+                    return "Does addition of two doubles. ";                     
 
                 //if intent is not defined
                 default:

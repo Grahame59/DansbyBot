@@ -965,5 +965,119 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "meaningless",
+    "Examples": [
+      {
+        "Utterance": "friendship",
+        "Tokens": [
+          "friendship"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "creatorname",
+    "Examples": [
+      {
+        "Utterance": "Kyler ",
+        "Tokens": [
+          "Kyler"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "creatorname",
+    "Examples": [
+      {
+        "Utterance": "kyler ",
+        "Tokens": [
+          "kyler"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "how are ypu ",
+        "Tokens": [
+          "how",
+          "are",
+          "ypu"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "Can you add two numbers for me ",
+        "Tokens": [
+          "Can",
+          "you",
+          "add",
+          "two",
+          "numbers",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "can you add 2 numbers for me ",
+        "Tokens": [
+          "can",
+          "you",
+          "add",
+          "2",
+          "numbers",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "can you add some numbers for me ",
+        "Tokens": [
+          "can",
+          "you",
+          "add",
+          "some",
+          "numbers",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "can u add 2 nums for me",
+        "Tokens": [
+          "can",
+          "u",
+          "add",
+          "2",
+          "nums",
+          "for",
+          "me"
+        ]
+      }
+    ]
   }
 ]

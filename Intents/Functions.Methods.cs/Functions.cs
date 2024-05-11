@@ -2,7 +2,6 @@ using System;
 using System.Reflection;
 using Intents;
 using Tokenization;
-using simplifiedRadical;
 
 namespace Functions
 {
@@ -99,7 +98,26 @@ namespace Functions
                 default:
                     return "No description available.";
             }
+
         } //end of GetFunctionDescriptions method
+
+        public void DoAddition()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Dansby: Input the first number you want to add: ");
+            double num1 = double.Parse(Console.ReadLine()); // Convert string to double
+
+            Console.WriteLine();
+            Console.WriteLine("Dansby: Input the second number you want to add: ");
+            double num2 = double.Parse(Console.ReadLine()); // Convert string to double
+
+            Console.WriteLine();
+
+            double result = num1 + num2;
+            Console.WriteLine($"Dansby: {num1} + {num2} = {result}"); // Convert double to string for output
+        }
+
+
 
         
 
