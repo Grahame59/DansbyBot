@@ -1079,5 +1079,177 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "subtraction",
+    "Examples": [
+      {
+        "Utterance": "can you minus these two numbers for me ",
+        "Tokens": [
+          "can",
+          "you",
+          "minus",
+          "these",
+          "two",
+          "numbers",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "subtraction",
+    "Examples": [
+      {
+        "Utterance": "can you minus these two numbers ",
+        "Tokens": [
+          "can",
+          "you",
+          "minus",
+          "these",
+          "two",
+          "numbers"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "subtraction",
+    "Examples": [
+      {
+        "Utterance": "can you minus these 2 numbers ",
+        "Tokens": [
+          "can",
+          "you",
+          "minus",
+          "these",
+          "2",
+          "numbers"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "division",
+    "Examples": [
+      {
+        "Utterance": "can you divide these two numbers",
+        "Tokens": [
+          "can",
+          "you",
+          "divide",
+          "these",
+          "two",
+          "numbers"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can you multiply these two numbers",
+        "Tokens": [
+          "can",
+          "you",
+          "multiply",
+          "these",
+          "two",
+          "numbers"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can u multiply these two nums",
+        "Tokens": [
+          "can",
+          "u",
+          "multiply",
+          "these",
+          "two",
+          "nums"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can u multiply these 2 nums",
+        "Tokens": [
+          "can",
+          "u",
+          "multiply",
+          "these",
+          "2",
+          "nums"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can you multiply these 2 nums ",
+        "Tokens": [
+          "can",
+          "you",
+          "multiply",
+          "these",
+          "2",
+          "nums"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can u multiply these 2 numns ",
+        "Tokens": [
+          "can",
+          "u",
+          "multiply",
+          "these",
+          "2",
+          "numns"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "how r u ",
+        "Tokens": [
+          "how",
+          "r",
+          "u"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "How r u ",
+        "Tokens": [
+          "How",
+          "r",
+          "u"
+        ]
+      }
+    ]
   }
 ]

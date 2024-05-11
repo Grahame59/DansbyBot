@@ -131,6 +131,18 @@ namespace Intents
                     FunctionScript.GetDayOfTheWeek();
                     return "The day of the week. "; 
 
+                case "subtraction" : 
+                    FunctionScript.DoSubtraction();
+                    return "Does subtraction of two doubles";
+
+                case "multiplication" :
+                    FunctionScript.DoMultiplication();
+                    return " Does Multiplication of two doubles.";
+
+                case "division" : 
+                    FunctionScript.DoDivision();
+                    return " Does Divison of two doubles.";
+
                 case "addition" :
                     FunctionScript.DoAddition();
                     return "Does addition of two doubles. ";                     

@@ -95,6 +95,12 @@ namespace Functions
                 case "GetDayOfTheWeek" :
                     return "This function gives you the day of the week";
 
+                case "DoAddition" :
+                    return "This function prompts you for input for 2 nums and adds them. ";
+
+                case "DoSubtraction" :
+                    return "This function prompts you for input for 2 nums and subtracts them.";
+
                 default:
                     return "No description available.";
             }
@@ -116,15 +122,53 @@ namespace Functions
             double result = num1 + num2;
             Console.WriteLine($"Dansby: {num1} + {num2} = {result}"); // Convert double to string for output
         }
+        public void DoSubtraction()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Dansby: Input the first number you want to subtract: ");
+            double num1 = double.Parse(Console.ReadLine()); // Convert string to double
 
+            Console.WriteLine();
+            Console.WriteLine("Dansby: Input the second number you want to subtract: ");
+            double num2 = double.Parse(Console.ReadLine()); // Convert string to double
 
+            Console.WriteLine();
 
-        
+            double result = num1 - num2;
+            Console.WriteLine($"Dansby: {num1} - {num2} = {result}"); // Convert double to string for output
+        }
 
-    
+        public void DoMultiplication()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Dansby: Input the first number you want to multiply: ");
+            double num1 = double.Parse(Console.ReadLine()); // Convert string to double
 
+            Console.WriteLine();
+            Console.WriteLine("Dansby: Input the second number you want to multiply: ");
+            double num2 = double.Parse(Console.ReadLine()); // Convert string to double
 
+            Console.WriteLine();
 
+            double result = num1 * num2;
+            Console.WriteLine($"Dansby: {num1} * {num2} = {result}"); // Convert double to string for output
+        }
+
+        public void DoDivision()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Dansby: Input the first number you want to divide: ");
+            double num1 = double.Parse(Console.ReadLine()); // Convert string to double
+
+            Console.WriteLine();
+            Console.WriteLine("Dansby: Input the second number you want to divide: ");
+            double num2 = double.Parse(Console.ReadLine()); // Convert string to double
+
+            Console.WriteLine();
+
+            double result = num1 / num2;
+            Console.WriteLine($"Dansby: {num1} / {num2} = {result}"); // Convert double to string for output
+        }
 
 
     } //end of class functionHoldings

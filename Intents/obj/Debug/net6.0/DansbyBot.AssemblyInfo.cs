@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DansbyBot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3619368cff65b6bd436e2a1c091fdb49ccb4f81a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e375ea1d93067b74cd1f64c8baccf1fd7ac7483e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DansbyBot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DansbyBot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
