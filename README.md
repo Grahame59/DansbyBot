@@ -61,5 +61,5 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5/10/24 - 5:06 pm 
 - Reworked the Intent classifications a bit and tried to implement a PerformSimpleMath() Function but crashed and burned trying to seperate the tokens from userInput into the function need to work on a better way to implement... Might switch focus over right now just gonna revert the code pre- mtah function and save it all to github so I can play around with some more features wanna implement as much as possible today! 
 
-# 5.10.24 - : pm 
-- 
+# 5.10.24 - 8:16 pm 
+- Added an addition function, having the problem of double output on all functions except PerformExitDansby(); ... Cannot find where it is double executing 
