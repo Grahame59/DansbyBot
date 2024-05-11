@@ -25,7 +25,7 @@ namespace Responses
         private Dictionary<string, List<string>> LoadResponseMappings()
         {
             // Load response mappings from file
-            if (File.Exists("response_mappings.json"))
+            if (File.Exists("Intents\\NLP_pipeline\\response_mappings.json"))
             {
                 string json = File.ReadAllText("response_mappings.json");
                 return JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(json);

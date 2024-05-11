@@ -42,7 +42,7 @@ namespace Intents
         {
             // Serialize intents to JSON and save to file
             string json = JsonConvert.SerializeObject(intents, Formatting.Indented);
-            File.WriteAllText("intents_mappings.json", json);
+            File.WriteAllText("Intents\\NLP_pipeline\\intents_mappings.json", json);
         }
 
         public string RecognizeIntent(string userInput)

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DansbyBot
-build_property.ProjectDir = /Users/kylergrahame/Desktop/TIcTacToeDev/DansbyBot/Intents/
+build_property.ProjectDir = E:\CODES\DansbyBot\DansbyBot\Intents\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

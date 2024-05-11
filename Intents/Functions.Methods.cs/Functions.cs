@@ -101,6 +101,12 @@ namespace Functions
                 case "DoSubtraction" :
                     return "This function prompts you for input for 2 nums and subtracts them.";
 
+                case "DoMultiplication" : 
+                    return "This function prompts you for input for 2 nums and multiplys them.";
+
+                case "DoDivision" :
+                    return "This function prompts you for input for 2 nums and divides them.";
+
                 default:
                     return "No description available.";
             }
