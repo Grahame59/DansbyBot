@@ -1251,5 +1251,132 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "hows your day",
+        "Tokens": [
+          "hows",
+          "your",
+          "day"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "hows ur day",
+        "Tokens": [
+          "hows",
+          "ur",
+          "day"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can u multiply 2 nums for me ",
+        "Tokens": [
+          "can",
+          "u",
+          "multiply",
+          "2",
+          "nums",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "whoiscreatorname",
+    "Examples": [
+      {
+        "Utterance": "whats my name ",
+        "Tokens": [
+          "whats",
+          "my",
+          "name"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dansbyfavcolor",
+    "Examples": [
+      {
+        "Utterance": "whats your favorite color?",
+        "Tokens": [
+          "whats",
+          "your",
+          "favorite",
+          "color"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dansbyfavcolor",
+    "Examples": [
+      {
+        "Utterance": "whats ur fav color",
+        "Tokens": [
+          "whats",
+          "ur",
+          "fav",
+          "color"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "subtraction",
+    "Examples": [
+      {
+        "Utterance": "can u subtract 2 nums for me ",
+        "Tokens": [
+          "can",
+          "u",
+          "subtract",
+          "2",
+          "nums",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "affection",
+    "Examples": [
+      {
+        "Utterance": "I love u ",
+        "Tokens": [
+          "I",
+          "love",
+          "u"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "affection",
+    "Examples": [
+      {
+        "Utterance": "I <3 u",
+        "Tokens": [
+          "I",
+          "<3",
+          "u"
+        ]
+      }
+    ]
   }
 ]
