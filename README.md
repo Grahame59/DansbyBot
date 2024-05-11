@@ -63,3 +63,8 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 5.10.24 - 8:16 pm 
 - Added an addition function, having the problem of double output on all functions except PerformExitDansby(); ... Cannot find where it is double executing 
+
+# 5.10.24 - 10:12pm
+- Added subtraction, multiplication, and division functions and some more intent reworking... 
+
+# 
