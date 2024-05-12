@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Fx+6nnE0ufdB9gQnBtS5w+4dp8NV/1hZj7uwdpH6ZZH/qD/UFhCS6qsU+kdiHlv/s5LUaLr4vXfusHdIP+FiLA==",
+  "dgSpecHash": "IBhrE10Mgqy5P6kKXP4Ez0NAdZltDRu0Hlz+juFa0I45bhpnCUZxCTjtRYf03M6fUC85jDy7zb3hmldc5sGY1A==",
   "success": true,
   "projectFilePath": "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512",
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512"
   ],
   "logs": []
 }

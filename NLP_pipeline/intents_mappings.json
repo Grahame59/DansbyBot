@@ -1,0 +1,1408 @@
+[
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "hello",
+        "Tokens": [
+          "hello"
+        ]
+      },
+      {
+        "Utterance": "hi",
+        "Tokens": [
+          "hi"
+        ]
+      },
+      {
+        "Utterance": "hey",
+        "Tokens": [
+          "hey"
+        ]
+      },
+      {
+        "Utterance": "hola",
+        "Tokens": [
+          "hola"
+        ]
+      },
+      {
+        "Utterance": "bonjour",
+        "Tokens": [
+          "bonjour"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "weather",
+    "Examples": [
+      {
+        "Utterance": "weather forecast",
+        "Tokens": [
+          "weather",
+          "forecast"
+        ]
+      },
+      {
+        "Utterance": "what's the weather like?",
+        "Tokens": [
+          "what's",
+          "the",
+          "weather",
+          "like"
+        ]
+      },
+      {
+        "Utterance": "How is it outside?",
+        "Tokens": [
+          "how",
+          "is",
+          "it",
+          "outside"
+        ]
+      },
+      {
+        "Utterance": "weather",
+        "Tokens": [
+          "weather"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "temperature",
+    "Examples": [
+      {
+        "Utterance": "temperature",
+        "Tokens": [
+          "temperature"
+        ]
+      },
+      {
+        "Utterance": "Should I dress warm?",
+        "Tokens": [
+          "should",
+          "I",
+          "dress",
+          "warm"
+        ]
+      },
+      {
+        "Utterance": "hot out?",
+        "Tokens": [
+          "hot",
+          "out"
+        ]
+      },
+      {
+        "Utterance": "Can I wear shorts?",
+        "Tokens": [
+          "can",
+          "I",
+          "wear",
+          "shorts"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "goodbye",
+    "Examples": [
+      {
+        "Utterance": "bye",
+        "Tokens": [
+          "bye"
+        ]
+      },
+      {
+        "Utterance": "see you later",
+        "Tokens": [
+          "see",
+          "you",
+          "later"
+        ]
+      },
+      {
+        "Utterance": "farewell",
+        "Tokens": [
+          "farewell"
+        ]
+      },
+      {
+        "Utterance": "goodbye",
+        "Tokens": [
+          "goodbye"
+        ]
+      },
+      {
+        "Utterance": "see ya",
+        "Tokens": [
+          "see",
+          "ya"
+        ]
+      },
+      {
+        "Utterance": "talk later",
+        "Tokens": [
+          "talk",
+          "later"
+        ]
+      },
+      {
+        "Utterance": "peace out",
+        "Tokens": [
+          "peace",
+          "out"
+        ]
+      },
+      {
+        "Utterance": "later",
+        "Tokens": [
+          "later"
+        ]
+      },
+      {
+        "Utterance": "later loser",
+        "Tokens": [
+          "later",
+          "loser"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "help",
+    "Examples": [
+      {
+        "Utterance": "help",
+        "Tokens": [
+          "help"
+        ]
+      },
+      {
+        "Utterance": "assistance?",
+        "Tokens": [
+          "assistance"
+        ]
+      },
+      {
+        "Utterance": "assistance",
+        "Tokens": [
+          "assistance"
+        ]
+      },
+      {
+        "Utterance": "i need help",
+        "Tokens": [
+          "i",
+          "need",
+          "help"
+        ]
+      },
+      {
+        "Utterance": "I'm so lost",
+        "Tokens": [
+          "i'm",
+          "so",
+          "lost"
+        ]
+      },
+      {
+        "Utterance": "confused",
+        "Tokens": [
+          "confused"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "name",
+    "Examples": [
+      {
+        "Utterance": "Whats your name?",
+        "Tokens": [
+          "whats",
+          "your",
+          "name"
+        ]
+      },
+      {
+        "Utterance": "what is your name",
+        "Tokens": [
+          "what",
+          "is",
+          "your",
+          "name"
+        ]
+      },
+      {
+        "Utterance": "whats your name",
+        "Tokens": [
+          "whats",
+          "your",
+          "name"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "meaningless",
+    "Examples": [
+      {
+        "Utterance": "hmmm",
+        "Tokens": [
+          "hmmm"
+        ]
+      },
+      {
+        "Utterance": "q",
+        "Tokens": [
+          "q"
+        ]
+      },
+      {
+        "Utterance": "hmm",
+        "Tokens": [
+          "hmm"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "how are you",
+        "Tokens": [
+          "how",
+          "are",
+          "you"
+        ]
+      },
+      {
+        "Utterance": "just checking up on you",
+        "Tokens": [
+          "just",
+          "checking",
+          "up",
+          "on",
+          "you"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what's up",
+        "Tokens": [
+          "what's",
+          "up"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "apology",
+    "Examples": [
+      {
+        "Utterance": "sorry",
+        "Tokens": [
+          "sorry"
+        ]
+      },
+      {
+        "Utterance": "my bad",
+        "Tokens": [
+          "my",
+          "bad"
+        ]
+      },
+      {
+        "Utterance": "I am sorry",
+        "Tokens": [
+          "i",
+          "am",
+          "sorry"
+        ]
+      },
+      {
+        "Utterance": "I'm sorry",
+        "Tokens": [
+          "i'm",
+          "sorry"
+        ]
+      },
+      {
+        "Utterance": "My fault",
+        "Tokens": [
+          "my",
+          "fault"
+        ]
+      },
+      {
+        "Utterance": "whoops",
+        "Tokens": [
+          "whoops"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "statement",
+    "Examples": [
+      {
+        "Utterance": "you don't have any functions yet so you can't help me",
+        "Tokens": [
+          "you",
+          "don't",
+          "have",
+          "any",
+          "functions",
+          "yet",
+          "so",
+          "you",
+          "can't",
+          "help"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "temperature",
+    "Examples": [
+      {
+        "Utterance": "hot out?",
+        "Tokens": [
+          "hot",
+          "out"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "temperature",
+    "Examples": [
+      {
+        "Utterance": "Can I wear shorts?",
+        "Tokens": [
+          "Can",
+          "I",
+          "wear",
+          "shorts"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "name",
+    "Examples": [
+      {
+        "Utterance": "Whats your name",
+        "Tokens": [
+          "Whats",
+          "your",
+          "name"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "affection",
+    "Examples": [
+      {
+        "Utterance": "I love you ",
+        "Tokens": [
+          "I",
+          "love",
+          "you"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "calledname",
+    "Examples": [
+      {
+        "Utterance": "Dansby",
+        "Tokens": [
+          "Dansby"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "whoiscreatorname",
+    "Examples": [
+      {
+        "Utterance": "Whats your creators name",
+        "Tokens": [
+          "whats",
+          "your",
+          "creators",
+          "name"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performexitdansby",
+    "Examples": [
+      {
+        "Utterance": "exit the program dansby",
+        "Tokens": [
+          "exit",
+          "the",
+          "program",
+          "dansby"
+        ]
+      },
+      {
+        "Utterance": "close the environment",
+        "Tokens": [
+          "close",
+          "the",
+          "environment"
+        ]
+      },
+      {
+        "Utterance": "exit the application",
+        "Tokens": [
+          "exit",
+          "the",
+          "application"
+        ]
+      },
+      {
+        "Utterance": "exit the program",
+        "Tokens": [
+          "exit",
+          "the",
+          "program"
+        ]
+      },
+      {
+        "Utterance": "close the program",
+        "Tokens": [
+          "close",
+          "the",
+          "program"
+        ]
+      },
+      {
+        "Utterance": "close the application",
+        "Tokens": [
+          "close",
+          "the",
+          "application"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "list all the functions",
+        "Tokens": [
+          "list",
+          "all",
+          "the",
+          "functions"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "List all functions",
+        "Tokens": [
+          "List",
+          "all",
+          "functions"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "List all Functions",
+        "Tokens": [
+          "List",
+          "all",
+          "Functions"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "help",
+    "Examples": [
+      {
+        "Utterance": "what are you capable of?",
+        "Tokens": [
+          "what",
+          "are",
+          "you",
+          "capable",
+          "of"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "list all your functions dansby ",
+        "Tokens": [
+          "list",
+          "all",
+          "your",
+          "functions",
+          "dansby"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performexitdansby",
+    "Examples": [
+      {
+        "Utterance": "exit",
+        "Tokens": [
+          "exit"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "time",
+    "Examples": [
+      {
+        "Utterance": "what time is it",
+        "Tokens": [
+          "what",
+          "time",
+          "is",
+          "it"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "list all functions ",
+        "Tokens": [
+          "list",
+          "all",
+          "functions"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "time",
+    "Examples": [
+      {
+        "Utterance": "whats the current time?",
+        "Tokens": [
+          "whats",
+          "the",
+          "current",
+          "time"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "What's todays Date?",
+        "Tokens": [
+          "Whats",
+          "todays",
+          "Date"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "whats todays date",
+        "Tokens": [
+          "whats",
+          "todays",
+          "date"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "what day is it today",
+        "Tokens": [
+          "what",
+          "day",
+          "is",
+          "it",
+          "today"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "whats the date of today",
+        "Tokens": [
+          "whats",
+          "the",
+          "date",
+          "of",
+          "today"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "whats the date?",
+        "Tokens": [
+          "whats",
+          "the",
+          "date"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "is today the ",
+        "Tokens": [
+          "is",
+          "today",
+          "the"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "affection",
+    "Examples": [
+      {
+        "Utterance": "do you love me?",
+        "Tokens": [
+          "do",
+          "you",
+          "love",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "whoiscreatorname",
+    "Examples": [
+      {
+        "Utterance": "whats is your creators name ",
+        "Tokens": [
+          "whats",
+          "is",
+          "your",
+          "creators",
+          "name"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "creatorname",
+    "Examples": [
+      {
+        "Utterance": "my name is kyler",
+        "Tokens": [
+          "my",
+          "name",
+          "is",
+          "kyler"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "time",
+    "Examples": [
+      {
+        "Utterance": "whats the time",
+        "Tokens": [
+          "whats",
+          "the",
+          "time"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "what date is it ",
+        "Tokens": [
+          "what",
+          "date",
+          "is",
+          "it"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "what day is it ",
+        "Tokens": [
+          "what",
+          "day",
+          "is",
+          "it"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "what is the day of the week dansby ",
+        "Tokens": [
+          "what",
+          "is",
+          "the",
+          "day",
+          "of",
+          "the",
+          "week",
+          "dansby"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "what is the day of the week ",
+        "Tokens": [
+          "what",
+          "is",
+          "the",
+          "day",
+          "of",
+          "the",
+          "week"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "whats up",
+        "Tokens": [
+          "whats",
+          "up"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "how are u",
+        "Tokens": [
+          "how",
+          "are",
+          "u"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "Hello",
+        "Tokens": [
+          "Hello"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "Hey",
+        "Tokens": [
+          "Hey"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "How are you ",
+        "Tokens": [
+          "How",
+          "are",
+          "you"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what are you up too",
+        "Tokens": [
+          "what",
+          "are",
+          "you",
+          "up",
+          "too"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "Whatcha doing",
+        "Tokens": [
+          "Whatcha",
+          "doing"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "whatcha doing",
+        "Tokens": [
+          "whatcha",
+          "doing"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what you been up too ",
+        "Tokens": [
+          "what",
+          "you",
+          "been",
+          "up",
+          "too"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "calledname",
+    "Examples": [
+      {
+        "Utterance": "Dasnby",
+        "Tokens": [
+          "Dasnby"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "simplifiedradicals",
+    "Examples": [
+      {
+        "Utterance": "Can you simplify two radicals for me?",
+        "Tokens": [
+          "Can",
+          "you",
+          "simplify",
+          "two",
+          "radicals",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "meaningless",
+    "Examples": [
+      {
+        "Utterance": "friendship",
+        "Tokens": [
+          "friendship"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "creatorname",
+    "Examples": [
+      {
+        "Utterance": "Kyler ",
+        "Tokens": [
+          "Kyler"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "creatorname",
+    "Examples": [
+      {
+        "Utterance": "kyler ",
+        "Tokens": [
+          "kyler"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "how are ypu ",
+        "Tokens": [
+          "how",
+          "are",
+          "ypu"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "Can you add two numbers for me ",
+        "Tokens": [
+          "Can",
+          "you",
+          "add",
+          "two",
+          "numbers",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "can you add 2 numbers for me ",
+        "Tokens": [
+          "can",
+          "you",
+          "add",
+          "2",
+          "numbers",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "can you add some numbers for me ",
+        "Tokens": [
+          "can",
+          "you",
+          "add",
+          "some",
+          "numbers",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "can u add 2 nums for me",
+        "Tokens": [
+          "can",
+          "u",
+          "add",
+          "2",
+          "nums",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "subtraction",
+    "Examples": [
+      {
+        "Utterance": "can you minus these two numbers for me ",
+        "Tokens": [
+          "can",
+          "you",
+          "minus",
+          "these",
+          "two",
+          "numbers",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "subtraction",
+    "Examples": [
+      {
+        "Utterance": "can you minus these two numbers ",
+        "Tokens": [
+          "can",
+          "you",
+          "minus",
+          "these",
+          "two",
+          "numbers"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "subtraction",
+    "Examples": [
+      {
+        "Utterance": "can you minus these 2 numbers ",
+        "Tokens": [
+          "can",
+          "you",
+          "minus",
+          "these",
+          "2",
+          "numbers"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "division",
+    "Examples": [
+      {
+        "Utterance": "can you divide these two numbers",
+        "Tokens": [
+          "can",
+          "you",
+          "divide",
+          "these",
+          "two",
+          "numbers"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can you multiply these two numbers",
+        "Tokens": [
+          "can",
+          "you",
+          "multiply",
+          "these",
+          "two",
+          "numbers"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can u multiply these two nums",
+        "Tokens": [
+          "can",
+          "u",
+          "multiply",
+          "these",
+          "two",
+          "nums"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can u multiply these 2 nums",
+        "Tokens": [
+          "can",
+          "u",
+          "multiply",
+          "these",
+          "2",
+          "nums"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can you multiply these 2 nums ",
+        "Tokens": [
+          "can",
+          "you",
+          "multiply",
+          "these",
+          "2",
+          "nums"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can u multiply these 2 numns ",
+        "Tokens": [
+          "can",
+          "u",
+          "multiply",
+          "these",
+          "2",
+          "numns"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "how r u ",
+        "Tokens": [
+          "how",
+          "r",
+          "u"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "How r u ",
+        "Tokens": [
+          "How",
+          "r",
+          "u"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "hows your day",
+        "Tokens": [
+          "hows",
+          "your",
+          "day"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "hows ur day",
+        "Tokens": [
+          "hows",
+          "ur",
+          "day"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "multiplication",
+    "Examples": [
+      {
+        "Utterance": "can u multiply 2 nums for me ",
+        "Tokens": [
+          "can",
+          "u",
+          "multiply",
+          "2",
+          "nums",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "whoiscreatorname",
+    "Examples": [
+      {
+        "Utterance": "whats my name ",
+        "Tokens": [
+          "whats",
+          "my",
+          "name"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dansbyfavcolor",
+    "Examples": [
+      {
+        "Utterance": "whats your favorite color?",
+        "Tokens": [
+          "whats",
+          "your",
+          "favorite",
+          "color"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dansbyfavcolor",
+    "Examples": [
+      {
+        "Utterance": "whats ur fav color",
+        "Tokens": [
+          "whats",
+          "ur",
+          "fav",
+          "color"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "subtraction",
+    "Examples": [
+      {
+        "Utterance": "can u subtract 2 nums for me ",
+        "Tokens": [
+          "can",
+          "u",
+          "subtract",
+          "2",
+          "nums",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "affection",
+    "Examples": [
+      {
+        "Utterance": "I love u ",
+        "Tokens": [
+          "I",
+          "love",
+          "u"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "affection",
+    "Examples": [
+      {
+        "Utterance": "I <3 u",
+        "Tokens": [
+          "I",
+          "<3",
+          "u"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "Hi there",
+        "Tokens": [
+          "Hi",
+          "there"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "What day is it?",
+        "Tokens": [
+          "What",
+          "day",
+          "is",
+          "it"
+        ]
+      }
+    ]
+  }
+]

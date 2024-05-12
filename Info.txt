@@ -1,3 +1,9 @@
+Json Files: 
+
+dotnet add package Newtonsoft.Json  //if error occurs with Json file, redownload Json package.
+
+
+
 Git Commands for updating all code: 
 1. git checkout -b main (or whatever branch im working on...)
 2. git add .

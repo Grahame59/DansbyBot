@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "admin",
+      "password": "admin",
+      "email": null,
+      "age": null,
+      "phonenumber": null,
+      "birthday": null,
+      "favcolor": null,
+      "Interests": null,
+      "location": null
+    },
+    {
+      "id": 1,
+      "username": "kyler_grahame",
+      "password": "Wmkg2168609",
+      "email": "kjgbusiness8@gmail.com",
+      "age": 21,
+      "phonenumber": "9736501596",
+      "birthday": "2002-06-08",
+      "favcolor": "Mauve",
+      "Interests": "Coding, Games, Woodworking, TV, Anime, Shows",
+      "location": "West Milford"
+    },
+    {
+      "id": 2,
+      "username": "colin_rosario",
+      "password": null,
+      "email": null,
+      "age": 21,
+      "phonenumber": "8624328167",
+      "birthday": "2003-04-10",
+      "favcolor": null,
+      "Interests": "fishing, cars",
+      "location": "West Milford"
+    },
+    {
+      "id": 3,
+      "username": "paige_czerepeck",
+      "password": null,
+      "email": null,
+      "age": 21,
+      "phonenumber": "9739085432",
+      "birthday": "2002-10-31",
+      "favcolor": null,
+      "Interests": null,
+      "location": "West Milford"
+    },
+    {
+      "id": 4,
+      "username": "steven_leyva",
+      "password": null,
+      "email": null,
+      "age": 21,
+      "phonenumber": "9732242175",
+      "birthday": "2002-07-31",
+      "favcolor": null,
+      "Interests": "Games, Anime, Bodybuilding, Gym",
+      "location": "West Milford"
+    },
+    {
+      "id": 5,
+      "username": "shea_walker",
+      "password": null,
+      "email": null,
+      "age": 21,
+      "phonenumber": "2016635788",
+      "birthday": "2002-11-29",
+      "favcolor": null,
+      "Interests": "Hair ",
+      "location": "West Milford"
+    },
+    {
+      "id": 6,
+      "username": "gavin_muniz",
+      "password": null,
+      "email": "gavinmuniz1325@gmail.com",
+      "age": 21,
+      "phonenumber": "9734590115",
+      "birthday": "2002-05-07",
+      "favcolor": "Green",
+      "Interests": "Chemistry, FuckingBitches, GettingBread, CallingMotherBitch, BuyingZins, UpperDeckLippy",
+      "location": "West Milford"
+    }
+  ]
+}
