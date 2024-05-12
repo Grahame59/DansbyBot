@@ -67,5 +67,5 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5.10.24 - 10:12pm
 - Added subtraction, multiplication, and division functions and some more intent reworking... 
 
-# 5.11.24
+# 5.11.24 - 8:39pm
 - Added User login and a directory for user data... worked on the paths and switched to relative paths and learned a bit more about path connections and exits. Also reworked and organized the file structure to be much cleaner.. Need to work on security Hash/Salt for security for passwords usernames, personal info etc...
