@@ -30,11 +30,11 @@
       "password": null,
       "email": null,
       "age": 21,
-      "phonenumber": "8624328167",
+      "phonenumber": null,
       "birthday": "2003-04-10",
       "favcolor": null,
       "Interests": "fishing, cars",
-      "location": "West Milford"
+      "location": null
     },
     {
       "id": 3,
@@ -42,11 +42,11 @@
       "password": null,
       "email": null,
       "age": 21,
-      "phonenumber": "9739085432",
+      "phonenumber": null,
       "birthday": "2002-10-31",
       "favcolor": null,
       "Interests": null,
-      "location": "West Milford"
+      "location": null
     },
     {
       "id": 4,
@@ -54,11 +54,11 @@
       "password": null,
       "email": null,
       "age": 21,
-      "phonenumber": "9732242175",
+      "phonenumber": null,
       "birthday": "2002-07-31",
       "favcolor": null,
       "Interests": "Games, Anime, Bodybuilding, Gym",
-      "location": "West Milford"
+      "location": null
     },
     {
       "id": 5,
@@ -66,11 +66,11 @@
       "password": null,
       "email": null,
       "age": 21,
-      "phonenumber": "2016635788",
+      "phonenumber": null,
       "birthday": "2002-11-29",
       "favcolor": null,
       "Interests": "Hair ",
-      "location": "West Milford"
+      "location": null
     },
     {
       "id": 6,
@@ -78,11 +78,11 @@
       "password": null,
       "email": "gavinmuniz1325@gmail.com",
       "age": 21,
-      "phonenumber": "9734590115",
+      "phonenumber": null,
       "birthday": "2002-05-07",
       "favcolor": "Green",
       "Interests": "Chemistry, FuckingBitches, GettingBread, CallingMotherBitch, BuyingZins, UpperDeckLippy",
-      "location": "West Milford"
+      "location": null
     }
   ]
 }
