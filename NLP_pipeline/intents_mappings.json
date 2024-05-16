@@ -1299,10 +1299,11 @@
     "Name": "whoiscreatorname",
     "Examples": [
       {
-        "Utterance": "whats my name ",
+        "Utterance": "whats ur creators name ",
         "Tokens": [
           "whats",
-          "my",
+          "ur",
+          "creators",
           "name"
         ]
       }
@@ -1401,6 +1402,147 @@
           "day",
           "is",
           "it"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "meaningless",
+    "Examples": [
+      {
+        "Utterance": "porn",
+        "Tokens": [
+          "porn"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "meaningless",
+    "Examples": [
+      {
+        "Utterance": "you are real ",
+        "Tokens": [
+          "you",
+          "are",
+          "real"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "meaningless",
+    "Examples": [
+      {
+        "Utterance": "where am I?",
+        "Tokens": [
+          "where",
+          "am",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performexitdansby",
+    "Examples": [
+      {
+        "Utterance": "EXIT",
+        "Tokens": [
+          "EXIT"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "getcurrentusername",
+    "Examples": [
+      {
+        "Utterance": "whats my name",
+        "Tokens": [
+          "whats",
+          "my",
+          "name"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listcurrentuserlogininfo",
+    "Examples": [
+      {
+        "Utterance": "list all my current data as a user",
+        "Tokens": [
+          "list",
+          "all",
+          "my",
+          "current",
+          "data",
+          "as",
+          "a",
+          "user"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listcurrentuserlogininfo",
+    "Examples": [
+      {
+        "Utterance": "list all current user data",
+        "Tokens": [
+          "list",
+          "all",
+          "current",
+          "user",
+          "data"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listcurrentuserlogininfo",
+    "Examples": [
+      {
+        "Utterance": "list all my user data",
+        "Tokens": [
+          "list",
+          "all",
+          "my",
+          "user",
+          "data"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listcurrentuserlogininfo",
+    "Examples": [
+      {
+        "Utterance": "list my current user data",
+        "Tokens": [
+          "list",
+          "my",
+          "current",
+          "user",
+          "data"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "test the user login and data display",
+        "Tokens": [
+          "test",
+          "the",
+          "user",
+          "login",
+          "and",
+          "data",
+          "display"
         ]
       }
     ]

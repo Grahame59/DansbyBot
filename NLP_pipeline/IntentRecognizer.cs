@@ -4,6 +4,8 @@ using System.IO;
 using Newtonsoft.Json;
 using Tokenization;
 using Functions;
+using UserAuthentication;
+
 
 namespace Intents
 {
@@ -104,7 +106,7 @@ namespace Intents
         private string PerformIntentAction(string intentName, string userInput)
         {
             // Perform specific action based on recognized intent
-            switch (intentName)
+            switch (intentName.ToLower()) //switch intent name to lowercase for function matches to ensure match
             {   
                 //Functions/methods under the cases
                 case "performexitdansby":
@@ -145,7 +147,22 @@ namespace Intents
 
                 case "addition" :
                     FunctionScript.DoAddition();
-                    return "Does addition of two doubles. ";                     
+                    return "Does addition of two doubles. ";   
+
+                case "getcurrentusername" :
+                    FunctionScript.GetCurrentUserName();
+                    return "Pulls the current Users username and prints it";    
+                
+                case "listcurrentuserlogininfo" :
+                    FunctionScript.ListCurrentUserData();
+                    return "Pulls and lists the data of the current user who is logged in";
+
+                case "testuserloginanddisplaydata" :
+                    string testUser = "admin";
+                    string testPass = "admin";
+                    FunctionScript.TestUserLoginAndDisplayData(testUser,testPass);
+                    return "Debugging user data info";
+
 
                 //if intent is not defined
                 default:

@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Text.Json;
+using System.Threading;
+using Functions;
 
 namespace UserAuthentication
 {
@@ -28,6 +31,7 @@ namespace UserAuthentication
     public class UserManager
     {
         private Dictionary<string, User> users;
+        private User currentUser; // Variable to store the currently logged-in user
 
         public UserManager()
         {
@@ -68,7 +72,15 @@ namespace UserAuthentication
                 if (users[username].Password == password)
                 {
                     Console.WriteLine($"Logged in as: {username}");
-                    Console.WriteLine();
+                    Console.WriteLine(); 
+                    //debug  
+                    Console.WriteLine($"Logged in as: {username}");
+                    Console.WriteLine($"User Details from JSON: {JsonSerializer.Serialize(users[username])}");
+                    Console.WriteLine();  
+                    Console.WriteLine("User data from the ListCurrentUserData() method: ");
+                    ListCurrentUserData();
+                    //end debug 
+                    currentUser = users[username]; // Set the current user
                     return true;
                 }
                 else
@@ -83,11 +95,52 @@ namespace UserAuthentication
                 return false;
             }
         }
-    }
+        public void ListCurrentUserData()
+        {
+            if (currentUser != null)
+            {
+                Console.WriteLine("Dansby: Current User Data:");
+                Console.WriteLine($"Dansby: User ID: {currentUser.Id}");
+                Console.WriteLine($"Dansby: Username: {currentUser.Username}");
+                Console.WriteLine($"Dansby: Email: {currentUser.Email}");
+                Console.WriteLine($"Dansby: Age: {currentUser.Age}");
+                Console.WriteLine($"Dansby: Phone Number: {currentUser.PhoneNumber}");
+                Console.WriteLine($"Dansby: Birthday: {currentUser.Birthday}");
+                Console.WriteLine($"Dansby: Favorite Color: {currentUser.FavoriteColor}");
+                Console.WriteLine($"Dansby: Interests: {currentUser.Interests}");
+                Console.WriteLine($"Dansby: Location: {currentUser.Location}");
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("Dansby: No user logged in.");
+            }
+        }
+        public void GetCurrentUserName()
+        {   
+            if (currentUser != null)
+            {
+            Console.WriteLine();
+            Console.WriteLine($"Dansby: Hello + {currentUser.Username}");
+            Console.WriteLine();
+            }
+            else
+            {
+            Console.WriteLine();
+            Console.WriteLine("Dansby: No user logged in.");
+            Console.WriteLine();
+            }
+        }
 
-    // Helper class to match the JSON structure
-    public class UserData
-    {
-        public List<User> Users { get; set; }
-    }
-}
+          
+    
+
+
+        // Helper class to match the JSON structure
+        public class UserData
+        {
+            public List<User> Users { get; set; }
+        }
+    
+    }//end of UserManager class
+}//end of UserAuthentication namespace

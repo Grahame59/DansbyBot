@@ -69,3 +69,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 5.11.24 - 8:39pm
 - Added User login and a directory for user data... worked on the paths and switched to relative paths and learned a bit more about path connections and exits. Also reworked and organized the file structure to be much cleaner.. Need to work on security Hash/Salt for security for passwords usernames, personal info etc...
+
+# 5.16.24 - 2:38am
+- I am working on the user script accesability across multiple scripts and specifically in making functions that can pull data from the UserAuthentication namespace and do things with the data but I am having problems with the info carrying over. Adding a ton of debugs in right now and once I fix this in my next coding dive I think I want to add admin only login accesiable commands and add in a ton of debugs for things that I can turn on and off with intents but only with admin permissions. Gonna focus towards a GUI or some non console interface soon to add a level of polish and that should involve a lot of refactoring the code where I can clean some stuff up because it is getting admitly pretty messy but this is still my first ever pure code project where I am really focusing on building something with depth.

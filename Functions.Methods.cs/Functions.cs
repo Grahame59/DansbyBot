@@ -2,11 +2,13 @@ using System;
 using System.Reflection;
 using Intents;
 using Tokenization;
+using UserAuthentication; //for retriving users names when logged in
 
 namespace Functions
 {
     public class functionHoldings
     {
+       private static UserManager userManager = new UserManager(); // Instantiate UserManager as static
         
         public void PerformExitDansby() //Exit function
         {
@@ -106,6 +108,7 @@ namespace Functions
 
                 case "DoDivision" :
                     return "This function prompts you for input for 2 nums and divides them.";
+                
 
                 default:
                     return "No description available.";
@@ -113,6 +116,56 @@ namespace Functions
 
         } //end of GetFunctionDescriptions method
 
+
+         public void ListCurrentUserData()
+        {
+            userManager.ListCurrentUserData(); // Call UserManager method to list user data
+        }
+
+        // Method to get the current username
+        public void GetCurrentUserName()
+        {
+            userManager.GetCurrentUserName(); // Call UserManager method to get current username
+        }
+
+        //DEBUGGING
+        public void TestUserLoginAndDisplayData(string username, string password)
+        {
+            // Simulate user login
+            bool loginSuccess = userManager.Login(username, password);
+            if (loginSuccess)
+            {
+                // Display user data after successful login
+                ListCurrentUserData();
+            }
+            else
+            {
+                Console.WriteLine("Login failed. Please check your username and password.");
+            }
+        }
+        //DEBUGGING END
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //ALL MATH FUNCTIONS 
+        //------------------------------------------------------------------------------------------------------------------------//
         public void DoAddition()
         {
             Console.WriteLine();
@@ -175,6 +228,9 @@ namespace Functions
             double result = num1 / num2;
             Console.WriteLine($"Dansby: {num1} / {num2} = {result}"); // Convert double to string for output
         }
+        //------------------------------------------------------------------------------------------------------------------------//
+        //END OF MATH FUNCTIONS
+
 
 
     } //end of class functionHoldings
