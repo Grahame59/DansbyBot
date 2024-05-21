@@ -1546,5 +1546,145 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "test user login",
+        "Tokens": [
+          "test",
+          "user",
+          "login"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "can you list a users data for me?",
+        "Tokens": [
+          "can",
+          "you",
+          "list",
+          "a",
+          "users",
+          "data",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "getcurrentusername",
+    "Examples": [
+      {
+        "Utterance": "can you get my current username",
+        "Tokens": [
+          "can",
+          "you",
+          "get",
+          "my",
+          "current",
+          "username"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listcurrentuserlogininfo",
+    "Examples": [
+      {
+        "Utterance": "can you list my current data",
+        "Tokens": [
+          "can",
+          "you",
+          "list",
+          "my",
+          "current",
+          "data"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "getcurrentusername",
+    "Examples": [
+      {
+        "Utterance": "list my current username",
+        "Tokens": [
+          "list",
+          "my",
+          "current",
+          "username"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "test user data profile",
+        "Tokens": [
+          "test",
+          "user",
+          "data",
+          "profile"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "getcurrentusername",
+    "Examples": [
+      {
+        "Utterance": "whats my current username",
+        "Tokens": [
+          "whats",
+          "my",
+          "current",
+          "username"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listcurrentuserlogininfo",
+    "Examples": [
+      {
+        "Utterance": "can u list my user data",
+        "Tokens": [
+          "can",
+          "u",
+          "list",
+          "my",
+          "user",
+          "data"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "can you pull up a users data for me?",
+        "Tokens": [
+          "can",
+          "you",
+          "pull",
+          "up",
+          "a",
+          "users",
+          "data",
+          "for",
+          "me"
+        ]
+      }
+    ]
   }
 ]

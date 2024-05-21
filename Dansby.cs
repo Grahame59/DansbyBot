@@ -40,6 +40,7 @@ public class Driver
         Console.WriteLine();
         userManager.Login(username, password);
         
+        
         // Test intent recognition
         Console.WriteLine("Welecome to your chat interface. I am Dansby also known as Dansby bot. May I assist you?");
         while (true)

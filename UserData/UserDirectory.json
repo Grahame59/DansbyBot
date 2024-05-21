@@ -10,7 +10,8 @@
       "birthday": null,
       "favcolor": null,
       "Interests": null,
-      "location": null
+      "location": null,
+      "isAdmin": true
     },
     {
       "id": 1,
@@ -22,7 +23,8 @@
       "birthday": "2002-06-08",
       "favcolor": "Mauve",
       "Interests": "Coding, Games, Woodworking, TV, Anime, Shows",
-      "location": "West Milford"
+      "location": "West Milford",
+      "isAdmin": false
     },
     {
       "id": 2,
@@ -34,7 +36,8 @@
       "birthday": "2003-04-10",
       "favcolor": null,
       "Interests": "fishing, cars",
-      "location": null
+      "location": null,
+      "isAdmin": false
     },
     {
       "id": 3,
@@ -46,7 +49,8 @@
       "birthday": "2002-10-31",
       "favcolor": null,
       "Interests": null,
-      "location": null
+      "location": null,
+      "isAdmin": false
     },
     {
       "id": 4,
@@ -58,7 +62,8 @@
       "birthday": "2002-07-31",
       "favcolor": null,
       "Interests": "Games, Anime, Bodybuilding, Gym",
-      "location": null
+      "location": null,
+      "isAdmin": false
     },
     {
       "id": 5,
@@ -70,7 +75,8 @@
       "birthday": "2002-11-29",
       "favcolor": null,
       "Interests": "Hair ",
-      "location": null
+      "location": null,
+      "isAdmin": false
     },
     {
       "id": 6,
@@ -82,7 +88,8 @@
       "birthday": "2002-05-07",
       "favcolor": "Green",
       "Interests": "Chemistry, FuckingBitches, GettingBread, CallingMotherBitch, BuyingZins, UpperDeckLippy",
-      "location": null
+      "location": null,
+      "isAdmin": false
     }
   ]
 }

@@ -158,9 +158,15 @@ namespace Intents
                     return "Pulls and lists the data of the current user who is logged in";
 
                 case "testuserloginanddisplaydata" :
-                    string testUser = "admin";
-                    string testPass = "admin";
-                    FunctionScript.TestUserLoginAndDisplayData(testUser,testPass);
+
+                    Console.WriteLine("Whats the Username you would like to check?");
+                    string testUser = Console.ReadLine();
+
+                    Console.WriteLine();
+                    Console.WriteLine("Whats the Password for that username?");
+                    string testPass = Console.ReadLine();
+
+                    FunctionScript.TestUserLoginAndDisplayData(testUser, testPass);
                     return "Debugging user data info";
 
 

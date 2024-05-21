@@ -3,6 +3,8 @@ using System.Reflection;
 using Intents;
 using Tokenization;
 using UserAuthentication; //for retriving users names when logged in
+using System.Text.Json;
+
 
 namespace Functions
 {
@@ -108,6 +110,15 @@ namespace Functions
 
                 case "DoDivision" :
                     return "This function prompts you for input for 2 nums and divides them.";
+
+                case "ListCurrentUserData" :
+                    return "This function lists your current logged in User data.";
+
+                case "GetCurrentUserName" : 
+                    return "This function returns your current logged in Username. ";
+                    
+                case "TestUserLoginAndDisplayData" :
+                    return "This is and Admin only command that allows you to view, a user of your selection, information. ";
                 
 
                 default:
@@ -120,29 +131,40 @@ namespace Functions
          public void ListCurrentUserData()
         {
             userManager.ListCurrentUserData(); // Call UserManager method to list user data
+            User currentUser = userManager.GetCurrentUser();
         }
 
         // Method to get the current username
         public void GetCurrentUserName()
         {
             userManager.GetCurrentUserName(); // Call UserManager method to get current username
+            User currentUser = userManager.GetCurrentUser();
         }
 
-        //DEBUGGING
+        //DEBUGGING method
         public void TestUserLoginAndDisplayData(string username, string password)
         {
-            // Simulate user login
-            bool loginSuccess = userManager.Login(username, password);
-            if (loginSuccess)
+            if (userManager.IsCurrentUserAdmin())
             {
-                // Display user data after successful login
-                ListCurrentUserData();
+                // Simulate user login
+                bool loginSuccess = userManager.Login(username, password);
+                if (loginSuccess)
+                {
+                    // Display user data after successful login
+                    userManager.ListCurrentUserData();
+                    User currentUser = userManager.GetCurrentUser();
+                }
+                else
+                {
+                    Console.WriteLine("Login failed. Please check your username and password.");
+                }
             }
-            else
+            else 
             {
-                Console.WriteLine("Login failed. Please check your username and password.");
+                Console.WriteLine("Dansby: You do not have high enough privledge to view peasant!");
             }
         }
+
         //DEBUGGING END
 
 

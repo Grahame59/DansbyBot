@@ -20,6 +20,8 @@ namespace UserAuthentication
         public string FavoriteColor { get; set; }
         public string Interests { get; set; }
         public string Location { get; set; }
+        public bool IsAdmin { get; set; }
+
 
         public User(string username, string password)
         {
@@ -73,13 +75,16 @@ namespace UserAuthentication
                 {
                     Console.WriteLine($"Logged in as: {username}");
                     Console.WriteLine(); 
-                    //debug  
-                    Console.WriteLine($"Logged in as: {username}");
+
+                    //debug 
+                    /* 
                     Console.WriteLine($"User Details from JSON: {JsonSerializer.Serialize(users[username])}");
                     Console.WriteLine();  
                     Console.WriteLine("User data from the ListCurrentUserData() method: ");
                     ListCurrentUserData();
+                    */
                     //end debug 
+                    
                     currentUser = users[username]; // Set the current user
                     return true;
                 }
@@ -100,6 +105,7 @@ namespace UserAuthentication
             if (currentUser != null)
             {
                 Console.WriteLine("Dansby: Current User Data:");
+                Console.WriteLine("--------------------------");
                 Console.WriteLine($"Dansby: User ID: {currentUser.Id}");
                 Console.WriteLine($"Dansby: Username: {currentUser.Username}");
                 Console.WriteLine($"Dansby: Email: {currentUser.Email}");
@@ -109,6 +115,7 @@ namespace UserAuthentication
                 Console.WriteLine($"Dansby: Favorite Color: {currentUser.FavoriteColor}");
                 Console.WriteLine($"Dansby: Interests: {currentUser.Interests}");
                 Console.WriteLine($"Dansby: Location: {currentUser.Location}");
+                Console.WriteLine("--------------------------");
                 Console.WriteLine();
             }
             else
@@ -121,7 +128,7 @@ namespace UserAuthentication
             if (currentUser != null)
             {
             Console.WriteLine();
-            Console.WriteLine($"Dansby: Hello + {currentUser.Username}");
+            Console.WriteLine($"Dansby: Hello, {currentUser.Username}");
             Console.WriteLine();
             }
             else
@@ -131,9 +138,17 @@ namespace UserAuthentication
             Console.WriteLine();
             }
         }
+        public bool IsCurrentUserAdmin()
+        {
+            return currentUser != null && currentUser.IsAdmin;
+        }
 
           
-    
+        // Method to get the current user
+        public User GetCurrentUser()
+        {
+            return currentUser;
+        }
 
 
         // Helper class to match the JSON structure
