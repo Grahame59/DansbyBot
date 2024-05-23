@@ -87,7 +87,7 @@ also don't know what is considered to be a long script as the longest scipt I ha
     - User data inheritance issues unless I simulate a login 
     (README 5.16.24 & 5.21.24)
 
-    -Path compatibility for MAC... Need to add proper JSON documentation
+    - Path compatibility for MAC... Need to add proper JSON documentation
     (README 5.23.24)
 
 # 5. .24 - : pm
