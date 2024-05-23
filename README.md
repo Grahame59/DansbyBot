@@ -75,3 +75,20 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 5.21.24 - 2:14am
 - Fixed a lot of bugs with the user script accesibility. Only havinf issues with listing current data such as GetCurrentUsername(). I think the user currently logged in needs to become a global property of a log in instance. Not really sure got to look into it more. Also added a isAdmin property to the user database to give admin permissions to apllicable users but it seems to recognized the class has admin privs. and then jump over the if bool statement in a method that has admin privs... Honestly was pretty confused so just felt like coming back to it later this is more of a personal reminder <- .... Might keep playing around and adding more functionality for the user aspect needs a lot of work but honestly I am the only current user who will have access to this bot for the most part. Will commit another push if I add any additions tonight. 
+
+# 5.23.24 - 12:58 am
+- So I am having file path issue compatability And i think I need to follow the guidelines for peoper Json file paths and make its own script. Going to write all the errors I currently am having below...
+
+    ERRORS:
+
+    - Double console print when functions are called like it being called upon twice.
+    (README 5.10.24 #1)
+
+    - User data inheritance issues unless I simulate a login 
+    (README 5.16.24 & 5.21.24)
+
+    -Path compatibility for MAC... Need to add proper JSON documentation
+    (README 5.23.24)
+
+# 5. .24 - : pm
+- 
