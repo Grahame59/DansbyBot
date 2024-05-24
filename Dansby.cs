@@ -3,6 +3,7 @@ using Intents;
 using Responses;
 using System.Collections.Generic;
 using UserAuthentication;
+using System.Security.Cryptography.X509Certificates;
 
 
 //------------------------------------------------------------------------------------------------//
@@ -15,9 +16,15 @@ using UserAuthentication;
 //------------------------------------------------------------------------------------------------//
 
 
+
+
+
 //testing with driver 
 public class Driver
 {
+    //
+    public static string CurInstanceLoginUser;
+    public static string CurInstanceLoginPass;
     public static void Main(string[] args)
     {
         // Create and initialize IntentRecognizer, ResponseRecognizer, & UserManager instance
@@ -31,10 +38,12 @@ public class Driver
         Console.WriteLine();
         Console.WriteLine("Enter your username:");
         string username = Console.ReadLine();
+        CurInstanceLoginUser = username;
 
         Console.WriteLine();
         Console.WriteLine("Enter your password:");
         string password = Console.ReadLine();
+        CurInstanceLoginPass = password;
 
         // Attempt to login
         Console.WriteLine();

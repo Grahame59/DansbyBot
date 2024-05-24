@@ -1686,5 +1686,44 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "listcurrentuserlogininfo",
+    "Examples": [
+      {
+        "Utterance": "Whats my user data",
+        "Tokens": [
+          "Whats",
+          "my",
+          "user",
+          "data"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listcurrentuserloginfo",
+    "Examples": [
+      {
+        "Utterance": "whats my user data",
+        "Tokens": [
+          "whats",
+          "my",
+          "user",
+          "data"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "userthankyou",
+    "Examples": [
+      {
+        "Utterance": "thanks",
+        "Tokens": [
+          "thanks"
+        ]
+      }
+    ]
   }
 ]

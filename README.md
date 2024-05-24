@@ -90,5 +90,8 @@ also don't know what is considered to be a long script as the longest scipt I ha
     - Path compatibility for MAC... Need to add proper JSON documentation
     (README 5.23.24)
 
-# 5. .24 - : pm
-- 
+# 5.24.24 - 2:43pm
+- This isn't a commit update but a reminder to Hash all user data sooner than later for future protection... 
+
+# 5.24.24 - pm 
+- Fixed the user data inheritance by creating a static variable in the driver when login info is logged... Need to work on implementing more features or fixing the double console print now. 

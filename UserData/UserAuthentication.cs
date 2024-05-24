@@ -115,6 +115,7 @@ namespace UserAuthentication
                 Console.WriteLine($"Dansby: Favorite Color: {currentUser.FavoriteColor}");
                 Console.WriteLine($"Dansby: Interests: {currentUser.Interests}");
                 Console.WriteLine($"Dansby: Location: {currentUser.Location}");
+                Console.WriteLine($"Dansby: Admin Privledge: {currentUser.IsAdmin}");
                 Console.WriteLine("--------------------------");
                 Console.WriteLine();
             }

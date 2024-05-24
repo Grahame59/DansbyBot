@@ -130,15 +130,27 @@ namespace Functions
 
          public void ListCurrentUserData()
         {
-            userManager.ListCurrentUserData(); // Call UserManager method to list user data
-            User currentUser = userManager.GetCurrentUser();
+            // Simulate user login to carry in current user data
+            bool loginSuccess = userManager.Login(Driver.CurInstanceLoginUser, Driver.CurInstanceLoginPass);
+            if (loginSuccess)
+            {
+                
+                userManager.ListCurrentUserData(); // Call UserManager method to list user data
+                User currentUser = userManager.GetCurrentUser();
+            }
         }
 
         // Method to get the current username
         public void GetCurrentUserName()
         {
-            userManager.GetCurrentUserName(); // Call UserManager method to get current username
-            User currentUser = userManager.GetCurrentUser();
+            // Simulate user login to carry in current user data
+            bool loginSuccess = userManager.Login(Driver.CurInstanceLoginUser, Driver.CurInstanceLoginPass);
+            if (loginSuccess)
+            {
+
+                userManager.GetCurrentUserName(); // Call UserManager method to get current username
+                User currentUser = userManager.GetCurrentUser();
+            }
         }
 
         //DEBUGGING method
