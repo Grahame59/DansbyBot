@@ -2,12 +2,12 @@
 # DansbyBot - Devlog
 A chatbot that can grow with me and doing many things I want it to in my preference. Like Jarvis from Iron Man
 
-# 4/28/24 - 1:45pm 
+# 4/28/24 - 1:45pm #1
  - Added a xml for configs... Don't really understand as I've never useed xml before and don't comprehend it well... file added = (DansbyBot.csproj)
  - dependency for the xml console control (.NET 5.0 Runtime (v5.0.17) - Windows x64 Installer!) LINK BELOW 
  - https://download.visualstudio.microsoft.com/download/pr/a0832b5a-6900-442b-af79-6ffddddd6ba4/e2df0b25dd851ee0b38a86947dd0e42e/dotnet-runtime-5.0.17-win-x64.exe 
 
-# 4/28/24 - 3:40pm
+# 4/28/24 - 3:40pm #2
  - Added a json file directory and a dictionary that references it. It will hold all the info as the directory of intent grows so the Bot can learn more and more. 
  - CODE BELOW...
 
@@ -25,7 +25,7 @@ A chatbot that can grow with me and doing many things I want it to in my prefere
         return new Dictionary<string, List<string>>();
     }
 
-# 4/28/24 - 3:55 pm 
+# 4/28/24 - 3:55 pm #3
  - new dependency:  dotnet add package Newtonsoft.Json (should be permenant but if you get a type or namespace name "Newtonsoft" could not be found type that in the term...)
 
  # 4/29/24 - 9:48 pm
@@ -46,10 +46,10 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5/4/24 - 12:21 pm
 - Ended up just adding a function holder script to keep the functions out of the IntentRecog. script so now to add functions I can code them in there and then add the Intents to the switch that they identify under. 
 
-# 5/6/24 - 6:18 pm
-- I added a function to called ListAllFunctions that lists all the functions that are user created on the functions script. I also added a sub function called GetFunctionDescription that uses a switch case and variables to essentially map functions to descriptions if they have a written description. Also added some more intents for responses and recognition as well as implementing some intent recog for the functions and a help intent that explains a little bit about what Dansby can do... Had a quick coding sess but will dive in a lot the next few months on this project as I have just finished my 3rd year of University today ;)... 
+# 5/6/24 - 6:18 pm #1
+- I added a function to called ListAllFunctions that lists all the functions that are user created on the functions script. I also added a sub function called GetFunctionDescription that uses a switch case and variables to essentially map functions to descriptions if they have a written description. Also added some more intents for responses and recognition as well as implementing some intent recog for the functions and a help intent that explains a little bit about what Dansby can do... Had a quick coding sess but will dive in a lot the next few months on this project as I have just finished my 3rd year of University today ... 
 
-# 5/6/24 - 6:22pm 
+# 5/6/24 - 6:22pm #2
 - NOTE TO SELF: Do some .Net tutorials off this link... https://learn.microsoft.com/en-us/dotnet/core/tutorials/
 
 # 5/7/24 - 1:22am
@@ -58,13 +58,13 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5/8/24 - 11:56pm
 - Added some random updates for some polsihing... much work needed... Want to work on building a much stronger response/intent script but should probably focus on NLP and having the bot understand info... Want to add more functions as well will try to make up a framework plan instead of jumping all over the place as I currently am. Want to make all the scripts more modular and refernceable and less dependent on one another and certain inputs etc... 
 
-# 5/10/24 - 5:06 pm 
+# 5/10/24 - 5:06 pm #1
 - Reworked the Intent classifications a bit and tried to implement a PerformSimpleMath() Function but crashed and burned trying to seperate the tokens from userInput into the function need to work on a better way to implement... Might switch focus over right now just gonna revert the code pre- mtah function and save it all to github so I can play around with some more features wanna implement as much as possible today! 
 
-# 5.10.24 - 8:16 pm 
+# 5.10.24 - 8:16 pm #2
 - Added an addition function, having the problem of double output on all functions except PerformExitDansby(); ... Cannot find where it is double executing 
 
-# 5.10.24 - 10:12pm
+# 5.10.24 - 10:12pm #3
 - Added subtraction, multiplication, and division functions and some more intent reworking... 
 
 # 5.11.24 - 8:39pm
@@ -90,10 +90,10 @@ also don't know what is considered to be a long script as the longest scipt I ha
     - Path compatibility for MAC... Need to add proper JSON documentation
     (README 5.23.24)
 
-# 5.24.24 - 2:43pm
+# 5.24.24 - 2:43pm #1
 - This isn't a commit update but a reminder to Hash all user data sooner than later for future protection... 
 
-# 5.24.24 - 2:50pm 
+# 5.24.24 - 2:50pm #2
 - Fixed the user data inheritance by creating a static variable in the driver when login info is logged... Need to work on implementing more features or fixing the double console print now. <- I CANNOT figure out the reason for double console output... extremely frustrating... (3:29pm)
 
 # 5. - 
