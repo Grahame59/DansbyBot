@@ -1725,5 +1725,109 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "TestUserLoginAndDisplayData()",
+        "Tokens": [
+          "TestUserLoginAndDisplayData"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performexitdansby",
+    "Examples": [
+      {
+        "Utterance": "ecit",
+        "Tokens": [
+          "ecit"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "how r you",
+        "Tokens": [
+          "how",
+          "r",
+          "you"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "whats 2 + 2",
+        "Tokens": [
+          "whats",
+          "2",
+          "+",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "whats 2+ 2",
+        "Tokens": [
+          "whats",
+          "2+",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "addition",
+    "Examples": [
+      {
+        "Utterance": "whats 5 + 8",
+        "Tokens": [
+          "whats",
+          "5",
+          "+",
+          "8"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "meaningless",
+    "Examples": [
+      {
+        "Utterance": "whats 3456",
+        "Tokens": [
+          "whats",
+          "3456"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "whats the day of the week",
+        "Tokens": [
+          "whats",
+          "the",
+          "day",
+          "of",
+          "the",
+          "week"
+        ]
+      }
+    ]
   }
 ]

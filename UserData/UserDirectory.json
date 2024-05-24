@@ -18,13 +18,13 @@
       "username": "kyler_grahame",
       "password": "admin",
       "email": "kjgbusiness8@gmail.com",
-      "age": 21,
+      "age": 22,
       "phonenumber": "9736501596",
       "birthday": "2002-06-08",
       "favcolor": "Mauve",
       "Interests": "Coding, Games, Woodworking, TV, Anime, Shows",
       "location": "West Milford",
-      "isAdmin": false
+      "isAdmin": true
     },
     {
       "id": 2,

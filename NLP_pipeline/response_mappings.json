@@ -81,8 +81,8 @@
       "Dansby is the name, did you call for me?",
       "That is correct, My name is Dansby.",
       "You know my name is infront of all the text I respond with......",
-      "\n  ___     ____  ____   _____ ____   __ __\n|   \\   /    ||    \\ / ___/|    \\ |  |  |\n|    \\ |  o  ||  _  (   \\_ |  o  )|  |  |\n|  D  ||     ||  |  |\\__  ||     ||  ~  |\n|     ||  _  ||  |  |/  \\ ||  O  ||___, |\n|     ||  |  ||  |  |\\    ||     ||     |\n|_____||__|__||__|__| \\___||_____||____/ ",
-      "\n  ___     ____  ____   _____ ____   __ __\n|   \\   /    ||    \\ / ___/|    \\ |  |  |\n|    \\ |  o  ||  _  (   \\_ |  o  )|  |  |\n|  D  ||     ||  |  |\\__  ||     ||  ~  |\n|     ||  _  ||  |  |/  \\ ||  O  ||___, |\n|     ||  |  ||  |  |\\    ||     ||     |\n|_____||__|__||__|__| \\___||_____||____/ "                                     
+      "\n ___     ____  ____   _____ ____   __ __\n|   \\   /    ||    \\ / ___/|    \\ |  |  |\n|    \\ |  o  ||  _  (   \\_ |  o  )|  |  |\n|  D  ||     ||  |  |\\__  ||     ||  ~  |\n|     ||  _  ||  |  |/  \\ ||  O  ||___, |\n|     ||  |  ||  |  |\\    ||     ||     |\n|_____||__|__||__|__| \\___||_____||____/ ",
+      "\n ___     ____  ____   _____ ____   __ __\n|   \\   /    ||    \\ / ___/|    \\ |  |  |\n|    \\ |  o  ||  _  (   \\_ |  o  )|  |  |\n|  D  ||     ||  |  |\\__  ||     ||  ~  |\n|     ||  _  ||  |  |/  \\ ||  O  ||___, |\n|     ||  |  ||  |  |\\    ||     ||     |\n|_____||__|__||__|__| \\___||_____||____/ "                                     
                                      
                     
      ],
@@ -101,13 +101,14 @@
       "That is classified information... oh wait your an authorized user! My creators name is Kyler.",
       "My creator goes by a couple names: Kyler, KJ, Dansby, Kyky, Ky, Kuler, Kyla, and many more throughout his history.",
       "If you have authorized access to my usage, my creator gave you access and entry so you know his name... Guess there are such things as a dumb question..."
-      
      
     ],
+
     "dansbyfavcolor" : [
       "My favorite color is Mauve like my creators.",
       "My fav color is Mauve."
     ],
+
     "userthankyou" : [
       "Your Welecome.",
       "My Pleasure."

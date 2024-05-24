@@ -134,7 +134,7 @@ namespace Functions
             bool loginSuccess = userManager.Login(Driver.CurInstanceLoginUser, Driver.CurInstanceLoginPass);
             if (loginSuccess)
             {
-                
+
                 userManager.ListCurrentUserData(); // Call UserManager method to list user data
                 User currentUser = userManager.GetCurrentUser();
             }
@@ -156,11 +156,12 @@ namespace Functions
         //DEBUGGING method
         public void TestUserLoginAndDisplayData(string username, string password)
         {
-            if (userManager.IsCurrentUserAdmin())
+            
+            // Simulate user login
+            bool loginSuccess = userManager.Login(username, password);
+            if (loginSuccess)
             {
-                // Simulate user login
-                bool loginSuccess = userManager.Login(username, password);
-                if (loginSuccess)
+                if (userManager.IsCurrentUserAdmin())
                 {
                     // Display user data after successful login
                     userManager.ListCurrentUserData();
@@ -168,12 +169,12 @@ namespace Functions
                 }
                 else
                 {
-                    Console.WriteLine("Login failed. Please check your username and password.");
+                    Console.WriteLine("Dansby: You do not have high enough privledge to view peasant!");
                 }
             }
             else 
             {
-                Console.WriteLine("Dansby: You do not have high enough privledge to view peasant!");
+                Console.WriteLine("Login failed. Please check your username and password.");  
             }
         }
 

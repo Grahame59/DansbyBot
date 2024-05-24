@@ -27,6 +27,7 @@ namespace Intents
             intents.Add(intent);
             // Save intents to the file
             SaveIntents(intents);
+            
         }
 
         private List<Intent> LoadIntents()
@@ -98,8 +99,9 @@ namespace Intents
 
             // Add the new intent
             AddIntent(newIntent);
-
-            return newIntentName; // Return the newly added intent
+            
+            // Return the newly added intent
+            return newIntentName; 
         }
 
         //functions from intents if an intentName is recognized that is not mapped to a response

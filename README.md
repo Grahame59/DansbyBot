@@ -93,5 +93,7 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5.24.24 - 2:43pm
 - This isn't a commit update but a reminder to Hash all user data sooner than later for future protection... 
 
-# 5.24.24 - pm 
-- Fixed the user data inheritance by creating a static variable in the driver when login info is logged... Need to work on implementing more features or fixing the double console print now. 
+# 5.24.24 - 2:50pm 
+- Fixed the user data inheritance by creating a static variable in the driver when login info is logged... Need to work on implementing more features or fixing the double console print now. <- I CANNOT figure out the reason for double console output... extremely frustrating... (3:29pm)
+
+# 5. - 

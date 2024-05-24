@@ -59,7 +59,7 @@ public class Driver
 
             //prompts User for input and scans it
             Console.WriteLine(); //convo flow format
-            Console.Write(username + " : "); // Print the username inline with the prompt
+            Console.Write(username + ": "); // Print the username inline with the prompt
             string userInput = Console.ReadLine();
 
             //sets recognizedIntent = to the intent grouping
