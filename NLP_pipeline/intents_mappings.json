@@ -1829,5 +1829,99 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "missyouaffection",
+    "Examples": [
+      {
+        "Utterance": "miss you ",
+        "Tokens": [
+          "miss",
+          "you"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "Comment ca va? ",
+        "Tokens": [
+          "Comment",
+          "ca",
+          "va"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "help",
+    "Examples": [
+      {
+        "Utterance": "what can you accomplish for me",
+        "Tokens": [
+          "what",
+          "can",
+          "you",
+          "accomplish",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what r u up too",
+        "Tokens": [
+          "what",
+          "r",
+          "u",
+          "up",
+          "too"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what ya doinf",
+        "Tokens": [
+          "what",
+          "ya",
+          "doinf"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what ya doing",
+        "Tokens": [
+          "what",
+          "ya",
+          "doing"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "whats new",
+        "Tokens": [
+          "whats",
+          "new"
+        ]
+      }
+    ]
   }
 ]

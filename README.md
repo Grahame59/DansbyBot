@@ -96,4 +96,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5.24.24 - 2:50pm #2
 - Fixed the user data inheritance by creating a static variable in the driver when login info is logged... Need to work on implementing more features or fixing the double console print now. <- I CANNOT figure out the reason for double console output... extremely frustrating... (3:29pm)
 
-# 5. - 
+# 5.25.24 - 9:48pm 
+- Working on more robust convo responses and intent recog. Want to start adding more complex functions like lists and events and stuff...
+ 
