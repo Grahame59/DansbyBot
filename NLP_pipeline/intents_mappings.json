@@ -1923,5 +1923,67 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what r u doing rn",
+        "Tokens": [
+          "what",
+          "r",
+          "u",
+          "doing",
+          "rn"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "statement",
+    "Examples": [
+      {
+        "Utterance": "why can't you do anything when I don't want you to do it",
+        "Tokens": [
+          "why",
+          "cant",
+          "you",
+          "do",
+          "anything",
+          "when",
+          "I",
+          "dont",
+          "want",
+          "you",
+          "to",
+          "do",
+          "it"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "getcurrentusername",
+    "Examples": [
+      {
+        "Utterance": "whats my username",
+        "Tokens": [
+          "whats",
+          "my",
+          "username"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "TestLoginAndDisplayData()",
+        "Tokens": [
+          "TestLoginAndDisplayData"
+        ]
+      }
+    ]
   }
 ]
