@@ -14,6 +14,19 @@
       "isAdmin": true
     },
     {
+      "id": 1000000,
+      "username": "guest",
+      "password": "guest",
+      "email": null,
+      "age": null,
+      "phonenumber": null,
+      "birthday": null,
+      "favcolor": null,
+      "Interests": null,
+      "location": null,
+      "isAdmin": false
+    },
+    {
       "id": 1,
       "username": "kyler_grahame",
       "password": "admin",
@@ -22,7 +35,7 @@
       "phonenumber": "9736501596",
       "birthday": "2002-06-08",
       "favcolor": "Mauve",
-      "Interests": "Coding, Games, Woodworking, TV, Anime, Shows",
+      "Interests": "Coding, Games, Woodworking, TV, Anime, Shows, Tattoos...",
       "location": "West Milford",
       "isAdmin": true
     },
@@ -35,7 +48,7 @@
       "phonenumber": null,
       "birthday": "2003-04-10",
       "favcolor": null,
-      "Interests": "fishing, cars",
+      "Interests": "fishing, cars, mechanic, money, tattoos.",
       "location": null,
       "isAdmin": false
     },
@@ -61,7 +74,7 @@
       "phonenumber": null,
       "birthday": "2002-07-31",
       "favcolor": null,
-      "Interests": "Games, Anime, Bodybuilding, Gym",
+      "Interests": "Games, Anime, Bodybuilding, Gym.",
       "location": null,
       "isAdmin": false
     },
@@ -74,7 +87,7 @@
       "phonenumber": null,
       "birthday": "2002-11-29",
       "favcolor": null,
-      "Interests": "Hair ",
+      "Interests": "Doing Hair, Drinking Highnoons, Chickens, Cheese, Spending Time with friends, Kyler, Family, Ipad Usage, More Cheese, Cheese Again, Ice Coffee, Being in a 'FarmGirlEra'. ",
       "location": null,
       "isAdmin": false
     },

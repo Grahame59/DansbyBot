@@ -98,4 +98,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 5.25.24 - 9:48pm 
 - Working on more robust convo responses and intent recog. Want to start adding more complex functions like lists and events and stuff...
- 
+
+# 5.27.31 - 2:32pm 
+- Fixed the AdminPriv error so now I can implement more Admin View Only commands as well as hopefully a debug on and off so I can make it more user friendly without removing my debugs with comments. 

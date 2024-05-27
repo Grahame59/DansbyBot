@@ -25,6 +25,7 @@ public class Driver
     //
     public static string CurInstanceLoginUser;
     public static string CurInstanceLoginPass;
+    public static bool CurInstanceIsAdmin;
     public static void Main(string[] args)
     {
         // Create and initialize IntentRecognizer, ResponseRecognizer, & UserManager instance
@@ -47,7 +48,17 @@ public class Driver
 
         // Attempt to login
         Console.WriteLine();
-        userManager.Login(username, password);
+        bool loginSuccess = userManager.Login(username, password);
+        if (loginSuccess)
+        {
+            CurInstanceIsAdmin = userManager.IsCurrentUserAdmin();
+            Console.WriteLine($"Logged in as: {username}");
+        }
+        else
+        {
+            Console.WriteLine("Login failed. Logging in as Guest.");
+            userManager.Login("guest", "guest");
+        }
         
         
         // Test intent recognition

@@ -2075,5 +2075,55 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "listcurrentuserlogininfo",
+    "Examples": [
+      {
+        "Utterance": "get my current user data",
+        "Tokens": [
+          "get",
+          "my",
+          "current",
+          "user",
+          "data"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "can u pull a users data for me\\",
+        "Tokens": [
+          "can",
+          "u",
+          "pull",
+          "a",
+          "users",
+          "data",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "pull up a users data for me",
+        "Tokens": [
+          "pull",
+          "up",
+          "a",
+          "users",
+          "data",
+          "for",
+          "me"
+        ]
+      }
+    ]
   }
 ]

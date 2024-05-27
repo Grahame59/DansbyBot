@@ -156,21 +156,17 @@ namespace Functions
         //DEBUGGING method
         public void TestUserLoginAndDisplayData(string username, string password)
         {
-            
+            if (!Driver.CurInstanceIsAdmin)
+            {
+                Console.WriteLine("Dansby: You do not have high enough privilege to view this information.");
+                return;
+            }
             // Simulate user login
             bool loginSuccess = userManager.Login(username, password);
             if (loginSuccess)
             {
-                if (userManager.IsCurrentUserAdmin())
-                {
-                    // Display user data after successful login
-                    userManager.ListCurrentUserData();
-                    User currentUser = userManager.GetCurrentUser();
-                }
-                else
-                {
-                    Console.WriteLine("Dansby: You do not have high enough privledge to view peasant!");
-                }
+                // Display user data after successful login
+                userManager.ListCurrentUserData();
             }
             else 
             {

@@ -90,7 +90,8 @@ namespace UserAuthentication
                 }
                 else
                 {
-                    Console.WriteLine("Dansby: Incorrect password. Please try again.");
+                    //Console.WriteLine("Dansby: Incorrect password. Please try again.");
+                    Console.WriteLine();
                     return false;
                 }
             }
