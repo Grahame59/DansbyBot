@@ -94,7 +94,7 @@ namespace Functions
                     return "This function gives the current time of your time zone";
 
                 case "GetDate" : 
-                    return "This function gives you the current";
+                    return "This function gives you the current date";
 
                 case "GetDayOfTheWeek" :
                     return "This function gives you the day of the week";

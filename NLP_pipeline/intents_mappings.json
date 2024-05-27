@@ -1985,5 +1985,95 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "what day is today",
+        "Tokens": [
+          "what",
+          "day",
+          "is",
+          "today"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "dayofweek",
+    "Examples": [
+      {
+        "Utterance": "what day is todat",
+        "Tokens": [
+          "what",
+          "day",
+          "is",
+          "todat"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "affection",
+    "Examples": [
+      {
+        "Utterance": "i love you",
+        "Tokens": [
+          "i",
+          "love",
+          "you"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "testuserloginanddisplaydata()",
+        "Tokens": [
+          "testuserloginanddisplaydata"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "can u pull up a users data for me?",
+        "Tokens": [
+          "can",
+          "u",
+          "pull",
+          "up",
+          "a",
+          "users",
+          "data",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "can u pull up a user for me ?",
+        "Tokens": [
+          "can",
+          "u",
+          "pull",
+          "up",
+          "a",
+          "user",
+          "for",
+          "me",
+          ""
+        ]
+      }
+    ]
   }
 ]

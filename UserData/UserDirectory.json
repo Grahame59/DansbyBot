@@ -68,7 +68,7 @@
     {
       "id": 5,
       "username": "shea_walker",
-      "password": null,
+      "password": "admin",
       "email": null,
       "age": 21,
       "phonenumber": null,
