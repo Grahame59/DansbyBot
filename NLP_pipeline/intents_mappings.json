@@ -2254,5 +2254,79 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "listalllists",
+    "Examples": [
+      {
+        "Utterance": "list all lists",
+        "Tokens": [
+          "list",
+          "all",
+          "lists"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "displaylist",
+    "Examples": [
+      {
+        "Utterance": "list the items on the list CodeErrors",
+        "Tokens": [
+          "list",
+          "the",
+          "items",
+          "on",
+          "the",
+          "list",
+          "CodeErrors"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "displaylist",
+    "Examples": [
+      {
+        "Utterance": "list the items on the list CodeErrorsa",
+        "Tokens": [
+          "list",
+          "the",
+          "items",
+          "on",
+          "the",
+          "list",
+          "CodeErrorsa"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "help",
+    "Examples": [
+      {
+        "Utterance": "what are you capable off?",
+        "Tokens": [
+          "what",
+          "are",
+          "you",
+          "capable",
+          "off"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "complimentaffection",
+    "Examples": [
+      {
+        "Utterance": "you rock",
+        "Tokens": [
+          "you",
+          "rock"
+        ]
+      }
+    ]
   }
 ]

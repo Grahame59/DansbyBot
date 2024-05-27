@@ -201,6 +201,7 @@ namespace Functions
             }
             else 
             {
+                Console.WriteLine();
                 Console.WriteLine("Login failed. Please check your username and password.");  
             }
         }
@@ -216,10 +217,13 @@ namespace Functions
             {
                 ListManager.CreateList(listName);
                 SaveLists();
+                Console.WriteLine();
                 Console.WriteLine($"Dansby: List '{listName}' created.");
+                
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine($"Dansby: List '{listName}' already exists.");
             }
         }
@@ -230,10 +234,13 @@ namespace Functions
             {
                 ListManager.AddItemToList(listName, item);
                 SaveLists();
+                Console.WriteLine();
                 Console.WriteLine($"Dansby: Item '{item}' added to list '{listName}'.");
+                
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine($"Dansby: List '{listName}' does not exist.");
             }
         }
@@ -245,15 +252,18 @@ namespace Functions
                 if (ListManager.RemoveItemFromList(listName, item))
                 {
                     SaveLists();
+                    Console.WriteLine();
                     Console.WriteLine($"Dansby: Item '{item}' removed from list '{listName}'.");
                 }
                 else
                 {
+                    Console.WriteLine();
                     Console.WriteLine($"Dansby: Item '{item}' not found in list '{listName}'.");
                 }
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine($"Dansby: List '{listName}' does not exist.");
             }
         }
@@ -262,6 +272,7 @@ namespace Functions
         {
             if (ListManager.ListExists(listName))
             {
+                Console.WriteLine();
                 Console.WriteLine($"Dansby: Items in list '{listName}':");
                 foreach (var item in ListManager.GetItemsInList(listName))
                 {
@@ -270,12 +281,14 @@ namespace Functions
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine($"Dansby: List '{listName}' does not exist.");
             }
         }
 
         public void ListAllLists()
         {
+            Console.WriteLine();
             Console.WriteLine("Dansby: All Lists:");
             foreach (var listName in ListManager.GetAllLists())
             {
@@ -338,6 +351,7 @@ namespace Functions
                 if (SnakeGame.IsCollision(nextHead, snake, width, height))
                 {
                     isGameOver = true;
+                    Console.WriteLine();
                     Console.WriteLine("Dansby: Game over! You collided with the wall or yourself.");
                     break;
                 }
