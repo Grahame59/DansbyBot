@@ -99,5 +99,8 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 5.25.24 - 9:48pm 
 - Working on more robust convo responses and intent recog. Want to start adding more complex functions like lists and events and stuff...
 
-# 5.27.31 - 2:32pm 
+# 5.27.31 - 2:32pm #1
 - Fixed the AdminPriv error so now I can implement more Admin View Only commands as well as hopefully a debug on and off so I can make it more user friendly without removing my debugs with comments. 
+
+# 5.27.24 - 3:36pm #2
+- Created a couple function pretaining to lists and like creating lists, additems to lists, removing items from lists, displaying a list and displaying all lists. Its working pretty well other than the data not being saved onto the json file but it also is pretaining the data through multiple sessions so Ill come back and polish it up and add more details later b/c its kind of boring me at the moment. 

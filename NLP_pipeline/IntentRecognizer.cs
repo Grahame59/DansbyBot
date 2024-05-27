@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using Tokenization;
 using Functions;
 using UserAuthentication;
+using TaskManagement;
 
 
 namespace Intents
@@ -99,7 +100,7 @@ namespace Intents
 
             // Add the new intent
             AddIntent(newIntent);
-            
+
             // Return the newly added intent
             return newIntentName; 
         }
@@ -170,7 +171,40 @@ namespace Intents
 
                     FunctionScript.TestUserLoginAndDisplayData(testUser, testPass);
                     return "Debugging user data info";
+                
+                //All List Intent Fucntions
+                
+                case "createlist":
+                    Console.WriteLine("Enter the name of the new  list:");
+                    string listName = Console.ReadLine();
+                    FunctionScript.CreateList(listName);
+                    return "Creating new list called: " + listName;
 
+                case "additem":
+                    Console.WriteLine("Enter the name of the  list:");
+                    listName = Console.ReadLine();
+                    Console.WriteLine("Enter the item to add:");
+                    string item = Console.ReadLine();
+                    FunctionScript.AddItemToList(listName, item);
+                    return "Adding item to to-do list.";
+
+                case "removeitem":
+                    Console.WriteLine("Enter the name of the list:");
+                    listName = Console.ReadLine();
+                    Console.WriteLine("Enter the item to remove from the list:");
+                    item = Console.ReadLine();
+                    FunctionScript.RemoveItemFromList(listName, item);
+                    return "Removing item from list.";
+
+                case "displaylist":
+                    Console.WriteLine("Enter the name of the list:");
+                    listName = Console.ReadLine();
+                    FunctionScript.DisplayList(listName);
+                    return "Displaying list.";
+
+                case "listalllists":
+                    FunctionScript.ListAllLists();
+                    return "Listing all lists.";
 
                 //if intent is not defined
                 default:

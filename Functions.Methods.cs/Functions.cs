@@ -4,13 +4,23 @@ using Intents;
 using Tokenization;
 using UserAuthentication; //for retriving users names when logged in
 using System.Text.Json;
-
+using TaskManagement; 
+using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace Functions
 {
     public class functionHoldings
     {
-       private static UserManager userManager = new UserManager(); // Instantiate UserManager as static
+        private static UserManager userManager = new UserManager(); // Instantiate UserManager as static
+        private static ListManager ListManager = new ListManager(); // Instantiate TodoListManager as static
+        private const string ListsFilePath = "Functions.Methods.cs\\lists.json"; // Path to save the to-do lists
+
+        public functionHoldings()
+        {
+            LoadLists();
+        }
         
         public void PerformExitDansby() //Exit function
         {
@@ -120,6 +130,21 @@ namespace Functions
                 case "TestUserLoginAndDisplayData" :
                     return "This is and Admin only command that allows you to view, a user of your selection, information. ";
                 
+                case "CreateList" :
+                    return "This is a function that can create lists.";
+
+                case "AddItemToList" :
+                    return "This is a function that can add items to a defined listName.";
+
+                case "RemoveItemFromList" :
+                    return "This is a function that can remove items from a defined listName.";
+
+                case "DisplayList" :
+                    return "This is a function that can display a single list of choice from a defined ListName.";
+
+                case "ListAllLists" :
+                    return "This is a function that list all lists that are already defined and saved.";
+                
 
                 default:
                     return "No description available.";
@@ -176,9 +201,101 @@ namespace Functions
 
         //DEBUGGING END
 
+        // List Functions
+        //-----------------------------------------------------------------
+        
+        public void CreateList(string listName)
+        {
+            if (!ListManager.ListExists(listName))
+            {
+                ListManager.CreateList(listName);
+                SaveLists();
+                Console.WriteLine($"Dansby: List '{listName}' created.");
+            }
+            else
+            {
+                Console.WriteLine($"Dansby: List '{listName}' already exists.");
+            }
+        }
+
+        public void AddItemToList(string listName, string item)
+        {
+            if (ListManager.ListExists(listName))
+            {
+                ListManager.AddItemToList(listName, item);
+                SaveLists();
+                Console.WriteLine($"Dansby: Item '{item}' added to list '{listName}'.");
+            }
+            else
+            {
+                Console.WriteLine($"Dansby: List '{listName}' does not exist.");
+            }
+        }
+
+        public void RemoveItemFromList(string listName, string item)
+        {
+            if (ListManager.ListExists(listName))
+            {
+                if (ListManager.RemoveItemFromList(listName, item))
+                {
+                    SaveLists();
+                    Console.WriteLine($"Dansby: Item '{item}' removed from list '{listName}'.");
+                }
+                else
+                {
+                    Console.WriteLine($"Dansby: Item '{item}' not found in list '{listName}'.");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Dansby: List '{listName}' does not exist.");
+            }
+        }
+
+        public void DisplayList(string listName)
+        {
+            if (ListManager.ListExists(listName))
+            {
+                Console.WriteLine($"Dansby: Items in list '{listName}':");
+                foreach (var item in ListManager.GetItemsInList(listName))
+                {
+                    Console.WriteLine($"- {item}");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Dansby: List '{listName}' does not exist.");
+            }
+        }
+
+        public void ListAllLists()
+        {
+            Console.WriteLine("Dansby: All Lists:");
+            foreach (var listName in ListManager.GetAllLists())
+            {
+                Console.WriteLine($"- {listName}");
+            }
+        }
+
+        private void SaveLists()
+        {
+            string json = JsonConvert.SerializeObject(ListManager.GetAllListsWithItems(), Formatting.Indented);
+            File.WriteAllText(ListsFilePath, json);
+        }
+
+        private void LoadLists()
+        {
+            if (File.Exists(ListsFilePath))
+            {
+                string json = File.ReadAllText(ListsFilePath);
+                var lists = JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(json);
+                ListManager.LoadLists(lists);
+            }
+        }
 
  
-
+        //End of List Functions
+        //-----------------------------------------------------------------
 
 
 

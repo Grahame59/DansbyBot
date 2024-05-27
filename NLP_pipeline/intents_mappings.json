@@ -2125,5 +2125,108 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "createlist",
+    "Examples": [
+      {
+        "Utterance": "create a list for me",
+        "Tokens": [
+          "create",
+          "a",
+          "list",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "additem",
+    "Examples": [
+      {
+        "Utterance": "add to a list for me",
+        "Tokens": [
+          "add",
+          "to",
+          "a",
+          "list",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "displaylist",
+    "Examples": [
+      {
+        "Utterance": "display a list for me",
+        "Tokens": [
+          "display",
+          "a",
+          "list",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listalllists",
+    "Examples": [
+      {
+        "Utterance": "list all my lists",
+        "Tokens": [
+          "list",
+          "all",
+          "my",
+          "lists"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listalllists",
+    "Examples": [
+      {
+        "Utterance": "display all my lists",
+        "Tokens": [
+          "display",
+          "all",
+          "my",
+          "lists"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "createlist",
+    "Examples": [
+      {
+        "Utterance": "create a new list",
+        "Tokens": [
+          "create",
+          "a",
+          "new",
+          "list"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "listalllists",
+    "Examples": [
+      {
+        "Utterance": "list every list I have",
+        "Tokens": [
+          "list",
+          "every",
+          "list",
+          "I",
+          "have"
+        ]
+      }
+    ]
   }
 ]
