@@ -104,3 +104,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 5.27.24 - 3:36pm #2
 - Created a couple function pretaining to lists and like creating lists, additems to lists, removing items from lists, displaying a list and displaying all lists. Its working pretty well other than the data not being saved onto the json file but it also is pretaining the data through multiple sessions so Ill come back and polish it up and add more details later b/c its kind of boring me at the moment. 
+
+# 5.27.24 - 4:50pm #3
+- Implemented a rough snake game through console but it has a lot of issues like independent movement in turn base for each char that represents the body and lack of constant forced movement in one direction... Needs MUCH better game logic plus a border for the game space as well as polish for over all look. Going to take a break for some time or remainder of the day... 

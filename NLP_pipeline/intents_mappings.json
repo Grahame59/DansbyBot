@@ -2228,5 +2228,31 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "snakegame",
+    "Examples": [
+      {
+        "Utterance": "load snake for me",
+        "Tokens": [
+          "load",
+          "snake",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "snakegame",
+    "Examples": [
+      {
+        "Utterance": "play snake",
+        "Tokens": [
+          "play",
+          "snake"
+        ]
+      }
+    ]
   }
 ]

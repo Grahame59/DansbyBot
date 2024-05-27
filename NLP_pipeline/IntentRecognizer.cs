@@ -6,6 +6,7 @@ using Tokenization;
 using Functions;
 using UserAuthentication;
 using TaskManagement;
+using Snake;
 
 
 namespace Intents
@@ -205,6 +206,11 @@ namespace Intents
                 case "listalllists":
                     FunctionScript.ListAllLists();
                     return "Listing all lists.";
+
+                case "snakegame":
+                    functionHoldings snakeGame = new functionHoldings();
+                    snakeGame.StartSnakeGame();
+                    return "Enjoy playing Snake!";
 
                 //if intent is not defined
                 default:
