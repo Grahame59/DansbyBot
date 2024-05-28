@@ -2355,5 +2355,16 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "hiii",
+        "Tokens": [
+          "hiii"
+        ]
+      }
+    ]
   }
 ]
