@@ -1,0 +1,15 @@
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\bin\Debug\net8.0-windows\ChatbotApp.exe
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\bin\Debug\net8.0-windows\ChatbotApp.deps.json
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\bin\Debug\net8.0-windows\ChatbotApp.runtimeconfig.json
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\bin\Debug\net8.0-windows\ChatbotApp.dll
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\bin\Debug\net8.0-windows\ChatbotApp.pdb
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\obj\Debug\net8.0-windows\ChatbotApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\obj\Debug\net8.0-windows\ChatbotApp.AssemblyInfoInputs.cache
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\obj\Debug\net8.0-windows\ChatbotApp.AssemblyInfo.cs
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\obj\Debug\net8.0-windows\ChatbotApp.csproj.CoreCompileInputs.cache
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\obj\Debug\net8.0-windows\ChatbotApp.sourcelink.json
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\obj\Debug\net8.0-windows\ChatbotApp.dll
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\obj\Debug\net8.0-windows\refint\ChatbotApp.dll
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\obj\Debug\net8.0-windows\ChatbotApp.pdb
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\obj\Debug\net8.0-windows\ChatbotApp.genruntimeconfig.cache
+E:\CODES\DansbyBot\DansbyBot\ChatbotApp\obj\Debug\net8.0-windows\ref\ChatbotApp.dll
