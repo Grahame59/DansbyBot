@@ -3,8 +3,9 @@
   <PropertyGroup>
     <LangVersion>10.0</LangVersion>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework> <!-- Target .NET 5 -->
+    <TargetFramework>net6.0-windows</TargetFramework> <!-- Target .NET 6 for Windows -->
     <Platforms>AnyCPU;x64</Platforms> <!-- Specify target platforms -->
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>

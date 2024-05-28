@@ -2328,5 +2328,32 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "displaylist",
+    "Examples": [
+      {
+        "Utterance": "display list",
+        "Tokens": [
+          "display",
+          "list"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "displaylist",
+    "Examples": [
+      {
+        "Utterance": "list a list for me",
+        "Tokens": [
+          "list",
+          "a",
+          "list",
+          "for",
+          "me"
+        ]
+      }
+    ]
   }
 ]

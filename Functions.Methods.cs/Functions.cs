@@ -10,6 +10,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Snake;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace Functions
 {
@@ -18,7 +19,7 @@ namespace Functions
         private static UserManager userManager = new UserManager(); // Instantiate UserManager as static
         private static ListManager ListManager = new ListManager(); // Instantiate TodoListManager as static
         private const string ListsFilePath = "Functions.Methods.cs\\lists.json"; // Path to save the to-do lists
-        private SnakeGame snakeGame = new SnakeGame(); // Instantiate Snake class
+
 
         public functionHoldings()
         {
@@ -315,62 +316,16 @@ namespace Functions
  
         //End of List Functions
         //-----------------------------------------------------------------
-
         public void StartSnakeGame()
         {
-            Console.WriteLine("Dansby: Welcome to Snake Game!");
-
-            // Set up game board
-            int width = 20;
-            int height = 10;
-            char[,] board = new char[height, width];
-            SnakeGame.InitializeBoard(board);
-
-            // Initialize snake
-            Queue<SnakeGame.Position> snake = new Queue<SnakeGame.Position>();
-            SnakeGame.InitializeSnake(snake, width, height);
-
-            // Initialize food position
-            SnakeGame.Position food = SnakeGame.GenerateFoodPosition(snake, width, height);
-
-            // Game loop
-            bool isGameOver = false;
-            while (!isGameOver)
+            Thread guiThread = new Thread(() =>
             {
-                Console.Clear();
-                SnakeGame.DrawBoard(board, snake, food);
-
-                // Handle user input
-                ConsoleKeyInfo keyInfo = Console.ReadKey();
-                SnakeGame.MoveDirection direction = SnakeGame.GetMoveDirection(keyInfo);
-
-                // Move snake
-                SnakeGame.Position nextHead = SnakeGame.MoveSnake(snake, direction, width, height);
-
-                // Check for collisions
-                if (SnakeGame.IsCollision(nextHead, snake, width, height))
-                {
-                    isGameOver = true;
-                    Console.WriteLine();
-                    Console.WriteLine("Dansby: Game over! You collided with the wall or yourself.");
-                    break;
-                }
-
-                // Check if snake eats food
-                if (nextHead.Equals(food))
-                {
-                    snake.Enqueue(nextHead);
-                    food = SnakeGame.GenerateFoodPosition(snake, width, height);
-                }
-                else
-                {
-                    snake.Enqueue(nextHead);
-                    snake.Dequeue();
-                }
-
-                // Pause for a short time to control game speed
-                Thread.Sleep(100);
-            }
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new SnakeGameForm());
+            });
+            guiThread.SetApartmentState(ApartmentState.STA);
+            guiThread.Start();
         }
 
 
