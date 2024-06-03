@@ -2366,5 +2366,16 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "howdy",
+        "Tokens": [
+          "howdy"
+        ]
+      }
+    ]
   }
 ]

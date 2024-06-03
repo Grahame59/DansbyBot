@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using Snake;
 using System.Threading;
 using System.Windows.Forms;
+using ChatbotApp;
 
 namespace Functions
 {
@@ -163,7 +164,7 @@ namespace Functions
          public void ListCurrentUserData()
         {
             // Simulate user login to carry in current user data
-            bool loginSuccess = userManager.Login(Driver.CurInstanceLoginUser, Driver.CurInstanceLoginPass);
+            bool loginSuccess = userManager.Login(MainForm.CurInstanceLoginUser, MainForm.CurInstanceLoginPass);
             if (loginSuccess)
             {
 
@@ -176,7 +177,7 @@ namespace Functions
         public void GetCurrentUserName()
         {
             // Simulate user login to carry in current user data
-            bool loginSuccess = userManager.Login(Driver.CurInstanceLoginUser, Driver.CurInstanceLoginPass);
+            bool loginSuccess = userManager.Login(MainForm.CurInstanceLoginUser, MainForm.CurInstanceLoginPass);
             if (loginSuccess)
             {
 
@@ -188,7 +189,7 @@ namespace Functions
         //DEBUGGING method
         public void TestUserLoginAndDisplayData(string username, string password)
         {
-            if (!Driver.CurInstanceIsAdmin)
+            if (!MainForm.CurInstanceIsAdmin)
             {
                 Console.WriteLine("Dansby: You do not have high enough privilege to view this information.");
                 return;

@@ -107,3 +107,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 5.27.24 - 4:50pm #3
 - Implemented a rough snake game through console but it has a lot of issues like independent movement in turn base for each char that represents the body and lack of constant forced movement in one direction... Needs MUCH better game logic plus a border for the game space as well as polish for over all look. Going to take a break for some time or remainder of the day... 
+
+# 6.3.24 - 3:28 am
+- So snake made me finally start creating an interface for Dansby so i deleted Snake game and started refactoring a lot of code for winForms... Had a rough time starting to learn WinForms a bit focusing on porting all the console environment code over to WinForms... gonna try to just refactor everything and then push it all to git when it is done... 
