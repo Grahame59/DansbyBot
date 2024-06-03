@@ -100,7 +100,7 @@ namespace ChatbotApp
             inputTextBox.Clear();
         }
 
-        private void AppendToChatHistory(string message)
+        public void AppendToChatHistory(string message)
         {
             chatTextBox.AppendText(message + Environment.NewLine);
         }

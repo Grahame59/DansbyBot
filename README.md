@@ -110,3 +110,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 6.3.24 - 3:28 am
 - So snake made me finally start creating an interface for Dansby so i deleted Snake game and started refactoring a lot of code for winForms... Had a rough time starting to learn WinForms a bit focusing on porting all the console environment code over to WinForms... gonna try to just refactor everything and then push it all to git when it is done... 
+
+# 6.3.24 - 3:56 pm #2 
+- SO currently worked over the functions partially but when you prompt for it for a function or convo flow mapping it opens a new textbox. This is NOT what I want so I tried to create a MainForm mainForm = new Mainform yatayatayata so i could use my AppendTextmethod... in the ChatBotApp driver script but this created an infinte loop so gotta play around and fix this but it is 4 am sooo until next session! (Also will have to go through UserAuthentication next to change from console to MessageBox output and I am sure this is more to refactor btw this entry is more personal note devlog currently...)

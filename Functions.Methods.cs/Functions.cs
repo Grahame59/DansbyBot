@@ -35,6 +35,9 @@ namespace Functions
             Console.WriteLine(" -> SUCCESFULLY EXITING DANSBYCHATBOT");
             Console.WriteLine();
 
+            MessageBox.Show("DANSBY: I feel so cold... don't leave me creator... goodbye");
+            MessageBox.Show(" -> SUCCESFULLY EXITING DANSBYCHATBOT");
+
             Environment.Exit(0);
 
         }
@@ -51,6 +54,8 @@ namespace Functions
             Console.WriteLine(" Dansby: The time is: " + formattedTime);
             Console.WriteLine();
 
+            MessageBox.Show(" Dansby: The time is: " + formattedTime);
+
         }
 
         public void GetDate()
@@ -62,6 +67,8 @@ namespace Functions
             Console.WriteLine();
             Console.WriteLine("Dansby: The current date is: " + currentDate.ToString("MMMM dd, yyyy"));
             Console.WriteLine();
+
+            MessageBox.Show("Dansby: The current date is: " + currentDate.ToString("MMMM dd, yyyy"));
         }
 
         public void GetDayOfTheWeek()
@@ -75,9 +82,14 @@ namespace Functions
             Console.WriteLine();
             Console.WriteLine("Dansby: The date of the week is " + DateTime.Today.DayOfWeek);
             Console.WriteLine();
+
+            MessageBox.Show("Dansby: The date of the week is " + DateTime.Today.DayOfWeek);
         }
         public void ListAllFunctions()
         {
+
+            MessageBox.Show("Dansby: Available Functions I can perform currently: ");
+            
             Console.WriteLine();
             Console.WriteLine("Dansby: Available Functions I can perform currently: ");
             Console.WriteLine();
@@ -87,6 +99,8 @@ namespace Functions
             string functionName = method.Name;
             string functionDescription = GetFunctionDescription(functionName);
             Console.WriteLine($"- {functionName}: {functionDescription}");
+
+            MessageBox.Show($"- {functionName}: {functionDescription}");
             }
         }
 
