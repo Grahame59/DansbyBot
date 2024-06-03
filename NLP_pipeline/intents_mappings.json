@@ -2377,5 +2377,18 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "how r y",
+        "Tokens": [
+          "how",
+          "r",
+          "y"
+        ]
+      }
+    ]
   }
 ]

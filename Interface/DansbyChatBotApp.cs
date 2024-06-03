@@ -3,6 +3,8 @@ using Intents;
 using Responses;
 using UserAuthentication;
 using System.Windows.Forms;
+using System.Drawing;
+
 
 namespace ChatbotApp
 {
@@ -13,10 +15,13 @@ namespace ChatbotApp
         public static bool CurInstanceIsAdmin;
         private TextBox inputTextBox; // Added inputTextBox
         private Button sendButton;
+        private System.Windows.Forms.RichTextBox chatRichTextBox; // Declare the RichTextBox control
+
         private TextBox chatTextBox;
         private IntentRecognizer intentRecognizer;
         private ResponseRecognizer responseRecognizer;
         private UserManager userManager;
+        public bool isUserInputForColor = false; //for chatbox color
 
         public MainForm()
         {
@@ -28,9 +33,8 @@ namespace ChatbotApp
         {
             this.inputTextBox = new TextBox();
             this.sendButton = new Button();
-            this.chatTextBox = new TextBox();
+            this.chatRichTextBox = new RichTextBox(); // Change from TextBox to RichTextBox
             this.AcceptButton = this.sendButton;
-
 
             // inputTextBox
             this.inputTextBox.Location = new System.Drawing.Point(12, 415);
@@ -43,18 +47,19 @@ namespace ChatbotApp
             this.sendButton.Click += new System.EventHandler(this.SendButton_Click);
             this.KeyDown += Form_KeyDown;
 
-            // chatTextBox
-            this.chatTextBox.Location = new System.Drawing.Point(12, 12);
-            this.chatTextBox.Size = new System.Drawing.Size(483, 395);
-            this.chatTextBox.Multiline = true;
-            this.chatTextBox.ReadOnly = true;
+            // chatRichTextBox
+            this.chatRichTextBox.Location = new System.Drawing.Point(12, 12);
+            this.chatRichTextBox.Size = new System.Drawing.Size(483, 395);
+            this.chatRichTextBox.Multiline = true;
+            this.chatRichTextBox.ReadOnly = true;
+            this.KeyDown += Form_KeyDown;
 
             // MainForm
             this.ClientSize = new System.Drawing.Size(507, 450);
             this.Controls.Add(this.inputTextBox);
             this.Controls.Add(this.sendButton);
-            this.Controls.Add(this.chatTextBox);
-            this.Text = "Chatbot";
+            this.Controls.Add(this.chatRichTextBox); // Add chatRichTextBox to controls
+            this.Text = "DansbyChatBot";
 
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -104,20 +109,36 @@ namespace ChatbotApp
         private void SendButton_Click(object sender, EventArgs e)
         {
             string userInput = inputTextBox.Text;
-            AppendToChatHistory($"You: {userInput}");
+            isUserInputForColor = true; //sets it to true for user
+            AppendToChatHistory("");
+            AppendToChatHistory(CurInstanceLoginUser + $": {userInput}");
+            AppendToChatHistory("");
+            isUserInputForColor = false; //reverts to false for following Dansby Output
 
             string recognizedIntent = intentRecognizer.RecognizeIntent(userInput);
             AppendToChatHistory($"Intent: {recognizedIntent}");
+            AppendToChatHistory("");
 
             string returnResponse = responseRecognizer.RecognizeResponse(userInput);
             AppendToChatHistory($"DANSBY: {returnResponse}");
+            AppendToChatHistory("");
 
             inputTextBox.Clear();
         }
 
         public void AppendToChatHistory(string message)
-        {
-            chatTextBox.AppendText(message + Environment.NewLine);
+        {   
+            
+            // Set the color of the text based on whether it's user input or Dansby's response
+            if (isUserInputForColor)
+            {
+                chatRichTextBox.SelectionColor = Color.Blue; // Change to your desired color for user input
+            }
+            else
+            {
+                chatRichTextBox.SelectionColor = Color.Red; // Change to your desired color for Dansby's response
+            }
+            chatRichTextBox.AppendText(message + Environment.NewLine);
         }
 
         private string PromptForInput(string prompt)

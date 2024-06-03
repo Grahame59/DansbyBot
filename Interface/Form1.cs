@@ -5,6 +5,8 @@ namespace ChatbotApp
 {
     public partial class Form1 : Form
     {
+        private System.Windows.Forms.RichTextBox chatRichTextBox; // Declare the RichTextBox control
+
         public Form1()
         {
             InitializeComponent();
@@ -32,6 +34,14 @@ namespace ChatbotApp
             this.buttonSend.Size = new System.Drawing.Size(75, 23);
             this.buttonSend.Text = "Send";
             this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
+
+            this.chatRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.chatRichTextBox.Location = new System.Drawing.Point(12, 12);
+            this.chatRichTextBox.Size = new System.Drawing.Size(483, 395);
+            this.chatRichTextBox.Multiline = true;
+            this.chatRichTextBox.ReadOnly = true;
+            this.Controls.Add(this.chatRichTextBox); // Add the RichTextBox control to the form's controls
+                        
 
             // Form1
             this.ClientSize = new System.Drawing.Size(800, 450);

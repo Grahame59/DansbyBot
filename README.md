@@ -115,4 +115,7 @@ also don't know what is considered to be a long script as the longest scipt I ha
 - SO currently worked over the functions partially but when you prompt for it for a function or convo flow mapping it opens a new textbox. This is NOT what I want so I tried to create a MainForm mainForm = new Mainform yatayatayata so i could use my AppendTextmethod... in the ChatBotApp driver script but this created an infinte loop so gotta play around and fix this but it is 4 am sooo until next session! (Also will have to go through UserAuthentication next to change from console to MessageBox output and I am sure this is more to refactor btw this entry is more personal note devlog currently...)
 
 # 6.3.24 - 3:16 pm #3
-- Added Handling for enter key acceptance to send event controls so you don't have to physcially press the send button with the mouse in the Interface. 
+- Added Handling for enter key acceptance to send event controls so you don't have to physcially press the send button with the mouse in the Interface. Added color difference in font for DansbyBot and User input...
+
+
+
