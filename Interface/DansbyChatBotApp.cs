@@ -29,6 +29,8 @@ namespace ChatbotApp
             this.inputTextBox = new TextBox();
             this.sendButton = new Button();
             this.chatTextBox = new TextBox();
+            this.AcceptButton = this.sendButton;
+
 
             // inputTextBox
             this.inputTextBox.Location = new System.Drawing.Point(12, 415);
@@ -39,6 +41,7 @@ namespace ChatbotApp
             this.sendButton.Size = new System.Drawing.Size(75, 23);
             this.sendButton.Text = "Send";
             this.sendButton.Click += new System.EventHandler(this.SendButton_Click);
+            this.KeyDown += Form_KeyDown;
 
             // chatTextBox
             this.chatTextBox.Location = new System.Drawing.Point(12, 12);
@@ -55,6 +58,18 @@ namespace ChatbotApp
 
             this.ResumeLayout(false);
             this.PerformLayout();
+        }
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Check if the pressed key is Enter
+            if (e.KeyCode == Keys.Enter)
+            {
+                // Trigger the action same as the click event of the send button
+                SendButton_Click(sender, e);
+                
+                // Optionally, prevent the beep sound when Enter key is pressed
+                e.SuppressKeyPress = true;
+            }
         }
 
         private void InitializeChatbot()
