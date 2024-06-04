@@ -36,23 +36,30 @@ namespace ChatbotApp
             // inputTextBox
             this.inputTextBox.Location = new System.Drawing.Point(12, 415);
             this.inputTextBox.Size = new System.Drawing.Size(400, 20);
+            this.inputTextBox.BackColor = System.Drawing.Color.FromArgb(88,86,91);
 
             // sendButton
             this.sendButton.Location = new System.Drawing.Point(420, 413);
             this.sendButton.Size = new System.Drawing.Size(75, 23);
             this.sendButton.Text = "Send";
             this.sendButton.Click += new System.EventHandler(this.SendButton_Click);
+            this.sendButton.BackColor = System.Drawing.Color.FromArgb(88,86,91); //background
+            sendButton.ForeColor = System.Drawing.Color.FromArgb(84, 18, 194);; //font color
 
             // chatRichTextBox
             this.chatRichTextBox.Location = new System.Drawing.Point(12, 12);
             this.chatRichTextBox.Size = new System.Drawing.Size(483, 395);
             this.chatRichTextBox.ReadOnly = true;
+            this.chatRichTextBox.BackColor = System.Drawing.Color.FromArgb(88, 86, 91);
+
 
             // MainForm
             this.ClientSize = new System.Drawing.Size(507, 450);
             this.Controls.Add(this.inputTextBox);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.chatRichTextBox);
+
+            this.BackColor = System.Drawing.Color.FromArgb(50, 50, 50); //Black color
             this.Text = "DansbyChatBot";
 
             this.ResumeLayout(false);
@@ -103,7 +110,7 @@ namespace ChatbotApp
         }
          public void AppendToChatHistory(string message)
         {
-            chatRichTextBox.SelectionColor = isUserInputForColor ? Color.Blue : Color.Red;
+            chatRichTextBox.SelectionColor = isUserInputForColor ? Color.GhostWhite : Color.FromArgb(84, 18, 194);
             chatRichTextBox.AppendText(message + Environment.NewLine);
         }
 
