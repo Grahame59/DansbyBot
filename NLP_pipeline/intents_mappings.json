@@ -2390,5 +2390,14 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "silence",
+    "Examples": [
+      {
+        "Utterance": "",
+        "Tokens": []
+      }
+    ]
   }
 ]
