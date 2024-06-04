@@ -17,13 +17,16 @@ namespace Functions
 {
     public class functionHoldings
     {
+
+        private MainForm mainForm;
         private static UserManager userManager = new UserManager(); // Instantiate UserManager as static
         private static ListManager ListManager = new ListManager(); // Instantiate TodoListManager as static
         private const string ListsFilePath = "Functions.Methods.cs\\lists.json"; // Path to save the to-do lists
 
 
-        public functionHoldings()
+        public functionHoldings(MainForm mainForm)
         {
+            this.mainForm = mainForm;
             LoadLists();
         }
         
@@ -35,7 +38,7 @@ namespace Functions
             Console.WriteLine(" -> SUCCESFULLY EXITING DANSBYCHATBOT");
             Console.WriteLine();
 
-            MessageBox.Show("DANSBY: I feel so cold... don't leave me creator... goodbye");
+            mainForm.AppendToChatHistory("DANSBY: I feel so cold... don't leave me creator... goodbye");
             MessageBox.Show(" -> SUCCESFULLY EXITING DANSBYCHATBOT");
 
             Environment.Exit(0);
@@ -54,7 +57,7 @@ namespace Functions
             Console.WriteLine(" Dansby: The time is: " + formattedTime);
             Console.WriteLine();
 
-            MessageBox.Show(" Dansby: The time is: " + formattedTime);
+            mainForm.AppendToChatHistory(" Dansby: The time is: " + formattedTime);
 
         }
 
@@ -68,7 +71,7 @@ namespace Functions
             Console.WriteLine("Dansby: The current date is: " + currentDate.ToString("MMMM dd, yyyy"));
             Console.WriteLine();
 
-            MessageBox.Show("Dansby: The current date is: " + currentDate.ToString("MMMM dd, yyyy"));
+            mainForm.AppendToChatHistory("Dansby: The current date is: " + currentDate.ToString("MMMM dd, yyyy"));
         }
 
         public void GetDayOfTheWeek()
@@ -83,12 +86,12 @@ namespace Functions
             Console.WriteLine("Dansby: The date of the week is " + DateTime.Today.DayOfWeek);
             Console.WriteLine();
 
-            MessageBox.Show("Dansby: The date of the week is " + DateTime.Today.DayOfWeek);
+            mainForm.AppendToChatHistory("Dansby: The date of the week is " + DateTime.Today.DayOfWeek);
         }
         public void ListAllFunctions()
         {
 
-            MessageBox.Show("Dansby: Available Functions I can perform currently: ");
+            mainForm.AppendToChatHistory("Dansby: Available Functions I can perform currently: ");
             
             Console.WriteLine();
             Console.WriteLine("Dansby: Available Functions I can perform currently: ");
@@ -100,7 +103,7 @@ namespace Functions
             string functionDescription = GetFunctionDescription(functionName);
             Console.WriteLine($"- {functionName}: {functionDescription}");
 
-            MessageBox.Show($"- {functionName}: {functionDescription}");
+            mainForm.AppendToChatHistory($"- {functionName}: {functionDescription}");
             }
         }
 
@@ -205,7 +208,7 @@ namespace Functions
         {
             if (!MainForm.CurInstanceIsAdmin)
             {
-                Console.WriteLine("Dansby: You do not have high enough privilege to view this information.");
+                mainForm.AppendToChatHistory("Dansby: You do not have high enough privilege to view this information.");
                 return;
             }
             // Simulate user login
@@ -217,8 +220,8 @@ namespace Functions
             }
             else 
             {
-                Console.WriteLine();
-                Console.WriteLine("Login failed. Please check your username and password.");  
+                mainForm.AppendToChatHistory("");
+                mainForm.AppendToChatHistory("Login failed. Please check your username and password.");  
             }
         }
 
@@ -233,14 +236,14 @@ namespace Functions
             {
                 ListManager.CreateList(listName);
                 SaveLists();
-                Console.WriteLine();
-                Console.WriteLine($"Dansby: List '{listName}' created.");
+                mainForm.AppendToChatHistory("");
+                mainForm.AppendToChatHistory($"Dansby: List '{listName}' created.");
                 
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine($"Dansby: List '{listName}' already exists.");
+                mainForm.AppendToChatHistory("");
+                mainForm.AppendToChatHistory($"Dansby: List '{listName}' already exists.");
             }
         }
 
@@ -250,14 +253,14 @@ namespace Functions
             {
                 ListManager.AddItemToList(listName, item);
                 SaveLists();
-                Console.WriteLine();
-                Console.WriteLine($"Dansby: Item '{item}' added to list '{listName}'.");
+                mainForm.AppendToChatHistory("");
+                mainForm.AppendToChatHistory($"Dansby: Item '{item}' added to list '{listName}'.");
                 
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine($"Dansby: List '{listName}' does not exist.");
+                mainForm.AppendToChatHistory("");
+                mainForm.AppendToChatHistory($"Dansby: List '{listName}' does not exist.");
             }
         }
 
@@ -268,19 +271,19 @@ namespace Functions
                 if (ListManager.RemoveItemFromList(listName, item))
                 {
                     SaveLists();
-                    Console.WriteLine();
-                    Console.WriteLine($"Dansby: Item '{item}' removed from list '{listName}'.");
+                    mainForm.AppendToChatHistory("");
+                    mainForm.AppendToChatHistory($"Dansby: Item '{item}' removed from list '{listName}'.");
                 }
                 else
                 {
-                    Console.WriteLine();
-                    Console.WriteLine($"Dansby: Item '{item}' not found in list '{listName}'.");
+                    mainForm.AppendToChatHistory("");
+                    mainForm.AppendToChatHistory($"Dansby: Item '{item}' not found in list '{listName}'.");
                 }
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine($"Dansby: List '{listName}' does not exist.");
+                mainForm.AppendToChatHistory("");
+                mainForm.AppendToChatHistory($"Dansby: List '{listName}' does not exist.");
             }
         }
 
@@ -288,27 +291,27 @@ namespace Functions
         {
             if (ListManager.ListExists(listName))
             {
-                Console.WriteLine();
-                Console.WriteLine($"Dansby: Items in list '{listName}':");
+                mainForm.AppendToChatHistory("");
+                mainForm.AppendToChatHistory($"Dansby: Items in list '{listName}':");
                 foreach (var item in ListManager.GetItemsInList(listName))
                 {
-                    Console.WriteLine($"- {item}");
+                    mainForm.AppendToChatHistory($"- {item}");
                 }
             }
             else
             {
-                Console.WriteLine();
-                Console.WriteLine($"Dansby: List '{listName}' does not exist.");
+                mainForm.AppendToChatHistory("");
+                mainForm.AppendToChatHistory($"Dansby: List '{listName}' does not exist.");
             }
         }
 
         public void ListAllLists()
         {
-            Console.WriteLine();
-            Console.WriteLine("Dansby: All Lists:");
+            mainForm.AppendToChatHistory("");
+            mainForm.AppendToChatHistory("Dansby: All Lists:");
             foreach (var listName in ListManager.GetAllLists())
             {
-                Console.WriteLine($"- {listName}");
+                mainForm.AppendToChatHistory($"- {listName}");
             }
         }
 
@@ -352,7 +355,7 @@ namespace Functions
 
 
 
-
+        //HAVE TO REFACTOR ALL MATH METHODS BELOW WITH AppendToChatHistory() and Readline() -> SaveResponse() ... 
 
 
 
@@ -360,23 +363,23 @@ namespace Functions
         //------------------------------------------------------------------------------------------------------------------------//
         public void DoAddition()
         {
-            Console.WriteLine();
-            Console.WriteLine("Dansby: Input the first number you want to add: ");
+            mainForm.AppendToChatHistory("");
+            mainForm.AppendToChatHistory("Dansby: Input the first number you want to add: ");
             double num1 = double.Parse(Console.ReadLine()); // Convert string to double
 
-            Console.WriteLine();
-            Console.WriteLine("Dansby: Input the second number you want to add: ");
+            mainForm.AppendToChatHistory("");
+            mainForm.AppendToChatHistory("Dansby: Input the second number you want to add: ");
             double num2 = double.Parse(Console.ReadLine()); // Convert string to double
 
-            Console.WriteLine();
+            mainForm.AppendToChatHistory("");
 
             double result = num1 + num2;
-            Console.WriteLine($"Dansby: {num1} + {num2} = {result}"); // Convert double to string for output
+            mainForm.AppendToChatHistory($"Dansby: {num1} + {num2} = {result}"); // Convert double to string for output
         }
         public void DoSubtraction()
         {
-            Console.WriteLine();
-            Console.WriteLine("Dansby: Input the first number you want to subtract: ");
+            mainForm.AppendToChatHistory("");
+            mainForm.AppendToChatHistory("Dansby: Input the first number you want to subtract: ");
             double num1 = double.Parse(Console.ReadLine()); // Convert string to double
 
             Console.WriteLine();

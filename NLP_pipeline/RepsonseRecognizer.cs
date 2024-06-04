@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Intents;
+using ChatbotApp;
 
 namespace Responses
 {
@@ -13,13 +14,13 @@ namespace Responses
         // Instance of IntentRecognizer
         private IntentRecognizer intentRecognizer; 
 
-        public ResponseRecognizer()
+        public ResponseRecognizer(MainForm mainForm)
         {
             // Initialize response mappings
             responseMappings = LoadResponseMappings();
 
             // Create an instance of IntentRecognizer
-            intentRecognizer = new IntentRecognizer();
+            intentRecognizer = new IntentRecognizer(mainForm);
         }
 
         private Dictionary<string, List<string>> LoadResponseMappings()
@@ -33,10 +34,10 @@ namespace Responses
             return new Dictionary<string, List<string>>();
         }
 
-        public string RecognizeResponse(string userInput)
+        public string RecognizeResponse(string userInput, MainForm mainform)
         {
             // Recognize intent based on user input
-            string intent = intentRecognizer.RecognizeIntent(userInput);
+            string intent = intentRecognizer.RecognizeIntent(userInput, mainform);
 
             // Check if the intent has a corresponding response
             if (responseMappings.ContainsKey(intent))

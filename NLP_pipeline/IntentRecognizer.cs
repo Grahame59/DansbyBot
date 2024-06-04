@@ -4,20 +4,20 @@ using System.IO;
 using Newtonsoft.Json;
 using Tokenization;
 using Functions;
-using UserAuthentication;
-using TaskManagement;
-using Snake;
-
+using ChatbotApp;
 
 namespace Intents
 {
     public class IntentRecognizer
     {
+        private MainForm mainform;
         private List<Intent> intents;
         private Tokenizer tokenizer;
-        functionHoldings FunctionScript = new functionHoldings(); //Instiate functions class
-        public IntentRecognizer()
+        private functionHoldings FunctionScript;
+        public IntentRecognizer(MainForm mainform)
         {
+            this.mainform = mainform; // Assign the passed MainForm instance
+            this.FunctionScript = new functionHoldings(mainform); // Pass MainForm to functionHoldings
             // Initialize intent mappings
             intents = LoadIntents();
             tokenizer = new Tokenizer();
@@ -50,7 +50,7 @@ namespace Intents
             File.WriteAllText("NLP_pipeline\\intents_mappings.json", json);
         }
 
-        public string RecognizeIntent(string userInput)
+        public string RecognizeIntent(string userInput, MainForm mainform)
         {
             
             // Tokenize user input
@@ -74,7 +74,7 @@ namespace Intents
                     if (match) //this is the intent match to the functions script, implement functions below in the switch case
                     {
                         // Call PerformIntentAction
-                        PerformIntentAction(intent.Name, userInput);
+                        PerformIntentAction(mainform, intent.Name, userInput);
                         // Return the recognized intent name
                         return intent.Name;
                     }
@@ -83,6 +83,9 @@ namespace Intents
 
             // If intent is not recognized, prompt user to provide meaning
             Console.WriteLine($"I didn't understand what you meant by: \"{userInput}\". Please provide the meaning (intent) for this input:");
+            mainform.AppendToChatHistory($"I didn't understand what you meant by: \"{userInput}\". Please provide the meaning (intent) for this input:");
+            
+
             string newIntentName = Console.ReadLine().ToLower().Trim();
 
             // Create a new intent with the user input as an example
@@ -107,7 +110,7 @@ namespace Intents
         }
 
         //functions from intents if an intentName is recognized that is not mapped to a response
-        private string PerformIntentAction(string intentName, string userInput)
+        private string PerformIntentAction(MainForm mainform,string intentName, string userInput)
         {
             // Perform specific action based on recognized intent
             switch (intentName.ToLower()) //switch intent name to lowercase for function matches to ensure match
@@ -163,12 +166,14 @@ namespace Intents
 
                 case "testuserloginanddisplaydata" :
 
-                    Console.WriteLine("Whats the Username you would like to check?");
-                    string testUser = Console.ReadLine();
+                    //Console.WriteLine("Whats the Username you would like to check?");
+                    //string testUser = Console.ReadLine();
 
-                    Console.WriteLine();
-                    Console.WriteLine("Whats the Password for that username?");
-                    string testPass = Console.ReadLine();
+                    string testUser = mainform.SaveResponse("Whats the Username you would like to check?");
+                    string testPass = mainform.SaveResponse("Whats the Password for that username?");
+
+                    //Console.WriteLine();
+                    //Console.WriteLine("Whats the Password for that username?");
 
                     FunctionScript.TestUserLoginAndDisplayData(testUser, testPass);
                     return "Debugging user data info";
@@ -176,8 +181,8 @@ namespace Intents
                 //All List Intent Fucntions
                 
                 case "createlist":
-                    Console.WriteLine("Enter the name of the new  list:");
-                    string listName = Console.ReadLine();
+                    //Console.WriteLine("Enter the name of the new  list:");
+                    string listName = mainform.SaveResponse("Enter the name of the new lsit: ");
                     FunctionScript.CreateList(listName);
                     return "Creating new list called: " + listName;
 
@@ -206,11 +211,6 @@ namespace Intents
                 case "listalllists":
                     FunctionScript.ListAllLists();
                     return "Listing all lists.";
-
-                case "snakegame":
-                    functionHoldings snakeGame = new functionHoldings();
-                    snakeGame.StartSnakeGame();
-                    return "Enjoy playing Snake!";
 
                 //if intent is not defined
                 default:
