@@ -13,6 +13,7 @@ namespace ChatbotApp
         public static string CurInstanceLoginPass;
         public static bool CurInstanceIsAdmin;
         private TextBox inputTextBox;
+        private Label loggedInUserLabel;
         private Button sendButton;
         private RichTextBox chatRichTextBox;
         private IntentRecognizer intentRecognizer;
@@ -32,40 +33,52 @@ namespace ChatbotApp
             this.sendButton = new Button();
             this.chatRichTextBox = new RichTextBox();
             this.AcceptButton = this.sendButton;
+            this.loggedInUserLabel = new Label();
 
             // inputTextBox
-            this.inputTextBox.Location = new System.Drawing.Point(12, 415);
-            this.inputTextBox.Size = new System.Drawing.Size(400, 20);
-            this.inputTextBox.BackColor = System.Drawing.Color.FromArgb(88,86,91);
+            this.inputTextBox.Location = new System.Drawing.Point(12, 520);
+            this.inputTextBox.Size = new System.Drawing.Size(600, 20);
+            this.inputTextBox.BackColor = System.Drawing.Color.FromArgb(88, 86, 91);
+            this.inputTextBox.ForeColor = System.Drawing.Color.White;
+            this.inputTextBox.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 
             // sendButton
-            this.sendButton.Location = new System.Drawing.Point(420, 413);
+            this.sendButton.Location = new System.Drawing.Point(620, 520);
             this.sendButton.Size = new System.Drawing.Size(75, 23);
             this.sendButton.Text = "Send";
             this.sendButton.Click += new System.EventHandler(this.SendButton_Click);
-            this.sendButton.BackColor = System.Drawing.Color.FromArgb(88,86,91); //background
-            sendButton.ForeColor = System.Drawing.Color.FromArgb(84, 18, 194);; //font color
+            this.sendButton.BackColor = System.Drawing.Color.FromArgb(88, 86, 91); // background
+            this.sendButton.ForeColor = System.Drawing.Color.FromArgb(84, 18, 194); // font color
+            this.sendButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
 
             // chatRichTextBox
             this.chatRichTextBox.Location = new System.Drawing.Point(12, 12);
-            this.chatRichTextBox.Size = new System.Drawing.Size(483, 395);
+            this.chatRichTextBox.Size = new System.Drawing.Size(683, 500);
             this.chatRichTextBox.ReadOnly = true;
-            this.chatRichTextBox.BackColor = System.Drawing.Color.FromArgb(88, 86, 91);
+            this.chatRichTextBox.BackColor = System.Drawing.Color.FromArgb(15, 15, 15);
+            this.chatRichTextBox.ForeColor = System.Drawing.Color.White;
+            this.chatRichTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 
+            // loggedInUserLabel
+            this.loggedInUserLabel.Location = new System.Drawing.Point(12, 550);
+            this.loggedInUserLabel.Size = new System.Drawing.Size(683, 20);
+            this.loggedInUserLabel.Text = "Logged in as: "; // Initial text
+            this.loggedInUserLabel.ForeColor = System.Drawing.Color.White;
+            this.loggedInUserLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 
             // MainForm
-            this.ClientSize = new System.Drawing.Size(507, 450);
+            this.ClientSize = new System.Drawing.Size(700, 580);
             this.Controls.Add(this.inputTextBox);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.chatRichTextBox);
+            this.Controls.Add(this.loggedInUserLabel);
 
-            this.BackColor = System.Drawing.Color.FromArgb(50, 50, 50); //Black color
+            this.BackColor = System.Drawing.Color.FromArgb(84, 18, 194); // Form background color
             this.Text = "DansbyChatBot";
 
             this.ResumeLayout(false);
             this.PerformLayout();
         }
-
         private void InitializeChatbot()
         {
             // Initialize the recognizers and user manager
@@ -82,12 +95,13 @@ namespace ChatbotApp
             if (loginSuccess)
             {
                 CurInstanceIsAdmin = userManager.IsCurrentUserAdmin();
-                AppendToChatHistory($"Logged in as: {CurInstanceLoginUser}");
+                loggedInUserLabel.Text = $"Logged in as: {CurInstanceLoginUser}"; // Update the label
             }
             else
             {
-                AppendToChatHistory("Login failed. Logging in as Guest.");
+                //AppendToChatHistory("Login failed. Logging in as Guest.");
                 userManager.Login("guest", "guest");
+                loggedInUserLabel.Text = "Logged in as: Guest"; // Update the label
             }
 
             AppendToChatHistory("Welcome to your chat interface. I am Dansby also known as Dansby bot. May I assist you?");
@@ -102,21 +116,27 @@ namespace ChatbotApp
             // Pass both userInput and mainform to RecognizeIntent
             string recognizedIntent = intentRecognizer.RecognizeIntent(userInput, this); // Assuming "this" refers to MainForm instance
             AppendToChatHistory($"Intent: {recognizedIntent}");
+            AppendToChatHistory("");
 
             string returnResponse = responseRecognizer.RecognizeResponse(userInput, this);
             AppendToChatHistory($"DANSBY: {returnResponse}");
+            AppendToChatHistory("");
 
-            inputTextBox.Clear();
+            inputTextBox.Clear();   
         }
          public void AppendToChatHistory(string message)
         {
             chatRichTextBox.SelectionColor = isUserInputForColor ? Color.GhostWhite : Color.FromArgb(84, 18, 194);
             chatRichTextBox.AppendText(message + Environment.NewLine);
+
+            // Scroll to the bottom
+            chatRichTextBox.SelectionStart = chatRichTextBox.Text.Length;
+            chatRichTextBox.ScrollToCaret();
         }
 
         public string SaveResponse(string prompt)
         {
-            AppendToChatHistory(prompt);
+            //AppendToChatHistory(prompt);
             string userInput = Prompt.ShowDialog(prompt);
             return userInput;
         }

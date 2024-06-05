@@ -2403,5 +2403,18 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "Whatcha up too",
+        "Tokens": [
+          "Whatcha",
+          "up",
+          "too"
+        ]
+      }
+    ]
   }
 ]

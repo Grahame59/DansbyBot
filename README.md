@@ -120,3 +120,5 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 6.4.23 - 1:43 am
 - Basically have just been refactoring all the code to work in winforms over a console environment... Not going to explain everything I did as it was pretty boring and technical and a lot of instance issues and so on... 
 
+# 6.5.24 - 2:54 am
+- Added more UI polishing such as a label for a logged user, auto scroll when ur chat starts entering the bottom of the physical text box, color block work, all still very work in progress still need to refactor a lot of code from console environment. 
