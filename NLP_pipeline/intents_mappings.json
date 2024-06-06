@@ -2416,5 +2416,30 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "meaningless",
+    "Examples": [
+      {
+        "Utterance": "admin",
+        "Tokens": [
+          "admin"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "getcurrentusername",
+    "Examples": [
+      {
+        "Utterance": "get my current username",
+        "Tokens": [
+          "get",
+          "my",
+          "current",
+          "username"
+        ]
+      }
+    ]
   }
 ]

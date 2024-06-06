@@ -5,14 +5,21 @@ using UserAuthentication;
 using System.Windows.Forms;
 using System.Drawing;
 
+//Color.FromArgb(84, 18, 194); // Set border color to purple (WANTED THEME OF PURPLE)
+
 namespace ChatbotApp
 {
-      public partial class MainForm : Form
+    public partial class MainForm : Form
     {
+
+        // Add a member variable to track the state of the toggle switch
+        private bool useGPTMode = false; 
+        private CheckBox toggleSwitch; // Declare toggle switch at the class level
         public static string CurInstanceLoginUser;
         public static string CurInstanceLoginPass;
         public static bool CurInstanceIsAdmin;
         private TextBox inputTextBox;
+        private Label toggleLabel;
         private Label loggedInUserLabel;
         private Button sendButton;
         private RichTextBox chatRichTextBox;
@@ -34,37 +41,58 @@ namespace ChatbotApp
             this.chatRichTextBox = new RichTextBox();
             this.AcceptButton = this.sendButton;
             this.loggedInUserLabel = new Label();
+            this.toggleLabel = new Label();
+            this.toggleSwitch = new CircleCheckBox();
+            
 
             // inputTextBox
-            this.inputTextBox.Location = new System.Drawing.Point(12, 520);
-            this.inputTextBox.Size = new System.Drawing.Size(600, 20);
-            this.inputTextBox.BackColor = System.Drawing.Color.FromArgb(88, 86, 91);
-            this.inputTextBox.ForeColor = System.Drawing.Color.White;
-            this.inputTextBox.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            this.inputTextBox.Location = new System.Drawing.Point(50, 524); // Moved to the bottom left
+            this.inputTextBox.Size = new System.Drawing.Size(500, 40); // Adjusted size
+            this.inputTextBox.BackColor = Color.FromArgb(88, 86, 91);//dark gray color
+            this.inputTextBox.ForeColor = Color.White;
+            this.inputTextBox.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right; // Anchored to the bottom, right and left
 
             // sendButton
-            this.sendButton.Location = new System.Drawing.Point(620, 520);
-            this.sendButton.Size = new System.Drawing.Size(75, 23);
+            this.sendButton.Location = new System.Drawing.Point(560, 522); // Adjusted position
+            this.sendButton.Size = new System.Drawing.Size(100, 27); // Adjusted size
             this.sendButton.Text = "Send";
             this.sendButton.Click += new System.EventHandler(this.SendButton_Click);
-            this.sendButton.BackColor = System.Drawing.Color.FromArgb(88, 86, 91); // background
-            this.sendButton.ForeColor = System.Drawing.Color.FromArgb(84, 18, 194); // font color
-            this.sendButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            this.sendButton.BackColor = Color.FromArgb(88, 86, 91);//dark gray color
+            this.sendButton.ForeColor = Color.BlueViolet;
+            this.sendButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right; // Anchored to the bottom and right
 
             // chatRichTextBox
-            this.chatRichTextBox.Location = new System.Drawing.Point(12, 12);
-            this.chatRichTextBox.Size = new System.Drawing.Size(683, 500);
+            this.chatRichTextBox.Location = new System.Drawing.Point(35, 50); // Adjusted position
+            this.chatRichTextBox.Size = new System.Drawing.Size(630, 450); // Adjusted size
             this.chatRichTextBox.ReadOnly = true;
-            this.chatRichTextBox.BackColor = System.Drawing.Color.FromArgb(15, 15, 15);
-            this.chatRichTextBox.ForeColor = System.Drawing.Color.White;
+            this.chatRichTextBox.BackColor = Color.FromArgb(50,50,50);
+            this.chatRichTextBox.ForeColor = Color.White;
             this.chatRichTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 
             // loggedInUserLabel
-            this.loggedInUserLabel.Location = new System.Drawing.Point(12, 550);
-            this.loggedInUserLabel.Size = new System.Drawing.Size(683, 20);
-            this.loggedInUserLabel.Text = "Logged in as: "; // Initial text
-            this.loggedInUserLabel.ForeColor = System.Drawing.Color.White;
-            this.loggedInUserLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            this.loggedInUserLabel.Location = new System.Drawing.Point(50, 25); // Moved to the top left
+            this.loggedInUserLabel.Size = new System.Drawing.Size(150, 20); // Adjusted size
+            this.loggedInUserLabel.Text = "Logged in as: ";
+            this.loggedInUserLabel.ForeColor = Color.White;
+            this.loggedInUserLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left; // Anchored to the top and left
+
+            // ToggleSwitch
+            this.toggleSwitch.Location = new Point(620, 20); // Adjusted position
+            this.toggleSwitch.BackColor = Color.FromArgb(25,25,25);
+            this.toggleSwitch.Size = new Size(25, 25); // Increased size for circular shape
+            this.toggleSwitch.Appearance = Appearance.Button; // Use button appearance
+            this.toggleSwitch.FlatStyle = FlatStyle.Flat; // Use flat style for custom appearance
+            this.toggleSwitch.FlatAppearance.BorderColor = Color.FromArgb(25,25,25); // Set border color to purple
+            this.toggleSwitch.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Anchor to the top and right
+            this.toggleSwitch.CheckedChanged += new EventHandler(ToggleSwitch_CheckedChanged);
+
+            // toggleLabel
+            this.toggleLabel = new Label();
+            this.toggleLabel.Location = new Point(550, 25); // Adjusted position
+            this.toggleLabel.Size = new Size(100, 20); // Adjusted size
+            this.toggleLabel.Text = "GPT Mode:"; // Set the text for the toggle button description
+            this.toggleLabel.ForeColor = Color.White; // Set the text color
+            this.toggleLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Anchor to the top and right
 
             // MainForm
             this.ClientSize = new System.Drawing.Size(700, 580);
@@ -72,8 +100,10 @@ namespace ChatbotApp
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.chatRichTextBox);
             this.Controls.Add(this.loggedInUserLabel);
+            this.Controls.Add(this.toggleSwitch); // Added the toggle switch
+            this.Controls.Add(this.toggleLabel); // Added the label 
 
-            this.BackColor = System.Drawing.Color.FromArgb(84, 18, 194); // Form background color
+            this.BackColor = Color.FromArgb(25,25,25);
             this.Text = "DansbyChatBot";
 
             this.ResumeLayout(false);
@@ -84,7 +114,7 @@ namespace ChatbotApp
             // Initialize the recognizers and user manager
             intentRecognizer = new IntentRecognizer(this);
             responseRecognizer = new ResponseRecognizer(this);
-            userManager = new UserManager();
+            userManager = new UserManager(this);
 
             // Prompt user for login credentials
             CurInstanceLoginUser = SaveResponse("Enter your username:");
@@ -126,7 +156,7 @@ namespace ChatbotApp
         }
          public void AppendToChatHistory(string message)
         {
-            chatRichTextBox.SelectionColor = isUserInputForColor ? Color.GhostWhite : Color.FromArgb(84, 18, 194);
+            chatRichTextBox.SelectionColor = isUserInputForColor ? Color.BlueViolet : Color.WhiteSmoke;
             chatRichTextBox.AppendText(message + Environment.NewLine);
 
             // Scroll to the bottom
@@ -140,10 +170,72 @@ namespace ChatbotApp
             string userInput = Prompt.ShowDialog(prompt);
             return userInput;
         }
+        // Toggle Switch CheckedChanged event handler
+        private void ToggleSwitch_CheckedChanged(object sender, EventArgs e)
+        {
+            // Update the state of the toggle switch
+            useGPTMode = toggleSwitch.Checked;
 
-    }
+            // Change the color of the circle
+            toggleSwitch.ForeColor = useGPTMode ? Color.Green : Color.Red;
+        }
 
-     public static class Prompt
+        public class CircleCheckBox : CheckBox
+        {
+            private bool useGPTMode = false;
+
+           public CircleCheckBox()
+            {
+                
+                this.Size = new Size(20, 20); // Set the size for circular shape
+                this.Appearance = Appearance.Button; // Use button appearance
+                this.FlatStyle = FlatStyle.Flat; // Use flat style for custom appearance
+                this.BackColor = Color.FromArgb(25,25,25); // Set background color to transparent
+                
+            }
+
+            protected override void OnPaint(PaintEventArgs e)
+            {
+                
+                base.OnPaint(e);
+
+                Graphics g = e.Graphics;
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+                int diameter = Math.Min(this.Width, this.Height);
+                Rectangle rect = new Rectangle(0, 0, diameter, diameter);
+
+                // Fill the background with the desired color
+                if (this.Checked)
+                    g.FillEllipse(new SolidBrush(Color.Green), rect); // Green color when checked
+                else
+                    g.FillEllipse(new SolidBrush(Color.Red), rect); // Purple color when unchecked
+
+                // Draw the circle outline with a thick border
+                int borderWidth = 2; // Adjust the thickness as needed
+                using (Pen borderPen = new Pen(Color.Black, borderWidth))
+                {
+                    g.DrawEllipse(borderPen, rect);
+                }
+
+            }
+
+            protected override void OnClick(EventArgs e)
+            {
+                base.OnClick(e);
+
+                // Toggle state
+                this.useGPTMode = !this.useGPTMode;
+
+                // Redraw control
+                this.Invalidate();
+            }
+        }
+
+
+    } //end of MainForm
+
+    public static class Prompt
     {
         public static string ShowDialog(string text)
         {

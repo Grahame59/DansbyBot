@@ -122,3 +122,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 6.5.24 - 2:54 am
 - Added more UI polishing such as a label for a logged user, auto scroll when ur chat starts entering the bottom of the physical text box, color block work, all still very work in progress still need to refactor a lot of code from console environment. 
+
+# 6.6.24 - 2:27 am
+- Polished the UI interface, worked on the colorblock more going to try to have dark black and greys with vibrant royal purple highlights. Added anchors to everything and a toggle button that will be capable of switching JSON mappings or GPT convo flow on and off so I can build GPT without diverting my full attention to it on the project. Ported over a lot more of code specifically refactored all the User Manager instance into the MainForm for WinForms usage. ETC... Defintely did more but this is all I am recalling right now. 

@@ -19,7 +19,7 @@ namespace Functions
     {
 
         private MainForm mainForm;
-        private static UserManager userManager = new UserManager(); // Instantiate UserManager as static
+        private static UserManager userManager;
         private static ListManager ListManager = new ListManager(); // Instantiate TodoListManager as static
         private const string ListsFilePath = "Functions.Methods.cs\\lists.json"; // Path to save the to-do lists
 
@@ -27,6 +27,7 @@ namespace Functions
         public functionHoldings(MainForm mainForm)
         {
             this.mainForm = mainForm;
+            userManager = new UserManager(mainForm);
             LoadLists();
         }
         

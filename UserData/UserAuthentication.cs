@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Threading;
 using Functions;
+using ChatbotApp;
 
 namespace UserAuthentication
 {
@@ -32,11 +33,13 @@ namespace UserAuthentication
 
     public class UserManager
     {
+        private MainForm mainform;
         private Dictionary<string, User> users;
         private User currentUser; // Variable to store the currently logged-in user
 
-        public UserManager()
+        public UserManager(MainForm mainform)
         {
+            this.mainform = mainform;
             string filePath = "UserData\\UserDirectory.json";
             users = LoadUsersFromFile(filePath);
         }
@@ -67,6 +70,7 @@ namespace UserAuthentication
 
         public bool Login(string username, string password)
         {
+            
             // Check if the user exists
             if (users.ContainsKey(username))
             {
@@ -105,24 +109,24 @@ namespace UserAuthentication
         {
             if (currentUser != null)
             {
-                Console.WriteLine("Dansby: Current User Data:");
-                Console.WriteLine("--------------------------");
-                Console.WriteLine($"Dansby: User ID: {currentUser.Id}");
-                Console.WriteLine($"Dansby: Username: {currentUser.Username}");
-                Console.WriteLine($"Dansby: Email: {currentUser.Email}");
-                Console.WriteLine($"Dansby: Age: {currentUser.Age}");
-                Console.WriteLine($"Dansby: Phone Number: {currentUser.PhoneNumber}");
-                Console.WriteLine($"Dansby: Birthday: {currentUser.Birthday}");
-                Console.WriteLine($"Dansby: Favorite Color: {currentUser.FavoriteColor}");
-                Console.WriteLine($"Dansby: Interests: {currentUser.Interests}");
-                Console.WriteLine($"Dansby: Location: {currentUser.Location}");
-                Console.WriteLine($"Dansby: Admin Privledge: {currentUser.IsAdmin}");
-                Console.WriteLine("--------------------------");
-                Console.WriteLine();
+                mainform.AppendToChatHistory("Dansby: Current User Data:");
+                mainform.AppendToChatHistory("--------------------------");
+                mainform.AppendToChatHistory($"Dansby: User ID: {currentUser.Id}");
+                mainform.AppendToChatHistory($"Dansby: Username: {currentUser.Username}");
+                mainform.AppendToChatHistory($"Dansby: Email: {currentUser.Email}");
+                mainform.AppendToChatHistory($"Dansby: Age: {currentUser.Age}");
+                mainform.AppendToChatHistory($"Dansby: Phone Number: {currentUser.PhoneNumber}");
+                mainform.AppendToChatHistory($"Dansby: Birthday: {currentUser.Birthday}");
+                mainform.AppendToChatHistory($"Dansby: Favorite Color: {currentUser.FavoriteColor}");
+                mainform.AppendToChatHistory($"Dansby: Interests: {currentUser.Interests}");
+                mainform.AppendToChatHistory($"Dansby: Location: {currentUser.Location}");
+                mainform.AppendToChatHistory($"Dansby: Admin Privledge: {currentUser.IsAdmin}");
+                mainform.AppendToChatHistory("--------------------------");
+                mainform.AppendToChatHistory("");
             }
             else
             {
-                Console.WriteLine("Dansby: No user logged in.");
+                mainform.AppendToChatHistory("Dansby: No user logged in.");
             }
         }
         public void GetCurrentUserName()
@@ -130,13 +134,13 @@ namespace UserAuthentication
             if (currentUser != null)
             {
             Console.WriteLine();
-            Console.WriteLine($"Dansby: Hello, {currentUser.Username}");
+            mainform.AppendToChatHistory($"Dansby: Hello, {currentUser.Username}");
             Console.WriteLine();
             }
             else
             {
             Console.WriteLine();
-            Console.WriteLine("Dansby: No user logged in.");
+            mainform.AppendToChatHistory("Dansby: No user logged in.");
             Console.WriteLine();
             }
         }
