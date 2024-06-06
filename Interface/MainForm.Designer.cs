@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace ChatbotApp;
 
-partial class Form1
+partial class MainForm
 {
     /// <summary>
     ///  Required designer variable.
