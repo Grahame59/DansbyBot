@@ -71,7 +71,7 @@ namespace ChatbotApp
 
             // loggedInUserLabel
             this.loggedInUserLabel.Location = new System.Drawing.Point(50, 25); // Moved to the top left
-            this.loggedInUserLabel.Size = new System.Drawing.Size(150, 20); // Adjusted size
+            this.loggedInUserLabel.Size = new System.Drawing.Size(250, 20); // Adjusted size
             this.loggedInUserLabel.Text = "Logged in as: ";
             this.loggedInUserLabel.ForeColor = Color.White;
             this.loggedInUserLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left; // Anchored to the top and left
