@@ -2441,5 +2441,18 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "howareyou",
+    "Examples": [
+      {
+        "Utterance": "hwo r u",
+        "Tokens": [
+          "hwo",
+          "r",
+          "u"
+        ]
+      }
+    ]
   }
 ]
