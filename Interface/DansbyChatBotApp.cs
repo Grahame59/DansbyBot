@@ -4,6 +4,14 @@ using Responses;
 using UserAuthentication;
 using System.Windows.Forms;
 using System.Drawing;
+using RestSharp;
+using Newtonsoft.Json.Linq;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
+using Newtonsoft.Json;
+using System.Net.Http;
+using System.Text;
 
 //Color.FromArgb(84, 18, 194); // Set border color to purple (WANTED THEME OF PURPLE)
 
@@ -136,25 +144,73 @@ namespace ChatbotApp
 
             AppendToChatHistory("Welcome to your chat interface. I am Dansby also known as Dansby bot. May I assist you?");
         }        
-        private void SendButton_Click(object sender, EventArgs e)
+        private async void SendButton_Click(object sender, EventArgs e)
         {
             string userInput = inputTextBox.Text;
             isUserInputForColor = true;
             AppendToChatHistory($"{CurInstanceLoginUser}: {userInput}");
             isUserInputForColor = false;
 
-            // Pass both userInput and mainform to RecognizeIntent
-            string recognizedIntent = intentRecognizer.RecognizeIntent(userInput, this); // Assuming "this" refers to MainForm instance
-            AppendToChatHistory($"Intent: {recognizedIntent}");
-            AppendToChatHistory("");
+            if (!useGPTMode)
+            {
+                // Process user input using intent and response recognizers
+                string recognizedIntent = intentRecognizer.RecognizeIntent(userInput, this);
+                AppendToChatHistory($"Intent: {recognizedIntent}");
+                AppendToChatHistory("");
 
-            string returnResponse = responseRecognizer.RecognizeResponse(userInput, this);
-            AppendToChatHistory($"DANSBY: {returnResponse}");
-            AppendToChatHistory("");
+                string returnResponse = responseRecognizer.RecognizeResponse(userInput, this);
+                AppendToChatHistory($"DANSBY: {returnResponse}");
+                AppendToChatHistory("");
+            }
+            else
+            {
+                // Send user input to GPT API and receive response
+                string gptResponse = await SendToGPTAPI(userInput);
 
-            inputTextBox.Clear();   
+                // Display GPT-generated response
+                AppendToChatHistory($"DansbyGPT: {gptResponse}");
+                AppendToChatHistory("");
+            }
+
+            inputTextBox.Clear();
         }
-         public void AppendToChatHistory(string message)
+
+        private async Task<string> SendToGPTAPI(string userInput)
+        {
+            // Read the API key from the configuration file
+            string apiKey;
+            try
+            {
+                IConfiguration configuration = new ConfigurationBuilder()
+                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                    .Build();
+
+                apiKey = configuration.GetSection("OpenAI")["ApiKey"];
+            }
+            catch (Exception ex)
+            {
+                return $"Error reading API key from configuration: {ex.Message}";
+                
+            }
+            // Define API endpoint URL
+            string gptApiUrl = "https://api.openai.com/v1/chat/completions";
+
+            // Prepare request data
+            var requestData = new { text = userInput };
+            var jsonData = JsonConvert.SerializeObject(requestData);
+            var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+
+            // Send request to GPT API
+            using (var client = new HttpClient())
+            {
+                var response = await client.PostAsync(gptApiUrl, content);
+                response.EnsureSuccessStatusCode();
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return responseBody;
+            }
+        }
+
+        public void AppendToChatHistory(string message)
         {
             chatRichTextBox.SelectionColor = isUserInputForColor ? Color.BlueViolet : Color.WhiteSmoke;
             chatRichTextBox.AppendText(message + Environment.NewLine);

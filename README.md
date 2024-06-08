@@ -125,3 +125,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 6.6.24 - 2:27 am
 - Polished the UI interface, worked on the colorblock more going to try to have dark black and greys with vibrant royal purple highlights. Added anchors to everything and a toggle button that will be capable of switching JSON mappings or GPT convo flow on and off so I can build GPT without diverting my full attention to it on the project. Ported over a lot more of code specifically refactored all the User Manager instance into the MainForm for WinForms usage. ETC... Defintely did more but this is all I am recalling right now. 
+
+# 6.8.24 - 2:16 am
+- So I added all the packages and the APIs for the GPT AI from Open AI it should be working but I seem to be getting a 401 error. So maybe I just have to wait for it to be activate because I just made it. Not really sure but I am done for now and will test tomorrow. 
