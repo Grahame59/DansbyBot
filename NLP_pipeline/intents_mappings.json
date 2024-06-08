@@ -2454,5 +2454,18 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "usergettingtattoo",
+    "Examples": [
+      {
+        "Utterance": "im getting tattoo",
+        "Tokens": [
+          "im",
+          "getting",
+          "tattoo"
+        ]
+      }
+    ]
   }
 ]
