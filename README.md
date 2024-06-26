@@ -128,3 +128,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 6.8.24 - 2:16 am
 - So I added all the packages and the APIs for the GPT AI from Open AI it should be working but I seem to be getting a 401 error. So maybe I just have to wait for it to be activate because I just made it. Not really sure but I am done for now and will test tomorrow. 
+
+# 6.17.24 - 2:16 pm : 
+- Need to make a .Make File that will download all dependencies as well as refactor again out of WinForms to Avalon or similiar UI platfrom API for Cross platform functionality so I don't have to refactor more code in the long run... Didn't change any Code yet this is self message trying to cut back my attention on Dansby to 50-50 with another project so I can develope more at once... 
