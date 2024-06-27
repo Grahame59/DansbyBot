@@ -2467,5 +2467,18 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "list ur functions",
+        "Tokens": [
+          "list",
+          "ur",
+          "functions"
+        ]
+      }
+    ]
   }
 ]

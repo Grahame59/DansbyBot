@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kylergrahame/Desktop/CODES/DansbyBot/DansbyBot.csproj": {}
+    "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj": {}
   },
   "projects": {
-    "/Users/kylergrahame/Desktop/CODES/DansbyBot/DansbyBot.csproj": {
+    "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kylergrahame/Desktop/CODES/DansbyBot/DansbyBot.csproj",
+        "projectUniqueName": "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj",
         "projectName": "DansbyBot",
-        "projectPath": "/Users/kylergrahame/Desktop/CODES/DansbyBot/DansbyBot.csproj",
-        "packagesPath": "/Users/kylergrahame/.nuget/packages/",
-        "outputPath": "/Users/kylergrahame/Desktop/CODES/DansbyBot/obj/",
+        "projectPath": "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj",
+        "packagesPath": "C:\\Users\\Kj Grahame\\.nuget\\packages\\",
+        "outputPath": "E:\\CODES\\DansbyBot\\DansbyBot\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/kylergrahame/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Kj Grahame\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +84,7 @@
               "version": "[6.0.29, 6.0.29]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[6.0.29, 6.0.29]"
             },
             {
@@ -97,7 +104,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }
