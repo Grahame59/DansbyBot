@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2JyKydpeGA8t8lWtrFTZlGJQOzu0XEotwgN8kfY3WWzzVH+lYa7xo7nTkedCY0NKNWjCZkHbU+afYWx9FJpavA==",
+  "dgSpecHash": "TfE6tNv6b8nBmkfvbwCzs7n54jrw5ELzfm/dFAzuYR4XPmoSzUjkGNW0HWpFfNIXZ9ssNoudVS5TLtAQDSw9tA==",
   "success": true,
-  "projectFilePath": "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj",
+  "projectFilePath": "E:\\CODES\\DansbyBot-1\\DansbyBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

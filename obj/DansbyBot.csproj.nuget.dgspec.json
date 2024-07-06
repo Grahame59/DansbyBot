@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj": {}
+    "E:\\CODES\\DansbyBot-1\\DansbyBot.csproj": {}
   },
   "projects": {
-    "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj": {
+    "E:\\CODES\\DansbyBot-1\\DansbyBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj",
+        "projectUniqueName": "E:\\CODES\\DansbyBot-1\\DansbyBot.csproj",
         "projectName": "DansbyBot",
-        "projectPath": "E:\\CODES\\DansbyBot\\DansbyBot\\DansbyBot.csproj",
+        "projectPath": "E:\\CODES\\DansbyBot-1\\DansbyBot.csproj",
         "packagesPath": "C:\\Users\\Kj Grahame\\.nuget\\packages\\",
-        "outputPath": "E:\\CODES\\DansbyBot\\DansbyBot\\obj\\",
+        "outputPath": "E:\\CODES\\DansbyBot-1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

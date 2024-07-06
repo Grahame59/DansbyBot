@@ -70,7 +70,7 @@
       "username": "steven_leyva",
       "password": null,
       "email": null,
-      "age": 21,
+      "age": 22,
       "phonenumber": null,
       "birthday": "2002-07-31",
       "favcolor": null,
@@ -103,6 +103,20 @@
       "Interests": "Chemistry, FuckingBitches, GettingBread, CallingMotherBitch, BuyingZins, UpperDeckLippy",
       "location": null,
       "isAdmin": false
+    },
+    {
+    "id": 7,
+      "username": "john_mathews",
+      "password": "GavinIsTwink",
+      "email": "johnmathews13@icloud.com",
+      "age": 21,
+      "phonenumber": 9735700392,
+      "birthday": "2003-07-17",
+      "favcolor": "purple",
+      "Interests": "Black&MildsWineFlav, Weed, WorkAholic, Money$$$, STEVENSHUGECOCK",
+      "location": "West Milford",
+      "isAdmin": true
     }
+
   ]
 }

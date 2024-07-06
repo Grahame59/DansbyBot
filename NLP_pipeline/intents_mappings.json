@@ -2480,5 +2480,33 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "usergettingtattoo",
+    "Examples": [
+      {
+        "Utterance": "Im getting a tattoo today",
+        "Tokens": [
+          "Im",
+          "getting",
+          "a",
+          "tattoo",
+          "today"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performexitdansby",
+    "Examples": [
+      {
+        "Utterance": "close the app",
+        "Tokens": [
+          "close",
+          "the",
+          "app"
+        ]
+      }
+    ]
   }
 ]
