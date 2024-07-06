@@ -177,6 +177,11 @@ namespace Intents
 
                     FunctionScript.TestUserLoginAndDisplayData(testUser, testPass);
                     return "Debugging user data info";
+
+                case "runmontecarlosimulation" : 
+
+                    //FunctionScript.RunMonteCarloSimulation
+                    return "Running a Simulation that renders and estimates the size of a sphere inside a cube.";
                 
                 //All List Intent Fucntions
                 

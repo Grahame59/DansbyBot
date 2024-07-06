@@ -131,3 +131,9 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 6.17.24 - 2:16 pm : 
 - Need to make a .Make File that will download all dependencies as well as refactor again out of WinForms to Avalon or similiar UI platfrom API for Cross platform functionality so I don't have to refactor more code in the long run... Didn't change any Code yet this is self message trying to cut back my attention on Dansby to 50-50 with another project so I can develope more at once... 
+
+# 7.6.24 - 5:53 pm : #1 
+- Adding a Monte Carlo sphere estimation Sim with a Winforms render. Have the logic completed but going to work towards a pop up bar in the DansbyBot Application with multiple buttons that lead to different applications.
+
+# 7.6.24 - 7:02 pm #2
+- Added the sidebar for future simulation and extended applications unrelated to the chatbot flow and services. The specific sim I added is a MonteCarlo Simulation of the estimation of a sphere that is access through a sidebar that you can open through the refactored API button for gpt which is now removed from the project. Was just for fun and got the side bar set up want to make some more pleasing simulations as well as add the book form for to do lists off that side bar and make it double accesible through chat flow etc....  Much room for additions with this sidebar implement. 

@@ -12,6 +12,10 @@ using Snake;
 using System.Threading;
 using System.Windows.Forms;
 using ChatbotApp;
+using System.Linq;
+using System.Threading.Tasks;
+
+
 
 namespace Functions
 {
@@ -170,7 +174,6 @@ namespace Functions
                 
                 case "StartSnakeGame" : 
                     return "This is a function that loads up snake in console and you can play!";
-                
 
                 default:
                     return "No description available.";
@@ -347,14 +350,7 @@ namespace Functions
             guiThread.Start();
         }
 
-
-
-
-
-
-
-
-
+        
 
         //HAVE TO REFACTOR ALL MATH METHODS BELOW WITH AppendToChatHistory() and Readline() -> SaveResponse() ... 
 

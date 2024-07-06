@@ -2508,5 +2508,16 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "performexitdansby",
+    "Examples": [
+      {
+        "Utterance": "close",
+        "Tokens": [
+          "close"
+        ]
+      }
+    ]
   }
 ]

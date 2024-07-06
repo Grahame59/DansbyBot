@@ -21,8 +21,9 @@ namespace ChatbotApp
     {
 
         // Add a member variable to track the state of the toggle switch
-        private bool useGPTMode = false; 
+        private bool sideBarStatus = false; 
         private CheckBox toggleSwitch; // Declare toggle switch at the class level
+        private Panel sidebar; // Declare sidebar at the class level
         public static string CurInstanceLoginUser;
         public static string CurInstanceLoginPass;
         public static bool CurInstanceIsAdmin;
@@ -96,11 +97,42 @@ namespace ChatbotApp
 
             // toggleLabel
             this.toggleLabel = new Label();
-            this.toggleLabel.Location = new Point(550, 25); // Adjusted position
+            this.toggleLabel.Location = new Point(530, 25); // Adjusted position
             this.toggleLabel.Size = new Size(100, 20); // Adjusted size
-            this.toggleLabel.Text = "GPT Mode:"; // Set the text for the toggle button description
+            this.toggleLabel.Text = "Open SideBar:"; // Set the text for the toggle button description
             this.toggleLabel.ForeColor = Color.White; // Set the text color
             this.toggleLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Anchor to the top and right
+
+            // Sidebar
+            sidebar = new Panel(); // assign class level field
+            sidebar.Size = new Size(200, 580);
+            sidebar.Location = new Point(-200, 0); // Start off-screen
+            sidebar.BackColor = Color.FromArgb(30, 30, 30);
+            sidebar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            this.Controls.Add(sidebar);
+
+            // Add buttons to the sidebar
+            Button appButton1 = new Button();
+            appButton1.Text = "MonteCarloSIM";
+            appButton1.Size = new Size(180, 40);
+            appButton1.Location = new Point(10, 20);
+            appButton1.BackColor = Color.FromArgb(50, 50, 50);
+            appButton1.ForeColor = Color.White;
+            appButton1.Click += AppButton1_Click;
+            sidebar.Controls.Add(appButton1);
+
+            Button appButton2 = new Button();
+            appButton2.Text = "Not Implemented";
+            appButton2.Size = new Size(180, 40);
+            appButton2.Location = new Point(10, 70);
+            appButton2.BackColor = Color.FromArgb(50, 50, 50);
+            appButton2.ForeColor = Color.White;
+            appButton2.Click += AppButton2_Click;
+            sidebar.Controls.Add(appButton2);
+
+            // Add more buttons as needed
+
+            
 
             // MainForm
             this.ClientSize = new System.Drawing.Size(700, 580);
@@ -151,65 +183,19 @@ namespace ChatbotApp
             AppendToChatHistory($"{CurInstanceLoginUser}: {userInput}");
             isUserInputForColor = false;
 
-            if (!useGPTMode)
-            {
-                // Process user input using intent and response recognizers
-                string recognizedIntent = intentRecognizer.RecognizeIntent(userInput, this);
-                AppendToChatHistory($"Intent: {recognizedIntent}");
-                AppendToChatHistory("");
+           
+            // Process user input using intent and response recognizers
+            string recognizedIntent = intentRecognizer.RecognizeIntent(userInput, this);
+            AppendToChatHistory($"Intent: {recognizedIntent}");
+            AppendToChatHistory("");
 
-                string returnResponse = responseRecognizer.RecognizeResponse(userInput, this);
-                AppendToChatHistory($"DANSBY: {returnResponse}");
-                AppendToChatHistory("");
-            }
-            else
-            {
-                // Send user input to GPT API and receive response
-                string gptResponse = await SendToGPTAPI(userInput);
-
-                // Display GPT-generated response
-                AppendToChatHistory($"DansbyGPT: {gptResponse}");
-                AppendToChatHistory("");
-            }
-
+            string returnResponse = responseRecognizer.RecognizeResponse(userInput, this);
+            AppendToChatHistory($"DANSBY: {returnResponse}");
+            AppendToChatHistory("");
+           
             inputTextBox.Clear();
         }
 
-        private async Task<string> SendToGPTAPI(string userInput)
-        {
-            // Read the API key from the configuration file
-            string apiKey;
-            try
-            {
-                IConfiguration configuration = new ConfigurationBuilder()
-                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                    .Build();
-
-                apiKey = configuration.GetSection("OpenAI")["ApiKey"];
-            }
-            catch (Exception ex)
-            {
-                return $"Error reading API key from configuration: {ex.Message}";
-                
-            }
-            // Define API endpoint URL
-            string gptApiUrl = "https://api.openai.com/v1/chat/completions";
-
-            // Prepare request data
-            var requestData = new { text = userInput };
-            var jsonData = JsonConvert.SerializeObject(requestData);
-            var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-
-            // Send request to GPT API
-            using (var client = new HttpClient())
-            {
-                var response = await client.PostAsync(gptApiUrl, content);
-                response.EnsureSuccessStatusCode();
-                string responseBody = await response.Content.ReadAsStringAsync();
-                return responseBody;
-            }
-        }
-        
 
         public void AppendToChatHistory(string message)
         {
@@ -231,15 +217,44 @@ namespace ChatbotApp
         private void ToggleSwitch_CheckedChanged(object sender, EventArgs e)
         {
             // Update the state of the toggle switch
-            useGPTMode = toggleSwitch.Checked;
+            sideBarStatus = toggleSwitch.Checked;
 
             // Change the color of the circle
-            toggleSwitch.ForeColor = useGPTMode ? Color.Green : Color.Red;
+            toggleSwitch.ForeColor = sideBarStatus ? Color.Green : Color.Red;
+            ToggleSidebarVisibility(sideBarStatus);
         }
 
-        public class CircleCheckBox : CheckBox
+        // Sidebar visibility logic
+        private void ToggleSidebarVisibility(bool isVisible)
         {
-            private bool useGPTMode = false;
+            if (sidebar != null)
+            {
+                sidebar.Location = isVisible ? new Point(0, 0) : new Point(-200, 0);
+            }
+            else
+            {
+                // Handle case where sidebar is null (optional, for debugging)
+                MessageBox.Show("Sidebar is not initialized!");
+            }
+        }
+        private void AppButton1_Click(object sender, EventArgs e)
+        {
+            // Logic for App 1
+
+             MonteCarloSimulationForm mcForm = new MonteCarloSimulationForm();
+             mcForm.ShowDialog(); // Show the form as a modal dialog
+           
+        }
+
+        private void AppButton2_Click(object sender, EventArgs e)
+        {
+            // Logic for App 2
+            MessageBox.Show("App 2 clicked");
+        }
+
+        public class CircleCheckBox : CheckBox 
+        {
+            private bool sideBarStatus = false;
 
            public CircleCheckBox()
             {
@@ -282,7 +297,7 @@ namespace ChatbotApp
                 base.OnClick(e);
 
                 // Toggle state
-                this.useGPTMode = !this.useGPTMode;
+                this.sideBarStatus = !this.sideBarStatus;
 
                 // Redraw control
                 this.Invalidate();
