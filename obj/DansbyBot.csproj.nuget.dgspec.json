@@ -50,6 +50,10 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.6.1, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -58,6 +62,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.Xaml.Behaviors.Wpf": {
+              "target": "Package",
+              "version": "[1.1.122, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -65,6 +73,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[111.2.0, )"
+            },
+            "System.Windows.Interactivity.WPF": {
+              "target": "Package",
+              "version": "[2.0.20525, )"
             }
           },
           "imports": [

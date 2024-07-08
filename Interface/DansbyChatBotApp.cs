@@ -237,6 +237,7 @@ namespace ChatbotApp
                 MessageBox.Show("Sidebar is not initialized!");
             }
         }
+        //Button for MonteCarloSim
         private void AppButton1_Click(object sender, EventArgs e)
         {
             // Logic for App 1
@@ -245,11 +246,11 @@ namespace ChatbotApp
              mcForm.ShowDialog(); // Show the form as a modal dialog
            
         }
-
+        //Button for Terrarium Simulation
         private void AppButton2_Click(object sender, EventArgs e)
         {
-            // Logic for App 2
-            MessageBox.Show("App 2 clicked");
+            WpfHostForm wpfHostForm = new WpfHostForm();
+            wpfHostForm.Show();
         }
 
         public class CircleCheckBox : CheckBox 

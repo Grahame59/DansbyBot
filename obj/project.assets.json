@@ -2,6 +2,61 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "Extended.Wpf.Toolkit/4.6.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net5.0/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net5.0/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net5.0/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net5.0/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net5.0/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net5.0/ja-JP/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ja-JP"
+          },
+          "lib/net5.0/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net5.0/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net5.0/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -162,6 +217,22 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.122": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -248,10 +319,79 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "System.Windows.Interactivity.WPF/2.0.20525": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Expression.Interactions.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/System.Windows.Interactivity.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Expression.Interactions.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/System.Windows.Interactivity.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
   "libraries": {
+    "Extended.Wpf.Toolkit/4.6.1": {
+      "sha512": "LZlLLGZP08mJufT/rjCiURP0owr34ZuAvcyzk5xgsvSMiKJRQvK7oaWUP7IXONE4BwCXREwKhtl34nUS8+RGQg==",
+      "type": "package",
+      "path": "extended.wpf.toolkit/4.6.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "Xceed_Logo_Retina-400x400.png",
+        "extended.wpf.toolkit.4.6.1.nupkg.sha512",
+        "extended.wpf.toolkit.nuspec",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "lib/net40/Xceed.Wpf.Toolkit.dll",
+        "lib/net40/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ja-JP/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/nl-BE/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "lib/net5.0/Xceed.Wpf.AvalonDock.dll",
+        "lib/net5.0/Xceed.Wpf.Toolkit.dll",
+        "lib/net5.0/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/de/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/es/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/fr/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/hu/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/it/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/ja-JP/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/pt-BR/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/ro/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/ru/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/sv/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
+        "tools/install.ps1"
+      ]
+    },
     "Microsoft.Extensions.Configuration/8.0.0": {
       "sha512": "0J/9YNXTMWSZP2p2+nvl8p71zpSwokZXZuJW+VjdErkegAnFdO1XlqtA62SJtgVYHdKu3uPxJHcMR/r35HwFBA==",
       "type": "package",
@@ -492,6 +632,28 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.122": {
+      "sha512": "SgcafT189u4qX++vSCV9FLQ4BsRXU9J2esnHA9IF8GOSgnPBulFw1CW4X/FYoOXvZwdDZxlSObJUGUg1U1wSyg==",
+      "type": "package",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.122",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Design/Microsoft.Xaml.Behaviors.Design.dll",
+        "lib/net462/Design/Microsoft.Xaml.Behaviors.DesignTools.dll",
+        "lib/net462/Microsoft.Xaml.Behaviors.dll",
+        "lib/net462/Microsoft.Xaml.Behaviors.pdb",
+        "lib/net462/Microsoft.Xaml.Behaviors.xml",
+        "lib/net6.0-windows7.0/Design/Microsoft.Xaml.Behaviors.DesignTools.dll",
+        "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.dll",
+        "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.pdb",
+        "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.xml",
+        "microsoft.xaml.behaviors.wpf.1.1.122.nupkg.sha512",
+        "microsoft.xaml.behaviors.wpf.nuspec",
+        "tools/Install.ps1"
+      ]
+    },
     "Newtonsoft.Json/13.0.3": {
       "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
@@ -679,14 +841,32 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "System.Windows.Interactivity.WPF/2.0.20525": {
+      "sha512": "0r+Le4E7hCm4zToUvBzjSUyTcuU3rFeoPa7JyTdWIzR/F7wH6+O/pWkjHIG40hIA0z1wvRdZayvoizA4wcK1dg==",
+      "type": "package",
+      "path": "system.windows.interactivity.wpf/2.0.20525",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Microsoft.Expression.Interactions.dll",
+        "lib/net40/Microsoft.Expression.Interactions.xml",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net40/System.Windows.Interactivity.xml",
+        "system.windows.interactivity.wpf.2.0.20525.nupkg.sha512",
+        "system.windows.interactivity.wpf.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "Extended.Wpf.Toolkit >= 4.6.1",
       "Microsoft.Extensions.Configuration >= 8.0.0",
       "Microsoft.Extensions.Configuration.Json >= 8.0.0",
+      "Microsoft.Xaml.Behaviors.Wpf >= 1.1.122",
       "Newtonsoft.Json >= 13.0.3",
-      "RestSharp >= 111.2.0"
+      "RestSharp >= 111.2.0",
+      "System.Windows.Interactivity.WPF >= 2.0.20525"
     ]
   },
   "packageFolders": {
@@ -739,6 +919,10 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
+          "Extended.Wpf.Toolkit": {
+            "target": "Package",
+            "version": "[4.6.1, )"
+          },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -747,6 +931,10 @@
             "target": "Package",
             "version": "[8.0.0, )"
           },
+          "Microsoft.Xaml.Behaviors.Wpf": {
+            "target": "Package",
+            "version": "[1.1.122, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
@@ -754,6 +942,10 @@
           "RestSharp": {
             "target": "Package",
             "version": "[111.2.0, )"
+          },
+          "System.Windows.Interactivity.WPF": {
+            "target": "Package",
+            "version": "[2.0.20525, )"
           }
         },
         "imports": [
@@ -796,5 +988,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Windows.Interactivity.WPF 2.0.20525' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Windows.Interactivity.WPF",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

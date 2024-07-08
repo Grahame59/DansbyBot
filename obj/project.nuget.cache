@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TfE6tNv6b8nBmkfvbwCzs7n54jrw5ELzfm/dFAzuYR4XPmoSzUjkGNW0HWpFfNIXZ9ssNoudVS5TLtAQDSw9tA==",
+  "dgSpecHash": "jBt98m0CeuPsBhwdLPcvCSnKesolm5eE4/2F9kwzw0/mDwDlYl+U6RCnOYbv5vqXQk3jgPyDLaBffLoNAgHJPw==",
   "success": true,
   "projectFilePath": "E:\\CODES\\DansbyBot-1\\DansbyBot.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\extended.wpf.toolkit\\4.6.1\\extended.wpf.toolkit.4.6.1.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\8.0.0\\microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512",
@@ -12,15 +13,28 @@
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\8.0.0\\microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\8.0.0\\microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.122\\microsoft.xaml.behaviors.wpf.1.1.122.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\restsharp\\111.2.0\\restsharp.111.2.0.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\system.windows.interactivity.wpf\\2.0.20525\\system.windows.interactivity.wpf.2.0.20525.nupkg.sha512",
     "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512",
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Windows.Interactivity.WPF 2.0.20525' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Windows.Interactivity.WPF",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
