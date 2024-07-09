@@ -8,7 +8,6 @@ using TaskManagement;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
-using Snake;
 using System.Threading;
 using System.Windows.Forms;
 using ChatbotApp;
@@ -338,17 +337,7 @@ namespace Functions
  
         //End of List Functions
         //-----------------------------------------------------------------
-        public void StartSnakeGame()
-        {
-            Thread guiThread = new Thread(() =>
-            {
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new SnakeGameForm());
-            });
-            guiThread.SetApartmentState(ApartmentState.STA);
-            guiThread.Start();
-        }
+        
 
         
 

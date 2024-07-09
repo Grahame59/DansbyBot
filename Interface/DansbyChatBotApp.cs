@@ -176,7 +176,7 @@ namespace ChatbotApp
 
             AppendToChatHistory("Welcome to your chat interface. I am Dansby also known as Dansby bot. May I assist you?");
         }        
-        private async void SendButton_Click(object sender, EventArgs e)
+        private void SendButton_Click(object sender, EventArgs e)
         {
             string userInput = inputTextBox.Text;
             isUserInputForColor = true;
@@ -249,8 +249,8 @@ namespace ChatbotApp
         //Button for Terrarium Simulation
         private void AppButton2_Click(object sender, EventArgs e)
         {
-            var terrariumWindow = new Terrarium.MainWindow();
-            terrariumWindow.Show();
+            //var terrariumWindow = new Terrarium.MainWindow();
+            //terrariumWindow.Show();
         
         }
 
