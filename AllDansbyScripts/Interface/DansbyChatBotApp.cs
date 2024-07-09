@@ -249,8 +249,9 @@ namespace ChatbotApp
         //Button for Terrarium Simulation
         private void AppButton2_Click(object sender, EventArgs e)
         {
-            //WpfHostForm wpfHostForm = new WpfHostForm();
-            //wpfHostForm.Show();
+            var terrariumWindow = new Terrarium.MainWindow();
+            terrariumWindow.Show();
+        
         }
 
         public class CircleCheckBox : CheckBox 

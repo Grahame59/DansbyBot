@@ -137,3 +137,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 7.6.24 - 7:02 pm #2
 - Added the sidebar for future simulation and extended applications unrelated to the chatbot flow and services. The specific sim I added is a MonteCarlo Simulation of the estimation of a sphere that is access through a sidebar that you can open through the refactored API button for gpt which is now removed from the project. Was just for fun and got the side bar set up want to make some more pleasing simulations as well as add the book form for to do lists off that side bar and make it double accesible through chat flow etc....  Much room for additions with this sidebar implement. 
+
+# 7.8.24 - 10:15 pm #1
+- Restructure the project file base and added a new .sln and project using WPF for the Terrarium extension Sim...
