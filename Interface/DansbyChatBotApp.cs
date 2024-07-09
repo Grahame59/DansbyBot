@@ -249,8 +249,10 @@ namespace ChatbotApp
         //Button for Terrarium Simulation
         private void AppButton2_Click(object sender, EventArgs e)
         {
-            //var terrariumWindow = new Terrarium.MainWindow();
-            //terrariumWindow.Show();
+            // Launch TerrariumWPF
+            TerrariumWPF.App app = new TerrariumWPF.App();
+            app.InitializeComponent();
+            app.Run(new TerrariumWPF.MainWindow());
         
         }
 
@@ -343,5 +345,5 @@ namespace ChatbotApp
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
         }
-    }
+    } 
 }
