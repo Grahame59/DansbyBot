@@ -2519,5 +2519,32 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what r u doing",
+        "Tokens": [
+          "what",
+          "r",
+          "u",
+          "doing"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what is up",
+        "Tokens": [
+          "what",
+          "is",
+          "up"
+        ]
+      }
+    ]
   }
 ]

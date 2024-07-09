@@ -5,8 +5,7 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DansbyBot", "DansbyBot.csproj", "{C7D2B622-FE97-48A4-8D78-C497E80F7E84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terrarium", "Terrarium\Terrarium.csproj", "{765B5B46-C096-4633-804D-4EAB91C6DF83}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
