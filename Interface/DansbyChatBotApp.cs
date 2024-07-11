@@ -4,6 +4,7 @@ using Responses;
 using UserAuthentication;
 using System.Windows.Forms;
 using System.Drawing;
+using ChatbotApp;
 using RestSharp;
 using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
@@ -240,21 +241,16 @@ namespace ChatbotApp
         //Button for MonteCarloSim
         private void AppButton1_Click(object sender, EventArgs e)
         {
-            // Logic for App 1
-
              MonteCarloSimulationForm mcForm = new MonteCarloSimulationForm();
-             mcForm.ShowDialog(); // Show the form as a modal dialog
-           
+             mcForm.ShowDialog(); // Show the form as a modal dialog           
         }
-        //Button for Terrarium Simulation
+        //Button for McBookRecreation
         private void AppButton2_Click(object sender, EventArgs e)
         {
-            // Launch TerrariumWPF
-            TerrariumWPF.App app = new TerrariumWPF.App();
-            app.InitializeComponent();
-            app.Run(new TerrariumWPF.MainWindow());
-        
+            MineCraftBookForm mcForm = new MineCraftBookForm();
+            mcForm.ShowDialog(); // Show the form as a modal dialog
         }
+
 
         public class CircleCheckBox : CheckBox 
         {
