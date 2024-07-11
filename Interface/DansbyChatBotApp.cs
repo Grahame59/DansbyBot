@@ -4,15 +4,11 @@ using Responses;
 using UserAuthentication;
 using System.Windows.Forms;
 using System.Drawing;
-using ChatbotApp;
-using RestSharp;
-using Newtonsoft.Json.Linq;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.Json;
-using Newtonsoft.Json;
-using System.Net.Http;
-using System.Text;
+using  ChatbotApp.Interface.MinecraftBook;
+
+
+//If I want my form to be borderless style (FormBorderStyle = None). 
+//This style removes the default window frame and control box (minimize, maximize, close buttons).
 
 //Color.FromArgb(84, 18, 194); // Set border color to purple (WANTED THEME OF PURPLE)
 
