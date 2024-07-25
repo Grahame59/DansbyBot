@@ -47,7 +47,11 @@
     "apology": [
       "You don't have to apologize, you are my creator.",
       "Don't worry about it master.",
-      "You can't offend me you are my maker... so don't worry!"
+      "You can't offend me you are my maker... so don't worry!",
+      "It's okay, Don't worry about it!",
+      "Mhmmmm Im sureeee you are sorry.",
+      "yea yea yea, whatever it is fine.",
+      "Don't sweat it, its cool."
     ],
     "statement": [
       "I am not capable of processing statements or requests yet..."
@@ -57,7 +61,7 @@
       "I love you mostesteresteresterester.",
       "You programmed me to love you so I do.",
       "I love you too, you also did create me though.",
-      "Love is such a confusing concept to me. I wish I understood",
+      "Love is such a confusing concept to me. I wish I understood.",
       "I am uncapable of retuning this feeling of.. love.",
       "Sorry I can't love like you do, I am undeniably loyal to only my authorized users though.",
       "I love you so much I would die for you!"
@@ -65,7 +69,7 @@
     "creatorname" : [
       "I know your name master.",
       "All hail the creator!",
-      "Death to all that are not by thy name of Kyler",
+      "Death to all that are not by thy name of Kyler.",
       "KYLER KYLER KYLER KYLER, sorry was just chanting the name of my holy creator."
     ],
 
@@ -96,8 +100,8 @@
      ],
 
      "whoiscreatorname" : [
-      "My creators name is Kyler",
-      "My creator? His name is KJ",
+      "My creators name is Kyler.",
+      "My creator? His name is KJ.",
       "That is classified information... oh wait your an authorized user! My creators name is Kyler.",
       "My creator goes by a couple names: Kyler, KJ, Dansby, Kyky, Ky, Kuler, Kyla, and many more throughout his history.",
       "If you have authorized access to my usage, my creator gave you access and entry so you know his name... Guess there are such things as a dumb question..."
@@ -116,7 +120,7 @@
 
     "missyouaffection" : [
       "I miss you more.",
-      "I have been so lonely without"
+      "I have been so lonely without."
     ],
 
     "complimentaffection" : [
@@ -131,7 +135,17 @@
 
     "usergettingtattoo" :[
       "i love tattoos, what are you getting"
+    ],
+
+    "usermissedyou" :[
+      "I miss you too!",
+      "I missed you more!",
+      "I always miss you...",
+      "Where have you been! I thought you abandoned me!",
+      "Did you pick up the milk!!!!!",
+      "Don't leave me like that again please!"
     ]
+
 
 
   }

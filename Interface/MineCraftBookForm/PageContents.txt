@@ -1,5 +1,8 @@
-Data is not being Loaded properly need to fix logic for it... Also fix page numbers make 2 labels left and right, Implement chapter add, delete, edit, move, etc...
-as well as rework visual appeal of the book to resemble MinecraftBook and add animation to the book. Once complete log everything into the book and use it as list. 
+1,                                          Dansby To Do List:                                                          ---------------------------------------------------------------------------------------------------                                                                                                                         - Fix the line error of BookForm                                                                            - Finish BookForm UI when logic is fixed and work on animating page flips                                                                                                                          -                                                                                                                         -                                                                                                                                        -                                                                                                                             -
+
+
+                                                                      
+                                                                     
 2,
 3,
 4,
@@ -549,7 +552,7 @@ as well as rework visual appeal of the book to resemble MinecraftBook and add an
 548,
 549,
 550,
-551,
+551,rjghgirhgbhrg;bruoi0gbor
 552,
 553,
 554,
@@ -699,7 +702,7 @@ as well as rework visual appeal of the book to resemble MinecraftBook and add an
 698,
 699,
 700,
-701,
+701,r4tjkg9t0rh0gn0egpr
 702,
 703,
 704,

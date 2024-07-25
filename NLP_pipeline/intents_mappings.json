@@ -2546,5 +2546,280 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "usermissedyou",
+    "Examples": [
+      {
+        "Utterance": "I missed you",
+        "Tokens": [
+          "I",
+          "missed",
+          "you"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "usermissedyou",
+    "Examples": [
+      {
+        "Utterance": "i missed you",
+        "Tokens": [
+          "i",
+          "missed",
+          "you"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "helllooooo",
+        "Tokens": [
+          "helllooooo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "hellloooooo",
+        "Tokens": [
+          "hellloooooo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "hellllooooo",
+        "Tokens": [
+          "hellllooooo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "helllllooooooooo",
+        "Tokens": [
+          "helllllooooooooo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "helloooooo",
+        "Tokens": [
+          "helloooooo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "helloo",
+        "Tokens": [
+          "helloo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "hellooo",
+        "Tokens": [
+          "hellooo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "yo",
+        "Tokens": [
+          "yo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "yooo",
+        "Tokens": [
+          "yooo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "ayooo",
+        "Tokens": [
+          "ayooo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "ayo",
+        "Tokens": [
+          "ayo"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "wassup",
+        "Tokens": [
+          "wassup"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "help",
+    "Examples": [
+      {
+        "Utterance": "what can u do",
+        "Tokens": [
+          "what",
+          "can",
+          "u",
+          "do"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "help",
+    "Examples": [
+      {
+        "Utterance": "what r u capable of",
+        "Tokens": [
+          "what",
+          "r",
+          "u",
+          "capable",
+          "of"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "date",
+    "Examples": [
+      {
+        "Utterance": "date?",
+        "Tokens": [
+          "date"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "time",
+    "Examples": [
+      {
+        "Utterance": "time?",
+        "Tokens": [
+          "time"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "complimentaffection",
+    "Examples": [
+      {
+        "Utterance": "ur pretty cool",
+        "Tokens": [
+          "ur",
+          "pretty",
+          "cool"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "complimentaffection",
+    "Examples": [
+      {
+        "Utterance": "ur a cool dude Dans",
+        "Tokens": [
+          "ur",
+          "a",
+          "cool",
+          "dude",
+          "Dans"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "complimentaffection",
+    "Examples": [
+      {
+        "Utterance": "ur a cool guy",
+        "Tokens": [
+          "ur",
+          "a",
+          "cool",
+          "guy"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "complimentaffection",
+    "Examples": [
+      {
+        "Utterance": "ur splendid",
+        "Tokens": [
+          "ur",
+          "splendid"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "complimentaffection",
+    "Examples": [
+      {
+        "Utterance": "u rock!",
+        "Tokens": [
+          "u",
+          "rock"
+        ]
+      }
+    ]
   }
 ]

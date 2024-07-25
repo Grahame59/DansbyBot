@@ -197,16 +197,19 @@ namespace ChatbotApp.Interface.MinecraftBook
 
                 foreach (string line in lines)
                 {
-                    string[] parts = line.Split(',');
+                    string[] parts = line.Split(',', 2); // Split into two parts, respecting commas in content
                     if (parts.Length == 2)
                     {
                         int page = int.Parse(parts[0]);
-                        string content = parts[1];
+                        string content = parts[1].Replace("\\n", "\n").Replace("\\r", "\r"); // Unescape newlines
                         if (page >= 1 && page <= maxChapters * pagesPerChapter)
                         {
                             int chapterIndex = (page - 1) / pagesPerChapter;
                             int localPageIndex = (page - 1) % pagesPerChapter;
                             chapters[chapterIndex][localPageIndex] = content;
+                            
+                            // Debug log
+                            Console.WriteLine($"Loaded Page {page}: {content}");
                         }
                     }
                 }
@@ -223,10 +226,14 @@ namespace ChatbotApp.Interface.MinecraftBook
                     {
                         int globalPageNumber = i * pagesPerChapter + j + 1;
                         writer.WriteLine($"{globalPageNumber},{chapters[i][j]}");
+                        
+                        // Debug log
+                        Console.WriteLine($"Saved Page {globalPageNumber}: {chapters[i][j]}");
                     }
                 }
             }
         }
+
 
         private void NavigateToChapter(int chapterIndex)
         {
@@ -238,64 +245,63 @@ namespace ChatbotApp.Interface.MinecraftBook
         {
             if (currentPage >= 0 && currentPage < maxChapters * pagesPerChapter)
             {
-                int globalPageNumber = currentPage + 1;
                 int chapterIndex = currentPage / pagesPerChapter;
                 int localPageIndex = currentPage % pagesPerChapter;
 
-                pageNumberLabel.Text = $"Chapter {chapterIndex + 1} - Page {globalPageNumber}";
+                pageNumberLabel.Text = $"Chapter {chapterIndex + 1} - Page {localPageIndex + 1}";
 
                 foreach (Button button in chapterButtons)
                 {
                     button.Visible = false;
                 }
 
-                prevButton.Visible = true;
-                nextButton.Visible = true;
+                prevButton.Visible = currentPage > 0;
+                nextButton.Visible = currentPage < (maxChapters * pagesPerChapter) - 1;
                 returnButton.Visible = true;
 
-                if (localPageIndex < chapters[chapterIndex].Count)
+                // Left Page
+                leftPagePanel.Visible = true;
+                leftPagePanel.Controls.Clear();
+                RichTextBox leftPageTextBox = new RichTextBox
                 {
-                    leftPagePanel.Visible = true;
-                    leftPagePanel.Controls.Clear();
-                    RichTextBox leftPageTextBox = new RichTextBox
+                    Dock = DockStyle.Fill,
+                    Font = new Font("Arial", 12, FontStyle.Regular),
+                    ForeColor = Color.Black,
+                    Text = chapters[chapterIndex][localPageIndex]
+                };
+                leftPageTextBox.TextChanged += (sender, e) =>
+                {
+                    chapters[chapterIndex][localPageIndex] = leftPageTextBox.Text;
+                    SavePageData();
+                };
+                leftPagePanel.Controls.Add(leftPageTextBox);
+
+                // Right Page
+                if (localPageIndex + 1 < chapters[chapterIndex].Count)
+                {
+                    rightPagePanel.Visible = true;
+                    rightPagePanel.Controls.Clear();
+                    RichTextBox rightPageTextBox = new RichTextBox
                     {
                         Dock = DockStyle.Fill,
                         Font = new Font("Arial", 12, FontStyle.Regular),
                         ForeColor = Color.Black,
-                        Text = chapters[chapterIndex][localPageIndex]
+                        Text = chapters[chapterIndex][localPageIndex + 1]
                     };
-                    leftPageTextBox.TextChanged += (sender, e) =>
+                    rightPageTextBox.TextChanged += (sender, e) =>
                     {
-                        chapters[chapterIndex][localPageIndex] = leftPageTextBox.Text;
-                        SavePageData(); // Save data whenever text changes
+                        chapters[chapterIndex][localPageIndex + 1] = rightPageTextBox.Text;
+                        SavePageData();
                     };
-                    leftPagePanel.Controls.Add(leftPageTextBox);
-
-                    if (localPageIndex + 1 < chapters[chapterIndex].Count)
-                    {
-                        rightPagePanel.Visible = true;
-                        rightPagePanel.Controls.Clear();
-                        RichTextBox rightPageTextBox = new RichTextBox
-                        {
-                            Dock = DockStyle.Fill,
-                            Font = new Font("Arial", 12, FontStyle.Regular),
-                            ForeColor = Color.Black,
-                            Text = chapters[chapterIndex][localPageIndex + 1]
-                        };
-                        rightPageTextBox.TextChanged += (sender, e) =>
-                        {
-                            chapters[chapterIndex][localPageIndex + 1] = rightPageTextBox.Text;
-                            SavePageData(); // Save data whenever text changes
-                        };
-                        rightPagePanel.Controls.Add(rightPageTextBox);
-                    }
-                    else
-                    {
-                        rightPagePanel.Visible = false;
-                    }
+                    rightPagePanel.Controls.Add(rightPageTextBox);
+                }
+                else
+                {
+                    rightPagePanel.Visible = false;
                 }
             }
         }
+
 
 
         private void PrevButton_Click(object sender, EventArgs e)
