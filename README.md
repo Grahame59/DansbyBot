@@ -146,3 +146,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 7.25.24 - 12:49 am #1
 - Have been away and getting back into Dansby and Terrarium Project. NEED to finish the bookForm but its kinda making me want to rip my hair out so I am probably going to stop for the night here did a little work and then reverted a lot... Figured out the saving/loading error for Page Content is based off new line or edge case problems... Basically if a line isn't full of characters there is some kind of index error and it won't load the next line... Kinda dealing with it but spamming spaces right now lol. Finding this very boring so I am going to leave the bookForm behind for a bit and try to focus on Terrarium next session or maybe overall polishing for Dansby (He is pretty damn rough around the edges right now... ) Gonna attempt to list some things I need to do for Dansby in my BookForm. 
+
+# 7.27.24 - 1:21 am 
+- Fixed the multi line saving and loading error For the McBookForm... Going to look into animation for the bookform and style it for simulation...

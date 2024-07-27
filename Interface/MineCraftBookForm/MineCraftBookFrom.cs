@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Text;
 
 namespace ChatbotApp.Interface.MinecraftBook
 {
@@ -111,6 +112,21 @@ namespace ChatbotApp.Interface.MinecraftBook
             this.Paint += new PaintEventHandler(MineCraftBookForm_Paint);
         }
 
+        private void SetupRichTextBox(RichTextBox richTextBox)
+        {
+            richTextBox.AcceptsTab = true; // Allows the RichTextBox to recognize the Tab key
+
+            richTextBox.KeyPress += (sender, e) =>
+            {
+                if (e.KeyChar == (char)13) // 13 is the Enter key
+                {
+                    e.Handled = true;
+                    richTextBox.SelectedText = Environment.NewLine; // Replace with newline
+                }
+            };
+        }
+
+
         private void MineCraftBookForm_Paint(object sender, PaintEventArgs e)
         {
             // Custom drawing for form border
@@ -197,17 +213,18 @@ namespace ChatbotApp.Interface.MinecraftBook
 
                 foreach (string line in lines)
                 {
-                    string[] parts = line.Split(',', 2); // Split into two parts, respecting commas in content
+                    string[] parts = line.Split(new[] { ',' }, 2); // Split into two parts, respecting commas in content
                     if (parts.Length == 2)
                     {
                         int page = int.Parse(parts[0]);
-                        string content = parts[1].Replace("\\n", "\n").Replace("\\r", "\r"); // Unescape newlines
+                        // Unescape newlines and commas
+                        string content = parts[1].Replace("\\n", "\n").Replace("\\r", "\r").Replace("\\,", ",");
                         if (page >= 1 && page <= maxChapters * pagesPerChapter)
                         {
                             int chapterIndex = (page - 1) / pagesPerChapter;
                             int localPageIndex = (page - 1) % pagesPerChapter;
                             chapters[chapterIndex][localPageIndex] = content;
-                            
+
                             // Debug log
                             Console.WriteLine($"Loaded Page {page}: {content}");
                         }
@@ -216,23 +233,28 @@ namespace ChatbotApp.Interface.MinecraftBook
             }
         }
 
+
         private void SavePageData()
         {
-            using (StreamWriter writer = new StreamWriter(pageDataFile))
+            using (StreamWriter writer = new StreamWriter(pageDataFile, false, Encoding.UTF8))
             {
                 for (int i = 0; i < maxChapters; i++)
                 {
                     for (int j = 0; j < pagesPerChapter; j++)
                     {
                         int globalPageNumber = i * pagesPerChapter + j + 1;
-                        writer.WriteLine($"{globalPageNumber},{chapters[i][j]}");
+                        // Escape commas and newlines to preserve content structure
+                        string sanitizedContent = chapters[i][j].Replace(",", "\\,").Replace("\n", "\\n").Replace("\r", "\\r");
+                        writer.WriteLine($"{globalPageNumber},{sanitizedContent}");
                         
                         // Debug log
-                        Console.WriteLine($"Saved Page {globalPageNumber}: {chapters[i][j]}");
+                        Console.WriteLine($"Saved Page {globalPageNumber}: {sanitizedContent}");
                     }
                 }
             }
         }
+
+
 
 
         private void NavigateToChapter(int chapterIndex)
@@ -301,6 +323,7 @@ namespace ChatbotApp.Interface.MinecraftBook
                 }
             }
         }
+
 
 
 
