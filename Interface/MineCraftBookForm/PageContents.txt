@@ -1,5 +1,5 @@
-﻿1,                                          Dansby To Do List:                                                          ---------------------------------------------------------------------------------------------------                                                                                                                         - Fix the line error of BookForm                                                                            - Finish BookForm UI when logic is fixed and work on animating page flips                                                                                                                          -                                                                                                                         -                                                                                                                                        -                                                                                                                             -
-2,This is a test\n\nTEWTSTSTST
+﻿1,                                          Dansby To Do List:                                                          --------------------------------------------------------------------------------------------------\n\n- Fix the line error of BookForm\n- Finish BookForm UI when logic is fixed and work on animating page flips\n- \n- \n- \n- \n- \n- \n- \n- \n- \n     
+2,
 3,
 4,
 5,

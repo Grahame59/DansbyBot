@@ -2821,5 +2821,44 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "listcurrentuserlogininfo",
+    "Examples": [
+      {
+        "Utterance": "list user data",
+        "Tokens": [
+          "list",
+          "user",
+          "data"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "steveneasteregg",
+    "Examples": [
+      {
+        "Utterance": "who has the biggest weiner",
+        "Tokens": [
+          "who",
+          "has",
+          "the",
+          "biggest",
+          "weiner"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "testuserloginanddisplaydata",
+    "Examples": [
+      {
+        "Utterance": "testuserdataandlogin",
+        "Tokens": [
+          "testuserdataandlogin"
+        ]
+      }
+    ]
   }
 ]
