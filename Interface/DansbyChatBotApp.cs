@@ -4,7 +4,13 @@ using Responses;
 using UserAuthentication;
 using System.Windows.Forms;
 using System.Drawing;
-using  ChatbotApp.Interface.MinecraftBook;
+using ChatbotApp.Interface.MinecraftBook;
+using NAudio.Wave;
+using System.Collections.Generic;
+using System.Windows.Media.Animation; // NAudio namespace
+using System.IO;
+using NAudio.Wave;
+
 
 
 //If I want my form to be borderless style (FormBorderStyle = None). 
@@ -34,10 +40,22 @@ namespace ChatbotApp
         private UserManager userManager;
         public bool isUserInputForColor = false;
 
+        //All Audio Variables
+
+        private WaveOutEvent outputDevice; //audio playback
+        private AudioFileReader audioFile; //read audio files
+        private bool isMuted = false; // mute/unmute state
+        private List<string> soundtracks; //List of soundtrack file paths
+        private ComboBox soundtrackComboBox; // Dropdown for soundtracks
+        private Button playButton; // Play/Stop button
+        private Button muteButton; // Mute/Unmute button
+
+
         public MainForm()
         {
             InitializeComponent();
             InitializeChatbot();
+            //LoadSoundtracks();
         }
 
         private void InitializeComponent()
@@ -119,7 +137,7 @@ namespace ChatbotApp
             sidebar.Controls.Add(appButton1);
 
             Button appButton2 = new Button();
-            appButton2.Text = "Not Implemented";
+            appButton2.Text = "McBookForm(WIP)";
             appButton2.Size = new Size(180, 40);
             appButton2.Location = new Point(10, 70);
             appButton2.BackColor = Color.FromArgb(50, 50, 50);
@@ -129,7 +147,54 @@ namespace ChatbotApp
 
             // Add more buttons as needed
 
-            
+            // Soundtrack ComboBox
+            this.soundtrackComboBox = new ComboBox();
+            if (this.soundtrackComboBox == null) throw new Exception("soundtrackComboBox not initialized");
+            this.soundtrackComboBox.Location = new Point(50, 490);
+            this.soundtrackComboBox.Size = new Size(250, 20);
+            this.soundtrackComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.soundtrackComboBox.SelectedIndexChanged += SoundtrackComboBox_SelectedIndexChanged;
+            this.soundtrackComboBox.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            this.soundtrackComboBox.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+
+            // Load soundtracks into ComboBox
+            LoadSoundtracks();
+            if (soundtracks == null)
+            {
+                throw new Exception("Soundtracks list is null.");
+            }
+            foreach (var track in soundtracks)
+            {
+                if (track == null)
+                {
+                    throw new Exception("A track in the soundtracks list is null.");
+                }
+                this.soundtrackComboBox.Items.Add(Path.GetFileName(track));
+            }
+            if (soundtrackComboBox.Items.Count > 0)
+            {
+                soundtrackComboBox.SelectedIndex = 0; // Select the first track
+            }
+            // Play Button
+            this.playButton = new Button();
+            this.playButton.Location = new Point(310, 490);
+            this.playButton.Size = new Size(100, 27);
+            this.playButton.Text = "Play";
+            this.playButton.Click += new EventHandler(PlayButton_Click);
+            this.playButton.BackColor = Color.FromArgb(88, 86, 91);
+            this.playButton.ForeColor = Color.BlueViolet;
+            this.playButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+
+            // Mute Button
+            this.muteButton = new Button();
+            this.muteButton.Location = new Point(420, 490);
+            this.muteButton.Size = new Size(100, 27);
+            this.muteButton.Text = "Mute";
+            this.muteButton.Click += new EventHandler(MuteButton_Click);
+            this.muteButton.BackColor = Color.FromArgb(88, 86, 91);
+            this.muteButton.ForeColor = Color.BlueViolet;
+            this.muteButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+
 
             // MainForm
             this.ClientSize = new System.Drawing.Size(700, 580);
@@ -139,6 +204,9 @@ namespace ChatbotApp
             this.Controls.Add(this.loggedInUserLabel);
             this.Controls.Add(this.toggleSwitch); // Added the toggle switch
             this.Controls.Add(this.toggleLabel); // Added the label 
+            this.Controls.Add(this.soundtrackComboBox);
+            this.Controls.Add(this.playButton);
+            this.Controls.Add(this.muteButton);
 
             this.BackColor = Color.FromArgb(25,25,25);
             this.Text = "DansbyChatBot";
@@ -299,6 +367,151 @@ namespace ChatbotApp
                 this.Invalidate();
             }
         }
+
+        private void LoadSoundtracks()
+        {
+            try
+            {
+                // Calculate the project root path
+                string projectRoot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"E:\CODES\DansbyBot");
+
+                // Navigate to Resources\Soundtracks
+                string soundtrackPath = Path.Combine(projectRoot, "Resources", "Soundtracks");
+
+                // Check if the directory exists
+                if (!Directory.Exists(soundtrackPath))
+                {
+                    MessageBox.Show("The Soundtracks folder does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Load the soundtracks
+                soundtracks = new List<string>(Directory.GetFiles(soundtrackPath, "*.mp3"));
+                Console.WriteLine(soundtracks);
+
+                if (soundtracks.Count == 0)
+                {
+                    MessageBox.Show("No soundtracks found in the Soundtracks folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Add soundtracks to ComboBox
+                soundtrackComboBox.Items.Clear();
+                foreach (var track in soundtracks)
+                {
+                    soundtrackComboBox.Items.Add(Path.GetFileName(track));
+
+                    //DEBUG
+                    Console.WriteLine("Each SoundTracks Individual names: ", Path.GetFileName(track));
+                    Console.WriteLine("\n");
+                }
+                if (soundtrackComboBox.Items.Count > 0)
+                {
+                    soundtrackComboBox.SelectedIndex = 0; // Select the first track
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading soundtracks: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+        private void SoundtrackComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Change soundtrack
+            string selectedSoundtrack = soundtrackComboBox.SelectedItem.ToString();
+            PlaySoundtrack(selectedSoundtrack);
+        }
+
+        private void PlaySoundtrack(string filePath)
+        {
+            try
+            {
+                Console.WriteLine("Attempting to play: " + filePath);
+
+                StopPlayback(); // Stop any existing playback
+
+                // Check if file exists
+                if (!File.Exists(filePath))
+                {
+                    throw new FileNotFoundException("File not found: " + filePath);
+                }
+
+                audioFile = new AudioFileReader(filePath);
+                outputDevice = new WaveOutEvent();
+                outputDevice.Init(audioFile);
+                outputDevice.Play();
+                Console.WriteLine("Playback started.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error playing soundtrack: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Console.WriteLine("Exception: " + ex.ToString());
+            }
+        }
+
+
+
+        private void StopPlayback()
+        {
+            if (outputDevice != null)
+            {
+                outputDevice.Stop();
+                outputDevice.Dispose();
+                outputDevice = null;
+            }
+
+            if (audioFile != null)
+            {
+                audioFile.Dispose();
+                audioFile = null;
+            }
+        }
+
+
+        private void MuteButton_Click(object sender, EventArgs e)
+        {
+            if (outputDevice != null)
+            {
+                if (isMuted)
+                {
+                    outputDevice.Volume = 1.0f; // Restore volume
+                    muteButton.Text = "Mute";
+                }
+                else
+                {
+                    outputDevice.Volume = 0.0f; // Mute volume
+                    muteButton.Text = "Unmute";
+                }
+
+                isMuted = !isMuted;
+            }
+        }
+
+        private void PlayButton_Click(object sender, EventArgs e)
+        {
+            if (outputDevice == null || outputDevice.PlaybackState == PlaybackState.Stopped)
+            {
+                string selectedSoundtrack = soundtrackComboBox.SelectedItem.ToString();
+                PlaySoundtrack(selectedSoundtrack);
+                playButton.Text = "Stop";
+            }
+            else
+            {
+                StopPlayback();
+                playButton.Text = "Play";
+            }
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            StopPlayback();
+            base.OnFormClosing(e);
+        }
+    
+
 
 
     } //end of MainForm

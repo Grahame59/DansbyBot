@@ -149,3 +149,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 7.27.24 - 1:21 am 
 - Fixed the multi line saving and loading error For the McBookForm... Going to look into animation for the bookform and style it for simulation...
+
+# 7.31.24 - 3:56 pm 
+- Working on adding a soundtrack system to Dansby with the flexibility of changing tracks (Like a Game Menu would have...) Working on fixing the FilePath logiv for the tracks being loaded properly... I believe it is loading the independent files of the mp3's but I am unsure have to add more debugs... Running out of time in this session have to go to work now... Will fix next session and also need to rework the form positioning of the soundtrack button UI... most likely will move them and make them much prettier... 

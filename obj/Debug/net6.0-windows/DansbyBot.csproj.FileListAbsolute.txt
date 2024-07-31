@@ -168,3 +168,10 @@ E:\CODES\DansbyBot\obj\Debug\net6.0-windows\refint\DansbyBot.dll
 E:\CODES\DansbyBot\obj\Debug\net6.0-windows\DansbyBot.pdb
 E:\CODES\DansbyBot\obj\Debug\net6.0-windows\DansbyBot.genruntimeconfig.cache
 E:\CODES\DansbyBot\obj\Debug\net6.0-windows\ref\DansbyBot.dll
+E:\CODES\DansbyBot\bin\Debug\net6.0-windows\NAudio.dll
+E:\CODES\DansbyBot\bin\Debug\net6.0-windows\NAudio.Asio.dll
+E:\CODES\DansbyBot\bin\Debug\net6.0-windows\NAudio.Core.dll
+E:\CODES\DansbyBot\bin\Debug\net6.0-windows\NAudio.Midi.dll
+E:\CODES\DansbyBot\bin\Debug\net6.0-windows\NAudio.Wasapi.dll
+E:\CODES\DansbyBot\bin\Debug\net6.0-windows\NAudio.WinForms.dll
+E:\CODES\DansbyBot\bin\Debug\net6.0-windows\NAudio.WinMM.dll
