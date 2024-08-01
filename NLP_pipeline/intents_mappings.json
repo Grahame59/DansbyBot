@@ -2860,5 +2860,17 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "greetings",
+    "Examples": [
+      {
+        "Utterance": "Hi Dans",
+        "Tokens": [
+          "Hi",
+          "Dans"
+        ]
+      }
+    ]
   }
 ]
