@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Windows.Media.Animation; // NAudio namespace
 using System.IO;
 using NAudio.Wave;
+using NAudio.Midi;
 
 
 
@@ -49,6 +50,7 @@ namespace ChatbotApp
         private ComboBox soundtrackComboBox; // Dropdown for soundtracks
         private Button playButton; // Play/Stop button
         private Button muteButton; // Mute/Unmute button
+        public string SoundTrackPathGlobal = null;
 
 
         public MainForm()
@@ -70,19 +72,19 @@ namespace ChatbotApp
             
 
             // inputTextBox
-            this.inputTextBox.Location = new System.Drawing.Point(50, 524); // Moved to the bottom left
-            this.inputTextBox.Size = new System.Drawing.Size(500, 40); // Adjusted size
+            this.inputTextBox.Location = new System.Drawing.Point(35, 524); // Moved to the bottom left
+            this.inputTextBox.Size = new System.Drawing.Size(515, 40); // Adjusted size
             this.inputTextBox.BackColor = Color.FromArgb(88, 86, 91);//dark gray color
             this.inputTextBox.ForeColor = Color.White;
             this.inputTextBox.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right; // Anchored to the bottom, right and left
 
             // sendButton
             this.sendButton.Location = new System.Drawing.Point(560, 522); // Adjusted position
-            this.sendButton.Size = new System.Drawing.Size(100, 27); // Adjusted size
+            this.sendButton.Size = new System.Drawing.Size(105, 27); // Adjusted size
             this.sendButton.Text = "Send";
             this.sendButton.Click += new System.EventHandler(this.SendButton_Click);
             this.sendButton.BackColor = Color.FromArgb(88, 86, 91);//dark gray color
-            this.sendButton.ForeColor = Color.BlueViolet;
+            this.sendButton.ForeColor = Color.White;
             this.sendButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right; // Anchored to the bottom and right
 
             // chatRichTextBox
@@ -150,12 +152,12 @@ namespace ChatbotApp
             // Soundtrack ComboBox
             this.soundtrackComboBox = new ComboBox();
             if (this.soundtrackComboBox == null) throw new Exception("soundtrackComboBox not initialized");
-            this.soundtrackComboBox.Location = new Point(50, 490);
-            this.soundtrackComboBox.Size = new Size(250, 20);
+            this.soundtrackComboBox.Location = new Point(680,130);
+            this.soundtrackComboBox.Size = new Size(100, 20);
             this.soundtrackComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             this.soundtrackComboBox.SelectedIndexChanged += SoundtrackComboBox_SelectedIndexChanged;
-            this.soundtrackComboBox.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            this.soundtrackComboBox.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            this.soundtrackComboBox.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Anchor to the top and right
+            
 
             // Load soundtracks into ComboBox
             LoadSoundtracks();
@@ -177,27 +179,27 @@ namespace ChatbotApp
             }
             // Play Button
             this.playButton = new Button();
-            this.playButton.Location = new Point(310, 490);
+            this.playButton.Location = new Point(680, 50);
             this.playButton.Size = new Size(100, 27);
             this.playButton.Text = "Play";
             this.playButton.Click += new EventHandler(PlayButton_Click);
             this.playButton.BackColor = Color.FromArgb(88, 86, 91);
-            this.playButton.ForeColor = Color.BlueViolet;
-            this.playButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            this.playButton.ForeColor = Color.White;
+            this.playButton.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Anchor to the top and right
 
             // Mute Button
             this.muteButton = new Button();
-            this.muteButton.Location = new Point(420, 490);
+            this.muteButton.Location = new Point(680, 90);
             this.muteButton.Size = new Size(100, 27);
             this.muteButton.Text = "Mute";
             this.muteButton.Click += new EventHandler(MuteButton_Click);
             this.muteButton.BackColor = Color.FromArgb(88, 86, 91);
-            this.muteButton.ForeColor = Color.BlueViolet;
-            this.muteButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            this.muteButton.ForeColor = Color.White;
+            this.muteButton.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Anchor to the top and right
 
 
             // MainForm
-            this.ClientSize = new System.Drawing.Size(700, 580);
+            this.ClientSize = new System.Drawing.Size(800, 580);
             this.Controls.Add(this.inputTextBox);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.chatRichTextBox);
@@ -377,6 +379,9 @@ namespace ChatbotApp
 
                 // Navigate to Resources\Soundtracks
                 string soundtrackPath = Path.Combine(projectRoot, "Resources", "Soundtracks");
+                SoundTrackPathGlobal = soundtrackPath;
+
+                //MessageBox.Show("DEBUG: " + soundtrackPath);
 
                 // Check if the directory exists
                 if (!Directory.Exists(soundtrackPath))
@@ -387,7 +392,15 @@ namespace ChatbotApp
 
                 // Load the soundtracks
                 soundtracks = new List<string>(Directory.GetFiles(soundtrackPath, "*.mp3"));
-                Console.WriteLine(soundtracks);
+                //Console.WriteLine(soundtracks);
+
+
+                //DEBUG -----------------------------------------------------------------------------------------------------
+                /*
+                MessageBox.Show("Soundtrack amount: " + soundtracks.Count + "\nSoundtrack Paths: " + soundtrackPath + "\nSoundtrack Project Root: " + projectRoot);
+                */
+                //DEBUG -----------------------------------------------------------------------------------------------------
+
 
                 if (soundtracks.Count == 0)
                 {
@@ -402,8 +415,8 @@ namespace ChatbotApp
                     soundtrackComboBox.Items.Add(Path.GetFileName(track));
 
                     //DEBUG
-                    Console.WriteLine("Each SoundTracks Individual names: ", Path.GetFileName(track));
-                    Console.WriteLine("\n");
+                    //Console.WriteLine("Each SoundTracks Individual names: ", Path.GetFileName(track));
+                    //Console.WriteLine("\n");
                 }
                 if (soundtrackComboBox.Items.Count > 0)
                 {
@@ -427,6 +440,10 @@ namespace ChatbotApp
 
         private void PlaySoundtrack(string filePath)
         {
+
+            filePath = Path.Combine(SoundTrackPathGlobal, filePath);
+
+            //MessageBox.Show("FilePath: " + filePath);
             try
             {
                 Console.WriteLine("Attempting to play: " + filePath);
@@ -442,6 +459,18 @@ namespace ChatbotApp
                 audioFile = new AudioFileReader(filePath);
                 outputDevice = new WaveOutEvent();
                 outputDevice.Init(audioFile);
+
+                // Attach the PlaybackStopped event to loop the track
+                outputDevice.PlaybackStopped += (s, a) => 
+                {
+                    if (outputDevice != null && outputDevice.PlaybackState == PlaybackState.Stopped)
+                    {
+                        // Restart the track
+                        outputDevice.Init(audioFile);
+                        outputDevice.Play();
+                    }
+                };
+
                 outputDevice.Play();
                 Console.WriteLine("Playback started.");
             }
