@@ -392,7 +392,12 @@ namespace ChatbotApp
 
                 // Load the soundtracks
                 soundtracks = new List<string>(Directory.GetFiles(soundtrackPath, "*.mp3"));
-                //Console.WriteLine(soundtracks);
+
+                for (int i = 0; i < soundtracks.Count; i++)
+                {
+                    Console.WriteLine(soundtracks[i]);
+                }
+                
 
 
                 //DEBUG -----------------------------------------------------------------------------------------------------
@@ -466,7 +471,7 @@ namespace ChatbotApp
                     if (outputDevice != null && outputDevice.PlaybackState == PlaybackState.Stopped)
                     {
                         // Restart the track
-                        outputDevice.Init(audioFile);
+                        audioFile.Position = 0; // Rewind the audio file
                         outputDevice.Play();
                     }
                 };
