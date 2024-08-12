@@ -12,6 +12,7 @@ namespace Intents
     {
         private MainForm mainform;
         private List<Intent> intents;
+        private string lastIntent;
         private Tokenizer tokenizer;
         private functionHoldings FunctionScript;
         public IntentRecognizer(MainForm mainform)
@@ -21,6 +22,7 @@ namespace Intents
             // Initialize intent mappings
             intents = LoadIntents();
             tokenizer = new Tokenizer();
+            lastIntent = null; //Initialize last intent as null upon opening usage
         }
 
         public void AddIntent(Intent intent)
@@ -71,12 +73,14 @@ namespace Intents
                             break;
                         }
                     }
-                    if (match) //this is the intent match to the functions script, implement functions below in the switch case
+                    if (match) //this is the intent match to the functions script, implemented functions below in the switch case
                     {
+
                         // Call PerformIntentAction
                         PerformIntentAction(mainform, intent.Name, userInput);
                         // Return the recognized intent name
                         return intent.Name;
+                        
                     }
                 }
             }
@@ -110,7 +114,7 @@ namespace Intents
         }
 
         //functions from intents if an intentName is recognized that is not mapped to a response
-        private string PerformIntentAction(MainForm mainform,string intentName, string userInput)
+        private string PerformIntentAction(MainForm mainform, string intentName, string userInput)
         {
             // Perform specific action based on recognized intent
             switch (intentName.ToLower()) //switch intent name to lowercase for function matches to ensure match
@@ -118,6 +122,7 @@ namespace Intents
                 //Functions/methods under the cases
                 case "performexitdansby":
                     FunctionScript.PerformExitDansby();
+                    lastIntent = intentName.ToLower();
                     return "exiting application...";
 
                 //case "method2":
@@ -126,42 +131,55 @@ namespace Intents
                 
                 case "listallfunctions" : 
                     FunctionScript.ListAllFunctions();
+                    lastIntent = intentName.ToLower();
                     return "Listing All Functions: ";
 
                 case "time" :
-                    FunctionScript.GetTime(); 
-                    return "The time.";
+
+                    if (intentName == lastIntent)
+                    {
+                        string currentTime = DateTime.Now.ToString("h:mm tt");
+                        mainform.AppendToChatHistory("You just asked me the time you bafoon... It is " + currentTime + ".");
+                        return "time repeated";
+                    }
+                    else
+                    {
+                        FunctionScript.GetTime();
+                        lastIntent = intentName.ToLower();
+
+                        return "The time.";
+                    }
 
                 case "date" :
+
+                    if (intentName == lastIntent)
+                    {
+                        string currentDate = DateTime.Now.ToString("MMMM dd, yyyy");
+                        mainform.AppendToChatHistory("You just asked me the date... It hasn't changed but it is " + currentDate + ".");
+                        return "date repeated.";
+                    }
+                    else 
+                    {
                     FunctionScript.GetDate();
+                    lastIntent = intentName.ToLower();
+                
                     return "The date.";
+                    }     
 
                 case "dayofweek" :
                     FunctionScript.GetDayOfTheWeek();
+                    lastIntent = intentName.ToLower();
                     return "The day of the week. "; 
 
-                case "subtraction" : 
-                    FunctionScript.DoSubtraction();
-                    return "Does subtraction of two doubles";
-
-                case "multiplication" :
-                    FunctionScript.DoMultiplication();
-                    return " Does Multiplication of two doubles.";
-
-                case "division" : 
-                    FunctionScript.DoDivision();
-                    return " Does Divison of two doubles.";
-
-                case "addition" :
-                    FunctionScript.DoAddition();
-                    return "Does addition of two doubles. ";   
-
+                
                 case "getcurrentusername" :
                     FunctionScript.GetCurrentUserName();
+                    lastIntent = intentName.ToLower();
                     return "Pulls the current Users username and prints it";    
                 
                 case "listcurrentuserlogininfo" :
                     FunctionScript.ListCurrentUserData();
+                    lastIntent = intentName.ToLower();
                     return "Pulls and lists the data of the current user who is logged in";
 
                 case "testuserloginanddisplaydata" :
@@ -176,46 +194,8 @@ namespace Intents
                     //Console.WriteLine("Whats the Password for that username?");
 
                     FunctionScript.TestUserLoginAndDisplayData(testUser, testPass);
+                    lastIntent = intentName.ToLower();
                     return "Debugging user data info";
-
-                case "runmontecarlosimulation" : 
-
-                    //FunctionScript.RunMonteCarloSimulation
-                    return "Running a Simulation that renders and estimates the size of a sphere inside a cube.";
-                
-                //All List Intent Fucntions
-                
-                case "createlist":
-                    //Console.WriteLine("Enter the name of the new  list:");
-                    string listName = mainform.SaveResponse("Enter the name of the new lsit: ");
-                    FunctionScript.CreateList(listName);
-                    return "Creating new list called: " + listName;
-
-                case "additem":
-                    Console.WriteLine("Enter the name of the  list:");
-                    listName = Console.ReadLine();
-                    Console.WriteLine("Enter the item to add:");
-                    string item = Console.ReadLine();
-                    FunctionScript.AddItemToList(listName, item);
-                    return "Adding item to to-do list.";
-
-                case "removeitem":
-                    Console.WriteLine("Enter the name of the list:");
-                    listName = Console.ReadLine();
-                    Console.WriteLine("Enter the item to remove from the list:");
-                    item = Console.ReadLine();
-                    FunctionScript.RemoveItemFromList(listName, item);
-                    return "Removing item from list.";
-
-                case "displaylist":
-                    Console.WriteLine("Enter the name of the list:");
-                    listName = Console.ReadLine();
-                    FunctionScript.DisplayList(listName);
-                    return "Displaying list.";
-
-                case "listalllists":
-                    FunctionScript.ListAllLists();
-                    return "Listing all lists.";
 
                 //if intent is not defined
                 default:

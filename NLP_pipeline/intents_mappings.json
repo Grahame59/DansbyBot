@@ -2872,5 +2872,18 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "listallfunctions",
+    "Examples": [
+      {
+        "Utterance": "list all fucntions",
+        "Tokens": [
+          "list",
+          "all",
+          "fucntions"
+        ]
+      }
+    ]
   }
 ]

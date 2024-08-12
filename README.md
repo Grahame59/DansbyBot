@@ -155,3 +155,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 8.9.24 - 3:58 pm 
 - Fixed the soundtracks not playing by caring FilePath root in a public variable... And then using Path.Combine to get the full filePath for multiple soundtracks. Reworking the form to be more visually appealing now before I commit... Reworked the MainFrom Aesthetic as well as added some more variety of soundtracks... Have the double output for soundtracks like I did with my functions... This error is HAUNTING ME... 
+
+# 8.12.24 - 6:43 pm
+- Added some context through saving lastIntents in the IntentRecognizer script... Dansby can now respond to repeated dates and repeated times with snarky answers b/c why would you repeat that intentAction.
