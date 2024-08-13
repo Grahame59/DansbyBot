@@ -2885,5 +2885,17 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "summonslime",
+    "Examples": [
+      {
+        "Utterance": "summon slime",
+        "Tokens":[
+          "summon",
+          "slime"
+        ]
+      }
+    ]
   }
 ]

@@ -17,6 +17,7 @@ namespace Intents
         private string lastIntent;
         private Tokenizer tokenizer;
         private functionHoldings FunctionScript;
+        
         public IntentRecognizer(MainForm mainform)
         {
             this.mainform = mainform; // Assign the passed MainForm instance
@@ -208,6 +209,11 @@ namespace Intents
                     FunctionScript.TestUserLoginAndDisplayData(testUser, testPass);
                     lastIntent = intentName.ToLower();
                     return "Debugging user data info";
+
+                case "summonslime" :
+                    mainform.SummonSlime();
+                    lastIntent = intentName.ToLower();
+                    return "Summons the Slime";
 
                 //if intent is not defined
                 default:

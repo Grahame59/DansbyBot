@@ -158,3 +158,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 8.12.24 - 6:43 pm
 - Added some context through saving lastIntents in the IntentRecognizer script... Dansby can now respond to repeated dates and repeated times with snarky answers b/c why would you repeat that intentAction.
+
+# 8.13.24 - 12:56 pm
+- Added a little animated Slime that runs across the top of the RichTextBox and jumps. Plan on adding sounds to him and he randomly appears... Basically is just a little EasterEgg I implemented to learn some PictureBox Functionality through WinForms as well as animating gifs in and such... 

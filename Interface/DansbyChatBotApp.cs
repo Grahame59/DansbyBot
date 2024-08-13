@@ -52,12 +52,34 @@ namespace ChatbotApp
         private Button muteButton; // Mute/Unmute button
         public string SoundTrackPathGlobal = null;
 
+        //All Sprite Variables
+
+        private PictureBox spritePictureBox;
+        private Timer animationTimer;
+        private int spriteX, spriteY;
+        private string currentAnimation;
+        private Random random = new Random();
+        private Timer jumpTimer;
+        private bool isJumping;
+        private int jumpHeight = 20; // Adjust the height of the jump
+        private Timer SlimeTimer;
+        public int SlimeCount = 0;
+
+
 
         public MainForm()
         {
             InitializeComponent();
             InitializeChatbot();
-            //LoadSoundtracks();
+            LoadSoundtracks();
+
+            //Initalize Timer    
+            SlimeTimer = new Timer();
+            SlimeTimer.Interval = 1000; // 1 second
+            SlimeTimer.Tick += Timer_Tick;
+            SlimeTimer.Start();
+
+           
         }
 
         private void InitializeComponent()
@@ -97,7 +119,7 @@ namespace ChatbotApp
 
             // loggedInUserLabel
             this.loggedInUserLabel.Location = new System.Drawing.Point(50, 25); // Moved to the top left
-            this.loggedInUserLabel.Size = new System.Drawing.Size(250, 20); // Adjusted size
+            this.loggedInUserLabel.Size = new System.Drawing.Size(150, 20); // Adjusted size
             this.loggedInUserLabel.Text = "Logged in as: ";
             this.loggedInUserLabel.ForeColor = Color.White;
             this.loggedInUserLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left; // Anchored to the top and left
@@ -539,10 +561,182 @@ namespace ChatbotApp
             }
         }
 
+        public void SummonSlime()
+        {
+            spritePictureBox = new PictureBox
+            {
+                
+                Size = new Size(40,40), //Image Size
+                SizeMode = PictureBoxSizeMode.Zoom, //Image Scale
+                Location = new Point(10,10) //Start Position
+            };
+            this.Controls.Add(spritePictureBox);
+
+            // Initialize the Jump Timer
+            jumpTimer = new Timer
+            {
+                Interval = 150// Adjust the interval to control the jump speed
+            };
+            jumpTimer.Tick += JumpTimer_Tick;
+
+
+            // Initialize the Timer for animation
+            animationTimer = new Timer
+            {
+                Interval = 300// Adjust for speed
+            };
+            animationTimer.Tick += AnimationTimer_Tick;
+            animationTimer.Start();
+
+            // Set initial position
+            spriteX = 10;
+            spriteY = 10;
+            currentAnimation = "running"; // Default animation
+
+            // Load the initial GIF
+            LoadGifAnimation(currentAnimation);
+
+            //Layering for Slime Animation
+            spritePictureBox.BringToFront();
+            loggedInUserLabel.BringToFront();
+            toggleLabel.BringToFront();
+            toggleSwitch.BringToFront();
+        }
+
+        private void AnimationTimer_Tick(object sender, EventArgs e)
+        {
+        
+            // Speed Logic for X and Y axis of sprite Movement
+            spriteX += 4;
+
+            // Check for animation state
+            if (currentAnimation == "attack")
+            {
+                spriteX -= 4; //No Movement
+            }
+            else if (currentAnimation == "jump")
+            {
+                if (!isJumping)
+                {
+                    // Start the jump
+                    isJumping = true;
+                    jumpTimer.Start();
+                }
+            }
+
+            // Sprite Visibility when off Screen
+            spritePictureBox.Location = new Point(spriteX, spriteY);
+
+            if (spriteX > this.ClientSize.Width || spriteY > this.ClientSize.Height)
+            {
+                spritePictureBox.Visible = false;
+            }
+
+            int action = random.Next(1, 101);
+
+            if (action <= 10)
+            {
+                currentAnimation = "attack";
+            }
+            else if (action > 10 && action <= 30)
+            {
+                currentAnimation = "jump";
+            }
+            else
+            {
+                currentAnimation = "running";
+            }
+
+            LoadGifAnimation(currentAnimation);
+        }
+
+        private void LoadGifAnimation(string animation)
+        {
+            switch (animation)
+            {
+                case "attack":
+                    spritePictureBox.Image = Image.FromFile(@"E:\CODES\DansbyBot\Resources\SlimeAnimation\SlimeAttack.gif");
+                    break;
+                case "running":
+                    spritePictureBox.Image = Image.FromFile(@"E:\CODES\DansbyBot\Resources\SlimeAnimation\SlimeRun.gif");
+                    break;
+                case "jump":
+                    spritePictureBox.Image = Image.FromFile(@"E:\CODES\DansbyBot\Resources\SlimeAnimation\SlimeJump.gif");
+                    break;
+            }
+        }
+
+        private void JumpTimer_Tick(object sender, EventArgs e)
+        {
+            // Move up
+            spriteY -= 3; // Adjust the speed of upward movement
+            spriteX += 3;
+
+            // Check if sprite has reached the peak of the jump
+            if (spriteY <= 10 - jumpHeight)
+            {
+                // Change direction to fall
+                jumpTimer.Interval = 50; // Adjust the fall speed
+                jumpTimer.Tick -= JumpTimer_Tick;
+                jumpTimer.Tick += FallTimer_Tick;
+            }
+        }
+
+        private void FallTimer_Tick(object sender, EventArgs e)
+        {
+            // Move down
+            spriteY += 3; // Adjust the speed of downward movement
+            spriteX += 2;
+
+            // Check if sprite has returned to original position
+            if (spriteY >= 10)
+            {
+                // Reset the state
+                spriteY = 10;
+                isJumping = false;
+                jumpTimer.Stop();
+                jumpTimer.Interval = 50; // Reset the interval for the next jump
+                jumpTimer.Tick -= FallTimer_Tick;
+                jumpTimer.Tick += JumpTimer_Tick; // Restore the original tick event
+            }
+
+            spritePictureBox.Location = new Point(spriteX, spriteY);
+        }
+
+         private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Increment the SlimeCount every second
+            SlimeCount++;
+            Console.WriteLine("SlimeTimer = " + SlimeCount);
+
+             if (SlimeCount == 5)
+            {
+                SummonSlime();
+            } else if (SlimeCount == 457)
+            {
+                SummonSlime();
+            } else if (SlimeCount == 1578)
+            {
+                SummonSlime();
+            } else if (SlimeCount == 3457)
+            {
+                SummonSlime();
+            } else if (SlimeCount == 6746)
+            {
+                SummonSlime();
+            } else if (SlimeCount == 10000)
+            {   
+                SummonSlime();
+            }
+        }
+
+    
+
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             StopPlayback();
             base.OnFormClosing(e);
+            SlimeCount = 0; //reset Slime Timer
         }
     
 
