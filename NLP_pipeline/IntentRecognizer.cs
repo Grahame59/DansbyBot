@@ -5,6 +5,8 @@ using Newtonsoft.Json;
 using Tokenization;
 using Functions;
 using ChatbotApp;
+using System.Windows;
+using System.Reflection;
 
 namespace Intents
 {
@@ -121,9 +123,19 @@ namespace Intents
             {   
                 //Functions/methods under the cases
                 case "performexitdansby":
-                    FunctionScript.PerformExitDansby();
-                    lastIntent = intentName.ToLower();
-                    return "exiting application...";
+
+                if (lastIntent == null)
+                    {
+                        MessageBox.Show("You didn't even say Hi Master");
+                        FunctionScript.PerformExitDansby();
+                        return "Snarky Comment about no usage";
+
+                    } else
+                    {
+                        FunctionScript.PerformExitDansby();
+                        lastIntent = intentName.ToLower();
+                        return "exiting application...";
+                    }
 
                 //case "method2":
                     //... ; 
