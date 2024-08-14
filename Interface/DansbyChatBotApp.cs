@@ -7,10 +7,8 @@ using System.Drawing;
 using ChatbotApp.Interface.MinecraftBook;
 using NAudio.Wave;
 using System.Collections.Generic;
-using System.Windows.Media.Animation; // NAudio namespace
 using System.IO;
-using NAudio.Wave;
-using NAudio.Midi;
+
 
 
 
