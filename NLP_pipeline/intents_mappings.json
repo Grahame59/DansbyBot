@@ -2891,9 +2891,42 @@
     "Examples": [
       {
         "Utterance": "summon slime",
-        "Tokens":[
+        "Tokens": [
           "summon",
           "slime"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "openerrorlog",
+    "Examples": [
+      {
+        "Utterance": "Open Error Log",
+        "Tokens": [
+          "Open",
+          "Error",
+          "Log"
+        ]
+      },
+      {
+        "Utterance": "Open ErrorLog",
+        "Tokens": [
+          "Open",
+          "ErrorLog"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "openerrorlog",
+    "Examples": [
+      {
+        "Utterance": "open error log",
+        "Tokens": [
+          "open",
+          "error",
+          "log"
         ]
       }
     ]

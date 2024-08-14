@@ -8,6 +8,7 @@ using ChatbotApp.Interface.MinecraftBook;
 using NAudio.Wave;
 using System.Collections.Generic;
 using System.IO;
+using ChatbotApp.Interface.ErrorLog;
 
 
 
@@ -38,6 +39,7 @@ namespace ChatbotApp
         private ResponseRecognizer responseRecognizer;
         private UserManager userManager;
         public bool isUserInputForColor = false;
+        private ErrorLogForm errorLogForm;
 
         //All Audio Variables
 
@@ -70,6 +72,9 @@ namespace ChatbotApp
             InitializeComponent();
             InitializeChatbot();
             LoadSoundtracks();
+            OpenErrorLogForm(this);
+            errorLogForm = new ErrorLogForm();
+
 
             //Initalize Timer    
             SlimeTimer = new Timer();
@@ -167,32 +172,68 @@ namespace ChatbotApp
             appButton2.Click += AppButton2_Click;
             sidebar.Controls.Add(appButton2);
 
+            Button appButton3 = new Button();
+            appButton3.Text = "ErrorLog";
+            appButton3.Size = new Size(180,40);
+            appButton3.Location = new Point(10,120);
+            appButton2.BackColor = Color.FromArgb(50, 50, 50);
+            appButton2.ForeColor = Color.White;
+            appButton2.Click += AppButton2_Click;
+            sidebar.Controls.Add(appButton2);
+
             // Add more buttons as needed
 
             // Soundtrack ComboBox
-            this.soundtrackComboBox = new ComboBox();
-            if (this.soundtrackComboBox == null) throw new Exception("soundtrackComboBox not initialized");
-            this.soundtrackComboBox.Location = new Point(680,130);
-            this.soundtrackComboBox.Size = new Size(100, 20);
-            this.soundtrackComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.soundtrackComboBox.SelectedIndexChanged += SoundtrackComboBox_SelectedIndexChanged;
-            this.soundtrackComboBox.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Anchor to the top and right
-            
+            try
+            {
+                // Soundtrack ComboBox
+                this.soundtrackComboBox = new ComboBox();
+                if (this.soundtrackComboBox == null) throw new Exception("soundtrackComboBox not initialized");
+
+                this.soundtrackComboBox.Location = new Point(680, 130);
+                this.soundtrackComboBox.Size = new Size(100, 20);
+                this.soundtrackComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+                this.soundtrackComboBox.SelectedIndexChanged += SoundtrackComboBox_SelectedIndexChanged;
+                this.soundtrackComboBox.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Anchor to the top and right
+            }
+            catch (Exception ex)
+            {
+                // Log the error to the error log
+                errorLogForm.AppendToErrorLog(ex.Message, "MainForm.cs");
+                //MessageBox.Show("An error occurred: " + ex.Message);
+            }
 
             // Load soundtracks into ComboBox
             LoadSoundtracks();
-            if (soundtracks == null)
+
+            try
             {
-                throw new Exception("Soundtracks list is null.");
-            }
-            foreach (var track in soundtracks)
-            {
-                if (track == null)
+                if (soundtracks == null)
                 {
-                    throw new Exception("A track in the soundtracks list is null.");
+                    throw new Exception("Soundtracks list is null.");
                 }
-                this.soundtrackComboBox.Items.Add(Path.GetFileName(track));
+            } catch (Exception ex)
+            {
+                // Log the error to the error log
+                errorLogForm.AppendToErrorLog(ex.Message, "MainForm.cs");
+
             }
+
+            try 
+            {
+                foreach (var track in soundtracks)
+                {
+                    if (track == null)
+                    {
+                        throw new Exception("A track in the soundtracks list is null.");
+                    }
+                    this.soundtrackComboBox.Items.Add(Path.GetFileName(track));
+                }
+            } catch (Exception ex)
+            {
+                errorLogForm.AppendToErrorLog(ex.Message, "MainForm.cs");
+            }
+
             if (soundtrackComboBox.Items.Count > 0)
             {
                 soundtrackComboBox.SelectedIndex = 0; // Select the first track
@@ -324,17 +365,46 @@ namespace ChatbotApp
                 MessageBox.Show("Sidebar is not initialized!");
             }
         }
-        //Button for MonteCarloSim
+        //Button for MonteCarloSimForm
         private void AppButton1_Click(object sender, EventArgs e)
         {
              MonteCarloSimulationForm mcForm = new MonteCarloSimulationForm();
              mcForm.ShowDialog(); // Show the form as a modal dialog           
         }
-        //Button for McBookRecreation
+        //Button for McBookForm
         private void AppButton2_Click(object sender, EventArgs e)
         {
             MineCraftBookForm mcForm = new MineCraftBookForm();
             mcForm.ShowDialog(); // Show the form as a modal dialog
+        }
+        
+        //Button for ErrorLogForm
+        private void AppButton3_Click(object sender, EventArgs e)
+        {
+            OpenErrorLogForm(this);
+        }
+
+        public void OpenErrorLogForm(Form mainForm)
+        {
+            ErrorLogForm errorLogForm = new ErrorLogForm();
+
+            // Set manual positioning for the form
+            errorLogForm.StartPosition = FormStartPosition.Manual;
+
+            // Calculate the new position based on the main form's position and width
+            int newX = mainForm.Location.X + mainForm.Width;
+            int newY = mainForm.Location.Y;
+
+            // Ensure the form is still within screen bounds
+            var screen = Screen.FromControl(mainForm);
+            if (newX + errorLogForm.Width > screen.WorkingArea.Right)
+            {
+                newX = screen.WorkingArea.Right - errorLogForm.Width;
+            }
+
+            errorLogForm.Location = new Point(newX, newY);
+
+            errorLogForm.Show(); // Opens as a non-modal dialog, allowing interaction with the main form.
         }
 
 
@@ -421,14 +491,16 @@ namespace ChatbotApp
 
 
                 //DEBUG -----------------------------------------------------------------------------------------------------
-                /*
-                MessageBox.Show("Soundtrack amount: " + soundtracks.Count + "\nSoundtrack Paths: " + soundtrackPath + "\nSoundtrack Project Root: " + projectRoot);
-                */
+                string SoundTrackDebug1 = ("Soundtrack amount: " + soundtracks.Count + "\nSoundtrack Paths: " + soundtrackPath + "\nSoundtrack Project Root: " + projectRoot);
+                errorLogForm.AppendToErrorLog(SoundTrackDebug1, "MainForm.cs");
                 //DEBUG -----------------------------------------------------------------------------------------------------
 
 
                 if (soundtracks.Count == 0)
                 {
+                    //Debug
+                    string SoundTrackCountEmptyError = ("No soundtracks found in the Soundtracks folder. (soundtracks.Count = 0)");
+                    errorLogForm.AppendToErrorLog(SoundTrackCountEmptyError, "MainForm.cs");
                     MessageBox.Show("No soundtracks found in the Soundtracks folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -440,8 +512,9 @@ namespace ChatbotApp
                     soundtrackComboBox.Items.Add(Path.GetFileName(track));
 
                     //DEBUG
-                    //Console.WriteLine("Each SoundTracks Individual names: ", Path.GetFileName(track));
-                    //Console.WriteLine("\n");
+                    String SoundTrackDebug2TrackNames = ("Each SoundTracks Individual names: " + Path.GetFileName(track) + "\n");
+                    errorLogForm.AppendToErrorLog(SoundTrackDebug2TrackNames, "MainForm.cs");
+                    
                 }
                 if (soundtrackComboBox.Items.Count > 0)
                 {

@@ -161,3 +161,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 8.13.24 - 12:56 pm
 - Added a little animated Slime that runs across the top of the RichTextBox and jumps. Plan on adding sounds to him and he randomly appears... Basically is just a little EasterEgg I implemented to learn some PictureBox Functionality through WinForms as well as animating gifs in and such... 
+
+# 8.14.24 - 3:41 pm 
+- Been bouncing around polsihing little things here and there... But now working on a clean UI for a seperate form that logs all my Errors and Debugs and saves them so I can work on saving many past issues as well as fixing current errors... Got to go to work soon so this commit will most likely be the only one for today. :/ 

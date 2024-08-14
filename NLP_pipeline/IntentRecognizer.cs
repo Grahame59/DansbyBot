@@ -119,6 +119,7 @@ namespace Intents
         //functions from intents if an intentName is recognized that is not mapped to a response
         private string PerformIntentAction(MainForm mainform, string intentName, string userInput)
         {
+
             // Perform specific action based on recognized intent
             switch (intentName.ToLower()) //switch intent name to lowercase for function matches to ensure match
             {   
@@ -214,6 +215,10 @@ namespace Intents
                     mainform.SummonSlime();
                     lastIntent = intentName.ToLower();
                     return "Summons the Slime";
+
+                case "openerrorLog" :
+                    mainform.OpenErrorLogForm(mainform);
+                    return "Opens ErrorLog";
 
                 //if intent is not defined
                 default:
