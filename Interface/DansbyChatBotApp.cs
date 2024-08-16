@@ -39,7 +39,7 @@ namespace ChatbotApp
         private ResponseRecognizer responseRecognizer;
         private UserManager userManager;
         public bool isUserInputForColor = false;
-        private ErrorLogForm errorLogForm;
+        public ErrorLogForm errorLogForm;
 
         //All Audio Variables
 
@@ -63,7 +63,7 @@ namespace ChatbotApp
         private bool isJumping;
         private int jumpHeight = 20; // Adjust the height of the jump
         private Timer SlimeTimer;
-        public int SlimeCount = 0;
+        public static int SlimeCount = 0; //Will have to change from Static in future if I ever release more instances of MainForm
 
 
 
@@ -72,8 +72,8 @@ namespace ChatbotApp
             InitializeComponent();
             InitializeChatbot();
             LoadSoundtracks();
-            OpenErrorLogForm(this);
             errorLogForm = new ErrorLogForm();
+            OpenErrorLogForm(this);
 
 
             //Initalize Timer    
@@ -151,7 +151,9 @@ namespace ChatbotApp
             sidebar.Location = new Point(-200, 0); // Start off-screen
             sidebar.BackColor = Color.FromArgb(30, 30, 30);
             sidebar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            sidebar.BringToFront();
             this.Controls.Add(sidebar);
+            
 
             // Add buttons to the sidebar
             Button appButton1 = new Button();
@@ -176,64 +178,41 @@ namespace ChatbotApp
             appButton3.Text = "ErrorLog";
             appButton3.Size = new Size(180,40);
             appButton3.Location = new Point(10,120);
-            appButton2.BackColor = Color.FromArgb(50, 50, 50);
-            appButton2.ForeColor = Color.White;
-            appButton2.Click += AppButton2_Click;
-            sidebar.Controls.Add(appButton2);
+            appButton3.BackColor = Color.FromArgb(50, 50, 50);
+            appButton3.ForeColor = Color.White;
+            appButton3.Click += AppButton3_Click;
+            sidebar.Controls.Add(appButton3);
 
             // Add more buttons as needed
 
             // Soundtrack ComboBox
-            try
-            {
-                // Soundtrack ComboBox
-                this.soundtrackComboBox = new ComboBox();
-                if (this.soundtrackComboBox == null) throw new Exception("soundtrackComboBox not initialized");
+            this.soundtrackComboBox = new ComboBox();
 
-                this.soundtrackComboBox.Location = new Point(680, 130);
-                this.soundtrackComboBox.Size = new Size(100, 20);
-                this.soundtrackComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-                this.soundtrackComboBox.SelectedIndexChanged += SoundtrackComboBox_SelectedIndexChanged;
-                this.soundtrackComboBox.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Anchor to the top and right
-            }
-            catch (Exception ex)
-            {
-                // Log the error to the error log
-                errorLogForm.AppendToErrorLog(ex.Message, "MainForm.cs");
-                //MessageBox.Show("An error occurred: " + ex.Message);
-            }
-
+            this.soundtrackComboBox.Location = new Point(680, 130);
+            this.soundtrackComboBox.Size = new Size(100, 20);
+            this.soundtrackComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.soundtrackComboBox.SelectedIndexChanged += SoundtrackComboBox_SelectedIndexChanged;
+            this.soundtrackComboBox.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Anchor to the top and right
+            
             // Load soundtracks into ComboBox
             LoadSoundtracks();
 
-            try
-            {
-                if (soundtracks == null)
-                {
-                    throw new Exception("Soundtracks list is null.");
-                }
-            } catch (Exception ex)
+        
+            if (soundtracks == null)
             {
                 // Log the error to the error log
-                errorLogForm.AppendToErrorLog(ex.Message, "MainForm.cs");
-
+                errorLogForm.AppendToErrorLog("Soundtracks list is null.", "MainForm.cs");
             }
 
-            try 
+            foreach (var track in soundtracks)
             {
-                foreach (var track in soundtracks)
+                if (track == null)
                 {
-                    if (track == null)
-                    {
-                        throw new Exception("A track in the soundtracks list is null.");
-                    }
-                    this.soundtrackComboBox.Items.Add(Path.GetFileName(track));
+                    errorLogForm.AppendToErrorLog("A track in the soundtracks list is null.", "MainForm.cs");
                 }
-            } catch (Exception ex)
-            {
-                errorLogForm.AppendToErrorLog(ex.Message, "MainForm.cs");
+                this.soundtrackComboBox.Items.Add(Path.GetFileName(track));
             }
-
+                
             if (soundtrackComboBox.Items.Count > 0)
             {
                 soundtrackComboBox.SelectedIndex = 0; // Select the first track
@@ -369,7 +348,7 @@ namespace ChatbotApp
         private void AppButton1_Click(object sender, EventArgs e)
         {
              MonteCarloSimulationForm mcForm = new MonteCarloSimulationForm();
-             mcForm.ShowDialog(); // Show the form as a modal dialog           
+             mcForm.Show(); // Show the form as a non modal dialog           
         }
         //Button for McBookForm
         private void AppButton2_Click(object sender, EventArgs e)
@@ -386,7 +365,14 @@ namespace ChatbotApp
 
         public void OpenErrorLogForm(Form mainForm)
         {
-            ErrorLogForm errorLogForm = new ErrorLogForm();
+
+            if (errorLogForm == null)
+            {
+                // If errorLogForm is not initialized, log an error or initialize it
+                // For example:
+                errorLogForm = new ErrorLogForm();
+                errorLogForm.AppendToDebugLog("ErrorLogForm was not initialized and now should be.", "MainForm.cs");
+            }
 
             // Set manual positioning for the form
             errorLogForm.StartPosition = FormStartPosition.Manual;
@@ -462,69 +448,75 @@ namespace ChatbotApp
 
         private void LoadSoundtracks()
         {
-            try
+            
+            // Calculate the project root path
+            string projectRoot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"E:\CODES\DansbyBot");
+
+            // Navigate to Resources\Soundtracks
+            string soundtrackPath = Path.Combine(projectRoot, "Resources", "Soundtracks");
+            SoundTrackPathGlobal = soundtrackPath;
+
+            //MessageBox.Show("DEBUG: " + soundtrackPath);
+
+            // Check if the directory exists
+            if (!Directory.Exists(soundtrackPath))
             {
-                // Calculate the project root path
-                string projectRoot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"E:\CODES\DansbyBot");
+                MessageBox.Show("The Soundtracks folder does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-                // Navigate to Resources\Soundtracks
-                string soundtrackPath = Path.Combine(projectRoot, "Resources", "Soundtracks");
-                SoundTrackPathGlobal = soundtrackPath;
+            // Load the soundtracks
+            soundtracks = new List<string>(Directory.GetFiles(soundtrackPath, "*.mp3"));
 
-                //MessageBox.Show("DEBUG: " + soundtrackPath);
-
-                // Check if the directory exists
-                if (!Directory.Exists(soundtrackPath))
+            for (int i = 0; i < soundtracks.Count; i++)
+            {
+                string SoundtrackListing = (soundtracks[i]);
+                if (errorLogForm != null)
                 {
-                    MessageBox.Show("The Soundtracks folder does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    errorLogForm.AppendToDebugLog($"Soundtrack list upon Initialization: {SoundtrackListing}", "MainForm.cs");
                 }
-
-                // Load the soundtracks
-                soundtracks = new List<string>(Directory.GetFiles(soundtrackPath, "*.mp3"));
-
-                for (int i = 0; i < soundtracks.Count; i++)
-                {
-                    Console.WriteLine(soundtracks[i]);
-                }
+            }
                 
 
-
-                //DEBUG -----------------------------------------------------------------------------------------------------
+            if (errorLogForm != null) //Debug
+            {
                 string SoundTrackDebug1 = ("Soundtrack amount: " + soundtracks.Count + "\nSoundtrack Paths: " + soundtrackPath + "\nSoundtrack Project Root: " + projectRoot);
                 errorLogForm.AppendToErrorLog(SoundTrackDebug1, "MainForm.cs");
-                //DEBUG -----------------------------------------------------------------------------------------------------
+            }
 
 
-                if (soundtracks.Count == 0)
+            if (soundtracks.Count == 0)
+            {
+                //Debug
+                string SoundTrackCountEmptyError = ("No soundtracks found in the Soundtracks folder. (soundtracks.Count = 0)");
+                errorLogForm.AppendToErrorLog(SoundTrackCountEmptyError, "MainForm.cs");
+                MessageBox.Show("No soundtracks found in the Soundtracks folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Add soundtracks to ComboBox
+            soundtrackComboBox.Items.Clear();
+            foreach (var track in soundtracks)
+            {
+                soundtrackComboBox.Items.Add(Path.GetFileName(track));
+
+                if (errorLogForm != null)
                 {
-                    //Debug
-                    string SoundTrackCountEmptyError = ("No soundtracks found in the Soundtracks folder. (soundtracks.Count = 0)");
-                    errorLogForm.AppendToErrorLog(SoundTrackCountEmptyError, "MainForm.cs");
-                    MessageBox.Show("No soundtracks found in the Soundtracks folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                // Add soundtracks to ComboBox
-                soundtrackComboBox.Items.Clear();
-                foreach (var track in soundtracks)
-                {
-                    soundtrackComboBox.Items.Add(Path.GetFileName(track));
-
                     //DEBUG
                     String SoundTrackDebug2TrackNames = ("Each SoundTracks Individual names: " + Path.GetFileName(track) + "\n");
-                    errorLogForm.AppendToErrorLog(SoundTrackDebug2TrackNames, "MainForm.cs");
-                    
+                    errorLogForm.AppendToDebugLog(SoundTrackDebug2TrackNames, "MainForm.cs");
                 }
-                if (soundtrackComboBox.Items.Count > 0)
-                {
-                    soundtrackComboBox.SelectedIndex = 0; // Select the first track
-                }
+                
             }
-            catch (Exception ex)
+            if (soundtrackComboBox.Items.Count > 0)
             {
-                MessageBox.Show($"Error loading soundtracks: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                soundtrackComboBox.SelectedIndex = 0; // Select the first track
             }
+            if (soundtracks == null && errorLogForm != null)
+            {
+                errorLogForm.AppendToErrorLog("Error loading soundtracks", "Mainform.cs");
+            }
+            
         }
 
 
@@ -540,46 +532,46 @@ namespace ChatbotApp
         {
 
             filePath = Path.Combine(SoundTrackPathGlobal, filePath);
-
-            //MessageBox.Show("FilePath: " + filePath);
-            try
+            if (errorLogForm != null)
             {
-                Console.WriteLine("Attempting to play: " + filePath);
+                string filePathDebugString = ("FilePath: " + filePath); //debugLog
+                errorLogForm.AppendToDebugLog(filePathDebugString, "Mainform.cs");
+            }
 
-                StopPlayback(); // Stop any existing playback
+            StopPlayback(); // Stop any existing playback
 
-                // Check if file exists
-                if (!File.Exists(filePath))
+            // Check if file exists
+            if (!File.Exists(filePath))
+            {
+                if (errorLogForm != null)
                 {
-                    throw new FileNotFoundException("File not found: " + filePath);
+                    errorLogForm.AppendToErrorLog($"File not found: {filePath}", "Mainform.cs");
                 }
-
-                audioFile = new AudioFileReader(filePath);
-                outputDevice = new WaveOutEvent();
-                outputDevice.Init(audioFile);
-
-                // Attach the PlaybackStopped event to loop the track
-                outputDevice.PlaybackStopped += (s, a) => 
-                {
-                    if (outputDevice != null && outputDevice.PlaybackState == PlaybackState.Stopped)
-                    {
-                        // Restart the track
-                        audioFile.Position = 0; // Rewind the audio file
-                        outputDevice.Play();
-                    }
-                };
-
-                outputDevice.Play();
-                Console.WriteLine("Playback started.");
+                return;
             }
-            catch (Exception ex)
+
+            audioFile = new AudioFileReader(filePath);
+            outputDevice = new WaveOutEvent();
+            outputDevice.Init(audioFile);
+
+            // Attach the PlaybackStopped event to loop the track
+            outputDevice.PlaybackStopped += (s, a) => 
             {
-                MessageBox.Show($"Error playing soundtrack: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Console.WriteLine("Exception: " + ex.ToString());
+                if (outputDevice != null && outputDevice.PlaybackState == PlaybackState.Stopped)
+                {
+                    // Restart the track
+                    audioFile.Position = 0; // Rewind the audio file
+                    outputDevice.Play();
+                }
+            };
+
+            outputDevice.Play();
+            if (errorLogForm != null)
+            {
+                errorLogForm.AppendToDebugLog("Playback started for Soundtracks.", "MainForm.cs");
             }
+ 
         }
-
-
 
         private void StopPlayback()
         {
@@ -672,6 +664,7 @@ namespace ChatbotApp
             loggedInUserLabel.BringToFront();
             toggleLabel.BringToFront();
             toggleSwitch.BringToFront();
+            sidebar.BringToFront();
         }
 
         private void AnimationTimer_Tick(object sender, EventArgs e)
@@ -774,30 +767,37 @@ namespace ChatbotApp
             spritePictureBox.Location = new Point(spriteX, spriteY);
         }
 
-         private void Timer_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
             // Increment the SlimeCount every second
             SlimeCount++;
-            Console.WriteLine("SlimeTimer = " + SlimeCount);
+            string slimeSummonedDebug = "Slime Summoned.";
+            errorLogForm.UpdateSlimeCount(SlimeCount);
 
              if (SlimeCount == 5)
             {
                 SummonSlime();
+                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
             } else if (SlimeCount == 457)
             {
                 SummonSlime();
+                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
             } else if (SlimeCount == 1578)
             {
                 SummonSlime();
+                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
             } else if (SlimeCount == 3457)
             {
                 SummonSlime();
+                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
             } else if (SlimeCount == 6746)
             {
                 SummonSlime();
+                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
             } else if (SlimeCount == 10000)
             {   
                 SummonSlime();
+                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
             }
         }
 

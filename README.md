@@ -164,3 +164,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 8.14.24 - 3:41 pm 
 - Been bouncing around polsihing little things here and there... But now working on a clean UI for a seperate form that logs all my Errors and Debugs and saves them so I can work on saving many past issues as well as fixing current errors... Got to go to work soon so this commit will most likely be the only one for today. :/ 
+
+#8.16.24 - 3:06 am 
+- Just did a lot of bug fixing and some Ui changes, generally polishing. 
