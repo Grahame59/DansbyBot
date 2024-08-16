@@ -14,11 +14,30 @@ namespace ChatbotApp.Interface.ErrorLog
         private Label SlimeCountLabel;
         private Label SlimeCountLabel2;
         private List<ErrorLogEntry> errorLogEntries;
+        private Timer autoSaveTimer;
 
         public ErrorLogForm()
         {
             InitializeComponent();
+            
+            // Initialize the list first
             errorLogEntries = new List<ErrorLogEntry>();
+
+            // Load from existing JSON
+            LoadErrorLog();
+
+            //AppendToErrorLog("Open ErrorLog Test", "MainForm.cs");
+            AppendToDebugLog($"Number of error entries: {errorLogEntries.Count}", "ErrorLogForm.cs");
+            DebugAutoSave();
+
+            // Initialize and set up autosave timer
+            autoSaveTimer = new Timer();
+            autoSaveTimer.Interval = 60000; // 1 minute in milliseconds (60000 ms)
+            autoSaveTimer.Tick += AutoSaveTimer_Tick;
+            autoSaveTimer.Start();
+
+
+
         }
 
         private void InitializeComponent()
@@ -88,46 +107,99 @@ namespace ChatbotApp.Interface.ErrorLog
                 Script = script,
                 Error = error
             });
-            DebugAutoSave(); //Saves Errors or Debugs to chat 
+
+            // Set the caret position to the end of the text
+            errorTextBox.SelectionStart = errorTextBox.Text.Length;
+            errorTextBox.ScrollToCaret();  // Scroll to the caret
+
+            //Console.WriteLine("Error added to list. Current count: " + errorLogEntries.Count);
+            
         }
 
-        public void AppendToDebugLog(string script, string debug)
+        public void AppendToDebugLog(string debug, string script)
         {
             string dateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             string logEntry = $"[{dateTime}] [{script}] {debug}";
             errorTextBox.AppendText(logEntry + Environment.NewLine);
+
+            // Store the error in the list for saving
+            errorLogEntries.Add(new ErrorLogEntry
+            {
+                DateTime = dateTime,
+                Script = script,
+                Error = debug
+            });
+
+            // Set the caret position to the end of the text
+            errorTextBox.SelectionStart = errorTextBox.Text.Length;
+            errorTextBox.ScrollToCaret();  // Scroll to the caret
+
+            //Console.WriteLine("Error added to list. Current count: " + errorLogEntries.Count);
+
         }
 
         // Save log entries to a JSON file
         private void SaveButton_Click(object sender, EventArgs e)
         {
             DebugAutoSave();
-            System.Windows.Forms.MessageBox.Show("Error log saved to ErrorLog.json");
+        }
+
+        private void AutoSaveTimer_Tick(object sender, EventArgs e)
+        {
+            DebugAutoSave();
+            AppendToDebugLog("Debug: AutoSave triggered.", "ErrorLogForm.cs");
         }
 
         
         public void DebugAutoSave()
         {
+            try
+            {
+                //MessageBox.Show($"Entries count before saving: {errorLogEntries.Count}");
+                
+                if (errorLogEntries.Count == 0)
+                {
+                    AppendToDebugLog("Debug: No Entries to save", "ErrorLogForm.cs");
+                    return;
+                }
+                
+                string ErrorJson = @"E:\CODES\DansbyBot\Interface\ErrorLogForm\ErrorLog.json";    
+                string json = JsonConvert.SerializeObject(errorLogEntries, Formatting.Indented); 
+                
+                File.WriteAllText(ErrorJson, json);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to save error log: {ex.Message}");
+                AppendToErrorLog($"Error: Failed to save error log: {ex.ToString()}", "ErrorLogForm.cs");
+            }
+        }       
+        private void LoadErrorLog()
+        {
             string ErrorJson = @"E:\CODES\DansbyBot\Interface\ErrorLogForm\ErrorLog.json";
-            string json = JsonConvert.SerializeObject(errorLogEntries, Formatting.Indented);
-            File.WriteAllText(ErrorJson, json);
+            if (File.Exists(ErrorJson))
+            {
+                try
+                {
+                    string json = File.ReadAllText(ErrorJson);
+                    errorLogEntries = JsonConvert.DeserializeObject<List<ErrorLogEntry>>(json) ?? new List<ErrorLogEntry>();
+                    foreach (var entry in errorLogEntries)
+                    {
+                        string logEntry = $"[{entry.DateTime}] [{entry.Script}] {entry.Error}";
+                        errorTextBox.AppendText(logEntry + Environment.NewLine);
+                    }
+                    AppendToDebugLog("Debug: ErrorLog Loaded from Json upon initialization.", "ErrorLogForm.cs");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Failed to load error log: {ex.Message}");
+                }
+            }
         }
 
         public void UpdateSlimeCount(int slimeCount)
         {
             SlimeCountLabel2.Text = $"{slimeCount}";
-        }
-
-        private void Label_Paint(object sender, PaintEventArgs e)
-        {
-            Label label = sender as Label;
-            if (label != null)
-            {
-                using (Pen pen = new Pen(Color.Black, 2)) // Black border with 2px thickness
-                {
-                    e.Graphics.DrawRectangle(pen, 0, 0, label.Width - 1, label.Height - 1);
-                }
-            }
         }
 
     }

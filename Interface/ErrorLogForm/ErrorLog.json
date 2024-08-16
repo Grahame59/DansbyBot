@@ -1,1 +1,392 @@
-[]
+[
+  {
+    "DateTime": "2024-08-16 16:55:23",
+    "Script": "MainForm.cs",
+    "Error": "Open ErrorLog Test"
+  },
+  {
+    "DateTime": "2024-08-16 16:57:22",
+    "Script": "MainForm.cs",
+    "Error": "Open ErrorLog Test"
+  },
+  {
+    "DateTime": "2024-08-16 17:00:01",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-16 17:00:01",
+    "Script": "MainForm.cs",
+    "Error": "Open ErrorLog Test"
+  },
+  {
+    "DateTime": "2024-08-16 17:00:01",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 4"
+  },
+  {
+    "DateTime": "2024-08-16 17:00:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Serialized JSON: [\r\n  {\r\n    \"DateTime\": \"2024-08-16 16:55:23\",\r\n    \"Script\": \"MainForm.cs\",\r\n    \"Error\": \"Open ErrorLog Test\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 16:57:22\",\r\n    \"Script\": \"MainForm.cs\",\r\n    \"Error\": \"Open ErrorLog Test\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 17:00:01\",\r\n    \"Script\": \"ErrorLogForm.cs\",\r\n    \"Error\": \"Debug: ErrorLog Loaded from Json upon initialization.\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 17:00:01\",\r\n    \"Script\": \"MainForm.cs\",\r\n    \"Error\": \"Open ErrorLog Test\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 17:00:01\",\r\n    \"Script\": \"ErrorLogForm.cs\",\r\n    \"Error\": \"Number of error entries: 4\"\r\n  }\r\n]"
+  },
+  {
+    "DateTime": "2024-08-16 17:00:11",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-16 17:00:48",
+    "Script": "Mainform.cs",
+    "Error": "FilePath: E:\\CODES\\DansbyBot\\Resources\\Soundtracks\\ChillStroll.mp3"
+  },
+  {
+    "DateTime": "2024-08-16 17:00:48",
+    "Script": "MainForm.cs",
+    "Error": "Playback started for Soundtracks."
+  },
+  {
+    "DateTime": "2024-08-16 17:01:09",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Serialized JSON: [\r\n  {\r\n    \"DateTime\": \"2024-08-16 16:55:23\",\r\n    \"Script\": \"MainForm.cs\",\r\n    \"Error\": \"Open ErrorLog Test\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 16:57:22\",\r\n    \"Script\": \"MainForm.cs\",\r\n    \"Error\": \"Open ErrorLog Test\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 17:00:01\",\r\n    \"Script\": \"ErrorLogForm.cs\",\r\n    \"Error\": \"Debug: ErrorLog Loaded from Json upon initialization.\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 17:00:01\",\r\n    \"Script\": \"MainForm.cs\",\r\n    \"Error\": \"Open ErrorLog Test\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 17:00:01\",\r\n    \"Script\": \"ErrorLogForm.cs\",\r\n    \"Error\": \"Number of error entries: 4\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 17:00:05\",\r\n    \"Script\": \"ErrorLogForm.cs\",\r\n    \"Error\": \"Serialized JSON: [\\r\\n  {\\r\\n    \\\"DateTime\\\": \\\"2024-08-16 16:55:23\\\",\\r\\n    \\\"Script\\\": \\\"MainForm.cs\\\",\\r\\n    \\\"Error\\\": \\\"Open ErrorLog Test\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"DateTime\\\": \\\"2024-08-16 16:57:22\\\",\\r\\n    \\\"Script\\\": \\\"MainForm.cs\\\",\\r\\n    \\\"Error\\\": \\\"Open ErrorLog Test\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"DateTime\\\": \\\"2024-08-16 17:00:01\\\",\\r\\n    \\\"Script\\\": \\\"ErrorLogForm.cs\\\",\\r\\n    \\\"Error\\\": \\\"Debug: ErrorLog Loaded from Json upon initialization.\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"DateTime\\\": \\\"2024-08-16 17:00:01\\\",\\r\\n    \\\"Script\\\": \\\"MainForm.cs\\\",\\r\\n    \\\"Error\\\": \\\"Open ErrorLog Test\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"DateTime\\\": \\\"2024-08-16 17:00:01\\\",\\r\\n    \\\"Script\\\": \\\"ErrorLogForm.cs\\\",\\r\\n    \\\"Error\\\": \\\"Number of error entries: 4\\\"\\r\\n  }\\r\\n]\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 17:00:11\",\r\n    \"Script\": \"MainForm.cs\",\r\n    \"Error\": \"Slime Summoned.\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 17:00:48\",\r\n    \"Script\": \"Mainform.cs\",\r\n    \"Error\": \"FilePath: E:\\\\CODES\\\\DansbyBot\\\\Resources\\\\Soundtracks\\\\ChillStroll.mp3\"\r\n  },\r\n  {\r\n    \"DateTime\": \"2024-08-16 17:00:48\",\r\n    \"Script\": \"MainForm.cs\",\r\n    \"Error\": \"Playback started for Soundtracks.\"\r\n  }\r\n]"
+  },
+  {
+    "DateTime": "2024-08-16 17:01:09",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:03:13",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-16 17:03:13",
+    "Script": "MainForm.cs",
+    "Error": "Open ErrorLog Test"
+  },
+  {
+    "DateTime": "2024-08-16 17:03:13",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 13"
+  },
+  {
+    "DateTime": "2024-08-16 17:05:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-16 17:05:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 15"
+  },
+  {
+    "DateTime": "2024-08-16 17:05:47",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-16 17:05:52",
+    "Script": "Mainform.cs",
+    "Error": "FilePath: E:\\CODES\\DansbyBot\\Resources\\Soundtracks\\ChillStroll.mp3"
+  },
+  {
+    "DateTime": "2024-08-16 17:05:52",
+    "Script": "MainForm.cs",
+    "Error": "Playback started for Soundtracks."
+  },
+  {
+    "DateTime": "2024-08-16 17:05:55",
+    "Script": "Mainform.cs",
+    "Error": "FilePath: E:\\CODES\\DansbyBot\\Resources\\Soundtracks\\ChillStroll.mp3"
+  },
+  {
+    "DateTime": "2024-08-16 17:05:55",
+    "Script": "MainForm.cs",
+    "Error": "Playback started for Soundtracks."
+  },
+  {
+    "DateTime": "2024-08-16 17:06:10",
+    "Script": "Mainform.cs",
+    "Error": "FilePath: E:\\CODES\\DansbyBot\\Resources\\Soundtracks\\RainVillage.mp3"
+  },
+  {
+    "DateTime": "2024-08-16 17:06:10",
+    "Script": "MainForm.cs",
+    "Error": "Playback started for Soundtracks."
+  },
+  {
+    "DateTime": "2024-08-16 17:06:12",
+    "Script": "Mainform.cs",
+    "Error": "FilePath: E:\\CODES\\DansbyBot\\Resources\\Soundtracks\\HoundDogJazz.mp3"
+  },
+  {
+    "DateTime": "2024-08-16 17:06:12",
+    "Script": "MainForm.cs",
+    "Error": "Playback started for Soundtracks."
+  },
+  {
+    "DateTime": "2024-08-16 17:06:16",
+    "Script": "Mainform.cs",
+    "Error": "FilePath: E:\\CODES\\DansbyBot\\Resources\\Soundtracks\\XyloBubbles.mp3"
+  },
+  {
+    "DateTime": "2024-08-16 17:06:16",
+    "Script": "MainForm.cs",
+    "Error": "Playback started for Soundtracks."
+  },
+  {
+    "DateTime": "2024-08-16 17:06:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:07:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:08:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:09:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:10:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:11:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:12:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:13:21",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-16 17:13:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:14:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:15:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:16:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:17:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:18:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:19:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:20:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:21:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:22:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:23:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:24:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:25:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:26:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:27:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:28:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:29:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:30:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:31:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:32:04",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-16 17:32:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:32:50",
+    "Script": "Mainform.cs",
+    "Error": "FilePath: E:\\CODES\\DansbyBot\\Resources\\Soundtracks\\ChillStroll.mp3"
+  },
+  {
+    "DateTime": "2024-08-16 17:32:50",
+    "Script": "MainForm.cs",
+    "Error": "Playback started for Soundtracks."
+  },
+  {
+    "DateTime": "2024-08-16 17:33:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:42:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-16 17:42:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 60"
+  },
+  {
+    "DateTime": "2024-08-16 17:42:10",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-16 17:43:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:44:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:45:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:46:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:47:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:48:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:49:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:49:44",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-16 17:50:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:52:11",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-16 17:52:11",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 72"
+  },
+  {
+    "DateTime": "2024-08-16 17:52:16",
+    "Script": "Mainform.cs",
+    "Error": "FilePath: E:\\CODES\\DansbyBot\\Resources\\Soundtracks\\HoundDogJazz.mp3"
+  },
+  {
+    "DateTime": "2024-08-16 17:52:16",
+    "Script": "MainForm.cs",
+    "Error": "Playback started for Soundtracks."
+  },
+  {
+    "DateTime": "2024-08-16 17:52:16",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-16 17:53:11",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-16 17:54:11",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  }
+]

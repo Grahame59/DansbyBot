@@ -2930,5 +2930,45 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "summonslime",
+    "Examples": [
+      {
+        "Utterance": "summonslime",
+        "Tokens": [
+          "summonslime"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "summonslime",
+    "Examples": [
+      {
+        "Utterance": "Summon Slime",
+        "Tokens": [
+          "Summon",
+          "Slime"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "usercurrenttaskcodingondansby",
+    "Examples": [
+      {
+        "Utterance": "I am working on coding you more",
+        "Tokens": [
+          "I",
+          "am",
+          "working",
+          "on",
+          "coding",
+          "you",
+          "more"
+        ]
+      }
+    ]
   }
 ]

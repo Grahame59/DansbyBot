@@ -18,6 +18,7 @@ namespace Intents
         private Tokenizer tokenizer;
         private functionHoldings FunctionScript;
         
+        
         public IntentRecognizer(MainForm mainform)
         {
             this.mainform = mainform; // Assign the passed MainForm instance
@@ -78,6 +79,11 @@ namespace Intents
                     }
                     if (match) //this is the intent match to the functions script, implemented functions below in the switch case
                     {
+                        //if statement gate for lastIntent Logic
+                        if (lastIntent == "greet" && intent.Name == "currenttask")
+                        {
+                            //add logic for context here
+                        }
 
                         // Call PerformIntentAction
                         PerformIntentAction(mainform, intent.Name, userInput);
@@ -181,9 +187,25 @@ namespace Intents
                     }     
 
                 case "dayofweek" :
+                if (lastIntent == "time") //time and dayofweek
+                {
+                    string currentTime = DateTime.Now.ToString("h:mm tt");
+                    mainform.AppendToChatHistory("Dansby: The date of the week is " + DateTime.Today.DayOfWeek + " and the time is " + currentTime + "." );
+                    lastIntent = intentName.ToLower();
+                    return "The day of the week and the time. "; 
+                } else if (lastIntent == "date") //date and day of week
+                {
+                    string currentDate = DateTime.Now.ToString("MMMM dd, yyyy"); 
+                    mainform.AppendToChatHistory("Dansby: The date of the week is " + DateTime.Today.DayOfWeek + " and the date is " + currentDate + "." );
+                    lastIntent = intentName.ToLower();
+                    return "dayofweek and date ";
+                } else //dayofweek
+                {
                     FunctionScript.GetDayOfTheWeek();
                     lastIntent = intentName.ToLower();
                     return "The day of the week. "; 
+                }
+                    
 
                 
                 case "getcurrentusername" :
@@ -213,11 +235,21 @@ namespace Intents
 
                 case "summonslime" :
                     mainform.SummonSlime();
-                    lastIntent = intentName.ToLower();
-                    return "Summons the Slime";
+                    if (lastIntent != "summonslime")
+                    {
+                        lastIntent = intentName.ToLower();
+                        return "Summons the Slime";
+                    } else
+                    {
+                        mainform.AppendToChatHistory("Let it Rain Slimes!");
+                        mainform.SummonSlime();
+                      return "Summons the Slime with snarky comment";
+                    }
+                    
 
                 case "openerrorLog" :
                     mainform.OpenErrorLogForm(mainform);
+                    lastIntent = intentName.ToLower();
                     return "Opens ErrorLog";
 
                 //if intent is not defined
