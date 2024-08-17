@@ -2970,5 +2970,49 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "usercurrenttaskcodingondansby",
+    "Examples": [
+      {
+        "Utterance": "im working on improving your code",
+        "Tokens": [
+          "im",
+          "working",
+          "on",
+          "improving",
+          "your",
+          "code"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "usercurrenttaskcodingondansby",
+    "Examples": [
+      {
+        "Utterance": "working on improving your code",
+        "Tokens": [
+          "working",
+          "on",
+          "improving",
+          "your",
+          "code"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "complimentaffection",
+    "Examples": [
+      {
+        "Utterance": "ur the best",
+        "Tokens": [
+          "ur",
+          "the",
+          "best"
+        ]
+      }
+    ]
   }
 ]
