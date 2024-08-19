@@ -2253,5 +2253,160 @@
     "DateTime": "2024-08-17 03:04:35",
     "Script": "ErrorLogForm.cs",
     "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:07:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-18 03:07:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 452"
+  },
+  {
+    "DateTime": "2024-08-18 03:07:31",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-18 03:08:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:09:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:10:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:11:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:12:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:13:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:14:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:15:03",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-18 03:15:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:16:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:17:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:18:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:19:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:20:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:21:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:22:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:23:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:24:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:25:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:26:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:27:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:28:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:29:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:30:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:31:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:32:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:33:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-18 03:33:44",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
   }
 ]
