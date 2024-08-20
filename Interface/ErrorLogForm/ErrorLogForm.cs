@@ -4,6 +4,10 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ChatbotApp.Interface.ErrorLog
 {
@@ -15,6 +19,7 @@ namespace ChatbotApp.Interface.ErrorLog
         private Label SlimeCountLabel2;
         private List<ErrorLogEntry> errorLogEntries;
         private Timer autoSaveTimer;
+        private ErrorListener _errorListener;
 
         public ErrorLogForm()
         {
@@ -32,9 +37,12 @@ namespace ChatbotApp.Interface.ErrorLog
 
             // Initialize and set up autosave timer
             autoSaveTimer = new Timer();
-            autoSaveTimer.Interval = 60000; // 1 minute in milliseconds (60000 ms)
+            autoSaveTimer.Interval = 300000; // 1 minute in milliseconds (60000 ms) 5 mins in ms (300000)
             autoSaveTimer.Tick += AutoSaveTimer_Tick;
             autoSaveTimer.Start();
+
+            _errorListener = new ErrorListener(this);
+            _errorListener.Start();
 
 
 
@@ -96,6 +104,7 @@ namespace ChatbotApp.Interface.ErrorLog
         // Method to append errors to the log
         public void AppendToErrorLog(string error, string script)
         {
+            
             string dateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             string logEntry = $"[{dateTime}] [{script}] {error}";
             errorTextBox.AppendText(logEntry + Environment.NewLine);
@@ -113,7 +122,7 @@ namespace ChatbotApp.Interface.ErrorLog
             errorTextBox.ScrollToCaret();  // Scroll to the caret
 
             //Console.WriteLine("Error added to list. Current count: " + errorLogEntries.Count);
-            
+        
         }
 
         public void AppendToDebugLog(string debug, string script)
@@ -136,6 +145,19 @@ namespace ChatbotApp.Interface.ErrorLog
 
             //Console.WriteLine("Error added to list. Current count: " + errorLogEntries.Count);
 
+        }
+
+        // Public method to allow external classes to log errors
+        public void AppendExternalError(string error, string script)
+        {
+            if (InvokeRequired)
+            {
+                BeginInvoke(new Action<string, string>(AppendToErrorLog), error, script);
+            }
+            else
+            {
+                AppendToErrorLog(error, script);
+            }
         }
 
         // Save log entries to a JSON file
@@ -202,7 +224,7 @@ namespace ChatbotApp.Interface.ErrorLog
             SlimeCountLabel2.Text = $"{slimeCount}";
         }
 
-    }
+    }//end of partial class ErrorLogForm
 
 
     // Helper class for log entries
@@ -212,6 +234,41 @@ namespace ChatbotApp.Interface.ErrorLog
         public string Script { get; set; }
         public string Error { get; set; }
 
-    } //end of partial class ErrorLogForm
+    } 
+
+    public class ErrorListener
+    {
+        private TcpListener _listener;
+        private ErrorLogForm _errorLogForm;
+
+        public ErrorListener(ErrorLogForm errorLogForm)
+        {
+            _errorLogForm = errorLogForm;
+        }
+
+        public void Start()
+        {
+            _listener = new TcpListener(IPAddress.Any, 5000); // Port number 5000
+            _listener.Start();
+            Task.Run(() => ListenForErrors());
+        }
+
+        private void ListenForErrors()
+        {
+            while (true)
+            {
+                var client = _listener.AcceptTcpClient();
+                var stream = client.GetStream();
+                var buffer = new byte[1024];
+                var bytesRead = stream.Read(buffer, 0, buffer.Length);
+                var errorMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+
+                // Update the ErrorForm with the received error message
+                _errorLogForm.AppendExternalError(errorMessage, "Network Listener");
+
+                client.Close();
+            }
+        }
+    }
 
 } //end of namespace
