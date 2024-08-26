@@ -2773,5 +2773,35 @@
     "DateTime": "2024-08-26 00:46:25",
     "Script": "Network Listener",
     "Error": "TEST TERRARIUM"
+  },
+  {
+    "DateTime": "2024-08-26 01:11:53",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-26 01:11:53",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 556"
+  },
+  {
+    "DateTime": "2024-08-26 01:12:02",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-26 01:12:29",
+    "Script": "TEST TERRARIUM|Game.cs(Terrarium Project)|NetworkListener",
+    "Error": "TEST TERRARIUM|Game.cs(Terrarium Project)|NetworkListener"
+  },
+  {
+    "DateTime": "2024-08-26 01:15:02",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-26 01:15:02",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 560"
   }
 ]

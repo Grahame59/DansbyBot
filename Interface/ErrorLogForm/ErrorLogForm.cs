@@ -163,9 +163,31 @@ namespace ChatbotApp.Interface.ErrorLog
             //Console.WriteLine("Error added to list. Current count: " + errorLogEntries.Count);
 
         }
+        public void AppendToErrorLogFromList(string error, string script, string Listener)
+        {
+            
+            string dateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            string logEntry = $"{Listener} [{dateTime}] [{script}] {error}";
+            errorTextBox.AppendText(logEntry + Environment.NewLine);
+
+            // Store the error in the list for saving
+            errorLogEntries.Add(new ErrorLogEntry
+            {
+                DateTime = dateTime,
+                Script = script,
+                Error = error
+            });
+
+            // Set the caret position to the end of the text
+            errorTextBox.SelectionStart = errorTextBox.Text.Length;
+            errorTextBox.ScrollToCaret();  // Scroll to the caret
+
+            //Console.WriteLine("Error added to list. Current count: " + errorLogEntries.Count);
+        
+        }
 
         // Public method to allow external classes to log errors
-        public void AppendExternalError(string error, string script)
+        public void AppendExternalError(string error, string script, string Listener)
         {
             if (InvokeRequired)
             {
@@ -173,7 +195,7 @@ namespace ChatbotApp.Interface.ErrorLog
             }
             else
             {
-                AppendToErrorLog(error, script);
+                AppendToErrorLogFromList(error, script, Listener);
             }
         }
 
@@ -297,9 +319,10 @@ namespace ChatbotApp.Interface.ErrorLog
                         if (bytesRead > 0)
                         {
                             var errorMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                            var script = Encoding.UTF8.GetString(buffer, 0, bytesRead);
 
                             // Update the ErrorForm with the received error message
-                            _errorLogForm.AppendExternalError(errorMessage, "Network Listener");
+                            _errorLogForm.AppendExternalError(errorMessage, script, "NetworkListener");
                         }
                     }
                     client.Close();
@@ -307,7 +330,7 @@ namespace ChatbotApp.Interface.ErrorLog
             }
             catch (Exception ex)
             {
-                _errorLogForm.AppendExternalError($"Network Listener Exception: {ex.Message}", "ErrorListener.cs");
+                _errorLogForm.AppendExternalError($"Network Listener Exception: {ex.Message}", "ErrorListener.cs", "NetworkListener");
             }
         }
 
