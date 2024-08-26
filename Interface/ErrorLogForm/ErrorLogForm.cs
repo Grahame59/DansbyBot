@@ -241,6 +241,13 @@ namespace ChatbotApp.Interface.ErrorLog
             SlimeCountLabel2.Text = $"{slimeCount}";
         }
 
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            _errorListener.Stop();
+            base.OnFormClosing(e);
+        }
+
+
     }//end of partial class ErrorLogForm
 
 
@@ -270,22 +277,40 @@ namespace ChatbotApp.Interface.ErrorLog
             Task.Run(() => ListenForErrors());
         }
 
+        public void Stop()
+        {
+            _listener?.Stop();
+        }
+
+
         private void ListenForErrors()
         {
-            while (true)
+            try
             {
-                var client = _listener.AcceptTcpClient();
-                var stream = client.GetStream();
-                var buffer = new byte[1024];
-                var bytesRead = stream.Read(buffer, 0, buffer.Length);
-                var errorMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                while (true)
+                {
+                    var client = _listener.AcceptTcpClient();
+                    using (var stream = client.GetStream())
+                    {
+                        var buffer = new byte[1024];
+                        var bytesRead = stream.Read(buffer, 0, buffer.Length);
+                        if (bytesRead > 0)
+                        {
+                            var errorMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
 
-                // Update the ErrorForm with the received error message
-                _errorLogForm.AppendExternalError(errorMessage, "Network Listener");
-
-                client.Close();
+                            // Update the ErrorForm with the received error message
+                            _errorLogForm.AppendExternalError(errorMessage, "Network Listener");
+                        }
+                    }
+                    client.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                _errorLogForm.AppendExternalError($"Network Listener Exception: {ex.Message}", "ErrorListener.cs");
             }
         }
+
     }
 
 } //end of namespace
