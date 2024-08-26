@@ -2408,5 +2408,350 @@
     "DateTime": "2024-08-18 03:33:44",
     "Script": "MainForm.cs",
     "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-20 01:50:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 01:50:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 483"
+  },
+  {
+    "DateTime": "2024-08-20 01:53:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 01:53:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 485"
+  },
+  {
+    "DateTime": "2024-08-20 01:54:43",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 01:54:43",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 487"
+  },
+  {
+    "DateTime": "2024-08-20 01:56:58",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 01:56:58",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 489"
+  },
+  {
+    "DateTime": "2024-08-20 01:57:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 01:57:26",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 491"
+  },
+  {
+    "DateTime": "2024-08-20 01:57:47",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 01:57:47",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 493"
+  },
+  {
+    "DateTime": "2024-08-20 02:01:27",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:01:27",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 495"
+  },
+  {
+    "DateTime": "2024-08-20 02:09:10",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:09:10",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 497"
+  },
+  {
+    "DateTime": "2024-08-20 02:11:46",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:11:46",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 499"
+  },
+  {
+    "DateTime": "2024-08-20 02:14:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:14:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 501"
+  },
+  {
+    "DateTime": "2024-08-20 02:16:01",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:16:01",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 503"
+  },
+  {
+    "DateTime": "2024-08-20 02:18:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:18:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 505"
+  },
+  {
+    "DateTime": "2024-08-20 02:18:52",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:33",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:33",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 508"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:34",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:34",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 510"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:35",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:35",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 512"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:36",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:36",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 514"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:37",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:37",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 516"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:38",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:38",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 518"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:39",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:39",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 520"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 522"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:41",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:41",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 524"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 526"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:43",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:43",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 528"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:44",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:44",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 530"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 532"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:46",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:46",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 534"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:47",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:47",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 536"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:48",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:48",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 538"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:49",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:49",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 540"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:50",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:50",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 542"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 544"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:52",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:52",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 546"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:53",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:53",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 548"
+  },
+  {
+    "DateTime": "2024-08-20 02:19:54",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-20 02:19:54",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 550"
   }
 ]

@@ -20,8 +20,10 @@ namespace ChatbotApp.Interface.ErrorLog
         private List<ErrorLogEntry> errorLogEntries;
         private Timer autoSaveTimer;
         private ErrorListener _errorListener;
+        private static ErrorLogForm instance;
+        private static readonly object lockObject = new object();
 
-        public ErrorLogForm()
+        private ErrorLogForm()
         {
             InitializeComponent();
             
@@ -45,7 +47,22 @@ namespace ChatbotApp.Interface.ErrorLog
             _errorListener.Start();
 
 
+        }
 
+        public static ErrorLogForm Instance
+        {
+            get
+            {
+                lock(lockObject)
+                {
+                    if (instance == null || instance.IsDisposed)
+                    {
+                        instance = new ErrorLogForm();
+                    }
+                    return instance;
+                }
+                
+            }
         }
 
         private void InitializeComponent()

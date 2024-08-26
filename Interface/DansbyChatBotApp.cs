@@ -72,8 +72,9 @@ namespace ChatbotApp
             InitializeComponent();
             InitializeChatbot();
             LoadSoundtracks();
-            errorLogForm = new ErrorLogForm();
-            OpenErrorLogForm(this);
+            // Use the singleton instance of ErrorLogForm
+            var errorLogForm = ErrorLogForm.Instance;
+            OpenErrorLogForm(this); 
 
 
             //Initalize Timer    
@@ -366,13 +367,9 @@ namespace ChatbotApp
         public void OpenErrorLogForm(Form mainForm)
         {
 
-            if (errorLogForm == null)
-            {
-                // If errorLogForm is not initialized, log an error or initialize it
-                // For example:
-                errorLogForm = new ErrorLogForm();
-                errorLogForm.AppendToDebugLog("ErrorLogForm was not initialized and now should be.", "MainForm.cs");
-            }
+            // Access the singleton instance of ErrorLogForm
+            var errorLogForm = ErrorLogForm.Instance;
+
 
             // Set manual positioning for the form
             errorLogForm.StartPosition = FormStartPosition.Manual;
@@ -530,17 +527,16 @@ namespace ChatbotApp
 
         private void PlaySoundtrack(string filePath)
         {
-
             filePath = Path.Combine(SoundTrackPathGlobal, filePath);
             if (errorLogForm != null)
             {
-                string filePathDebugString = ("FilePath: " + filePath); //debugLog
+                string filePathDebugString = "FilePath: " + filePath; // debugLog
                 errorLogForm.AppendToDebugLog(filePathDebugString, "Mainform.cs");
             }
 
             StopPlayback(); // Stop any existing playback
 
-            // Check if file exists
+            // Check if the file exists
             if (!File.Exists(filePath))
             {
                 if (errorLogForm != null)
@@ -550,27 +546,61 @@ namespace ChatbotApp
                 return;
             }
 
-            audioFile = new AudioFileReader(filePath);
-            outputDevice = new WaveOutEvent();
-            outputDevice.Init(audioFile);
-
-            // Attach the PlaybackStopped event to loop the track
-            outputDevice.PlaybackStopped += (s, a) => 
+            // Initialize the audio file and output device
+            try
             {
-                if (outputDevice != null && outputDevice.PlaybackState == PlaybackState.Stopped)
+                audioFile = new AudioFileReader(filePath);
+                outputDevice = new WaveOutEvent();
+                outputDevice.Init(audioFile);
+
+                // Attach the PlaybackStopped event to loop the track
+                outputDevice.PlaybackStopped += (s, a) =>
                 {
-                    // Restart the track
-                    audioFile.Position = 0; // Rewind the audio file
-                    outputDevice.Play();
-                }
-            };
+                    // Check if the outputDevice and audioFile are still valid and not null
+                    if (outputDevice != null && audioFile != null && outputDevice.PlaybackState == PlaybackState.Stopped)
+                    {
+                        // Rewind the audio file
+                        audioFile.Position = 0;
 
-            outputDevice.Play();
-            if (errorLogForm != null)
-            {
-                errorLogForm.AppendToDebugLog("Playback started for Soundtracks.", "MainForm.cs");
+                        // Reinitialize outputDevice in case it was disposed
+                        if (outputDevice != null && audioFile != null)
+                        {
+                            try
+                            {
+                                outputDevice.Init(audioFile); // Ensure Init is called
+                                outputDevice.Play();
+                            }
+                            catch (InvalidOperationException ex)
+                            {
+                                if (errorLogForm != null)
+                                {
+                                    errorLogForm.AppendToErrorLog("Error during re-initialization of the outputDevice: " + ex.Message, "MainForm.cs");
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (errorLogForm != null)
+                            {
+                                errorLogForm.AppendToErrorLog("OutputDevice or AudioFile for Soundtracks not initialized or disposed.", "MainForm.cs");
+                            }
+                        }
+                    }
+                };
+
+                outputDevice.Play();
+                if (errorLogForm != null)
+                {
+                    errorLogForm.AppendToDebugLog("Playback started for Soundtracks.", "MainForm.cs");
+                }
             }
- 
+            catch (Exception ex)
+            {
+                if (errorLogForm != null)
+                {
+                    errorLogForm.AppendToErrorLog("Exception occurred during playback initialization: " + ex.Message, "MainForm.cs");
+                }
+            }
         }
 
         private void StopPlayback()
@@ -772,6 +802,7 @@ namespace ChatbotApp
             // Increment the SlimeCount every second
             SlimeCount++;
             string slimeSummonedDebug = "Slime Summoned.";
+            var errorLogForm = ErrorLogForm.Instance;
             errorLogForm.UpdateSlimeCount(SlimeCount);
 
              if (SlimeCount == 5)
@@ -801,17 +832,42 @@ namespace ChatbotApp
             }
         }
 
-    
-
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            StopPlayback();
-            base.OnFormClosing(e);
-            SlimeCount = 0; //reset Slime Timer
+            
+            // Check if the form is being closed by the user or from the code (CloseReason)
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                // Hide the MainForm instead of closing it
+                this.Hide();
+                e.Cancel = true;
+                StopPlayback();
+            }
+            else
+            {
+                // If the form is being closed by the application, you might want to close everything
+                if (errorLogForm != null && !errorLogForm.IsDisposed)
+                {
+                    errorLogForm.Close();
+                }
+                SlimeCount = 0; //reset Slime Timer
+                StopPlayback();
+                base.OnFormClosing(e); // Close the main form
+            }
         }
-    
 
-
+        // Method to fully close the application when needed
+        public void CloseApplication()
+        {
+            
+            if (errorLogForm != null && !errorLogForm.IsDisposed)
+            {
+                StopPlayback();
+                errorLogForm.Close();
+            }
+            this.Close();
+            Application.Exit(); // Ensure all forms are closed
+        }
 
     } //end of MainForm
 
@@ -845,9 +901,18 @@ namespace ChatbotApp
         [STAThread]
         static void Main()
         {
+
+            //MainForm Entry Point
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // Access the singleton instance of ErrorLogForm
+            ErrorLogForm errorLogForm = ErrorLogForm.Instance;
+            errorLogForm.Show();
+
+            //Create/Show MainForm
             Application.Run(new MainForm());
+
         }
     } 
 }
