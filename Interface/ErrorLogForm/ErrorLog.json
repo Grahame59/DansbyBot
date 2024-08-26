@@ -2753,5 +2753,25 @@
     "DateTime": "2024-08-20 02:19:54",
     "Script": "ErrorLogForm.cs",
     "Error": "Number of error entries: 550"
+  },
+  {
+    "DateTime": "2024-08-26 00:45:16",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-26 00:45:16",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 552"
+  },
+  {
+    "DateTime": "2024-08-26 00:45:26",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-26 00:46:25",
+    "Script": "Network Listener",
+    "Error": "TEST TERRARIUM"
   }
 ]

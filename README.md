@@ -170,3 +170,7 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 8.16.24 - 5:54 pm 
 - Working on more bug fixes, completed the errorlogforms save and load logic for json. Working on context for multiple intent correlations so he can have context between current and last intent. 
+
+# 8.26.24 - 12:50 am 
+- Just been doing a ton of bug fixes here and there over past week+ as well as I built a Network Listener into Dansby's ErrorLogForm as well as making it semi independent off of the main form without giving it its own entry point... Going to be gearing towards working on Terrarium Project a lot to learn a lot about Network communication as well as having real time data coming in... Will hopefully be a big first step towards making Dansby have more control and real time data ... 
+
