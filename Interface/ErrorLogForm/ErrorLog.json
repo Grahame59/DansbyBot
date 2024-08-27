@@ -2803,5 +2803,410 @@
     "DateTime": "2024-08-26 01:15:02",
     "Script": "ErrorLogForm.cs",
     "Error": "Number of error entries: 560"
+  },
+  {
+    "DateTime": "2024-08-27 14:07:16",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 14:07:16",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 562"
+  },
+  {
+    "DateTime": "2024-08-27 14:07:25",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 14:12:16",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 14:14:57",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 14:17:16",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 14:17:50",
+    "Script": "Permutation Array Values = System.Int32[]|PerlinNoise.cs|NetworkListener (Terrarium)",
+    "Error": "Permutation Array Values = System.Int32[]|PerlinNoise.cs|NetworkListener (Terrarium)"
+  },
+  {
+    "DateTime": "2024-08-27 14:25:57",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 14:25:57",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 569"
+  },
+  {
+    "DateTime": "2024-08-27 14:30:46",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 14:30:46",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 571"
+  },
+  {
+    "DateTime": "2024-08-27 14:32:50",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 14:32:50",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 573"
+  },
+  {
+    "DateTime": "2024-08-27 14:34:50",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 14:34:50",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 575"
+  },
+  {
+    "DateTime": "2024-08-27 14:36:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 14:36:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 577"
+  },
+  {
+    "DateTime": "2024-08-27 14:36:37",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 14:36:43",
+    "Script": "ErrorListener.cs",
+    "Error": "Raw received message: TEST TERRARIUM|Game.cs(Terrarium Project)|NetworkListener"
+  },
+  {
+    "DateTime": "2024-08-27 14:36:43",
+    "Script": "ErrorListener.cs",
+    "Error": "Received message in an unexpected format."
+  },
+  {
+    "DateTime": "2024-08-27 14:38:17",
+    "Script": "ErrorListener.cs",
+    "Error": "Raw received message: TEST TERRARIUM\r\nGame.cs(Terrarium Project)\r\nNetworkListener"
+  },
+  {
+    "DateTime": "2024-08-27 14:38:17",
+    "Script": "Game.cs(Terrarium Project)",
+    "Error": "TEST TERRARIUM"
+  },
+  {
+    "DateTime": "2024-08-27 14:41:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 14:44:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 14:46:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 14:47:59",
+    "Script": "ErrorListener.cs",
+    "Error": "Raw received message: TEST TERRARIUM\r\nGame.cs(Terrarium Project)\r\nNetworkListener"
+  },
+  {
+    "DateTime": "2024-08-27 14:47:59",
+    "Script": "Game.cs(Terrarium Project)",
+    "Error": "TEST TERRARIUM"
+  },
+  {
+    "DateTime": "2024-08-27 14:51:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 14:56:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:01:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:02:50",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 15:06:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:11:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:16:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:21:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:26:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:31:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:34:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 15:36:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:41:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:46:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:51:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 15:56:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 16:01:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 16:06:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 16:11:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 16:16:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 16:21:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 16:32:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 16:32:42",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 610"
+  },
+  {
+    "DateTime": "2024-08-27 16:35:50",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 16:35:50",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 612"
+  },
+  {
+    "DateTime": "2024-08-27 16:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 16:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 614"
+  },
+  {
+    "DateTime": "2024-08-27 16:36:47",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 16:36:52",
+    "Script": "ErrorListener.cs",
+    "Error": "Raw received message: TEST TERRARIUM\r\nGame.cs(Terrarium Project)\r\nNetworkListener"
+  },
+  {
+    "DateTime": "2024-08-27 16:36:52",
+    "Script": "ph",
+    "Error": "MessageRecieved: TEST TERRARIUM\r\nGame.cs(Terrarium Project)\r\nNetworkListener"
+  },
+  {
+    "DateTime": "2024-08-27 16:36:52",
+    "Script": "Game.cs(Terrarium Project)",
+    "Error": "TEST TERRARIUM"
+  },
+  {
+    "DateTime": "2024-08-27 16:42:23",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 16:42:23",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 620"
+  },
+  {
+    "DateTime": "2024-08-27 16:44:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 16:44:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 622"
+  },
+  {
+    "DateTime": "2024-08-27 16:44:37",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 16:44:45",
+    "Script": "ErrorListener.cs",
+    "Error": "Network Listener Exception: Index was outside the bounds of the array."
+  },
+  {
+    "DateTime": "2024-08-27 16:50:52",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 16:50:52",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 626"
+  },
+  {
+    "DateTime": "2024-08-27 16:50:59",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 16:51:09",
+    "Script": "TEST TERRARIUM\r\nGame.cs(Terrarium Project)\r\nNetworkListener",
+    "Error": "TEST TERRARIUM\r\nGame.cs(Terrarium Project)\r\nNetworkListener"
+  },
+  {
+    "DateTime": "2024-08-27 16:53:55",
+    "Script": "Error: TEST TERRARIUM\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Error: TEST TERRARIUM\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener"
+  },
+  {
+    "DateTime": "2024-08-27 16:54:26",
+    "Script": "\r\nError: TEST TERRARIUM\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "\r\nError: TEST TERRARIUM\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener"
+  },
+  {
+    "DateTime": "2024-08-27 16:59:48",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 16:59:48",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 632"
+  },
+  {
+    "DateTime": "2024-08-27 17:00:00",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 17:00:00",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 634"
+  },
+  {
+    "DateTime": "2024-08-27 17:04:33",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 17:04:33",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 636"
+  },
+  {
+    "DateTime": "2024-08-27 17:04:40",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 17:10:04",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 17:10:04",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 639"
+  },
+  {
+    "DateTime": "2024-08-27 17:10:13",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-27 17:10:41",
+    "Script": "\r\nError: TEST TERRARIUM\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
   }
 ]
