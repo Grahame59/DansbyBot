@@ -115,7 +115,7 @@ namespace ChatbotApp.Interface.ErrorLog
             // Set up Form properties
             this.Text = "Error Log";
             this.BackColor = Color.FromArgb(25,25,25);
-            this.Size = new Size(500, 700);
+            this.Size = new Size(515, 700);
         }
 
         // Method to append errors to the log
