@@ -3493,5 +3493,2810 @@
     "DateTime": "2024-08-27 20:48:55",
     "Script": "ErrorLogForm.cs",
     "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-27 20:59:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-08-27 20:59:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 700"
+  },
+  {
+    "DateTime": "2024-08-27 20:59:13",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-29 17:28:11",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 17:32:04",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-29 17:33:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 17:38:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 17:43:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 17:48:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 17:50:45",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-29 17:53:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 17:58:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:03:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:08:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:13:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:18:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:22:05",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-29 18:23:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:28:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:33:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:38:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:43:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:48:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:53:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 18:58:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:03:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:08:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:13:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:16:54",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-29 19:18:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:23:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:28:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:33:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:38:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:43:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:48:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:53:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 19:58:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:03:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:08:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:11:08",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-08-29 20:13:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:18:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:23:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:28:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:33:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:38:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:43:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:48:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:53:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 20:58:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:03:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:08:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:13:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:18:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:23:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:28:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:33:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:38:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:43:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:48:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:53:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 21:58:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:03:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:08:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:13:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:18:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:23:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:28:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:30:35",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:32:27",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:33:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:38:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:39:35",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:43:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:44:27",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:44:29",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:44:31",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:44:33",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:44:35",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:44:37",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:44:39",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:44:41",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:44:43",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:48:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:51:22",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:51:25",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:51:27",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:51:29",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:51:31",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:51:33",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:51:35",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:53:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:54:56",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:54:58",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:55:00",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:55:02",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:55:04",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:55:06",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:55:08",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:55:10",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:58:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 22:58:26",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 22:59:59",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:00:01",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:00:03",
+    "Script": "\r\nError: Vertices Length: 1440000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:01:31",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:01:33",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:01:35",
+    "Script": "\r\nError: Vertices Length: 1440000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:01:37",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:01:39",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:01:41",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:01:43",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:01:45",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:01:47",
+    "Script": "\r\nError: Number of vertices: 480000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:03:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:08:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:09:48",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:09:50",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:09:52",
+    "Script": "\r\nError: Vertices Length: 1440000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:13:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:13:59",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:14:01",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:14:03",
+    "Script": "\r\nError: Vertices Length: 1440000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:18:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:22:33",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:22:35",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:22:37",
+    "Script": "\r\nError: Vertices Length: 1440000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:23:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:28:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:31:54",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:31:56",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:31:58",
+    "Script": "\r\nError: Vertices Length: 1440000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:32:36",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:32:38",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:32:40",
+    "Script": "\r\nError: Vertices Length: 1440000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:33:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:35:53",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:35:55",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:35:58",
+    "Script": "\r\nError: Vertices Length: 1440000\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:38:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:39:20",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:39:22",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:39:24",
+    "Script": "\r\nError: Vertices Length: 18\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:43:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:43:59",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:44:01",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:44:03",
+    "Script": "\r\nError: Vertices Length: 18\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:18",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:20",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:22",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:24",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.1, z: 0) = 0.54572\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:26",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.2, z: 0) = 0.57104003\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:28",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3, z: 0) = 0.56846\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:31",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4, z: 0) = 0.54128003\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:33",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:35",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6, z: 0) = 0.45872\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:37",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.7, z: 0) = 0.43153998\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:39",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8, z: 0) = 0.42895994\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:41",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.90000004, z: 0) = 0.45428008\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:43",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:45",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.100000024, z: 0) = 0.54572\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:47",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000005, z: 0) = 0.57104003\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:49",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.30000007, z: 0) = 0.56846\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:51",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.39999998, z: 0) = 0.54128003\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:53",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:55",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6, z: 0) = 0.45872\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:57",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.70000005, z: 0) = 0.43153992\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:45:59",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000001, z: 0) = 0.4289601\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:48:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:53:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:53:46",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:53:48",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:53:51",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:53:53",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.1, z: 0) = 0.450428\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:53:55",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.2, z: 0) = 0.405792\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:53:57",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3, z: 0) = 0.374462\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:53:59",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4, z: 0) = 0.363488\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:01",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:03",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6, z: 0) = 0.404768\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:05",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.7, z: 0) = 0.442922\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:07",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8, z: 0) = 0.47683206\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:09",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.90000004, z: 0) = 0.49614793\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:11",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:13",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.100000024, z: 0) = 0.503852\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:15",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000005, z: 0) = 0.523168\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:17",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.30000007, z: 0) = 0.557078\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:19",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.39999998, z: 0) = 0.595232\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:21",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.625\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:23",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6, z: 0) = 0.636512\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:25",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.70000005, z: 0) = 0.625538\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:27",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000001, z: 0) = 0.59420794\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:29",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9, z: 0) = 0.549572\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:31",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:33",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000014, z: 0) = 0.45042792\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:36",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000005, z: 0) = 0.405792\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:38",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.29999995, z: 0) = 0.374462\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:40",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4000001, z: 0) = 0.363488\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:42",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:44",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.60000014, z: 0) = 0.40476802\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:46",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.70000005, z: 0) = 0.44292206\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:48",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.79999995, z: 0) = 0.47683197\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:50",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000001, z: 0) = 0.49614802\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:52",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:54",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000014, z: 0) = 0.496148\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:56",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000005, z: 0) = 0.47683197\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:54:58",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.29999995, z: 0) = 0.44292203\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:00",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4000001, z: 0) = 0.40476796\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:02",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:04",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.60000014, z: 0) = 0.36348802\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:06",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.70000005, z: 0) = 0.374462\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:08",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.79999995, z: 0) = 0.405792\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:10",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000001, z: 0) = 0.45042804\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:12",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:14",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.099999905, z: 0) = 0.55342394\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:16",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000029, z: 0) = 0.6173762\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:19",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.6826161\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:21",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4000001, z: 0) = 0.73174405\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:23",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.75\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:25",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5999999, z: 0) = 0.73174405\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:27",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.7000003, z: 0) = 0.6826158\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:29",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.61737585\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:31",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000001, z: 0) = 0.55342394\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:33",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:35",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.099999905, z: 0) = 0.45428005\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:37",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000029, z: 0) = 0.42895997\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:39",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.43154004\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:41",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4000001, z: 0) = 0.45872003\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:43",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:45",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5999999, z: 0) = 0.54128\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:47",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.7000003, z: 0) = 0.56846005\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:49",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.57104003\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:51",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000001, z: 0) = 0.54572\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:53",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:55",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.099999905, z: 0) = 0.44657606\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:57",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000029, z: 0) = 0.3826238\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:55:59",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.3173839\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:01",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4000001, z: 0) = 0.26825595\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:04",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.25\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:06",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5999999, z: 0) = 0.26825595\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:08",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.7000003, z: 0) = 0.31738418\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:10",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.38262415\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:12",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000001, z: 0) = 0.44657606\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:14",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:16",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.099999905, z: 0) = 0.55342394\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:18",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000029, z: 0) = 0.6173762\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:20",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.6826161\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:22",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4000001, z: 0) = 0.73174405\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:24",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.75\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:26",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5999999, z: 0) = 0.73174405\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:28",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.7000003, z: 0) = 0.6826158\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:30",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.61737585\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:32",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000001, z: 0) = 0.55342394\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:34",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:36",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.45042783\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:38",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.19999981, z: 0) = 0.40579206\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:40",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.37446195\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:42",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.40000057, z: 0) = 0.36348802\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:44",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:46",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.4047681\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:49",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6999998, z: 0) = 0.44292197\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:51",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.47683206\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:53",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000006, z: 0) = 0.49614814\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:55",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:57",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.49614796\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:56:59",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.19999981, z: 0) = 0.47683206\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:01",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.44292194\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:03",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.40000057, z: 0) = 0.4047678\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:05",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:07",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.36348802\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:09",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6999998, z: 0) = 0.37446195\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:11",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.40579206\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:13",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000006, z: 0) = 0.45042828\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:15",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:17",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.54957217\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:19",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.19999981, z: 0) = 0.59420794\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:21",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.62553805\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:23",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.40000057, z: 0) = 0.636512\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:25",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.625\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:27",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.5952319\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:29",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6999998, z: 0) = 0.557078\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:31",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.52316797\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:34",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000006, z: 0) = 0.5038519\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:36",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:38",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.50385207\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:40",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.19999981, z: 0) = 0.52316797\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:42",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.55707806\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:44",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.40000057, z: 0) = 0.5952322\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:46",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.625\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:48",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.636512\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:50",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6999998, z: 0) = 0.62553805\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:52",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.59420794\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:54",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000006, z: 0) = 0.54957175\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:56",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:57:58",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.45427984\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:00",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.19999981, z: 0) = 0.42896003\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:02",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.43154004\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:04",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.40000057, z: 0) = 0.4587202\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:06",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-29 23:58:08",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.54128015\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:10",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6999998, z: 0) = 0.56846\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:12",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.57104003\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:14",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000006, z: 0) = 0.54571986\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:17",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:19",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.44657576\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:21",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.19999981, z: 0) = 0.38262412\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:23",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.3173839\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:25",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.40000057, z: 0) = 0.2682558\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:27",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.25\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:29",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.26825613\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:31",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6999998, z: 0) = 0.3173839\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:33",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.38262415\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:35",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000006, z: 0) = 0.4465764\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:37",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:39",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.54957217\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:41",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.19999981, z: 0) = 0.59420794\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:43",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.62553805\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:45",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.40000057, z: 0) = 0.636512\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:47",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.625\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:49",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.5952319\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:51",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6999998, z: 0) = 0.557078\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:53",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.52316797\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:55",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000006, z: 0) = 0.5038519\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:57",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:58:59",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.49614796\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:02",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.19999981, z: 0) = 0.47683206\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:04",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3000002, z: 0) = 0.44292194\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:06",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.40000057, z: 0) = 0.4047678\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:08",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:10",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.36348802\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:12",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6999998, z: 0) = 0.37446195\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:14",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8000002, z: 0) = 0.40579206\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:16",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.9000006, z: 0) = 0.45042828\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:18",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:20",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.54957217\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:22",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000076, z: 0) = 0.5942083\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:24",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.30000114, z: 0) = 0.62553823\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:26",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.39999962, z: 0) = 0.63651204\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:28",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.625\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:30",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.5952319\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:32",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.70000076, z: 0) = 0.5570777\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:34",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.80000114, z: 0) = 0.5231677\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:36",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8999996, z: 0) = 0.503852\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:38",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:40",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.49614796\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:42",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000076, z: 0) = 0.4768318\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:44",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.30000114, z: 0) = 0.44292158\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:47",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.39999962, z: 0) = 0.40476814\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:49",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:51",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.36348802\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:53",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.70000076, z: 0) = 0.3744622\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:55",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.80000114, z: 0) = 0.40579247\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:57",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8999996, z: 0) = 0.45042783\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-29 23:59:59",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:01",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.55342424\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:03",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000076, z: 0) = 0.6173765\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:05",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.30000114, z: 0) = 0.6826167\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:07",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.39999962, z: 0) = 0.7317439\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:09",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.75\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:11",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.7317439\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:13",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.70000076, z: 0) = 0.6826155\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:15",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.80000114, z: 0) = 0.61737525\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:17",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8999996, z: 0) = 0.55342424\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:19",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:21",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.45042783\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:23",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000076, z: 0) = 0.4057917\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:25",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.30000114, z: 0) = 0.37446174\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:28",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.39999962, z: 0) = 0.363488\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:30",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:32",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.4047681\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:34",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.70000076, z: 0) = 0.4429223\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:36",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.80000114, z: 0) = 0.47683224\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:38",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8999996, z: 0) = 0.49614796\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:40",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:42",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.49614796\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:44",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000076, z: 0) = 0.4768318\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:46",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.30000114, z: 0) = 0.44292158\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:48",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.39999962, z: 0) = 0.40476814\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:50",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:52",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.36348802\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:54",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.70000076, z: 0) = 0.3744622\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:56",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.80000114, z: 0) = 0.40579247\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:00:58",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8999996, z: 0) = 0.45042783\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:00",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:02",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.10000038, z: 0) = 0.55342424\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:04",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.20000076, z: 0) = 0.6173765\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:06",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.30000114, z: 0) = 0.6826167\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:08",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.39999962, z: 0) = 0.7317439\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:11",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.75\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:13",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6000004, z: 0) = 0.7317439\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:15",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.70000076, z: 0) = 0.6826155\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:17",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.80000114, z: 0) = 0.61737525\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:53",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:55",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:57",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:01:59",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.1, z: 0) = 0.446576\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:01",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.2, z: 0) = 0.382624\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:03",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3, z: 0) = 0.317384\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:05",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4, z: 0) = 0.268256\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:07",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.5, z: 0) = 0.25\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:09",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.6, z: 0) = 0.268256\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:11",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.7, z: 0) = 0.317384\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:13",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.8, z: 0) = 0.38262406\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:15",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.90000004, z: 0) = 0.44657597\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:17",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0, z: 0) = 0.503852\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:19",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.1, z: 0) = 0.45121074\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:22",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.2, z: 0) = 0.38764262\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:24",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.3, z: 0) = 0.32212883\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:26",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.4, z: 0) = 0.27199954\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:28",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.5, z: 0) = 0.25214\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:30",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.6, z: 0) = 0.26847994\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:32",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.7, z: 0) = 0.31576556\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:34",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.8, z: 0) = 0.3796149\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:36",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.90000004, z: 0) = 0.44285586\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:38",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0, z: 0) = 0.523168\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:40",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.1, z: 0) = 0.4750898\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:42",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.2, z: 0) = 0.41402128\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:44",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.3, z: 0) = 0.34753785\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:46",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.4, z: 0) = 0.29252866\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:48",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.5, z: 0) = 0.26448\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:50",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.6, z: 0) = 0.2708286\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:52",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.7, z: 0) = 0.3083844\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:54",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.8, z: 0) = 0.36482358\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:56",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.90000004, z: 0) = 0.42425084\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:02:58",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0, z: 0) = 0.557078\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:00",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.1, z: 0) = 0.51884526\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:02",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.2, z: 0) = 0.46381697\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:04",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.3, z: 0) = 0.39679092\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:07",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.4, z: 0) = 0.33362108\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-30 00:03:09",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.5, z: 0) = 0.29077\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:11",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.6, z: 0) = 0.27847654\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:13",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.7, z: 0) = 0.29753911\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:15",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.8, z: 0) = 0.3397144\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:17",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.90000004, z: 0) = 0.39173156\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:19",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0, z: 0) = 0.595232\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:21",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.1, z: 0) = 0.5716499\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:23",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.2, z: 0) = 0.5266351\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:25",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.3, z: 0) = 0.46125668\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:27",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.4, z: 0) = 0.38969582\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:29",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.5, z: 0) = 0.32936\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:31",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.6, z: 0) = 0.2939458\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:33",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.7, z: 0) = 0.28945053\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:35",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.8, z: 0) = 0.31313258\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:37",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.90000004, z: 0) = 0.35541996\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:39",
+    "Script": "\r\nError: PerlinNoise(x: 0.5, y: 0, z: 0) = 0.625\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:41",
+    "Script": "\r\nError: PerlinNoise(x: 0.5, y: 0.1, z: 0) = 0.619008\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:43",
+    "Script": "\r\nError: PerlinNoise(x: 0.5, y: 0.2, z: 0) = 0.587352\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:45",
+    "Script": "\r\nError: PerlinNoise(x: 0.5, y: 0.3, z: 0) = 0.527152\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:47",
+    "Script": "\r\nError: PerlinNoise(x: 0.5, y: 0.4, z: 0) = 0.45040798\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:50",
+    "Script": "\r\nError: PerlinNoise(x: 0.5, y: 0.5, z: 0) = 0.375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:52",
+    "Script": "\r\nError: PerlinNoise(x: 0.5, y: 0.6, z: 0) = 0.317848\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:54",
+    "Script": "\r\nError: PerlinNoise(x: 0.5, y: 0.7, z: 0) = 0.290232\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:56",
+    "Script": "\r\nError: PerlinNoise(x: 0.5, y: 0.8, z: 0) = 0.29527196\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:03:58",
+    "Script": "\r\nError: PerlinNoise(x: 0.5, y: 0.90000004, z: 0) = 0.32756805\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:00",
+    "Script": "\r\nError: PerlinNoise(x: 0.6, y: 0, z: 0) = 0.636512\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:02",
+    "Script": "\r\nError: PerlinNoise(x: 0.6, y: 0.1, z: 0) = 0.64842266\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:04",
+    "Script": "\r\nError: PerlinNoise(x: 0.6, y: 0.2, z: 0) = 0.63192767\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:06",
+    "Script": "\r\nError: PerlinNoise(x: 0.6, y: 0.3, z: 0) = 0.5807457\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:08",
+    "Script": "\r\nError: PerlinNoise(x: 0.6, y: 0.4, z: 0) = 0.50445455\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:10",
+    "Script": "\r\nError: PerlinNoise(x: 0.6, y: 0.5, z: 0) = 0.42064002\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:12",
+    "Script": "\r\nError: PerlinNoise(x: 0.6, y: 0.6, z: 0) = 0.34841585\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:14",
+    "Script": "\r\nError: PerlinNoise(x: 0.6, y: 0.7, z: 0) = 0.303315\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:16",
+    "Script": "\r\nError: PerlinNoise(x: 0.6, y: 0.8, z: 0) = 0.2935526\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:18",
+    "Script": "\r\nError: PerlinNoise(x: 0.6, y: 0.90000004, z: 0) = 0.31765962\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:20",
+    "Script": "\r\nError: PerlinNoise(x: 0.7, y: 0, z: 0) = 0.625538\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:22",
+    "Script": "\r\nError: PerlinNoise(x: 0.7, y: 0.1, z: 0) = 0.6529404\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:24",
+    "Script": "\r\nError: PerlinNoise(x: 0.7, y: 0.2, z: 0) = 0.6513088\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:26",
+    "Script": "\r\nError: PerlinNoise(x: 0.7, y: 0.3, z: 0) = 0.61210704\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:28",
+    "Script": "\r\nError: PerlinNoise(x: 0.7, y: 0.4, z: 0) = 0.5425917\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:31",
+    "Script": "\r\nError: PerlinNoise(x: 0.7, y: 0.5, z: 0) = 0.45923\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:33",
+    "Script": "\r\nError: PerlinNoise(x: 0.7, y: 0.6, z: 0) = 0.3818227\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:35",
+    "Script": "\r\nError: PerlinNoise(x: 0.7, y: 0.7, z: 0) = 0.32833084\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:37",
+    "Script": "\r\nError: PerlinNoise(x: 0.7, y: 0.8, z: 0) = 0.3104078\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:39",
+    "Script": "\r\nError: PerlinNoise(x: 0.7, y: 0.90000004, z: 0) = 0.32963493\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:41",
+    "Script": "\r\nError: PerlinNoise(x: 0.8, y: 0, z: 0) = 0.594208\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:43",
+    "Script": "\r\nError: PerlinNoise(x: 0.8, y: 0.1, z: 0) = 0.63257277\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:45",
+    "Script": "\r\nError: PerlinNoise(x: 0.8, y: 0.2, z: 0) = 0.6434219\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:47",
+    "Script": "\r\nError: PerlinNoise(x: 0.8, y: 0.3, z: 0) = 0.61739886\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:49",
+    "Script": "\r\nError: PerlinNoise(x: 0.8, y: 0.4, z: 0) = 0.55986375\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:51",
+    "Script": "\r\nError: PerlinNoise(x: 0.8, y: 0.5, z: 0) = 0.48552006\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:53",
+    "Script": "\r\nError: PerlinNoise(x: 0.8, y: 0.6, z: 0) = 0.41329113\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:55",
+    "Script": "\r\nError: PerlinNoise(x: 0.8, y: 0.7, z: 0) = 0.36144695\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:57",
+    "Script": "\r\nError: PerlinNoise(x: 0.8, y: 0.8, z: 0) = 0.3429812\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:04:59",
+    "Script": "\r\nError: PerlinNoise(x: 0.8, y: 0.90000004, z: 0) = 0.36123875\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:01",
+    "Script": "\r\nError: PerlinNoise(x: 0.90000004, y: 0, z: 0) = 0.549572\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:03",
+    "Script": "\r\nError: PerlinNoise(x: 0.90000004, y: 0.1, z: 0) = 0.5935946\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:05",
+    "Script": "\r\nError: PerlinNoise(x: 0.90000004, y: 0.2, z: 0) = 0.6132567\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:07",
+    "Script": "\r\nError: PerlinNoise(x: 0.90000004, y: 0.3, z: 0) = 0.59971434\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:09",
+    "Script": "\r\nError: PerlinNoise(x: 0.90000004, y: 0.4, z: 0) = 0.5570426\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:11",
+    "Script": "\r\nError: PerlinNoise(x: 0.90000004, y: 0.5, z: 0) = 0.49785995\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:14",
+    "Script": "\r\nError: PerlinNoise(x: 0.90000004, y: 0.6, z: 0) = 0.43898985\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:16",
+    "Script": "\r\nError: PerlinNoise(x: 0.90000004, y: 0.7, z: 0) = 0.39715922\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:18",
+    "Script": "\r\nError: PerlinNoise(x: 0.90000004, y: 0.8, z: 0) = 0.3847337\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:20",
+    "Script": "\r\nError: PerlinNoise(x: 0.90000004, y: 0.90000004, z: 0) = 0.40549085\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:22",
+    "Script": "\r\nError: Terrain generation completed successfully.\r\nScript: TerrainGenerator.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:05:24",
+    "Script": "\r\nError: Vertices Length: 300\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:08:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-30 00:10:12",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:15",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:17",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:19",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.1, z: 0) = 0.549572\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:21",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.2, z: 0) = 0.594208\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:23",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3, z: 0) = 0.625538\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:25",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4, z: 0) = 0.63651204\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:27",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0, z: 0) = 0.553424\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:29",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.1, z: 0) = 0.60126567\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:31",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.2, z: 0) = 0.64002883\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:33",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.3, z: 0) = 0.6598766\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:35",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.4, z: 0) = 0.6544963\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:37",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0, z: 0) = 0.61737597\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:39",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.1, z: 0) = 0.6594192\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:41",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.2, z: 0) = 0.688416\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:43",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.3, z: 0) = 0.6933943\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:45",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.4, z: 0) = 0.6690706\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:47",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0, z: 0) = 0.682616\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:49",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.1, z: 0) = 0.71352136\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:51",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.2, z: 0) = 0.72872114\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:53",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.3, z: 0) = 0.71695477\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:55",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.4, z: 0) = 0.67419446\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:57",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0, z: 0) = 0.731744\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:10:59",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.1, z: 0) = 0.74709904\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:11:02",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.2, z: 0) = 0.74665046\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:11:04",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.3, z: 0) = 0.72011364\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:11:06",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.4, z: 0) = 0.6646881\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:11:08",
+    "Script": "\r\nError: Terrain generation completed successfully.\r\nScript: TerrainGenerator.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:11:10",
+    "Script": "\r\nError: Vertices Length: 75\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:13:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-30 00:18:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-30 00:22:26",
+    "Script": "\r\nError: Terrarium App Connected!\r\nScript: Game.cs(Terrarium Project)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:29",
+    "Script": "\r\nError: Vertex Array and Buffer Setup Completed\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:31",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:33",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.1, z: 0) = 0.54572\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:35",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.2, z: 0) = 0.57104003\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:37",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.3, z: 0) = 0.56846\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:39",
+    "Script": "\r\nError: PerlinNoise(x: 0, y: 0.4, z: 0) = 0.54128003\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:41",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:43",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.1, z: 0) = 0.5449043\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:45",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.2, z: 0) = 0.5696007\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:47",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.3, z: 0) = 0.56665975\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:49",
+    "Script": "\r\nError: PerlinNoise(x: 0.1, y: 0.4, z: 0) = 0.5393505\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:51",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:53",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.1, z: 0) = 0.5402255\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:55",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.2, z: 0) = 0.56146884\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:57",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.3, z: 0) = 0.5567514\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:22:59",
+    "Script": "\r\nError: PerlinNoise(x: 0.2, y: 0.4, z: 0) = 0.5291437\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:01",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:03",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.1, z: 0) = 0.5303194\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:05",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.2, z: 0) = 0.54456365\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-08-30 00:23:07",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.3, z: 0) = 0.5368228\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:09",
+    "Script": "\r\nError: PerlinNoise(x: 0.3, y: 0.4, z: 0) = 0.50969726\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:12",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0, z: 0) = 0.5\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:14",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.1, z: 0) = 0.5158781\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:16",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.2, z: 0) = 0.5204223\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:18",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.3, z: 0) = 0.5094657\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:20",
+    "Script": "\r\nError: PerlinNoise(x: 0.4, y: 0.4, z: 0) = 0.4848417\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:22",
+    "Script": "\r\nError: Terrain generation completed successfully.\r\nScript: TerrainGenerator.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:23:24",
+    "Script": "\r\nError: Vertices Length: 75\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-08-30 00:28:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
   }
 ]
