@@ -97,7 +97,7 @@ namespace ChatbotApp.Interface.ErrorLog
             //SlimeCountLabel Set Up 2
             SlimeCountLabel2 = new Label();
             SlimeCountLabel2.Location = new Point(430,20);
-            SlimeCountLabel2.Size = new Size(50,30);
+            SlimeCountLabel2.Size = new Size(65,30);
             SlimeCountLabel2.Text = "0";
             SlimeCountLabel2.BackColor = Color.FromArgb(158,90,210); //dry light purple
             SlimeCountLabel2.ForeColor = Color.White;
