@@ -12488,5 +12488,1290 @@
     "DateTime": "2024-09-02 01:11:54",
     "Script": "ErrorLogForm.cs",
     "Error": "Number of error entries: 2497"
+  },
+  {
+    "DateTime": "2024-09-02 13:03:47",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-02 13:03:47",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 2499"
+  },
+  {
+    "DateTime": "2024-09-02 13:05:14",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-02 13:05:14",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 2501"
+  },
+  {
+    "DateTime": "2024-09-02 13:05:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-02 13:05:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 2503"
+  },
+  {
+    "DateTime": "2024-09-02 13:06:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-02 13:06:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 2505"
+  },
+  {
+    "DateTime": "2024-09-02 15:26:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-02 15:26:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 2507"
+  },
+  {
+    "DateTime": "2024-09-02 15:30:33",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-02 15:30:33",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 2509"
+  },
+  {
+    "DateTime": "2024-09-02 15:30:40",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:31:05",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:31:30",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:41:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-02 15:41:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 2514"
+  },
+  {
+    "DateTime": "2024-09-02 15:41:57",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:42:27",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:42:53",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:43:26",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:44:07",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:45:26",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:46:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:46:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 15:47:44",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:48:54",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:51:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:51:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 15:51:53",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:53:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:53:46",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:55:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:56:06",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 15:56:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 15:57:37",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 16:01:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:04:46",
+    "Script": "\r\nError: Loading shader sources from files.\r\nScript: Shader\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:04:48",
+    "Script": "\r\nError: Exception: Could not find file 'E:\\CODES\\Terrarium\\Terrarium\\vertexShader.glsl'.\r\nScript: Shader\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:04:50",
+    "Script": "\r\nError: Error in OnLoad: Could not find file 'E:\\CODES\\Terrarium\\Terrarium\\vertexShader.glsl'.\r\nScript: Script\r\nContext: Program",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:04:52",
+    "Script": "\r\nError: Error in OnRenderFrame: Object reference not set to an instance of an object.\r\nScript: Script\r\nContext: Program",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:04:54",
+    "Script": "\r\nError: Error in OnRenderFrame: Object reference not set to an instance of an object.\r\nScript: Script\r\nContext: Program",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:04:56",
+    "Script": "\r\nError: Error in OnRenderFrame: Object reference not set to an instance of an object.\r\nScript: Script\r\nContext: Program",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:04:58",
+    "Script": "\r\nError: Error in OnRenderFrame: Object reference not set to an instance of an object.\r\nScript: Script\r\nContext: Program",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:05:00",
+    "Script": "\r\nError: Error in OnRenderFrame: Object reference not set to an instance of an object.\r\nScript: Script\r\nContext: Program",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:05:02",
+    "Script": "\r\nError: Error in OnRenderFrame: Object reference not set to an instance of an object.\r\nScript: Script\r\nContext: Program",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:05:04",
+    "Script": "\r\nError: Error in OnUnload: Object reference not set to an instance of an object.\r\nScript: Script\r\nContext: Program",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:06:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:10:38",
+    "Script": "\r\nError: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:10:40",
+    "Script": "\r\nError: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:10:42",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:10:44",
+    "Script": "\r\nError: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:10:46",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:10:48",
+    "Script": "\r\nError: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:10:50",
+    "Script": "\r\nError: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:10:52",
+    "Script": "\r\nError: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:10:54",
+    "Script": "\r\nError: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:10:56",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:10:58",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:11:00",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:11:02",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:11:04",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:11:06",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:11:08",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:11:10",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 16:11:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:16:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:21:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:26:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:31:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:36:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:39:31",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 16:40:14",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 16:40:29",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 16:40:44",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 16:40:59",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 16:41:14",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 16:41:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:46:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:51:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 16:56:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:01:04",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:06",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:08",
+    "Script": "\r\nDebug: Fade function result: 0.9988418\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:10",
+    "Script": "\r\nDebug: Fade function result: 0.9988418\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:12",
+    "Script": "\r\nDebug: Fade function result: 0\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:14",
+    "Script": "\r\nDebug: Grad function result for hash 104: 0.95\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:16",
+    "Script": "\r\nDebug: Grad function result for hash 185: -0.95\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:18",
+    "Script": "\r\nDebug: Lerp function result: -0.9477995\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:20",
+    "Script": "\r\nDebug: Grad function result for hash 255: 0.050000012\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:22",
+    "Script": "\r\nDebug: Grad function result for hash 242: 0\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:24",
+    "Script": "\r\nDebug: Lerp function result: 5.7909638E-05\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:26",
+    "Script": "\r\nDebug: Lerp function result: -0.0010398626\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:28",
+    "Script": "\r\nDebug: Grad function result for hash 100: -0.050000012\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:31",
+    "Script": "\r\nDebug: Grad function result for hash 26: 1.95\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:33",
+    "Script": "\r\nDebug: Lerp function result: 1.9476836\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:35",
+    "Script": "\r\nDebug: Grad function result for hash 18: 1\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:37",
+    "Script": "\r\nDebug: Grad function result for hash 2: 0\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:39",
+    "Script": "\r\nDebug: Lerp function result: 0.0011581779\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:41",
+    "Script": "\r\nDebug: Lerp function result: 0.0034126043\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:43",
+    "Script": "\r\nDebug: Lerp function result: -0.0010398626\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:45",
+    "Script": "\r\nDebug: Fade function result: 0.9988418\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:47",
+    "Script": "\r\nDebug: Fade function result: 0.9988686\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:49",
+    "Script": "\r\nDebug: Fade function result: 0\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:51",
+    "Script": "\r\nDebug: Grad function result for hash 104: 0.95039064\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:01:53",
+    "Script": "\r\nDebug: Grad function result for hash 185: -0.95039064\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:55",
+    "Script": "\r\nDebug: Lerp function result: -0.9481892\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:57",
+    "Script": "\r\nDebug: Grad function result for hash 255: 0.049609363\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:01:59",
+    "Script": "\r\nDebug: Grad function result for hash 242: -0.00039064884\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:01",
+    "Script": "\r\nDebug: Lerp function result: -0.0003327392\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:03",
+    "Script": "\r\nDebug: Lerp function result: -0.0014051199\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:05",
+    "Script": "\r\nDebug: Grad function result for hash 100: -0.050000012\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:07",
+    "Script": "\r\nDebug: Grad function result for hash 26: 1.9503906\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:09",
+    "Script": "\r\nDebug: Lerp function result: 1.9480736\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:11",
+    "Script": "\r\nDebug: Grad function result for hash 18: 0.99960935\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:14",
+    "Script": "\r\nDebug: Grad function result for hash 2: -0.00039064884\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:16",
+    "Script": "\r\nDebug: Lerp function result: 0.000767529\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:18",
+    "Script": "\r\nDebug: Lerp function result: 0.0029706955\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:20",
+    "Script": "\r\nDebug: Lerp function result: -0.0014051199\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:22",
+    "Script": "\r\nDebug: Fade function result: 0.9988418\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:24",
+    "Script": "\r\nDebug: Fade function result: 0.99889416\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:26",
+    "Script": "\r\nDebug: Fade function result: 0\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:28",
+    "Script": "\r\nDebug: Grad function result for hash 104: 0.9507812\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:30",
+    "Script": "\r\nDebug: Grad function result for hash 185: -0.9507812\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:32",
+    "Script": "\r\nDebug: Lerp function result: -0.94857883\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:34",
+    "Script": "\r\nDebug: Grad function result for hash 255: 0.049218774\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:36",
+    "Script": "\r\nDebug: Grad function result for hash 242: -0.0007812381\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:38",
+    "Script": "\r\nDebug: Lerp function result: -0.00072332844\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:40",
+    "Script": "\r\nDebug: Lerp function result: -0.0017715096\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:42",
+    "Script": "\r\nDebug: Grad function result for hash 100: -0.050000012\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:44",
+    "Script": "\r\nDebug: Grad function result for hash 26: 1.9507812\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:02:46",
+    "Script": "\r\nDebug: Lerp function result: 1.9484639\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:35",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:37",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:39",
+    "Script": "\r\nError: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:41",
+    "Script": "\r\nError: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:43",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:45",
+    "Script": "\r\nError: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:47",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:49",
+    "Script": "\r\nError: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:51",
+    "Script": "\r\nError: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:54",
+    "Script": "\r\nError: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:56",
+    "Script": "\r\nError: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:04:58",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:00",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:02",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:04",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:06",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:08",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:10",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:12",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:14",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:16",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:18",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:05:20",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:06:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:09:01",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:03",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: Mathf.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:05",
+    "Script": "\r\nError: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:07",
+    "Script": "\r\nError: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:09",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:11",
+    "Script": "\r\nError: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:13",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:15",
+    "Script": "\r\nError: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:17",
+    "Script": "\r\nError: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:39",
+    "Script": "\r\nError: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:39",
+    "Script": "\r\nError: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:39",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:39",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:39",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:39",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:39",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:39",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:39",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:39",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:43",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:09:43",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:10:05",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:10:05",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:11:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:16:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:21:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:26:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:31:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:36:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:37:02",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 17:39:56",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:39:58",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:00",
+    "Script": "\r\nDebug: Generated heightmap with dimensions 256x256 and scale 0.1.\r\nScript: TerrainGeneration.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:02",
+    "Script": "\r\nDebug: Generated mesh with 65536 vertices and 130050 triangles.\r\nScript: TerrainGeneration.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:04",
+    "Script": "\r\nError: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:06",
+    "Script": "\r\nError: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:08",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:10",
+    "Script": "\r\nError: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:12",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:14",
+    "Script": "\r\nError: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:16",
+    "Script": "\r\nError: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:18",
+    "Script": "\r\nError: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:20",
+    "Script": "\r\nError: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:22",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:24",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:26",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:28",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:31",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:40:33",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:32",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:34",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:36",
+    "Script": "\r\nDebug: Generated heightmap with dimensions 256x256 and scale 0.1.\r\nScript: TerrainGeneration.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:38",
+    "Script": "\r\nDebug: Generated mesh with 65536 vertices and 130050 triangles.\r\nScript: TerrainGeneration.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:40",
+    "Script": "\r\nError: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:42",
+    "Script": "\r\nError: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:44",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:46",
+    "Script": "\r\nError: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:48",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:50",
+    "Script": "\r\nError: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:41:52",
+    "Script": "\r\nError: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:54",
+    "Script": "\r\nError: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:56",
+    "Script": "\r\nError: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:41:58",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:42:00",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:42:02",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:42:04",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:42:06",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 17:46:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:51:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 17:56:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 18:01:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 18:06:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 18:11:38",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:11:40",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:11:42",
+    "Script": "\r\nDebug: Generated heightmap with dimensions 256x256 and scale 0.1.\r\nScript: TerrainGeneration.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:11:44",
+    "Script": "\r\nDebug: Generated mesh with 65536 vertices and 130050 triangles.\r\nScript: TerrainGeneration.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:11:46",
+    "Script": "\r\nError: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:11:48",
+    "Script": "\r\nError: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:11:50",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:11:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 18:11:52",
+    "Script": "\r\nError: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:11:54",
+    "Script": "\r\nError: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:11:56",
+    "Script": "\r\nError: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:11:59",
+    "Script": "\r\nError: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:12:01",
+    "Script": "\r\nError: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:12:03",
+    "Script": "\r\nError: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:12:05",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:12:07",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:12:09",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:12:11",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:12:13",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:12:15",
+    "Script": "\r\nError: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-02 18:16:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 18:21:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 18:27:33",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 18:31:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-02 18:34:25",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-02 18:41:12",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-02 18:41:12",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 2754"
   }
 ]

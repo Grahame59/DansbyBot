@@ -676,7 +676,7 @@ namespace ChatbotApp
             // Initialize the Timer for animation
             animationTimer = new Timer
             {
-                Interval = 300// Adjust for speed
+                Interval = 500// Adjust for speed {500ms = .5seconds}
             };
             animationTimer.Tick += AnimationTimer_Tick;
             animationTimer.Start();
@@ -734,10 +734,12 @@ namespace ChatbotApp
             if (action <= 20)
             {
                 currentAnimation = "attack";
+                spritePictureBox.Visible = true;
             }
             else if (action > 20 && action <= 50)
             {
                 currentAnimation = "jump";
+                spritePictureBox.Visible = true;
             }
             else if (action > 60 && action < 65)
             {
@@ -756,13 +758,13 @@ namespace ChatbotApp
                     // Hide the sprite or remove it after the animation plays out
                     spritePictureBox.Visible = false;
                     dieTimer.Stop();
-                    animationTimer.Start(); // Resume the main animation loop if needed
                 };
                 dieTimer.Start();
                 
             } else
             {
                 currentAnimation = "running";
+                spritePictureBox.Visible = true;
             }
 
             LoadGifAnimation(currentAnimation);
@@ -839,7 +841,7 @@ namespace ChatbotApp
             var errorLogForm = ErrorLogForm.Instance;
             errorLogForm.UpdateSlimeCount(SlimeCount);
 
-            int[] summonCounts = { 5, 30, 55, 420, 3457, 6746, 10000 };
+            int[] summonCounts = { 3, 33, 59, 92, 133, 212, 285, 350, 420, 555, 599, 675, 712, 795, 852, 943, 3457, 3500, 3515, 3530, 3545, 3560, 6746, 10000 };
 
             if (Array.IndexOf(summonCounts, SlimeCount) >= 0)
             {
