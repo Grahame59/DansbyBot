@@ -716,6 +716,9 @@ namespace ChatbotApp
                     isJumping = true;
                     jumpTimer.Start();
                 }
+            } else if (currentAnimation == "die")
+            {
+                spriteX -= 4;
             }
 
             // Sprite Visibility when off Screen
@@ -728,15 +731,36 @@ namespace ChatbotApp
 
             int action = random.Next(1, 101);
 
-            if (action <= 10)
+            if (action <= 20)
             {
                 currentAnimation = "attack";
             }
-            else if (action > 10 && action <= 30)
+            else if (action > 20 && action <= 50)
             {
                 currentAnimation = "jump";
             }
-            else
+            else if (action > 60 && action < 65)
+            {
+                currentAnimation = "die";
+                // Pause the AnimationTimer to let the "die" animation play out
+                animationTimer.Stop();
+                
+                // Determine the duration of the "die" animation (in milliseconds)
+                int dieAnimationDuration = 2000; // Adjust this based on the actual GIF duration
+                
+                // Start a timer to resume after the animation has played out
+                Timer dieTimer = new Timer();
+                dieTimer.Interval = dieAnimationDuration;
+                dieTimer.Tick += (s, args) =>
+                {
+                    // Hide the sprite or remove it after the animation plays out
+                    spritePictureBox.Visible = false;
+                    dieTimer.Stop();
+                    animationTimer.Start(); // Resume the main animation loop if needed
+                };
+                dieTimer.Start();
+                
+            } else
             {
                 currentAnimation = "running";
             }
@@ -746,19 +770,30 @@ namespace ChatbotApp
 
         private void LoadGifAnimation(string animation)
         {
-            switch (animation)
+            string imagePath = animation switch
             {
-                case "attack":
-                    spritePictureBox.Image = Image.FromFile(@"E:\CODES\DansbyBot\Resources\SlimeAnimation\SlimeAttack.gif");
-                    break;
-                case "running":
-                    spritePictureBox.Image = Image.FromFile(@"E:\CODES\DansbyBot\Resources\SlimeAnimation\SlimeRun.gif");
-                    break;
-                case "jump":
-                    spritePictureBox.Image = Image.FromFile(@"E:\CODES\DansbyBot\Resources\SlimeAnimation\SlimeJump.gif");
-                    break;
+                "attack" => @"E:\CODES\DansbyBot\Resources\SlimeAnimation\SlimeAttack.gif",
+                "running" => @"E:\CODES\DansbyBot\Resources\SlimeAnimation\SlimeRun.gif",
+                "jump" => @"E:\CODES\DansbyBot\Resources\SlimeAnimation\SlimeJump.gif",
+                "die" => @"E:\CODES\DansbyBot\Resources\SlimeAnimation\SlimeExplosion.gif",
+                _ => throw new ArgumentOutOfRangeException(nameof(animation), $"Unknown animation: {animation}")
+            };
+
+            spritePictureBox.Image = Image.FromFile(imagePath);
+
+            if (animation == "die")
+            {
+                int deathcount = 0;
+                if (deathcount == 0)
+                {
+                    deathcount++;
+                } else if (deathcount == 5)
+                {
+                    spritePictureBox.Visible = false; // Hide after resizing
+                }
             }
         }
+
 
         private void JumpTimer_Tick(object sender, EventArgs e)
         {
@@ -799,38 +834,21 @@ namespace ChatbotApp
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            // Increment the SlimeCount every second
             SlimeCount++;
             string slimeSummonedDebug = "Slime Summoned.";
             var errorLogForm = ErrorLogForm.Instance;
             errorLogForm.UpdateSlimeCount(SlimeCount);
 
-             if (SlimeCount == 5)
+            int[] summonCounts = { 5, 30, 55, 420, 3457, 6746, 10000 };
+
+            if (Array.IndexOf(summonCounts, SlimeCount) >= 0)
             {
-                SummonSlime();
-                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
-            } else if (SlimeCount == 457)
-            {
-                SummonSlime();
-                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
-            } else if (SlimeCount == 1578)
-            {
-                SummonSlime();
-                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
-            } else if (SlimeCount == 3457)
-            {
-                SummonSlime();
-                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
-            } else if (SlimeCount == 6746)
-            {
-                SummonSlime();
-                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
-            } else if (SlimeCount == 10000)
-            {   
                 SummonSlime();
                 errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
             }
+
         }
+
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {

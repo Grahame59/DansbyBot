@@ -176,3 +176,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 8.27.24 - 2:24 pm
 - Was implementing a parser for external errors but ran into some difficulties so instead just used newlines format when the message is sent as one string...
+
+# 9.2.24 - 1:13 am
+- Added a death animation state for slime sprite... Need to go through a lot of bug fixes in next Code Sess, been trying to get procedural terrain generation done for Terrarium.
