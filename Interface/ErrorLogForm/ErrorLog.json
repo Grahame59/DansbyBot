@@ -16883,5 +16883,3870 @@
     "DateTime": "2024-09-05 01:04:13",
     "Script": "\r\nError: Cube rendered successfully.\r\nScript: TerrainGeneration.cs (Terrarium)\r\nContext: NetworkListener",
     "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:31:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-05 21:31:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 3378"
+  },
+  {
+    "DateTime": "2024-09-05 21:31:56",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:32:26",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:32:52",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:33:15",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:17",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:19",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:21",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:23",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:25",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:33:25",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:27",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:29",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:31",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:33",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:35",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:37",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:39",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:42",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:44",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:46",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:48",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:50",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:52",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:54",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:56",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:33:58",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:00",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:02",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:06",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:34:13",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:15",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:17",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:19",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:21",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:23",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:25",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:27",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:30",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:32",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:34",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:36",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:38",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:40",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:42",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:44",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:46",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:48",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:50",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:52",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:54",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:56",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:34:58",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:35:00",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:35:02",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:35:04",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:35:06",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:35:08",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:35:10",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:35:13",
+    "Script": "\r\nError: Basic Terrain generation setup completed successfully.\r\nScript: TerrainGeneration.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 21:35:25",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:36:38",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 21:37:43",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:38:53",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:41:08",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:41:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 21:41:52",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:43:08",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:43:45",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:45:08",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:46:05",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:46:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 21:47:36",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 21:51:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 21:56:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:01:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:06:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:11:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:16:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:20:53",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:20:55",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:20:57",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:20:59",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:21:01",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:21:03",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:21:05",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:21:07",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:21:09",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:21:11",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:21:13",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:21:15",
+    "Script": "\r\nDebug: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:21:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:26:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:29:30",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 22:30:13",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 22:30:28",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 22:30:43",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 22:30:58",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 22:31:13",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 22:31:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:32:46",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:32:48",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:32:50",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:32:52",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:32:54",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:32:56",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:32:58",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:00",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:02",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:04",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:06",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:08",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:10",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:12",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:14",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:16",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:19",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:21",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:23",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:25",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:27",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:29",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:31",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:33",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:35",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:37",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:39",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:41",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:43",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:45",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:47",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:49",
+    "Script": "\r\nDebug: Chunks initialized successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:52",
+    "Script": "\r\nDebug: Initialization completed successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:54",
+    "Script": "\r\nDebug: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:56",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:33:58",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:00",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:02",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:04",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:06",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:08",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:10",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:12",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:14",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:16",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:18",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:20",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:22",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:24",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:26",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:28",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:31",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:33",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:35",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:37",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:39",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:41",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:43",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:45",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:47",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:49",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:51",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:53",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:55",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:34:57",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:40:52",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:40:54",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:40:56",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:40:58",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:00",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:02",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:04",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:06",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:08",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:10",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:12",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:14",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:16",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:18",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:20",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:22",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:25",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:27",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:29",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:31",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:33",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:35",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:37",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:39",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:41:41",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:43",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:45",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:47",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:49",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:51",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:53",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:55",
+    "Script": "\r\nDebug: Chunks initialized successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:41:57",
+    "Script": "\r\nDebug: Initialization completed successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:00",
+    "Script": "\r\nDebug: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:02",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:04",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:06",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:08",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:10",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:12",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:14",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:16",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:18",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:20",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:22",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:24",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:26",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:28",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:30",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:32",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:34",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:36",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:38",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:40",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:42",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:45",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:47",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:49",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:51",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:53",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:55",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:57",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:42:59",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:01",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:03",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:05",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:07",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:09",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:11",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:13",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:15",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:17",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:19",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:21",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:23",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:25",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:27",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:29",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:31",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:34",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:36",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:38",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:40",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:42",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:44",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:46",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:48",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:50",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:52",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:54",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:56",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:43:58",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:00",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:02",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:04",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:06",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:08",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:10",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:12",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:14",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:16",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:19",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:21",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:23",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:25",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:27",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:29",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:31",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:33",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:35",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:37",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:39",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:41",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:43",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:45",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:47",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:49",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:51",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:53",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:55",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:57",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:44:59",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:01",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:03",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:05",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:08",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:10",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:12",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:14",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:16",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:18",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:20",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:22",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:24",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:26",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:28",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:30",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:32",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:34",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:36",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:38",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:40",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:42",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:44",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:46",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:48",
+    "Script": "\r\nDebug: Frame rendered successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:51",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:53",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:55",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:57",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:45:59",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:01",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:03",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:05",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:07",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:09",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:11",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:13",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:15",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:17",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:19",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:21",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:23",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:34",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:36",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:38",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:46:40",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:42",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:44",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:46",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:48",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:51",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:53",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:55",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:57",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:46:59",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:01",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:03",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:05",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:07",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:09",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:11",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:13",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:15",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:17",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:19",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:21",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:24",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:26",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:28",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:30",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:32",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:34",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:36",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:38",
+    "Script": "\r\nDebug: Chunks initialized successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:40",
+    "Script": "\r\nDebug: Initialization completed successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:42",
+    "Script": "\r\nDebug: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:44",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:46",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:48",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:50",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:52",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:54",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:56",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:47:58",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:48:00",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:48:02",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:48:05",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:02",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:04",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:06",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:08",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:10",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:12",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:14",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:16",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:18",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:21",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:23",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:25",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:27",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:29",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:31",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:33",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:35",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:37",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:39",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:41",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:43",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:45",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:47",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:49",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:51",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:54",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:56",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:50:58",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:00",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:02",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:04",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:06",
+    "Script": "\r\nDebug: Chunks initialized successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:08",
+    "Script": "\r\nDebug: Initialization completed successfully.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:10",
+    "Script": "\r\nDebug: Shader program is now in use.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:12",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:14",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:16",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:18",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:20",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:22",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:24",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:26",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:28",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:31",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:33",
+    "Script": "\r\nDebug: DrawElements called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:35",
+    "Script": "\r\nDebug: Vertex Array Object unbound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:37",
+    "Script": "\r\nDebug: Vertex Array Object bound.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:51:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 22:53:51",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:53:53",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:53:55",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:53:57",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:53:59",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:01",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:03",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:05",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:07",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:09",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:11",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:13",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:16",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:18",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:20",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:22",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:24",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:26",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:28",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:30",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:32",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:34",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:36",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:38",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:54:55",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 22:56:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:01:14",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:16",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:18",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:20",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:22",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:24",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:26",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:28",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:30",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:32",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:34",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:36",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:38",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:01:40",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:42",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:44",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:46",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:48",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:51",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:53",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:55",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:57",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:01:59",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:02:01",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:02:03",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:02:05",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:02:07",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:02:09",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:06:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:10:19",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:21",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:23",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:25",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:28",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:30",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:32",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:34",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:36",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:38",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:40",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:42",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:44",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:46",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:48",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:50",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:52",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:54",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:56",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:10:58",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:11:00",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:11:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:13:25",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:27",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:29",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:31",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:33",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:35",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:37",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:39",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:41",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:43",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:45",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:48",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:50",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:52",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:54",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:56",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:13:58",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:14:00",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:14:02",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:14:04",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:14:06",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:14:08",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:14:10",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:16:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:17:29",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:31",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:33",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:35",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:37",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:39",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:41",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:43",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:45",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:47",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:49",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:51",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:53",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:55",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:57",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:17:59",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:01",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:03",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:05",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:07",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:10",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:12",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:14",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:16",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:18",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:20",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:18:22",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:19:58",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:00",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:02",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:04",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:06",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:08",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:10",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:12",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:14",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:17",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:19",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:21",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:23",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:25",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:27",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:29",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:31",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:33",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:20:35",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:21:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:25:31",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-05 23:26:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:29:02",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:04",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:06",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:08",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:10",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:12",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:14",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:16",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:18",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:20",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:22",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:25",
+    "Script": "\r\nDebug: Chunk constructor called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:27",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:29",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:31",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:33",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:35",
+    "Script": "\r\nDebug: Chunk constructor called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:37",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:39",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:41",
+    "Script": "\r\nDebug: Chunk constructor called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:29:43",
+    "Script": "\r\nDebug: Terrain generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:31:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:41:38",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:41:40",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:41:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:41:42",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:41:44",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:41:46",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:41:48",
+    "Script": "\r\nError: Shader Compilation Error: Fragment shader failed to compile with the following errors:\nERROR: 0:25: error(#143) Undeclared identifier: specular\nERROR: error(#273) 1 compilation errors.  No code generated\n\n\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:41:50",
+    "Script": "\r\nError: Exception: Shader Compilation Error: Fragment shader failed to compile with the following errors:\nERROR: 0:25: error(#143) Undeclared identifier: specular\nERROR: error(#273) 1 compilation errors.  No code generated\n\n\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:41:52",
+    "Script": "\r\nError: Initialization exception: Shader Compilation Error: Fragment shader failed to compile with the following errors:\nERROR: 0:25: error(#143) Undeclared identifier: specular\nERROR: error(#273) 1 compilation errors.  No code generated\n\n\r\nScript: Game.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:41:54",
+    "Script": "\r\nError: Camera or Shader is not initialized.\r\nScript: Game.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:41:56",
+    "Script": "\r\nError: Camera or Shader is not initialized.\r\nScript: Game.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:41:58",
+    "Script": "\r\nError: Camera or Shader is not initialized.\r\nScript: Game.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:42:00",
+    "Script": "\r\nError: Camera or Shader is not initialized.\r\nScript: Game.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:42:19",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:42:21",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:42:23",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:42:25",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:42:27",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:42:29",
+    "Script": "\r\nError: Shader Compilation Error: Fragment shader failed to compile with the following errors:\nERROR: 0:26: error(#143) Undeclared identifier: viewPos\nERROR: error(#273) 1 compilation errors.  No code generated\n\n\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:42:31",
+    "Script": "\r\nError: Exception: Shader Compilation Error: Fragment shader failed to compile with the following errors:\nERROR: 0:26: error(#143) Undeclared identifier: viewPos\nERROR: error(#273) 1 compilation errors.  No code generated\n\n\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:42:33",
+    "Script": "\r\nError: Initialization exception: Shader Compilation Error: Fragment shader failed to compile with the following errors:\nERROR: 0:26: error(#143) Undeclared identifier: viewPos\nERROR: error(#273) 1 compilation errors.  No code generated\n\n\r\nScript: Game.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:46:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:51:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:56:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-05 23:59:26",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:29",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:31",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:33",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:35",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:37",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:39",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:41",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:43",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:45",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:47",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:49",
+    "Script": "\r\nDebug: Chunk constructor called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:51",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:53",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:55",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:57",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-05 23:59:59",
+    "Script": "\r\nDebug: Chunk constructor called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:00:01",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:00:03",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:00:05",
+    "Script": "\r\nDebug: Chunk constructor called.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:00:07",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:00:10",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:01:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-06 00:06:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-06 00:07:27",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:29",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:32",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:34",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:36",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:38",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:40",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:42",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:44",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:46",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:48",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:50",
+    "Script": "\r\nDebug: Chunk constructor called at 9/6/2024 12:07:48 AM\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:52",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:54",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:56",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:07:58",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:00",
+    "Script": "\r\nDebug: Chunk created. Total chunks: 1\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:02",
+    "Script": "\r\nDebug: Chunk constructor called at 9/6/2024 12:08:00 AM\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:04",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:06",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:08",
+    "Script": "\r\nDebug: Chunk created. Total chunks: 2\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:10",
+    "Script": "\r\nDebug: Chunk constructor called at 9/6/2024 12:08:08 AM\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:12",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:15",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:17",
+    "Script": "\r\nDebug: Chunk created. Total chunks: 3\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:19",
+    "Script": "\r\nDebug: Chunk constructor called at 9/6/2024 12:08:17 AM\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:21",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:08:23",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:28",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:30",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:32",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:34",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:36",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:38",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:40",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-06 00:11:42",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:44",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:46",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:48",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:50",
+    "Script": "\r\nDebug: Chunk constructor called at 9/6/2024 12:11:26 AM\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:52",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:54",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:56",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:11:58",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:00",
+    "Script": "\r\nDebug: Chunk created. Total chunks: 1\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:02",
+    "Script": "\r\nDebug: Chunk constructor called at 9/6/2024 12:11:26 AM\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:04",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:07",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:09",
+    "Script": "\r\nDebug: Chunk created. Total chunks: 2\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:11",
+    "Script": "\r\nDebug: Chunk constructor called at 9/6/2024 12:11:26 AM\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:13",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:15",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:17",
+    "Script": "\r\nDebug: Chunk created. Total chunks: 3\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:19",
+    "Script": "\r\nDebug: Chunk constructor called at 9/6/2024 12:11:26 AM\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:21",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:23",
+    "Script": "\r\nDebug: Buffers set up successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:25",
+    "Script": "\r\nDebug: Chunk created. Total chunks: 4\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:27",
+    "Script": "\r\nDebug: Chunk constructor called at 9/6/2024 12:11:26 AM\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:12:29",
+    "Script": "\r\nDebug: Terrain and normals generated successfully.\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:16",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:18",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:20",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:22",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:24",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:26",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:28",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:30",
+    "Script": "\r\nDebug: Program linked successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:32",
+    "Script": "\r\nDebug: Cleaning up shaders.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:34",
+    "Script": "\r\nDebug: Shader program created successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:36",
+    "Script": "\r\nDebug: Camera initialized\r\nScript: Camera.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:38",
+    "Script": "\r\nDebug: Chunk constructor called at 9/6/2024 12:14:14 AM\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:40",
+    "Script": "\r\nDebug: Generating terrain...\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:42",
+    "Script": "\r\nDebug: Permutation array generated successfully.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:44",
+    "Script": "\r\nDebug: Permutation array initialized and duplicated.\r\nScript: PerlinNoise.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:46",
+    "Script": "\r\nDebug: HeightMap[0, 0] = 5\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:48",
+    "Script": "\r\nDebug: HeightMap[0, 1] = 4.46576\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:50",
+    "Script": "\r\nDebug: HeightMap[0, 2] = 3.82624\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:52",
+    "Script": "\r\nDebug: HeightMap[0, 3] = 3.17384\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:54",
+    "Script": "\r\nDebug: HeightMap[0, 4] = 2.68256\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:56",
+    "Script": "\r\nDebug: HeightMap[0, 5] = 2.5\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:14:58",
+    "Script": "\r\nDebug: HeightMap[0, 6] = 2.68256\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:00",
+    "Script": "\r\nDebug: HeightMap[0, 7] = 3.17384\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:02",
+    "Script": "\r\nDebug: HeightMap[0, 8] = 3.8262405\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:05",
+    "Script": "\r\nDebug: HeightMap[0, 9] = 4.4657598\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:07",
+    "Script": "\r\nDebug: HeightMap[0, 10] = 5\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:09",
+    "Script": "\r\nDebug: HeightMap[0, 11] = 5.4572\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:11",
+    "Script": "\r\nDebug: HeightMap[0, 12] = 5.7104006\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:13",
+    "Script": "\r\nDebug: HeightMap[0, 13] = 5.6846\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:15",
+    "Script": "\r\nDebug: HeightMap[0, 14] = 5.4128003\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:17",
+    "Script": "\r\nDebug: HeightMap[0, 15] = 5\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:19",
+    "Script": "\r\nDebug: HeightMap[0, 16] = 4.5872\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:21",
+    "Script": "\r\nDebug: HeightMap[1, 0] = 4.46576\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:23",
+    "Script": "\r\nDebug: HeightMap[1, 1] = 3.9318495\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:25",
+    "Script": "\r\nDebug: HeightMap[1, 2] = 3.294231\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:27",
+    "Script": "\r\nDebug: HeightMap[1, 3] = 2.6458817\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:29",
+    "Script": "\r\nDebug: HeightMap[1, 4] = 2.1605477\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:31",
+    "Script": "\r\nDebug: HeightMap[1, 5] = 1.98502\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:33",
+    "Script": "\r\nDebug: HeightMap[1, 6] = 2.1746123\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:35",
+    "Script": "\r\nDebug: HeightMap[1, 7] = 2.6718383\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:37",
+    "Script": "\r\nDebug: HeightMap[1, 8] = 3.3282895\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:39",
+    "Script": "\r\nDebug: HeightMap[1, 9] = 3.96971\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:41",
+    "Script": "\r\nDebug: HeightMap[1, 10] = 4.50428\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:43",
+    "Script": "\r\nDebug: HeightMap[1, 11] = 4.966053\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:45",
+    "Script": "\r\nDebug: HeightMap[1, 12] = 5.245623\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:47",
+    "Script": "\r\nDebug: HeightMap[1, 13] = 5.276004\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:49",
+    "Script": "\r\nDebug: HeightMap[1, 14] = 5.0866694\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:15:52",
+    "Script": "\r\nDebug: HeightMap[1, 15] = 4.7714\r\nScript: Chunk.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:16:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-06 00:22:56",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-06 00:24:18",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:24:18",
+    "Script": "\r\nError: Exception: Could not find a part of the path 'E:\\CODES\\Terrarium\\Terrarium\\bin\\Debug\\net6.0\\ZGameBox2.0\\Shaders\\vertexShader.glsl'.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:24:18",
+    "Script": "\r\nError: Initialization exception: Could not find a part of the path 'E:\\CODES\\Terrarium\\Terrarium\\bin\\Debug\\net6.0\\ZGameBox2.0\\Shaders\\vertexShader.glsl'.\r\nScript: Game.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:24:18",
+    "Script": "\r\nError: Camera or Shader is not initialized.\r\nScript: Game.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:24:18",
+    "Script": "\r\nError: Camera or Shader is not initialized.\r\nScript: Game.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:24:18",
+    "Script": "\r\nError: Camera or Shader is not initialized.\r\nScript: Game.cs\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:25:40",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: Game.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:25:42",
+    "Script": "\r\nDebug: Loading shader sources from files.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:25:44",
+    "Script": "\r\nDebug: Compiling vertex shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:25:46",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:25:48",
+    "Script": "\r\nDebug: Compiling fragment shader.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:25:50",
+    "Script": "\r\nDebug: Shader compiled successfully.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:25:52",
+    "Script": "\r\nDebug: Linking shaders into a program.\r\nScript: ShaderProgram.cs (Terrarium)\r\nContext: NetworkListener",
+    "Error": "Listed Above"
+  },
+  {
+    "DateTime": "2024-09-06 00:25:59",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:26:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
   }
 ]
