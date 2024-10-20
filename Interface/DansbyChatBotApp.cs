@@ -88,7 +88,7 @@ namespace ChatbotApp
 
             //Initialize Lorehaven Timer
             LorehavenTimer = new Timer();
-            LorehavenTimer.Interval = 30000; //5 minutes in ms
+            LorehavenTimer.Interval = 300000; //5 minutes in ms
             LorehavenTimer.Tick += Lorehaven_Tick;
             LorehavenTimer.Start();
 
