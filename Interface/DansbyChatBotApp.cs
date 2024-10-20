@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.IO;
 using ChatbotApp.Interface.ErrorLog;
 using System.Diagnostics;
+using System.Timers;
 
 
 
@@ -56,15 +57,17 @@ namespace ChatbotApp
         //All Sprite Variables
 
         private PictureBox spritePictureBox;
-        private Timer animationTimer;
+        private System.Windows.Forms.Timer animationTimer;
         private int spriteX, spriteY;
         private string currentAnimation;
         private Random random = new Random();
-        private Timer jumpTimer;
+        private System.Windows.Forms.Timer jumpTimer;
         private bool isJumping;
         private int jumpHeight = 20; // Adjust the height of the jump
-        private Timer SlimeTimer;
-        private Timer LorehavenTimer;
+        private System.Windows.Forms.Timer SlimeTimer;
+        private System.Windows.Forms.Timer LorehavenTimer;
+        private const int RestartInterval = 3 *60 * 60 * 1000; // 3 hours in milliseconds.
+        private System.Timers.Timer restartTimer;
         public static int SlimeCount = 0; //Will have to change from Static in future if I ever release more instances of MainForm
 
 
@@ -72,6 +75,14 @@ namespace ChatbotApp
         public MainForm()
         {
             InitializeComponent();
+
+            // Set up Restart Timer
+            restartTimer = new System.Timers.Timer(RestartInterval);
+            restartTimer.Elapsed += OnRestartTimerElapsed;
+            restartTimer.Start();
+
+
+
             InitializeChatbot();
             LoadSoundtracks();
 
@@ -81,13 +92,13 @@ namespace ChatbotApp
 
 
             //Initialize Slime Timer for SlimeCount++ and slime animation
-            SlimeTimer = new Timer();
+            SlimeTimer = new System.Windows.Forms.Timer();
             SlimeTimer.Interval = 1000; // 1 second
             SlimeTimer.Tick += Timer_Tick;
             SlimeTimer.Start();
 
             //Initialize Lorehaven Timer
-            LorehavenTimer = new Timer();
+            LorehavenTimer = new System.Windows.Forms.Timer();
             LorehavenTimer.Interval = 300000; //5 minutes in ms
             LorehavenTimer.Tick += Lorehaven_Tick;
             LorehavenTimer.Start();
@@ -294,6 +305,88 @@ namespace ChatbotApp
 
             AppendToChatHistory("Welcome to your chat interface. I am Dansby also known as Dansby bot. May I assist you?");
         }        
+        // END: OF FORM SETUP ----------------------------------------------------------------------------------------------------------------------------------------
+
+        //Start: Restart Methods ------------------------------------------------------------------------------------------------------------------------------------
+        private void OnRestartTimerElapsed(object sender, ElapsedEventArgs e)
+        {
+            RestartApplication();
+        }
+
+        private void RestartApplication()
+        {
+            // Stop the timer to prevent multiple restarts
+            restartTimer.Stop();
+
+            // Log the restart action
+            LogRestart();
+
+            // Start a new instance of the application
+            Process.Start(Application.ExecutablePath);
+            Application.Exit(); // Close the current instance gracefully
+        }
+
+        private void LogRestart()
+        {
+            if (errorLogForm != null)
+            {
+                errorLogForm.AppendToDebugLog("DansbyBot is restarting.", "MainForm.cs");
+            }
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            // Handle graceful shutdown
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                // Log the shutdown action
+                LogShutdown();
+
+                // Perform any cleanup needed here
+                StopPlayback(); // Example cleanup action
+                
+                // Hide the MainForm instead of closing it
+                this.Hide();
+                e.Cancel = true; // Cancel the close event to keep the form open
+            }
+            else
+            {
+                // If the form is being closed programmatically, close any dependent forms
+                if (errorLogForm != null && !errorLogForm.IsDisposed)
+                {
+                    errorLogForm.Close();
+                }
+
+                SlimeCount = 0; // Reset Slime Timer
+                StopPlayback(); // Ensure playback is stopped during shutdown
+            }
+
+            // Call the base class method to ensure proper closing behavior
+            base.OnFormClosing(e);
+        }
+
+
+        private void LogShutdown()
+        {
+            if (errorLogForm != null)
+            {
+                errorLogForm.AppendToDebugLog("DansbyBot is shutting down gracefully.", "MainForm.cs");
+            }
+        }
+
+        // Additional method to handle exceptions globally
+        private void HandleCrash(Exception ex)
+        {
+            if (errorLogForm != null)
+            {
+                errorLogForm.AppendToErrorLog($"Unhandled exception occurred: {ex.Message}", "MainForm.cs");
+            }
+
+            // Restart the application after logging the error
+            RestartApplication();
+        }
+
+        //END: Restart Methods -------------------------------------------------------------------------------------------------------------------------------------
         private void SendButton_Click(object sender, EventArgs e)
         {
             string userInput = inputTextBox.Text;
@@ -355,20 +448,20 @@ namespace ChatbotApp
                 MessageBox.Show("Sidebar is not initialized!");
             }
         }
-        //Button for MonteCarloSimForm
+        //Button for MonteCarloSimForm -----------------------------------
         private void AppButton1_Click(object sender, EventArgs e)
         {
              MonteCarloSimulationForm mcForm = new MonteCarloSimulationForm();
              mcForm.Show(); // Show the form as a non modal dialog           
         }
-        //Button for McBookForm
+        //Button for McBookForm ------------------------------------------
         private void AppButton2_Click(object sender, EventArgs e)
         {
             MineCraftBookForm mcForm = new MineCraftBookForm();
             mcForm.ShowDialog(); // Show the form as a modal dialog
         }
         
-        //Button for ErrorLogForm
+        //Button for ErrorLogForm -----------------------------------------
         private void AppButton3_Click(object sender, EventArgs e)
         {
             OpenErrorLogForm(this);
@@ -400,7 +493,7 @@ namespace ChatbotApp
             errorLogForm.Show(); // Opens as a non-modal dialog, allowing interaction with the main form.
         }
 
-
+    // Start methods/constructors with UI/UX Logic -----------------------------------------------------------------------------------------------------------------
         public class CircleCheckBox : CheckBox 
         {
             private bool sideBarStatus = false;
@@ -453,6 +546,9 @@ namespace ChatbotApp
             }
         }
 
+        // End: methods/constructors with UI/UX Logic ---------------------------------------------------------------------------------------------------------------
+
+        // Start: Methods/Contructors with Soundtrack Logic ---------------------------------------------------------------------------------------------------------
         private void LoadSoundtracks()
         {
             
@@ -664,6 +760,9 @@ namespace ChatbotApp
             }
         }
 
+        // End: Methods/Contructors with Soundtrack Logic -----------------------------------------------------------------------------------------------------------
+
+        //Start: Methods/Constuctors with Slime Animation Logic -----------------------------------------------------------------------------------------------------
         public void SummonSlime()
         {
             spritePictureBox = new PictureBox
@@ -676,7 +775,7 @@ namespace ChatbotApp
             this.Controls.Add(spritePictureBox);
 
             // Initialize the Jump Timer
-            jumpTimer = new Timer
+            jumpTimer = new System.Windows.Forms.Timer
             {
                 Interval = 150// Adjust the interval to control the jump speed
             };
@@ -684,7 +783,7 @@ namespace ChatbotApp
 
 
             // Initialize the Timer for animation
-            animationTimer = new Timer
+            animationTimer = new System.Windows.Forms.Timer
             {
                 Interval = 500// Adjust for speed {500ms = .5seconds}
             };
@@ -761,7 +860,7 @@ namespace ChatbotApp
                 int dieAnimationDuration = 2000; // Adjust this based on the actual GIF duration
                 
                 // Start a timer to resume after the animation has played out
-                Timer dieTimer = new Timer();
+                System.Windows.Forms.Timer dieTimer = new System.Windows.Forms.Timer();
                 dieTimer.Interval = dieAnimationDuration;
                 dieTimer.Tick += (s, args) =>
                 {
@@ -860,13 +959,14 @@ namespace ChatbotApp
             }
 
         }
+        //End: Methods/Constructors for Slime Animation Logic ----------------------------------------------------------------------------------------------------------
 
         // Autosave function to autosave my Obsidian Notes onto my github
         // It access a file called autosave.bat which runs the git pull, add, commit, push commands...
         // the autosave.bat file is in cd E:/Lorehaven and the repo it pushes to is under E:/Lorehaven/gitconnect
         public void Autosave(object state)
         {
-            string autosaveDebugmsg = "Autosaved exceuted for Lorehaven at: " + DateTime.Now;
+            string autosaveDebugmsg = "Autosaved excecuted for Lorehaven at: " + DateTime.Now;
             Process.Start("E:\\Lorehaven\\autosave.bat");
 
             var errorLogForm = ErrorLogForm.Instance;
@@ -877,30 +977,6 @@ namespace ChatbotApp
         private void Lorehaven_Tick(object sender, EventArgs e)
         {
             Autosave(null); //calls Autosave Method.
-        }
-
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            
-            // Check if the form is being closed by the user or from the code (CloseReason)
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                // Hide the MainForm instead of closing it
-                this.Hide();
-                e.Cancel = true;
-                StopPlayback();
-            }
-            else
-            {
-                // If the form is being closed by the application, you might want to close everything
-                if (errorLogForm != null && !errorLogForm.IsDisposed)
-                {
-                    errorLogForm.Close();
-                }
-                SlimeCount = 0; //reset Slime Timer
-                StopPlayback();
-                base.OnFormClosing(e); // Close the main form
-            }
         }
 
         // Method to fully close the application when needed
@@ -953,13 +1029,50 @@ namespace ChatbotApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // Access the singleton instance of ErrorLogForm
-            ErrorLogForm errorLogForm = ErrorLogForm.Instance;
-            errorLogForm.Show();
+            int restartCount = 0; // Counter for consecutive restarts
+            const int maxRestarts = 5; // Maximum allowed restarts before exiting
 
-            //Create/Show MainForm
-            Application.Run(new MainForm());
+            while (true) // Infinite loop to keep restarting the application
+            {
+                try
+                {
+                    // Create and run the MainForm
+                    using (MainForm mainForm = new MainForm())
+                    {
 
+                        // Access the singleton instance of ErrorLogForm
+                        ErrorLogForm errorLogForm = ErrorLogForm.Instance;
+                        errorLogForm.Show();
+
+                        Application.Run(mainForm);
+                    }
+
+                    // Reset the restart count if the application closes successfully
+                    restartCount = 0;
+                }
+                catch (Exception ex)
+                {
+                    // Log the exception to your error log form or a log file
+                    ErrorLogForm errorLogForm = ErrorLogForm.Instance;
+                    errorLogForm.AppendToErrorLog($"Application crashed: {ex.Message}", "Program.cs");
+
+                    // Optionally show a message box to inform the user
+                    MessageBox.Show("The application has encountered an error and will restart.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+                    restartCount++; // Increment the restart count
+
+                    // Check if the maximum restart count has been reached
+                    if (restartCount >= maxRestarts)
+                    {
+                        MessageBox.Show("The application has encountered multiple errors and will now exit.", "Critical Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break; // Exit the loop
+
+                    }
+                }
+
+                System.Threading.Thread.Sleep(1000); // Sleep for 1 second
+
+            }
         }
     } 
 }
