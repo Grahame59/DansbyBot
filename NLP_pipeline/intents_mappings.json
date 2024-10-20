@@ -3014,5 +3014,58 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "performsavelorehaven",
+    "Examples": [
+      {
+        "Utterance": "Force Save Lorehaven",
+        "Tokens": [
+          "Force",
+          "Save",
+          "Lorehaven"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performsavelorehaven",
+    "Examples": [
+      {
+        "Utterance": "save lorehaven",
+        "Tokens": [
+          "save",
+          "lorehaven"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performsavelorehaven",
+    "Examples": [
+      {
+        "Utterance": "push Lorehaven to my gith",
+        "Tokens": [
+          "push",
+          "Lorehaven",
+          "to",
+          "my",
+          "gith"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performexitdansby",
+    "Examples": [
+      {
+        "Utterance": "closes the app",
+        "Tokens": [
+          "closes",
+          "the",
+          "app"
+        ]
+      }
+    ]
   }
 ]

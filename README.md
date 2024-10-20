@@ -179,3 +179,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 9.2.24 - 1:13 am
 - Added a death animation state for slime sprite... Need to go through a lot of bug fixes in next Code Sess, been trying to get procedural terrain generation done for Terrarium.
+
+# 10.20.24 - 1:04 pm
+- Added autosaving as well as the ability for Dansby to perform a save of my Obsidian Vault (Lorehaven). He runs a Autosave.bat file which pulls the repo, then adds all files, commits them as "autosave" and pushes it to the main branch. Going to try to get Constant runtime up for dansby that can handle restarts and crashes. 

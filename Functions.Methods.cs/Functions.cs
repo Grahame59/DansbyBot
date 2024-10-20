@@ -4,7 +4,6 @@ using Intents;
 using Tokenization;
 using UserAuthentication; //for retriving users names when logged in
 using System.Text.Json;
-using TaskManagement; 
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
@@ -13,6 +12,7 @@ using System.Windows.Forms;
 using ChatbotApp;
 using System.Linq;
 using System.Threading.Tasks;
+using ChatbotApp.Interface.ErrorLog;
 
 
 
@@ -23,7 +23,6 @@ namespace Functions
 
         private MainForm mainForm;
         private static UserManager userManager;
-        private static ListManager ListManager = new ListManager(); // Instantiate TodoListManager as static
         private const string ListsFilePath = "Functions.Methods.cs\\lists.json"; // Path to save the to-do lists
 
 
@@ -111,6 +110,15 @@ namespace Functions
             }
         }
 
+        public void ForceSaveLorehaven(object state)
+        {
+            mainForm.Autosave(state);
+            mainForm.AppendToChatHistory("Dansby: Lorehaven has been pushed to the main branch.");
+
+            var errorLogForm = ErrorLogForm.Instance;
+            errorLogForm.AppendToDebugLog("Dansby performed a manual pull, add, commit, push to Lorehaven repo.", "Functions.cs");
+        }
+
         // Function description method
         public string GetFunctionDescription(string functionName)
         {
@@ -156,23 +164,8 @@ namespace Functions
                 case "TestUserLoginAndDisplayData" :
                     return "This is and Admin only command that allows you to view, a user of your selection, information. ";
                 
-                case "CreateList" :
-                    return "This is a function that can create lists.";
-
-                case "AddItemToList" :
-                    return "This is a function that can add items to a defined listName.";
-
-                case "RemoveItemFromList" :
-                    return "This is a function that can remove items from a defined listName.";
-
-                case "DisplayList" :
-                    return "This is a function that can display a single list of choice from a defined ListName.";
-
-                case "ListAllLists" :
-                    return "This is a function that list all lists that are already defined and saved.";
-                
-                case "StartSnakeGame" : 
-                    return "This is a function that loads up snake in console and you can play!";
+                case "ForceSaveLorehaven" :
+                    return "This is a method that runs a Autosave.bat file that pulls, adds, commits, and pushes my Obisidian Vault to my Github(Grahame59/Lorehaven).";
 
                 default:
                     return "No description available.";

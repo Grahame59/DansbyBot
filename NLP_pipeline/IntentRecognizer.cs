@@ -245,6 +245,11 @@ namespace Intents
                         mainform.SummonSlime();
                       return "Summons the Slime with snarky comment";
                     }
+
+                case "performsavelorehaven" :
+
+                    FunctionScript.ForceSaveLorehaven(null);
+                    return "Saves Lorehaven Obsidian Vault to my Github";
                     
 
                 case "openerrorLog" :

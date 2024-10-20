@@ -864,7 +864,7 @@ namespace ChatbotApp
         // Autosave function to autosave my Obsidian Notes onto my github
         // It access a file called autosave.bat which runs the git pull, add, commit, push commands...
         // the autosave.bat file is in cd E:/Lorehaven and the repo it pushes to is under E:/Lorehaven/gitconnect
-        private static void Autosave(object state)
+        public void Autosave(object state)
         {
             string autosaveDebugmsg = "Autosaved exceuted for Lorehaven at: " + DateTime.Now;
             Process.Start("E:\\Lorehaven\\autosave.bat");

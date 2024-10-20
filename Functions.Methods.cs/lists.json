@@ -1,6 +1,0 @@
-{
-  "CodeErrors": [
-    "Fix the double print output in console when called functions are used through intent recog.",
-    "Fix the snake game logic if need info look at README 5.27.24 Entry #3."
-  ]
-}

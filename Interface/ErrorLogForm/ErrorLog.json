@@ -203,5 +203,110 @@
     "DateTime": "2024-10-19 21:56:38",
     "Script": "ErrorLogForm.cs",
     "Error": "Number of error entries: 40"
+  },
+  {
+    "DateTime": "2024-10-20 12:57:21",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-20 12:57:21",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 42"
+  },
+  {
+    "DateTime": "2024-10-20 12:57:28",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 12:58:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 12:58:07 PM."
+  },
+  {
+    "DateTime": "2024-10-20 12:58:22",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 12:58:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 12:58:25 PM."
+  },
+  {
+    "DateTime": "2024-10-20 12:58:48",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 12:59:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 12:59:07 PM."
+  },
+  {
+    "DateTime": "2024-10-20 12:59:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 12:59:25 PM."
+  },
+  {
+    "DateTime": "2024-10-20 12:59:35",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 12:59:53",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 12:59:53 PM."
+  },
+  {
+    "DateTime": "2024-10-20 12:59:53",
+    "Script": "Functions.cs",
+    "Error": "Dansby performed a manual pull, add, commit, push to Lorehaven repo."
+  },
+  {
+    "DateTime": "2024-10-20 12:59:53",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 12:59:53 PM."
+  },
+  {
+    "DateTime": "2024-10-20 12:59:53",
+    "Script": "Functions.cs",
+    "Error": "Dansby performed a manual pull, add, commit, push to Lorehaven repo."
+  },
+  {
+    "DateTime": "2024-10-20 12:59:55",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 12:59:55 PM."
+  },
+  {
+    "DateTime": "2024-10-20 13:00:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 1:00:25 PM."
+  },
+  {
+    "DateTime": "2024-10-20 13:00:29",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 13:00:55",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 1:00:55 PM."
+  },
+  {
+    "DateTime": "2024-10-20 13:01:25",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 1:01:25 PM."
+  },
+  {
+    "DateTime": "2024-10-20 13:01:48",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 13:01:55",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved exceuted for Lorehaven at: 10/20/2024 1:01:55 PM."
   }
 ]
