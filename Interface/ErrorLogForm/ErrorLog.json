@@ -1,0 +1,207 @@
+[
+  {
+    "DateTime": "2024-09-06 00:43:44",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-06 00:43:44",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 1"
+  },
+  {
+    "DateTime": "2024-09-06 00:44:00",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:44:30",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:44:56",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:45:29",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:46:10",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:47:29",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:48:42",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:48:44",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-06 00:49:47",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:50:57",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:53:12",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:53:44",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-09-06 00:53:56",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:55:12",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:55:49",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:57:12",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 00:58:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-09-06 01:02:55",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-06 01:02:55",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 20"
+  },
+  {
+    "DateTime": "2024-09-27 23:54:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-27 23:54:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 22"
+  },
+  {
+    "DateTime": "2024-09-27 23:54:38",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-09-27 23:54:38",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 24"
+  },
+  {
+    "DateTime": "2024-10-10 14:26:02",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-10 14:26:02",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 26"
+  },
+  {
+    "DateTime": "2024-10-10 14:27:19",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-10 14:27:50",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-10 14:28:16",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-10 14:28:49",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-10 14:29:30",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-10 14:30:49",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-10 14:31:02",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-10 14:32:03",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-10 14:33:08",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-10 14:34:19",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-19 21:55:18",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-19 21:55:18",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 38"
+  },
+  {
+    "DateTime": "2024-10-19 21:56:38",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-19 21:56:38",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 40"
+  }
+]

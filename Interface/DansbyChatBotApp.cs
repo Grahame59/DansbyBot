@@ -9,6 +9,7 @@ using NAudio.Wave;
 using System.Collections.Generic;
 using System.IO;
 using ChatbotApp.Interface.ErrorLog;
+using System.Diagnostics;
 
 
 
@@ -63,6 +64,7 @@ namespace ChatbotApp
         private bool isJumping;
         private int jumpHeight = 20; // Adjust the height of the jump
         private Timer SlimeTimer;
+        private Timer LorehavenTimer;
         public static int SlimeCount = 0; //Will have to change from Static in future if I ever release more instances of MainForm
 
 
@@ -72,16 +74,24 @@ namespace ChatbotApp
             InitializeComponent();
             InitializeChatbot();
             LoadSoundtracks();
+
             // Use the singleton instance of ErrorLogForm
             var errorLogForm = ErrorLogForm.Instance;
             OpenErrorLogForm(this); 
 
 
-            //Initalize Timer    
+            //Initialize Slime Timer for SlimeCount++ and slime animation
             SlimeTimer = new Timer();
             SlimeTimer.Interval = 1000; // 1 second
             SlimeTimer.Tick += Timer_Tick;
             SlimeTimer.Start();
+
+            //Initialize Lorehaven Timer
+            LorehavenTimer = new Timer();
+            LorehavenTimer.Interval = 30000; //5 minutes in ms
+            LorehavenTimer.Tick += Lorehaven_Tick;
+            LorehavenTimer.Start();
+
 
            
         }
@@ -851,6 +861,23 @@ namespace ChatbotApp
 
         }
 
+        // Autosave function to autosave my Obsidian Notes onto my github
+        // It access a file called autosave.bat which runs the git pull, add, commit, push commands...
+        // the autosave.bat file is in cd E:/Lorehaven and the repo it pushes to is under E:/Lorehaven/gitconnect
+        private static void Autosave(object state)
+        {
+            string autosaveDebugmsg = "Autosaved exceuted for Lorehaven at: " + DateTime.Now;
+            Process.Start("E:\\Lorehaven\\autosave.bat");
+
+            var errorLogForm = ErrorLogForm.Instance;
+            errorLogForm.AppendToDebugLog($"Debug: {autosaveDebugmsg}.", "ErrorLogForm.cs" );
+        }
+        
+        // Tick event for Autosave Timer that calls Autosave method above ^.
+        private void Lorehaven_Tick(object sender, EventArgs e)
+        {
+            Autosave(null); //calls Autosave Method.
+        }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
