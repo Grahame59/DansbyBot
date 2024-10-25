@@ -1598,5 +1598,2820 @@
     "DateTime": "2024-10-20 17:42:02",
     "Script": "ErrorLogForm.cs",
     "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 5:42:02 PM."
+  },
+  {
+    "DateTime": "2024-10-20 17:43:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-20 17:43:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 321"
+  },
+  {
+    "DateTime": "2024-10-20 17:43:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:43:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:44:05",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:44:38",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:45:19",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:46:38",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:47:51",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:48:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 17:48:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 5:48:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 17:48:56",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:50:06",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:52:21",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:53:05",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:53:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 17:53:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 5:53:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 17:54:21",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:54:58",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:56:21",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:57:18",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 17:58:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 17:58:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 5:58:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 17:58:49",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 18:03:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:03:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:03:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:08:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:08:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:08:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:13:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:13:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:13:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:18:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:18:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:18:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:23:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:23:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:23:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:28:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:28:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:28:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:33:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:33:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:33:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:38:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:38:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:38:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:40:53",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 18:41:36",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 18:41:51",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 18:42:06",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 18:42:21",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 18:42:36",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 18:43:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:43:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:43:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:48:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:48:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:48:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:53:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:53:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:53:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 18:58:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 18:58:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 6:58:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:03:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:03:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:03:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:08:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:08:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:08:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:13:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:13:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:13:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:18:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:18:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:18:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:23:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:23:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:23:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:28:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:28:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:28:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:33:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:33:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:33:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:35:42",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 19:38:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:38:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:38:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:43:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:43:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:43:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:48:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:48:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:48:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:53:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:53:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:53:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 19:58:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 19:58:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 7:58:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 20:03:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 20:03:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 8:03:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 20:08:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 20:08:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 8:08:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 20:13:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 20:13:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 8:13:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 20:18:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 20:18:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 8:18:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 20:23:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 20:23:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 8:23:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 20:28:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 20:28:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 8:28:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 20:29:56",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 20:33:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 20:33:06",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 8:33:06 PM."
+  },
+  {
+    "DateTime": "2024-10-20 20:43:03",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-20 20:43:03",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 415"
+  },
+  {
+    "DateTime": "2024-10-20 20:43:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-20 20:43:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 417"
+  },
+  {
+    "DateTime": "2024-10-20 20:43:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-20 20:43:05",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 419"
+  },
+  {
+    "DateTime": "2024-10-20 21:05:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-20 21:05:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 421"
+  },
+  {
+    "DateTime": "2024-10-20 21:05:27",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:05:57",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:06:23",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:06:56",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:07:37",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:08:56",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:10:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:10:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 21:10:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 9:10:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 21:11:14",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:12:24",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:14:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:15:23",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:15:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 21:15:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 9:15:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 21:16:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:17:16",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:18:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:19:36",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:20:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 21:20:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 9:20:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 21:21:07",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 21:25:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 21:25:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 9:25:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 21:30:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 21:30:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 9:30:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 21:35:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 21:35:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 9:35:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 21:40:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 21:40:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 9:40:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 21:45:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 21:45:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 9:45:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 21:50:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 21:50:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 9:50:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 21:55:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 21:55:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 9:55:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:00:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 22:00:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 10:00:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:03:01",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:03:44",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:03:59",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:04:14",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:04:29",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:04:44",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:05:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 22:05:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 10:05:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:10:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 22:10:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 10:10:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:15:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 22:15:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 10:15:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:20:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 22:20:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 10:20:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:25:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 22:25:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 10:25:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:30:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 22:30:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 10:30:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:35:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 22:35:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 10:35:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:40:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 22:40:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 10:40:24 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:51:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-20 22:51:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 483"
+  },
+  {
+    "DateTime": "2024-10-20 22:51:22",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:51:52",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:52:18",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:52:51",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:53:32",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:54:51",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:56:04",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:56:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 22:56:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 10:56:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 22:57:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 22:58:19",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:00:34",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:01:18",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:01:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:01:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:01:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:02:34",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:03:11",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:04:34",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:05:31",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:06:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:06:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:06:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:07:02",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:11:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:11:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:11:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:16:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:16:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:16:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:21:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:21:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:21:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:26:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:26:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:26:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:31:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:31:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:31:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:36:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:36:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:36:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:41:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:41:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:41:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:46:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:46:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:46:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:48:56",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:49:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:49:54",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:50:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:50:24",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:50:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-20 23:51:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:51:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:51:19 PM."
+  },
+  {
+    "DateTime": "2024-10-20 23:56:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-20 23:56:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/20/2024 11:56:19 PM."
+  },
+  {
+    "DateTime": "2024-10-21 00:01:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 00:01:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 12:01:19 AM."
+  },
+  {
+    "DateTime": "2024-10-21 00:06:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 00:06:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 12:06:19 AM."
+  },
+  {
+    "DateTime": "2024-10-21 00:11:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 00:11:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 12:11:19 AM."
+  },
+  {
+    "DateTime": "2024-10-21 00:16:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 00:16:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 12:16:19 AM."
+  },
+  {
+    "DateTime": "2024-10-21 00:21:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 00:21:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 12:21:19 AM."
+  },
+  {
+    "DateTime": "2024-10-21 00:26:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 00:26:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 12:26:19 AM."
+  },
+  {
+    "DateTime": "2024-10-21 00:31:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 00:31:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 12:31:19 AM."
+  },
+  {
+    "DateTime": "2024-10-21 00:36:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 00:36:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 12:36:19 AM."
+  },
+  {
+    "DateTime": "2024-10-21 00:41:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 00:41:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 12:41:19 AM."
+  },
+  {
+    "DateTime": "2024-10-21 00:43:45",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 00:46:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 00:46:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 12:46:19 AM."
+  },
+  {
+    "DateTime": "2024-10-21 18:30:47",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 18:30:47",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 6:30:47 PM."
+  },
+  {
+    "DateTime": "2024-10-21 18:35:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 18:35:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 6:35:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 18:40:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 18:40:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 6:40:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 18:45:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 18:45:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 6:45:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 18:50:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 18:50:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 6:50:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 18:55:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 18:55:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 6:55:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 19:00:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 19:00:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 7:00:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 19:05:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 19:05:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 7:05:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 19:10:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 19:10:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 7:10:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 19:15:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 19:15:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 7:15:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 19:18:18",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:20:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 19:20:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 7:20:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 19:25:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 19:25:45",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 7:25:45 PM."
+  },
+  {
+    "DateTime": "2024-10-21 19:31:30",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-21 19:31:30",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 579"
+  },
+  {
+    "DateTime": "2024-10-21 19:31:31",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-21 19:31:31",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 581"
+  },
+  {
+    "DateTime": "2024-10-21 19:31:31",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-21 19:31:31",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 583"
+  },
+  {
+    "DateTime": "2024-10-21 19:35:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-21 19:35:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 585"
+  },
+  {
+    "DateTime": "2024-10-21 19:35:20",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:35:50",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:36:16",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:36:49",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:37:30",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:38:49",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:40:02",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:40:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 19:40:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 7:40:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 19:41:07",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:42:17",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:44:32",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:45:16",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:45:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 19:45:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 7:45:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 19:46:32",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:47:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:48:32",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:49:29",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:50:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 19:50:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 7:50:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 19:51:00",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 19:55:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 19:55:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 7:55:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:00:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:00:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:00:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:05:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:05:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:05:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:10:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:10:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:10:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:15:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:15:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:15:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:20:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:20:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:20:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:25:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:25:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:25:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:30:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:30:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:30:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:32:54",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 20:33:37",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 20:33:52",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 20:34:07",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 20:34:22",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 20:34:37",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 20:35:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:35:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:35:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:40:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:40:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:40:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:45:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:45:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:45:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:50:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:50:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:50:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 20:55:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 20:55:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 8:55:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:00:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:00:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:00:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:05:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:05:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:05:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:10:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:10:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:10:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:15:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:15:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:15:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:20:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:20:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:20:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:25:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:25:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:25:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:27:43",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 21:30:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:30:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:30:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:35:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:35:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:35:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:40:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:40:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:40:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:45:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:45:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:45:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:50:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:50:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:50:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 21:55:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 21:55:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 9:55:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:00:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:00:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:00:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:05:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:05:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:05:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:10:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:10:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:10:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:15:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:15:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:15:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:20:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:20:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:20:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:21:57",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:25:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:25:17",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:25:17 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:31:30",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-21 22:31:30",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 679"
+  },
+  {
+    "DateTime": "2024-10-21 22:31:32",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-21 22:31:32",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 681"
+  },
+  {
+    "DateTime": "2024-10-21 22:31:32",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-21 22:31:32",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 683"
+  },
+  {
+    "DateTime": "2024-10-21 22:31:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-21 22:31:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 685"
+  },
+  {
+    "DateTime": "2024-10-21 22:31:43",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:32:13",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:32:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:33:12",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:33:53",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:35:12",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:36:25",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:36:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:37:30",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:38:40",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:40:55",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:41:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:41:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:41:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:41:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:42:55",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:43:32",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:44:55",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:45:52",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:46:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:46:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:46:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:47:23",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 22:51:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:51:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:51:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 22:56:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 22:56:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 10:56:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:01:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:01:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:01:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:06:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:06:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:06:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:11:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:11:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:11:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:16:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:16:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:16:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:21:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:21:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:21:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:26:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:26:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:26:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:29:17",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 23:30:00",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 23:30:15",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 23:30:30",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 23:30:45",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 23:31:00",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-21 23:31:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:31:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:31:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:36:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:41:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:41:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:41:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:46:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:46:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:46:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:51:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:51:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:51:40 PM."
+  },
+  {
+    "DateTime": "2024-10-21 23:56:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-21 23:56:41",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/21/2024 11:56:40 PM."
+  },
+  {
+    "DateTime": "2024-10-22 00:01:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:01:41",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:01:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:06:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:06:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:06:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:11:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:11:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:11:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:16:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:16:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:16:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:21:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:21:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:21:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:24:06",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 00:26:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:26:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:26:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:31:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:31:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:31:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:36:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:36:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:41:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:41:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:41:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:46:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:46:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:46:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:51:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:51:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:51:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 00:56:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 00:56:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 12:56:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 01:01:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 01:01:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 1:01:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 01:06:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 01:06:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 1:06:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 01:11:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 01:11:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 1:11:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 01:16:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 01:16:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 1:16:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 01:18:20",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 01:21:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 01:21:40",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 1:21:40 AM."
+  },
+  {
+    "DateTime": "2024-10-22 01:31:31",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-22 01:31:31",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 779"
+  },
+  {
+    "DateTime": "2024-10-22 01:31:32",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-22 01:31:32",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 781"
+  },
+  {
+    "DateTime": "2024-10-22 01:31:32",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-22 01:31:32",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 783"
+  },
+  {
+    "DateTime": "2024-10-22 01:56:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-22 01:56:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 785"
+  },
+  {
+    "DateTime": "2024-10-22 01:56:27",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 01:56:57",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 01:57:23",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 01:57:56",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 01:58:37",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 01:59:56",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:01:09",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:01:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:01:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:01:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:02:14",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:03:24",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:05:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:06:23",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:06:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:06:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:06:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:07:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:08:16",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:09:39",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:10:36",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:11:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:11:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:11:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:12:07",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:16:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:16:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:16:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:21:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:21:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:21:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:26:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:26:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:26:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:31:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:31:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:31:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:36:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:36:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:36:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:41:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:41:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:41:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:46:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:46:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:46:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:51:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:51:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:51:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 02:54:01",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:54:44",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:54:59",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:55:14",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:55:29",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:55:44",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 02:56:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 02:56:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 2:56:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 03:01:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 03:01:24",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 3:01:24 AM."
+  },
+  {
+    "DateTime": "2024-10-22 22:57:21",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 22:57:23",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 10:57:23 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:02:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:02:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:02:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:07:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:07:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:07:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:12:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:12:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:12:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:17:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:17:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:17:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:22:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:22:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:22:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:27:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:27:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:27:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:32:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:32:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:32:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:37:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:37:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:37:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:42:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:42:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:42:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:42:28",
+    "Script": "MainForm.cs",
+    "Error": "Slime Summoned."
+  },
+  {
+    "DateTime": "2024-10-22 23:47:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:47:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:47:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:52:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:52:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:52:19 PM."
+  },
+  {
+    "DateTime": "2024-10-22 23:57:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-22 23:57:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/22/2024 11:57:19 PM."
+  },
+  {
+    "DateTime": "2024-10-23 00:02:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-23 00:02:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/23/2024 12:02:19 AM."
+  },
+  {
+    "DateTime": "2024-10-23 00:07:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-23 00:07:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/23/2024 12:07:19 AM."
+  },
+  {
+    "DateTime": "2024-10-23 00:12:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-23 00:12:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/23/2024 12:12:19 AM."
+  },
+  {
+    "DateTime": "2024-10-23 00:17:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: AutoSave triggered."
+  },
+  {
+    "DateTime": "2024-10-23 00:17:19",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: Autosaved excecuted for Lorehaven at: 10/23/2024 12:17:19 AM."
+  },
+  {
+    "DateTime": "2024-10-23 00:25:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-23 00:25:07",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 870"
+  },
+  {
+    "DateTime": "2024-10-23 00:25:08",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-23 00:25:08",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 872"
+  },
+  {
+    "DateTime": "2024-10-23 00:25:08",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-23 00:25:08",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 874"
+  },
+  {
+    "DateTime": "2024-10-23 15:28:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-23 15:28:29",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 876"
+  },
+  {
+    "DateTime": "2024-10-23 15:28:31",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-23 15:28:31",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 878"
+  },
+  {
+    "DateTime": "2024-10-25 00:49:55",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-25 00:49:55",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 880"
+  },
+  {
+    "DateTime": "2024-10-25 00:51:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Debug: ErrorLog Loaded from Json upon initialization."
+  },
+  {
+    "DateTime": "2024-10-25 00:51:51",
+    "Script": "ErrorLogForm.cs",
+    "Error": "Number of error entries: 882"
   }
 ]
