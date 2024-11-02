@@ -182,3 +182,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 10.20.24 - 1:04 pm
 - Added autosaving as well as the ability for Dansby to perform a save of my Obsidian Vault (Lorehaven). He runs a Autosave.bat file which pulls the repo, then adds all files, commits them as "autosave" and pushes it to the main branch. Going to try to get Constant runtime up for dansby that can handle restarts and crashes. 
+
+# 11.2.24 - 3:19 am
+- Just modified the entry for log in a little and instead of using the SaveResponse() function for user and pass, I hard coded it in so Dansby knows its my user. Did this so when the restart occurs no user input is needed for the restart to fully take place! 

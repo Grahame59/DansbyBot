@@ -12,7 +12,7 @@ dotnet build
 if %errorlevel% neq 0 (
     echo Build failed. Please check the errors above.
     exit /b %errorlevel%
-)
+) 
 
 :: Run the application.
 dotnet run

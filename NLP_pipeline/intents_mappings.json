@@ -3092,5 +3092,30 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "performsavelorehaven",
+    "Examples": [
+      {
+        "Utterance": "push lorehaven",
+        "Tokens": [
+          "push",
+          "lorehaven"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performsavelorehaven",
+    "Examples": [
+      {
+        "Utterance": "save lore haven",
+        "Tokens": [
+          "save",
+          "lore",
+          "haven"
+        ]
+      }
+    ]
   }
 ]

@@ -144,7 +144,7 @@ namespace ChatbotApp
 
             // loggedInUserLabel
             this.loggedInUserLabel.Location = new System.Drawing.Point(50, 25); // Moved to the top left
-            this.loggedInUserLabel.Size = new System.Drawing.Size(150, 20); // Adjusted size
+            this.loggedInUserLabel.Size = new System.Drawing.Size(200, 20); // Adjusted size
             this.loggedInUserLabel.Text = "Logged in as: ";
             this.loggedInUserLabel.ForeColor = Color.White;
             this.loggedInUserLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left; // Anchored to the top and left
@@ -286,8 +286,8 @@ namespace ChatbotApp
             userManager = new UserManager(this);
 
             // Prompt user for login credentials
-            CurInstanceLoginUser = SaveResponse("Enter your username:");
-            CurInstanceLoginPass = SaveResponse("Enter your password:");
+            CurInstanceLoginUser = "kyler_grahame"; // TO PROMPT LOGIN DO: CurInstanceLoginUser = SaveResponse("Enter Your Username: ");
+            CurInstanceLoginPass = "admin";// TO PROMPT PASS DO : CurInstanceLoginPass = SaveResponse("Enter your password:");
 
             // Attempt to login
             bool loginSuccess = userManager.Login(CurInstanceLoginUser, CurInstanceLoginPass);
@@ -304,6 +304,8 @@ namespace ChatbotApp
             }
 
             AppendToChatHistory("Welcome to your chat interface. I am Dansby also known as Dansby bot. May I assist you?");
+
+            // Removing User system : Leaving code if I want to reimplement... Only removing here unless I need to refactor some other scripts. 
         }        
         // END: OF FORM SETUP ----------------------------------------------------------------------------------------------------------------------------------------
 
