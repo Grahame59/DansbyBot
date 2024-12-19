@@ -3117,5 +3117,30 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "currenttask",
+    "Examples": [
+      {
+        "Utterance": "what are you doing",
+        "Tokens": [
+          "what",
+          "are",
+          "you",
+          "doing"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "performsavelorehaven",
+    "Examples": [
+      {
+        "Utterance": "forcesavelorehaven",
+        "Tokens": [
+          "forcesavelorehaven"
+        ]
+      }
+    ]
   }
 ]
