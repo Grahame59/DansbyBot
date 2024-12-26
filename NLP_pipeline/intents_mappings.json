@@ -3142,5 +3142,29 @@
         ]
       }
     ]
+  },
+  {
+    "Name": "missyouaffection",
+    "Examples": [
+      {
+        "Utterance": "i miss u",
+        "Tokens": [
+          "i",
+          "miss",
+          "u"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "calledname",
+    "Examples": [
+      {
+        "Utterance": "dansby",
+        "Tokens": [
+          "dansby"
+        ]
+      }
+    ]
   }
 ]

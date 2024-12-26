@@ -185,3 +185,7 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 11.2.24 - 3:19 am
 - Just modified the entry for log in a little and instead of using the SaveResponse() function for user and pass, I hard coded it in so Dansby knows its my user. Did this so when the restart occurs no user input is needed for the restart to fully take place! 
+
+# 12.26.24 - 3:08 pm
+- Was able to remove ErrorLogger From Dansby and get it fully functional with a good setup to scale bigger. Working on cleaning up Dansby's code base but think I broke some stuff going to take a break for now. Some stuff I removed was the ErrorLogger out of Dansby so now it is replaced with a client for TCP -> ErrorLogClient.cs. Removed the buttons and all other functionality involving the old partial form ErrorloggerForm.cs as well as removed the McBookForm as well as its button and other related functionality. 
+- Planning to trim all the fluff out of Dansby and then make a new project or branch for Dansby V1.1 or 0.2 however I plan to version them. The main goal of this will be HEAVY POLISH on the current Dansby features I plan to keep (base chatbot and task completition). The biggest goal for the refactoring will be to get Dansby's speech much better and his comprehension much better. I want to base his responses off my Obsidian Vault so he can scrap data from the .md files and act as a second brain for me as well as complete more task and have a much stronger and diverse dialog. NO CLUE HOW I AM DOING THIS YET!!!!!

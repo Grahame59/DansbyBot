@@ -4,16 +4,11 @@ using Responses;
 using UserAuthentication;
 using System.Windows.Forms;
 using System.Drawing;
-using ChatbotApp.Interface.MinecraftBook;
 using NAudio.Wave;
 using System.Collections.Generic;
 using System.IO;
-using ChatbotApp.Interface.ErrorLog;
 using System.Diagnostics;
 using System.Timers;
-
-
-
 
 //If I want my form to be borderless style (FormBorderStyle = None). 
 //This style removes the default window frame and control box (minimize, maximize, close buttons).
@@ -41,10 +36,9 @@ namespace ChatbotApp
         private ResponseRecognizer responseRecognizer;
         private UserManager userManager;
         public bool isUserInputForColor = false;
-        public ErrorLogForm errorLogForm;
+        
 
         //All Audio Variables
-
         private WaveOutEvent outputDevice; //audio playback
         private AudioFileReader audioFile; //read audio files
         private bool isMuted = false; // mute/unmute state
@@ -55,7 +49,6 @@ namespace ChatbotApp
         public string SoundTrackPathGlobal = null;
 
         //All Sprite Variables
-
         private PictureBox spritePictureBox;
         private System.Windows.Forms.Timer animationTimer;
         private int spriteX, spriteY;
@@ -69,8 +62,7 @@ namespace ChatbotApp
         private const int RestartInterval = 3 *60 * 60 * 1000; // 3 hours in milliseconds.
         private System.Timers.Timer restartTimer;
         public static int SlimeCount = 0; //Will have to change from Static in future if I ever release more instances of MainForm
-
-
+        private ErrorLogClient errorLogClient = new ErrorLogClient();
 
         public MainForm()
         {
@@ -81,15 +73,8 @@ namespace ChatbotApp
             restartTimer.Elapsed += OnRestartTimerElapsed;
             restartTimer.Start();
 
-
-
             InitializeChatbot();
             LoadSoundtracks();
-
-            // Use the singleton instance of ErrorLogForm
-            var errorLogForm = ErrorLogForm.Instance;
-            OpenErrorLogForm(this); 
-
 
             //Initialize Slime Timer for SlimeCount++ and slime animation
             SlimeTimer = new System.Windows.Forms.Timer();
@@ -102,11 +87,8 @@ namespace ChatbotApp
             LorehavenTimer.Interval = 300000; //5 minutes in ms
             LorehavenTimer.Tick += Lorehaven_Tick;
             LorehavenTimer.Start();
-
-
            
         }
-
         private void InitializeComponent()
         {
             this.inputTextBox = new TextBox();
@@ -187,24 +169,6 @@ namespace ChatbotApp
             appButton1.Click += AppButton1_Click;
             sidebar.Controls.Add(appButton1);
 
-            Button appButton2 = new Button();
-            appButton2.Text = "McBookForm(WIP)";
-            appButton2.Size = new Size(180, 40);
-            appButton2.Location = new Point(10, 70);
-            appButton2.BackColor = Color.FromArgb(50, 50, 50);
-            appButton2.ForeColor = Color.White;
-            appButton2.Click += AppButton2_Click;
-            sidebar.Controls.Add(appButton2);
-
-            Button appButton3 = new Button();
-            appButton3.Text = "ErrorLog";
-            appButton3.Size = new Size(180,40);
-            appButton3.Location = new Point(10,120);
-            appButton3.BackColor = Color.FromArgb(50, 50, 50);
-            appButton3.ForeColor = Color.White;
-            appButton3.Click += AppButton3_Click;
-            sidebar.Controls.Add(appButton3);
-
             // Add more buttons as needed
 
             // Soundtrack ComboBox
@@ -223,14 +187,14 @@ namespace ChatbotApp
             if (soundtracks == null)
             {
                 // Log the error to the error log
-                errorLogForm.AppendToErrorLog("Soundtracks list is null.", "MainForm.cs");
+                errorLogClient.AppendToErrorLog("Soundtracks list is null.", "MainForm.cs");
             }
 
             foreach (var track in soundtracks)
             {
                 if (track == null)
                 {
-                    errorLogForm.AppendToErrorLog("A track in the soundtracks list is null.", "MainForm.cs");
+                    errorLogClient.AppendToErrorLog("A track in the soundtracks list is null.", "MainForm.cs");
                 }
                 this.soundtrackComboBox.Items.Add(Path.GetFileName(track));
             }
@@ -330,9 +294,9 @@ namespace ChatbotApp
 
         private void LogRestart()
         {
-            if (errorLogForm != null)
+            if (errorLogClient != null)
             {
-                errorLogForm.AppendToDebugLog("DansbyBot is restarting.", "MainForm.cs");
+                errorLogClient.AppendToDebugLog("DansbyBot is restarting.", "MainForm.cs");
             }
         }
 
@@ -353,12 +317,6 @@ namespace ChatbotApp
             }
             else
             {
-                // If the form is being closed programmatically, close any dependent forms
-                if (errorLogForm != null && !errorLogForm.IsDisposed)
-                {
-                    errorLogForm.Close();
-                }
-
                 SlimeCount = 0; // Reset Slime Timer
                 StopPlayback(); // Ensure playback is stopped during shutdown
             }
@@ -370,18 +328,18 @@ namespace ChatbotApp
 
         private void LogShutdown()
         {
-            if (errorLogForm != null)
+            if (errorLogClient != null)
             {
-                errorLogForm.AppendToDebugLog("DansbyBot is shutting down gracefully.", "MainForm.cs");
+                errorLogClient.AppendToDebugLog("DansbyBot is shutting down gracefully.", "MainForm.cs");
             }
         }
 
         // Additional method to handle exceptions globally
         private void HandleCrash(Exception ex)
         {
-            if (errorLogForm != null)
+            if (errorLogClient != null)
             {
-                errorLogForm.AppendToErrorLog($"Unhandled exception occurred: {ex.Message}", "MainForm.cs");
+                errorLogClient.AppendToErrorLog($"Unhandled exception occurred: {ex.Message}", "MainForm.cs");
             }
 
             // Restart the application after logging the error
@@ -456,46 +414,8 @@ namespace ChatbotApp
              MonteCarloSimulationForm mcForm = new MonteCarloSimulationForm();
              mcForm.Show(); // Show the form as a non modal dialog           
         }
-        //Button for McBookForm ------------------------------------------
-        private void AppButton2_Click(object sender, EventArgs e)
-        {
-            MineCraftBookForm mcForm = new MineCraftBookForm();
-            mcForm.ShowDialog(); // Show the form as a modal dialog
-        }
-        
-        //Button for ErrorLogForm -----------------------------------------
-        private void AppButton3_Click(object sender, EventArgs e)
-        {
-            OpenErrorLogForm(this);
-        }
 
-        public void OpenErrorLogForm(Form mainForm)
-        {
-
-            // Access the singleton instance of ErrorLogForm
-            var errorLogForm = ErrorLogForm.Instance;
-
-
-            // Set manual positioning for the form
-            errorLogForm.StartPosition = FormStartPosition.Manual;
-
-            // Calculate the new position based on the main form's position and width
-            int newX = mainForm.Location.X + mainForm.Width;
-            int newY = mainForm.Location.Y;
-
-            // Ensure the form is still within screen bounds
-            var screen = Screen.FromControl(mainForm);
-            if (newX + errorLogForm.Width > screen.WorkingArea.Right)
-            {
-                newX = screen.WorkingArea.Right - errorLogForm.Width;
-            }
-
-            errorLogForm.Location = new Point(newX, newY);
-
-            errorLogForm.Show(); // Opens as a non-modal dialog, allowing interaction with the main form.
-        }
-
-    // Start methods/constructors with UI/UX Logic -----------------------------------------------------------------------------------------------------------------
+        // Start methods/constructors with UI/UX Logic -----------------------------------------------------------------------------------------------------------------
         public class CircleCheckBox : CheckBox 
         {
             private bool sideBarStatus = false;
@@ -568,25 +488,12 @@ namespace ChatbotApp
             {
                 MessageBox.Show("The Soundtracks folder does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
+            }          
 
-            // Load the soundtracks
-            soundtracks = new List<string>(Directory.GetFiles(soundtrackPath, "*.mp3"));
-
-            for (int i = 0; i < soundtracks.Count; i++)
-            {
-                string SoundtrackListing = (soundtracks[i]);
-                if (errorLogForm != null)
-                {
-                    errorLogForm.AppendToDebugLog($"Soundtrack list upon Initialization: {SoundtrackListing}", "MainForm.cs");
-                }
-            }
-                
-
-            if (errorLogForm != null) //Debug
+            if (errorLogClient != null) //Debug
             {
                 string SoundTrackDebug1 = ("Soundtrack amount: " + soundtracks.Count + "\nSoundtrack Paths: " + soundtrackPath + "\nSoundtrack Project Root: " + projectRoot);
-                errorLogForm.AppendToErrorLog(SoundTrackDebug1, "MainForm.cs");
+                errorLogClient.AppendToErrorLog(SoundTrackDebug1, "MainForm.cs");
             }
 
 
@@ -594,7 +501,7 @@ namespace ChatbotApp
             {
                 //Debug
                 string SoundTrackCountEmptyError = ("No soundtracks found in the Soundtracks folder. (soundtracks.Count = 0)");
-                errorLogForm.AppendToErrorLog(SoundTrackCountEmptyError, "MainForm.cs");
+                errorLogClient.AppendToErrorLog(SoundTrackCountEmptyError, "MainForm.cs");
                 MessageBox.Show("No soundtracks found in the Soundtracks folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -604,22 +511,15 @@ namespace ChatbotApp
             foreach (var track in soundtracks)
             {
                 soundtrackComboBox.Items.Add(Path.GetFileName(track));
-
-                if (errorLogForm != null)
-                {
-                    //DEBUG
-                    String SoundTrackDebug2TrackNames = ("Each SoundTracks Individual names: " + Path.GetFileName(track) + "\n");
-                    errorLogForm.AppendToDebugLog(SoundTrackDebug2TrackNames, "MainForm.cs");
-                }
                 
             }
             if (soundtrackComboBox.Items.Count > 0)
             {
                 soundtrackComboBox.SelectedIndex = 0; // Select the first track
             }
-            if (soundtracks == null && errorLogForm != null)
+            if (soundtracks == null && errorLogClient != null)
             {
-                errorLogForm.AppendToErrorLog("Error loading soundtracks", "Mainform.cs");
+                errorLogClient.AppendToErrorLog("Error loading soundtracks", "Mainform.cs");
             }
             
         }
@@ -636,10 +536,10 @@ namespace ChatbotApp
         private void PlaySoundtrack(string filePath)
         {
             filePath = Path.Combine(SoundTrackPathGlobal, filePath);
-            if (errorLogForm != null)
+            if (errorLogClient != null)
             {
                 string filePathDebugString = "FilePath: " + filePath; // debugLog
-                errorLogForm.AppendToDebugLog(filePathDebugString, "Mainform.cs");
+                errorLogClient.AppendToDebugLog(filePathDebugString, "Mainform.cs");
             }
 
             StopPlayback(); // Stop any existing playback
@@ -647,9 +547,9 @@ namespace ChatbotApp
             // Check if the file exists
             if (!File.Exists(filePath))
             {
-                if (errorLogForm != null)
+                if (errorLogClient != null)
                 {
-                    errorLogForm.AppendToErrorLog($"File not found: {filePath}", "Mainform.cs");
+                    errorLogClient.AppendToErrorLog($"File not found: {filePath}", "Mainform.cs");
                 }
                 return;
             }
@@ -680,33 +580,33 @@ namespace ChatbotApp
                             }
                             catch (InvalidOperationException ex)
                             {
-                                if (errorLogForm != null)
+                                if (errorLogClient != null)
                                 {
-                                    errorLogForm.AppendToErrorLog("Error during re-initialization of the outputDevice: " + ex.Message, "MainForm.cs");
+                                    errorLogClient.AppendToErrorLog("Error during re-initialization of the outputDevice: " + ex.Message, "MainForm.cs");
                                 }
                             }
                         }
                         else
                         {
-                            if (errorLogForm != null)
+                            if (errorLogClient != null)
                             {
-                                errorLogForm.AppendToErrorLog("OutputDevice or AudioFile for Soundtracks not initialized or disposed.", "MainForm.cs");
+                                errorLogClient.AppendToErrorLog("OutputDevice or AudioFile for Soundtracks not initialized or disposed.", "MainForm.cs");
                             }
                         }
                     }
                 };
 
                 outputDevice.Play();
-                if (errorLogForm != null)
+                if (errorLogClient != null)
                 {
-                    errorLogForm.AppendToDebugLog("Playback started for Soundtracks.", "MainForm.cs");
+                    errorLogClient.AppendToDebugLog("Playback started for Soundtracks.", "MainForm.cs");
                 }
             }
             catch (Exception ex)
             {
-                if (errorLogForm != null)
+                if (errorLogClient != null)
                 {
-                    errorLogForm.AppendToErrorLog("Exception occurred during playback initialization: " + ex.Message, "MainForm.cs");
+                    errorLogClient.AppendToErrorLog("Exception occurred during playback initialization: " + ex.Message, "MainForm.cs");
                 }
             }
         }
@@ -948,16 +848,14 @@ namespace ChatbotApp
         private void Timer_Tick(object sender, EventArgs e)
         {
             SlimeCount++;
-            string slimeSummonedDebug = "Slime Summoned.";
-            var errorLogForm = ErrorLogForm.Instance;
-            errorLogForm.UpdateSlimeCount(SlimeCount);
-
+            string slimeSummonedDebug = "Debug: Slime Summoned.";
+            
             int[] summonCounts = { 3, 33, 59, 92, 133, 212, 285, 350, 420, 555, 599, 675, 712, 795, 852, 943, 3457, 3500, 3515, 3530, 3545, 3560, 6746, 10000 };
 
             if (Array.IndexOf(summonCounts, SlimeCount) >= 0)
             {
                 SummonSlime();
-                errorLogForm.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
+                errorLogClient.AppendToDebugLog(slimeSummonedDebug, "MainForm.cs");
             }
 
         }
@@ -970,9 +868,7 @@ namespace ChatbotApp
         {
             string autosaveDebugmsg = "Autosaved excecuted for Lorehaven at: " + DateTime.Now;
             Process.Start("E:\\Lorehaven\\autosave.bat");
-
-            var errorLogForm = ErrorLogForm.Instance;
-            errorLogForm.AppendToDebugLog($"Debug: {autosaveDebugmsg}.", "ErrorLogForm.cs" );
+            errorLogClient.AppendToDebugLog($"Debug: {autosaveDebugmsg}.", "ErrorLogForm.cs" );
         }
         
         // Tick event for Autosave Timer that calls Autosave method above ^.
@@ -985,10 +881,9 @@ namespace ChatbotApp
         public void CloseApplication()
         {
             
-            if (errorLogForm != null && !errorLogForm.IsDisposed)
+            if (errorLogClient != null)
             {
                 StopPlayback();
-                errorLogForm.Close();
             }
             this.Close();
             Application.Exit(); // Ensure all forms are closed
@@ -1041,11 +936,6 @@ namespace ChatbotApp
                     // Create and run the MainForm
                     using (MainForm mainForm = new MainForm())
                     {
-
-                        // Access the singleton instance of ErrorLogForm
-                        ErrorLogForm errorLogForm = ErrorLogForm.Instance;
-                        errorLogForm.Show();
-
                         Application.Run(mainForm);
                     }
 
@@ -1054,10 +944,6 @@ namespace ChatbotApp
                 }
                 catch (Exception ex)
                 {
-                    // Log the exception to your error log form or a log file
-                    ErrorLogForm errorLogForm = ErrorLogForm.Instance;
-                    errorLogForm.AppendToErrorLog($"Application crashed: {ex.Message}", "Program.cs");
-
                     // Optionally show a message box to inform the user
                     MessageBox.Show("The application has encountered an error and will restart.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 

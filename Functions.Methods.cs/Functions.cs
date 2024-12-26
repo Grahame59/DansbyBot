@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using ChatbotApp;
 using System.Linq;
 using System.Threading.Tasks;
-using ChatbotApp.Interface.ErrorLog;
+using static ErrorLogClient;
 
 
 
@@ -24,6 +24,8 @@ namespace Functions
         private MainForm mainForm;
         private static UserManager userManager;
         private const string ListsFilePath = "Functions.Methods.cs\\lists.json"; // Path to save the to-do lists
+        private ErrorLogClient errorLogClient = new ErrorLogClient();
+
 
 
         public functionHoldings(MainForm mainForm)
@@ -114,9 +116,7 @@ namespace Functions
         {
             mainForm.Autosave(state);
             mainForm.AppendToChatHistory("Dansby: Lorehaven has been pushed to the main branch.");
-
-            var errorLogForm = ErrorLogForm.Instance;
-            errorLogForm.AppendToDebugLog("Dansby performed a manual pull, add, commit, push to Lorehaven repo.", "Functions.cs");
+            errorLogClient.AppendToDebugLog("Dansby performed a manual pull, add, commit, push to Lorehaven repo.", "Functions.cs");
         }
 
         // Function description method

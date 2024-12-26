@@ -250,12 +250,6 @@ namespace Intents
 
                     FunctionScript.ForceSaveLorehaven(null);
                     return "Saves Lorehaven Obsidian Vault to my Github";
-                    
-
-                case "openerrorLog" :
-                    mainform.OpenErrorLogForm(mainform);
-                    lastIntent = intentName.ToLower();
-                    return "Opens ErrorLog";
 
                 //if intent is not defined
                 default:
