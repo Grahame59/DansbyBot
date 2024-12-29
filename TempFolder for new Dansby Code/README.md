@@ -189,3 +189,22 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 12.26.24 - 3:08 pm
 - Was able to remove ErrorLogger From Dansby and get it fully functional with a good setup to scale bigger. Working on cleaning up Dansby's code base but think I broke some stuff going to take a break for now. Some stuff I removed was the ErrorLogger out of Dansby so now it is replaced with a client for TCP -> ErrorLogClient.cs. Removed the buttons and all other functionality involving the old partial form ErrorloggerForm.cs as well as removed the McBookForm as well as its button and other related functionality. 
 - Planning to trim all the fluff out of Dansby and then make a new project or branch for Dansby V1.1 or 0.2 however I plan to version them. The main goal of this will be HEAVY POLISH on the current Dansby features I plan to keep (base chatbot and task completition). The biggest goal for the refactoring will be to get Dansby's speech much better and his comprehension much better. I want to base his responses off my Obsidian Vault so he can scrap data from the .md files and act as a second brain for me as well as complete more task and have a much stronger and diverse dialog. NO CLUE HOW I AM DOING THIS YET!!!!!
+
+# 12.29.24 - 12:33 AM
+- Spent a few hours refactoring most of Dansby's code in a new branch - (rewrite). All that is remaining is the refactoring of the NLP_Pipeline and then reflecting those changes in DansbyCore.cs and the MainForm.cs. Everything is much more modular and scalable now. Rest of the plans for the V1.1 of Dansby include priority goals being the refactor of all the NLP classes and scripts, the implement of the Obsidian Vault integratition into Dansby's intent grouping, Reimplement User Data Management, and some other new features I'll go into a little more detail below for self noting for the next session, as well as over all polish, structure review and reflections of the implements to be in the MainForm.cs and DansbyCore.cs and any features I removed that I would like added back. 
+
+- Some of the features to add before unit testing:
+    - Some form of UI related to the intents, possibly dynamic with a dashboard implement so the dictionary mappings are much more easily managed.
+    - A centralized intent-response config file
+    - Adding a tagging system to categorize intents such as greetings, utility, vault-related, etc...
+    - Integration of a system that can use the Obsidian Vault as "Memory"
+    - A search mechanism of the Vault for vault related queries
+    - Combination of the 2 main forms of Predifined Mappings (this also generally includes action-intents: Tasks called that require code [Functions.cs]) and Vault data.
+    - Modularization of the NLP Pipeline into Intent Recognition Module, Response Generation Module (Chooses mappings or vault query), and Vault query Module.
+    - A WHOLE LOT OF UNIT TESTING !!!
+    - Still lacking a MAIN ENTRY POINT! 
+    - Have not deleted the original MainForm [DansbyChatBotApp.cs] for reference purpose, Almost there! 
+    * DISCLAIMER TO SELF * - This list does not encompass all work for the base of the V1.1 to be complete this is an imediate priority list for the next coding session, much more work and implements/refactoring to be done. This is to get the base up and running to perform unit testing for polish!!!!
+
+# 12.29.24 - 
+- 
