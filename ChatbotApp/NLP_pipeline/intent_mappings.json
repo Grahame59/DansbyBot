@@ -1,0 +1,253 @@
+[
+    {
+        "Name": "greetings",
+        "Tags": ["social", "casual"],
+        "Examples": [
+            { "Utterance": "hello", "Tokens": ["hello"] },
+            { "Utterance": "hi", "Tokens": ["hi"] },
+            { "Utterance": "hey", "Tokens": ["hey"] },
+            { "Utterance": "hola", "Tokens": ["hola"] },
+            { "Utterance": "bonjour", "Tokens": ["bonjour"] },
+            { "Utterance": "yo", "Tokens": ["yo"] },
+            { "Utterance": "yooo", "Tokens": ["yooo"] },
+            { "Utterance": "ayooo", "Tokens": ["ayooo"] },
+            { "Utterance": "howdy", "Tokens": ["howdy"] }
+        ]
+    },
+    {
+        "Name": "weather",
+        "Tags": ["information", "weather"],
+        "Examples": [
+          { "Utterance": "weather forecast", "Tokens": ["weather", "forecast"] },
+          { "Utterance": "what's the weather like?", "Tokens": ["what's", "the", "weather", "like"] },
+          { "Utterance": "how is it outside?", "Tokens": ["how", "is", "it", "outside"] },
+          { "Utterance": "what's the weather?", "Tokens": ["what's", "the", "weather"] }
+        ]
+    },
+    {
+        "Name": "temperature",
+        "Tags": ["information", "weather"],
+        "Examples": [
+          { "Utterance": "what's the temperature?", "Tokens": ["what's", "the", "temperature"] },
+          { "Utterance": "should I dress warm?", "Tokens": ["should", "i", "dress", "warm"] },
+          { "Utterance": "is it hot out?", "Tokens": ["is", "it", "hot", "out"] },
+          { "Utterance": "can I wear shorts?", "Tokens": ["can", "i", "wear", "shorts"] }
+        ]
+    },
+    {
+        "Name": "goodbye",
+        "Tags": ["social", "casual"],
+        "Examples": [
+          { "Utterance": "bye", "Tokens": ["bye"] },
+          { "Utterance": "see you later", "Tokens": ["see", "you", "later"] },
+          { "Utterance": "farewell", "Tokens": ["farewell"] },
+          { "Utterance": "goodbye", "Tokens": ["goodbye"] },
+          { "Utterance": "see ya", "Tokens": ["see", "ya"] },
+          { "Utterance": "later", "Tokens": ["later"] },
+          { "Utterance": "peace out", "Tokens": ["peace", "out"] }
+        ]
+    },
+    {
+        "Name": "help",
+        "Tags": ["interaction", "support"],
+        "Examples": [
+          { "Utterance": "help", "Tokens": ["help"] },
+          { "Utterance": "i need help", "Tokens": ["i", "need", "help"] },
+          { "Utterance": "can you help me?", "Tokens": ["can", "you", "help", "me"] },
+          { "Utterance": "assist me", "Tokens": ["assist", "me"] },
+          { "Utterance": "what can you do?", "Tokens": ["what", "can", "you", "do"] },
+          { "Utterance": "what are you capable of?", "Tokens": ["what", "are", "you", "capable", "of"] },
+          { "Utterance": "what are your skills?", "Tokens": ["what", "are", "your", "skills"] }
+        ]
+    },                            
+    {
+        "Name": "howareyou",
+        "Tags": ["social", "casual"],
+        "Examples": [
+          { "Utterance": "how are you?", "Tokens": ["how", "are", "you"] },
+          { "Utterance": "just checking up on you", "Tokens": ["just", "checking", "up", "on", "you"] },
+          { "Utterance": "comment ça va?", "Tokens": ["comment", "ça", "va"] }
+        ]
+    },
+    {
+        "Name": "currenttask",
+        "Tags": ["interaction", "status"],
+        "Examples": [
+          { "Utterance": "what's up?", "Tokens": ["what's", "up"] },
+          { "Utterance": "what are you doing?", "Tokens": ["what", "are", "you", "doing"] },
+          { "Utterance": "whatcha up to?", "Tokens": ["whatcha", "up", "to"] },
+          { "Utterance": "what are you working on?", "Tokens": ["what", "are", "you", "working", "on"] }
+        ]
+    },                             
+    {
+        "Name": "performexitdansby",
+        "Tags": ["system", "functional", "information"],
+        "Examples": [
+          { "Utterance": "exit the program Dansby", "Tokens": ["exit", "the", "program", "dansby"] },
+          { "Utterance": "close the application", "Tokens": ["close", "the", "application"] },
+          { "Utterance": "shutdown", "Tokens": ["shutdown"] },
+          { "Utterance": "exit", "Tokens": ["exit"] }
+        ]
+    },                              
+    {
+        "Name": "dayofweek",
+        "Tags": ["system", "functional", "information"],
+        "Examples": [
+          { "Utterance": "what's the day of the week?", "Tokens": ["what's", "the", "day", "of", "the", "week"] },
+          { "Utterance": "what day is today?", "Tokens": ["what", "day", "is", "today"] },
+          { "Utterance": "what day is it?", "Tokens": ["what", "day", "is", "it"] }
+        ]
+    },
+    {
+        "Name": "affection",
+        "Tags": ["social", "casual"],
+        "Examples": [
+          { "Utterance": "I love you", "Tokens": ["i", "love", "you"] },
+          { "Utterance": "you are awesome", "Tokens": ["you", "are", "awesome"] },
+          { "Utterance": "i <3 you", "Tokens": ["i", "<3", "you"] }
+        ]
+    },
+    {
+        "Name": "whoiscreatorname",
+        "Tags": ["information"],
+        "Examples": [
+            { "Utterance": "what's your creator's name?", "Tokens": ["what's", "your", "creator's", "name"] }
+        ]
+    },                      
+    {
+        "Name": "dansbyfavcolor",
+        "Tags": ["information", "casual"],
+        "Examples": [
+            { "Utterance": "what's your favorite color?", "Tokens": ["what's", "your", "favorite", "color"] },
+            { "Utterance": "what's your fav color", "Tokens": ["what's", "your", "fav", "color"] }
+        ]
+    },
+    {
+        "Name": "userthankyou",
+        "Tags": ["social", "interaction"],
+        "Examples": [
+          { "Utterance": "thanks", "Tokens": ["thanks"] },
+          { "Utterance": "thank you", "Tokens": ["thank", "you"] },
+          { "Utterance": "much appreciated", "Tokens": ["much", "appreciated"] }
+        ]
+    },                            
+    {
+        "Name": "complimentaffection",
+        "Tags": ["social", "interaction"],
+        "Examples": [
+          { "Utterance": "you rock", "Tokens": ["you", "rock"] },
+          { "Utterance": "you're a cool guy", "Tokens": ["you're", "a", "cool", "guy"] },
+          { "Utterance": "u rock!", "Tokens": ["u", "rock"] }
+        ]
+    },                              
+    {
+        "Name": "steveneasteregg",
+        "Tags": ["fun", "easteregg"],
+        "Examples": [
+            { "Utterance": "who has the biggest weiner", "Tokens": ["who", "has", "the", "biggest", "weiner"] }
+        ]
+    },
+    {
+        "Name": "listallfunctions",
+        "Tags": ["system", "functional"],
+        "Examples": [
+            { "Utterance": "list all the functions", "Tokens": ["list", "all", "the", "functions"] },
+            { "Utterance": "list all functions", "Tokens": ["list", "all", "functions"] },
+            { "Utterance": "list all your functions dansby", "Tokens": ["list", "all", "your", "functions", "dansby"] }
+        ]
+    },
+    {
+        "Name": "time",
+        "Tags": ["system", "functional", "information"],
+        "Examples": [
+            { "Utterance": "what time is it", "Tokens": ["what", "time", "is", "it"] },
+            { "Utterance": "what's the current time?", "Tokens": ["what's", "the", "current", "time"] },
+            { "Utterance": "what's the time", "Tokens": ["what's", "the", "time"] }
+        ]
+    },
+    {
+        "Name": "date",
+        "Tags": ["system", "functional", "information"],
+        "Examples": [
+            { "Utterance": "what's today's date?", "Tokens": ["what's", "today's", "date"] },
+            { "Utterance": "what date is it", "Tokens": ["what", "date", "is", "it"] },
+            { "Utterance": "is today the", "Tokens": ["is", "today", "the"] }
+        ]
+    },
+    {
+        "Name": "summonslime",
+        "Tags": ["system", "functional", "information"],
+        "Examples": [
+        { "Utterance": "summon slime", "Tokens": ["summon", "slime"] },
+        { "Utterance": "summonslime", "Tokens": ["summonslime"] }
+        ]
+    },
+    {
+        "Name": "openerrorlog",
+        "Tags": ["system", "functional", "information"],
+        "Examples": [
+        { "Utterance": "open error log", "Tokens": ["open", "error", "log"] },
+        { "Utterance": "open errorlog", "Tokens": ["open", "errorlog"] }
+        ]
+    },
+    {
+        "Name": "usercurrenttaskcodingondansby",
+        "Tags": ["system", "interaction"],
+        "Examples": [
+        { "Utterance": "I am working on coding you more", "Tokens": ["I", "am", "working", "on", "coding", "you", "more"] },
+        { "Utterance": "im working on improving your code", "Tokens": ["im", "working", "on", "improving", "your", "code"] },
+        { "Utterance": "working on improving your code", "Tokens": ["working", "on", "improving", "your", "code"] }
+        ]
+    },
+    {
+        "Name": "missyouaffection",
+        "Tags": ["social", "affection"],
+        "Examples": [
+        { "Utterance": "miss you", "Tokens": ["miss", "you"] }
+        ]
+    },
+    {
+        "Name": "usermissedyou",
+        "Tags": ["social", "affection"],
+        "Examples": [
+        { "Utterance": "I missed you", "Tokens": ["I", "missed", "you"] },
+        { "Utterance": "i missed you", "Tokens": ["i", "missed", "you"] }
+        ]
+    },
+    {
+        "Name": "creatorname",
+        "Tags": ["information", "system"],
+        "Examples": [
+            { "Utterance": "kyler", "Tokens": ["kyler"] }
+        ]
+    },
+    {
+    "Name": "calledname",
+    "Tags": ["information", "system"],
+    "Examples": [
+        { "Utterance": "dansby", "Tokens": ["dansby"] }
+    ]
+    },      
+    {
+    "Name": "name",
+    "Tags": ["information", "system"],
+    "Examples": [
+        { "Utterance": "what's your name?", "Tokens": ["what's", "your", "name"] },
+        { "Utterance": "what is your name", "Tokens": ["what", "is", "your", "name"] }
+    ]
+    },
+    {
+    "Name": "apology",
+    "Tags": ["social", "casual"],
+    "Examples": [
+        { "Utterance": "sorry", "Tokens": ["sorry"] },
+        { "Utterance": "my bad", "Tokens": ["my", "bad"] },
+        { "Utterance": "I am sorry", "Tokens": ["i", "am", "sorry"] },
+        { "Utterance": "I'm sorry", "Tokens": ["i'm", "sorry"] },
+        { "Utterance": "my fault", "Tokens": ["my", "fault"] },
+        { "Utterance": "whoops", "Tokens": ["whoops"] }
+    ]
+    }                         
+]
+
+

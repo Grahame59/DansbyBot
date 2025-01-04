@@ -50,6 +50,10 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
             "Extended.Wpf.Toolkit": {
               "target": "Package",
               "version": "[4.6.1, )"
@@ -64,7 +68,7 @@
             },
             "Microsoft.Xaml.Behaviors.Wpf": {
               "target": "Package",
-              "version": "[1.1.122, )"
+              "version": "[1.1.135, )"
             },
             "NAudio": {
               "target": "Package",
@@ -76,11 +80,7 @@
             },
             "RestSharp": {
               "target": "Package",
-              "version": "[111.2.0, )"
-            },
-            "System.Windows.Interactivity.WPF": {
-              "target": "Package",
-              "version": "[2.0.20525, )"
+              "version": "[112.0.0, )"
             }
           },
           "imports": [

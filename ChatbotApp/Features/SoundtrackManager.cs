@@ -17,8 +17,8 @@ namespace ChatbotApp.Features
 
         public SoundtrackManager()
         {
-            // Default path for soundtracks (should be configurable in the future)
-            soundtrackDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Soundtracks");
+            // Adjusted path to match your project structure
+            soundtrackDirectory = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "ChatbotApp", "Resources", "Soundtracks");
             soundtracks = new List<string>();
             errorLogClient = new ErrorLogClient();
         }
