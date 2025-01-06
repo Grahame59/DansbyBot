@@ -1,10 +1,11 @@
 using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChatbotApp.Utilities;
 using Intents;
 using ChatbotApp.Features;
-using ChatbotApp.Core;
-using System.Collections.Generic;
+using Functions;
 
 namespace ChatbotApp.Core
 {
@@ -15,116 +16,168 @@ namespace ChatbotApp.Core
         private readonly SoundtrackManager soundtrackManager;
         private readonly AnimationManager animationManager;
         private readonly AutosaveManager autosaveManager;
+        private readonly VaultManager vaultManager;
         private readonly ErrorLogClient errorLogClient;
+        private readonly functionHoldings functionHoldings;
 
-        public DansbyCore()
+
+        public DansbyCore(MainForm mainForm)
         {
-            errorLogClient = new ErrorLogClient();
+            errorLogClient = ErrorLogClient.Instance;
 
-            try
-            {
-                intentRecognizer = new IntentRecognizer();
-                responseGenerator = new ResponseGenerator(errorLogClient);
-                soundtrackManager = new SoundtrackManager();
-                animationManager = new AnimationManager();
-                autosaveManager = new AutosaveManager("E:\\Lorehaven\\autosave.bat");
+            // Initialize Managers
+            intentRecognizer = new IntentRecognizer();
+            responseGenerator = new ResponseGenerator(errorLogClient);
+            soundtrackManager = new SoundtrackManager();
+            animationManager = new AnimationManager();
+            autosaveManager = new AutosaveManager("E:\\Lorehaven\\autosave.bat");
+            vaultManager = new VaultManager("E:\\Lorehaven\\gitconnect");
+            functionHoldings = new functionHoldings(mainForm);
 
-                InitializeManagers();
-            }
-            catch (Exception ex)
-            {
-                errorLogClient.AppendToErrorLog($"Error initializing DansbyCore: {ex.Message}", "DansbyCore.cs");
-            }
         }
 
-        private void InitializeManagers()
+        // Async initialization to be called from MainForm
+        public async Task InitializeAsync()
         {
             try
             {
-                soundtrackManager.InitializeSoundtracks();
-                autosaveManager.StartAutosave();
+                await intentRecognizer.InitializeAsync();
+                await soundtrackManager.InitializeSoundtracksAsync();
+                await autosaveManager.StartAutosaveAsync();
 
-                errorLogClient.AppendToDebugLog("DansbyCore managers initialized successfully.", "DansbyCore.cs");
+                await errorLogClient.AppendToDebugLogAsync("DansbyCore managers initialized successfully.", "DansbyCore.cs");
             }
             catch (Exception ex)
             {
-                errorLogClient.AppendToErrorLog($"Error initializing managers: {ex.Message}", "DansbyCore.cs");
+                await errorLogClient.AppendToErrorLogAsync($"Error during DansbyCore initialization: {ex.Message}", "DansbyCore.cs");
             }
         }
 
-        public string ProcessUserInput(string userInput)
+        // Method to refresh the vault cache
+        public async Task RefreshVaultCacheAsync()
+        {
+            try
+            {
+                await vaultManager.RefreshCacheAsync();
+                await errorLogClient.AppendToDebugLogAsync("Vault cache refreshed successfully.", "DansbyCore.cs");
+            }
+            catch (Exception ex)
+            {
+                await errorLogClient.AppendToErrorLogAsync($"Error refreshing vault cache: {ex.Message}", "DansbyCore.cs");
+            }
+        }
+
+        // Async method for processing user input
+        public async Task<string> ProcessUserInputAsync(string userInput)
         {
             if (string.IsNullOrWhiteSpace(userInput))
             {
-                errorLogClient.AppendToDebugLog("Received empty user input.", "DansbyCore.cs");
+                await errorLogClient.AppendToDebugLogAsync("Received empty user input.", "DansbyCore.cs");
                 return "Please say something!";
             }
 
             try
             {
-                // Recognize the user's intent
-                string intent = intentRecognizer.RecognizeIntent(userInput);
-                errorLogClient.AppendToDebugLog($"Recognized intent: {intent}", "DansbyCore.cs");
+                // Recognize the intent from user input
+                string intent = await intentRecognizer.RecognizeIntentAsync(userInput);
+                await errorLogClient.AppendToDebugLogAsync($"Recognized intent: {intent}", "DansbyCore.cs");
 
-                // Generate an appropriate response
-                string response = responseGenerator.GenerateResponse(intent, userInput);
+                // Check if the intent matches a function in Function.cs
+                var functionResponse = await functionHoldings.ExecuteFunctionAsync(intent, userInput);
+                if (functionResponse != "Sorry, I don't recognize that command.")
+                {
+                    await errorLogClient.AppendToDebugLogAsync($"Function executed for intent: {intent}", "DansbyCore.cs");
+                    return functionResponse;
+                }
+
+                // If no function matches, fall back to generating a response
+                string response = await responseGenerator.GenerateResponseAsync(intent, userInput);
+                await errorLogClient.AppendToDebugLogAsync($"Response generated from recognized intent: {response}.", "DansbyCore.cs");
+
                 return response;
             }
             catch (Exception ex)
             {
-                errorLogClient.AppendToErrorLog($"Error processing user input: {ex.Message}", "DansbyCore.cs");
+                await errorLogClient.AppendToErrorLogAsync($"Error processing user input: {ex.Message}", "DansbyCore.cs");
                 return "Sorry, something went wrong while processing your input.";
             }
         }
 
+
+
+        // Async method for retrieving soundtrack names
+        public async Task<List<string>> GetSoundtrackNamesAsync()
+        {
+            try
+            {
+                return await Task.Run(() => soundtrackManager.GetSoundtrackNames());
+            }
+            catch (Exception ex)
+            {
+                await errorLogClient.AppendToErrorLogAsync($"Error fetching soundtrack names: {ex.Message}", "DansbyCore.cs");
+                return new List<string>();
+            }
+        }
+
+        // Async method to play a soundtrack
+        public async Task PlaySoundtrackAsync(string soundtrackName)
+        {
+            try
+            {
+                await soundtrackManager.PlaySoundtrackAsync(soundtrackName);
+                await errorLogClient.AppendToDebugLogAsync($"Playing soundtrack: {soundtrackName}", "DansbyCore.cs");
+            }
+            catch (Exception ex)
+            {
+                await errorLogClient.AppendToErrorLogAsync($"Error playing soundtrack: {ex.Message}", "DansbyCore.cs");
+            }
+        }
+
+        // Async method to pause playback
+        public async Task PausePlaybackAsync()
+        {
+            try
+            {
+                await soundtrackManager.PausePlaybackAsync();
+                await errorLogClient.AppendToDebugLogAsync("Playback paused.", "DansbyCore.cs");
+            }
+            catch (Exception ex)
+            {
+                await errorLogClient.AppendToErrorLogAsync($"Error pausing playback: {ex.Message}", "DansbyCore.cs");
+            }
+        }
+
+        // Slime Animation Methods (UI-related logic stays in MainForm)
         public bool ShouldSummonSlime()
         {
             return new Random().Next(1, 101) <= 10; // 10% chance
         }
 
-        public void SummonSlime(Form parent)
+        public async Task SummonSlimeAsync(RichTextBox chatRichTextBox)
         {
             try
             {
-                animationManager.InitializeAnimation(parent);
-                errorLogClient.AppendToDebugLog("Slime summoned successfully.", "DansbyCore.cs");
+                animationManager.InitializeAnimation(chatRichTextBox);
+                await errorLogClient.AppendToDebugLogAsync("Slime summoned successfully.", "DansbyCore.cs");
             }
             catch (Exception ex)
             {
-                errorLogClient.AppendToErrorLog($"Error summoning slime: {ex.Message}", "DansbyCore.cs");
+                await errorLogClient.AppendToErrorLogAsync($"Error summoning slime: {ex.Message}", "DansbyCore.cs");
             }
         }
 
-// FIX ----------------------------------------------------------
-        public List<string> GetSoundtrackNames()
-        {
-            return new List<string> { "Track1", "Track2", "Track3" }; // Replace with actual logic
-        }
 
-        public void PlaySoundtrack(string trackName)
-        {
-            // Logic to play the selected soundtrack
-            errorLogClient.AppendToDebugLog($"Playing soundtrack: {trackName}", "DansbyCore.cs");
-        }
-
-        public void PausePlayback()
-        {
-            // Logic to pause the soundtrack
-            errorLogClient.AppendToDebugLog("Playback paused.", "DansbyCore.cs");
-        }
-// FIX ----------------------------------------------------------
-
-
-        public void Shutdown()
+        // Shutdown logic
+        public async Task ShutdownAsync()
         {
             try
             {
-                autosaveManager.StopAutosave();
-                errorLogClient.AppendToDebugLog("DansbyCore shut down successfully.", "DansbyCore.cs");
+                await autosaveManager.StopAutosaveAsync();
+                await errorLogClient.AppendToDebugLogAsync("DansbyCore shut down successfully.", "DansbyCore.cs");
             }
             catch (Exception ex)
             {
-                errorLogClient.AppendToErrorLog($"Error during shutdown: {ex.Message}", "DansbyCore.cs");
+                await errorLogClient.AppendToErrorLogAsync($"Error during shutdown: {ex.Message}", "DansbyCore.cs");
             }
         }
     }

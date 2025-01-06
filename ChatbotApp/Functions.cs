@@ -1,5 +1,6 @@
 using System;
-using System.Reflection;
+using System.Collections.Generic;
+using System.IO;
 using Newtonsoft.Json;
 using System.Threading;
 using System.Windows.Forms;
@@ -7,6 +8,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using static ErrorLogClient;
 using ChatbotApp;
+using ChatbotApp.UserData;
+using ChatbotApp.Utilities;
+using ChatbotApp.Features;
 
 namespace Functions
 {
@@ -27,7 +31,7 @@ namespace Functions
                 // Shutdown message
                 string exitMessage = "DANSBY: I feel so cold... don't leave me creator... goodbye";
                 mainForm.AppendToChatHistory(exitMessage);
-                MessageBox.Show(" -> SUCCESFULLY EXITING DANSBYCHATBOT");
+                MessageBox.Show(" -> SUCCESSFULLY EXITING DANSBYCHATBOT");
 
                 errorLogClient.AppendToDebugLog("Application is exiting.", "Functions.cs");
 
@@ -57,7 +61,44 @@ namespace Functions
             }
         }
 
-        public void GetTime()
+        public async Task<string> ExecuteFunctionAsync(string intent, string userInput)
+        {
+            try
+            {
+                switch (intent)
+                {
+                    case "performexitdansby":
+                        PerformExitDansby();
+                        return "Exiting the application.";
+
+                    case "time":
+                        GetTime();
+                        return "Time fetched.";
+
+                    case "date":
+                        GetDate();
+                        return "Date fetched.";
+
+                    case "dayofweek":
+                        GetDayOfTheWeek();
+                        return "Day of the week fetched.";
+
+                    case "searchvault":
+                        string searchResult = await SearchVaultAsync(userInput);
+                        return searchResult;
+
+                    default:
+                        return "Sorry, I don't recognize that command.";
+                }
+            }
+            catch (Exception ex)
+            {
+                await errorLogClient.AppendToErrorLogAsync($"Error executing function for intent {intent}: {ex.Message}", "Functions.cs");
+                return "An error occurred while processing your request.";
+            }
+        }
+
+        private void GetTime()
         {
             try
             {
@@ -75,7 +116,7 @@ namespace Functions
             }
         }
 
-        public void GetDate()
+        private void GetDate()
         {
             try
             {
@@ -93,7 +134,7 @@ namespace Functions
             }
         }
 
-        public void GetDayOfTheWeek()
+        private void GetDayOfTheWeek()
         {
             try
             {
@@ -110,15 +151,45 @@ namespace Functions
             }
         }
 
-        public void ListAllFunctions()
+        private async Task<string> SearchVaultAsync(string keyword)
+        {
+            try
+            {
+                VaultManager vaultManager = new VaultManager("E:\\Lorehaven\\gitconnect");
+                List<string> searchResults = await vaultManager.SearchVaultAsync(keyword);
+
+                if (searchResults.Count > 0)
+                {
+                    string response = $"Dansby: Found {searchResults.Count} matching files.";
+                    mainForm.AppendToChatHistory(response);
+
+                    foreach (string result in searchResults)
+                    {
+                        mainForm.AppendToChatHistory(result);
+                    }
+
+                    return response;
+                }
+                else
+                {
+                    return "Dansby: No matches found in the vault.";
+                }
+            }
+            catch (Exception ex)
+            {
+                await errorLogClient.AppendToErrorLogAsync($"Error searching vault: {ex.Message}", "Functions.cs");
+                return "An error occurred while searching the vault.";
+            }
+        }
+
+        public async Task ListAllFunctionsAsync()
         {
             try
             {
                 string introMessage = "Dansby: Available Functions I can perform currently:";
                 mainForm.AppendToChatHistory(introMessage);
-                Console.WriteLine(introMessage);
 
-                var methods = typeof(functionHoldings).GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly);
+                var methods = typeof(functionHoldings).GetMethods(System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.DeclaredOnly);
                 foreach (var method in methods)
                 {
                     string functionName = method.Name;
@@ -126,36 +197,28 @@ namespace Functions
 
                     string message = $"- {functionName}: {functionDescription}";
                     mainForm.AppendToChatHistory(message);
-                    Console.WriteLine(message);
                 }
 
-                errorLogClient.AppendToDebugLog("Listed all available functions.", "Functions.cs");
+                await errorLogClient.AppendToDebugLogAsync("Listed all available functions.", "Functions.cs");
             }
             catch (Exception ex)
             {
-                errorLogClient.AppendToErrorLog($"Error listing functions: {ex}", "Functions.cs");
+                await errorLogClient.AppendToErrorLogAsync($"Error listing functions: {ex.Message}", "Functions.cs");
             }
         }
 
-        public string GetFunctionDescription(string functionName)
+        private string GetFunctionDescription(string functionName)
         {
-            switch (functionName)
+            return functionName switch
             {
-                case "PerformExitDansby":
-                    return "This function exits the application.";
-                case "GetTime":
-                    return "This function gives the current time of your time zone.";
-                case "GetDate":
-                    return "This function gives you the current date.";
-                case "GetDayOfTheWeek":
-                    return "This function gives you the day of the week.";
-                case "GetCurrentDateTime":
-                    return "This function gives you the current date, time, and day of the week.";
-                case "ListAllFunctions":
-                    return "This function lists all the available functions Dansby can complete.";
-                default:
-                    return "No description available.";
-            }
+                "PerformExitDansby" => "This function exits the application.",
+                "GetTime" => "This function gives the current time of your time zone.",
+                "GetDate" => "This function gives you the current date.",
+                "GetDayOfTheWeek" => "This function gives you the day of the week.",
+                "SearchVaultAsync" => "This function searches your vault for matching keywords.",
+                "ListAllFunctionsAsync" => "This function lists all the available functions Dansby can complete.",
+                _ => "No description available.",
+            };
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System;
+using System.Threading.Tasks;
 using ChatbotApp.Utilities;
 
 public class UserManager
@@ -9,21 +10,21 @@ public class UserManager
     private Dictionary<string, User> users;
     private User currentUser;
     private const string UserFilePath = "UserDirectory.json";
-    private ErrorLogClient errorLogClient;
+    private readonly ErrorLogClient errorLogClient;
 
     public UserManager()
     {
-        errorLogClient = new ErrorLogClient();
-        users = LoadUsersFromFile(UserFilePath);
+        errorLogClient = ErrorLogClient.Instance; // Using the singleton instance
+        users = LoadUsersFromFileAsync(UserFilePath).GetAwaiter().GetResult();
     }
 
-    private Dictionary<string, User> LoadUsersFromFile(string filePath)
+    private async Task<Dictionary<string, User>> LoadUsersFromFileAsync(string filePath)
     {
         try
         {
             if (!File.Exists(filePath)) return new Dictionary<string, User>();
 
-            string jsonString = File.ReadAllText(filePath);
+            string jsonString = await File.ReadAllTextAsync(filePath);
             var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
             var userData = JsonSerializer.Deserialize<UserData>(jsonString, options);
 
@@ -37,55 +38,56 @@ public class UserManager
         }
         catch (Exception ex)
         {
-            errorLogClient.AppendToErrorLog($"Failed to load user data: {ex.Message}", "UserData.cs");
+            await errorLogClient.AppendToErrorLogAsync($"Failed to load user data: {ex.Message}", "UserManager.cs");
             return new Dictionary<string, User>();
         }
     }
 
-    public void SaveUsersToFile()
+    public async Task SaveUsersToFileAsync()
     {
         try
         {
             var userData = new UserData { Users = new List<User>(users.Values) };
             string jsonString = JsonSerializer.Serialize(userData, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(UserFilePath, jsonString);
-            errorLogClient.AppendToDebugLog("User data saved successfully.", "UserData.cs");
+            await File.WriteAllTextAsync(UserFilePath, jsonString);
+            await errorLogClient.AppendToDebugLogAsync("User data saved successfully.", "UserManager.cs");
         }
         catch (Exception ex)
         {
-            errorLogClient.AppendToErrorLog($"Failed to save user data: {ex.Message}", "UserData.cs");
+            await errorLogClient.AppendToErrorLogAsync($"Failed to save user data: {ex.Message}", "UserManager.cs");
         }
     }
 
-    public bool Login(string username, string password)
+    public async Task<bool> LoginAsync(string username, string password)
     {
         if (users.TryGetValue(username, out var user) && user.VerifyPassword(password))
         {
             currentUser = user;
-            errorLogClient.AppendToDebugLog($"User {username} logged in successfully.", "UserData.cs");
+            await errorLogClient.AppendToDebugLogAsync($"User {username} logged in successfully.", "UserManager.cs");
             return true;
         }
-        errorLogClient.AppendToDebugLog($"Login failed for user {username}.", "UserData.cs");
+
+        await errorLogClient.AppendToDebugLogAsync($"Login failed for user {username}.", "UserManager.cs");
         return false;
     }
 
-    public void Logout()
+    public async Task LogoutAsync()
     {
         currentUser = null;
-        errorLogClient.AppendToDebugLog("User logged out.", "UserData.cs");
+        await errorLogClient.AppendToDebugLogAsync("User logged out.", "UserManager.cs");
     }
 
-    public void AddUser(User user)
+    public async Task AddUserAsync(User user)
     {
         if (users.ContainsKey(user.Username))
         {
-            errorLogClient.AppendToErrorLog($"User {user.Username} already exists.", "UserData.cs");
+            await errorLogClient.AppendToErrorLogAsync($"User {user.Username} already exists.", "UserManager.cs");
             return;
         }
 
         users[user.Username] = user;
-        SaveUsersToFile();
-        errorLogClient.AppendToDebugLog($"User {user.Username} added successfully.", "UserData.cs");
+        await SaveUsersToFileAsync();
+        await errorLogClient.AppendToDebugLogAsync($"User {user.Username} added successfully.", "UserManager.cs");
     }
 
     public User GetCurrentUser()

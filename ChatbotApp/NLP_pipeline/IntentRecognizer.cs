@@ -4,6 +4,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Tokenization;
 using ChatbotApp.Utilities;
+using System.Threading.Tasks;
 
 namespace Intents
 {
@@ -13,49 +14,53 @@ namespace Intents
         private Tokenizer tokenizer;
         private ErrorLogClient errorLogClient;
 
-        public IntentRecognizer(string configFilePath = "ChatbotApp\\NLP_pipeline\\intent_mappings.json")
+        public IntentRecognizer()
         {
             tokenizer = new Tokenizer();
-            errorLogClient = new ErrorLogClient();
+            errorLogClient = ErrorLogClient.Instance; // Use Singleton instance
+            intents = new List<Intent>(); // Initialize to prevent null reference issues
+        }
 
+        public async Task InitializeAsync(string configFilePath = "ChatbotApp\\NLP_pipeline\\intent_mappings.json")
+        {
             try
             {
-                intents = LoadIntents(configFilePath);
-                errorLogClient.AppendToDebugLog($"Successfully loaded intents from {configFilePath}.", "IntentRecognizer");
+                intents = await LoadIntentsAsync(configFilePath);
+                await errorLogClient.AppendToDebugLogAsync($"Successfully loaded intents from {configFilePath}.", "IntentRecognizer");
             }
             catch (Exception ex)
             {
-                errorLogClient.AppendToErrorLog($"Error loading intents: {ex.Message}", "IntentRecognizer");
-                intents = new List<Intent>(); // Initialize an empty list to prevent crashes
+                await errorLogClient.AppendToErrorLogAsync($"Error loading intents: {ex.Message}", "IntentRecognizer");
+                intents = new List<Intent>();
             }
         }
 
-        // Load intents from a JSON file
-        private List<Intent> LoadIntents(string filePath)
+        // Load intents from a JSON file asynchronously
+        private async Task<List<Intent>> LoadIntentsAsync(string filePath)
         {
             if (!File.Exists(filePath))
             {
-                errorLogClient.AppendToErrorLog($"Intent file not found at {filePath}.", "IntentRecognizer");
+                await errorLogClient.AppendToErrorLogAsync($"Intent file not found at {filePath}.", "IntentRecognizer");
                 return new List<Intent>();
             }
 
-            string json = File.ReadAllText(filePath);
+            string json = await File.ReadAllTextAsync(filePath);
             return JsonConvert.DeserializeObject<List<Intent>>(json);
         }
 
         // Recognize intent based on user input
-        public string RecognizeIntent(string userInput)
+        public async Task<string> RecognizeIntentAsync(string userInput)
         {
             if (string.IsNullOrWhiteSpace(userInput))
             {
-                errorLogClient.AppendToDebugLog("User input is empty or null.", "IntentRecognizer");
+                await errorLogClient.AppendToDebugLogAsync("User input is empty or null.", "IntentRecognizer");
                 return "unknown_intent";
             }
 
-            errorLogClient.AppendToDebugLog($"Recognizing intent for input: \"{userInput}\"", "IntentRecognizer");
+            await errorLogClient.AppendToDebugLogAsync($"Recognizing intent for input: \"{userInput}\"", "IntentRecognizer");
 
             var userTokens = tokenizer.Tokenize(userInput);
-            errorLogClient.AppendToDebugLog($"Tokenized input: {string.Join(", ", userTokens)}", "IntentRecognizer");
+            await errorLogClient.AppendToDebugLogAsync($"Tokenized input: {string.Join(", ", userTokens)}", "IntentRecognizer");
 
             foreach (var intent in intents)
             {
@@ -63,33 +68,33 @@ namespace Intents
                 {
                     if (IsMatch(userTokens, example.Tokens))
                     {
-                        errorLogClient.AppendToDebugLog($"Recognized intent: \"{intent.Name}\"", "IntentRecognizer");
+                        await errorLogClient.AppendToDebugLogAsync($"Recognized intent: \"{intent.Name}\"", "IntentRecognizer");
                         return intent.Name;
                     }
                 }
             }
 
-            errorLogClient.AppendToDebugLog("No matching intent found. Returning 'unknown_intent'.", "IntentRecognizer");
+            await errorLogClient.AppendToDebugLogAsync("No matching intent found. Returning 'unknown_intent'.", "IntentRecognizer");
             return "unknown_intent";
         }
 
         // Check if tokens match
         private bool IsMatch(List<string> userTokens, List<string> exampleTokens)
         {
-            if (userTokens.Count < exampleTokens.Count)
-            {
-                return false;
-            }
+            // Check if all tokens from the example are found in the user's tokens, in the same order
+            int userIndex = 0;
+            int exampleIndex = 0;
 
-            for (int i = 0; i < exampleTokens.Count; i++)
+            while (userIndex < userTokens.Count && exampleIndex < exampleTokens.Count)
             {
-                if (!userTokens.Contains(exampleTokens[i]))
+                if (userTokens[userIndex].Equals(exampleTokens[exampleIndex], StringComparison.OrdinalIgnoreCase))
                 {
-                    return false;
+                    exampleIndex++;
                 }
+                userIndex++;
             }
 
-            return true;
+            return exampleIndex == exampleTokens.Count;
         }
     }
 

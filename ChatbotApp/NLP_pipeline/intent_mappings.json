@@ -66,7 +66,8 @@
         "Examples": [
           { "Utterance": "how are you?", "Tokens": ["how", "are", "you"] },
           { "Utterance": "just checking up on you", "Tokens": ["just", "checking", "up", "on", "you"] },
-          { "Utterance": "comment ça va?", "Tokens": ["comment", "ça", "va"] }
+          { "Utterance": "comment ça va?", "Tokens": ["comment", "ça", "va"] },
+          { "Utterance": "how r you?", "Tokens": ["how", "r","you"]}
         ]
     },
     {
@@ -86,7 +87,10 @@
           { "Utterance": "exit the program Dansby", "Tokens": ["exit", "the", "program", "dansby"] },
           { "Utterance": "close the application", "Tokens": ["close", "the", "application"] },
           { "Utterance": "shutdown", "Tokens": ["shutdown"] },
-          { "Utterance": "exit", "Tokens": ["exit"] }
+          { "Utterance": "exit", "Tokens": ["exit"] },
+          { "Utterance": "close the app", "Tokens": ["close", "the", "app"]},
+          { "Utterance": "close app", "Tokens": ["close", "app"]}
+          
         ]
     },                              
     {

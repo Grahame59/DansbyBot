@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 using NAudio.Wave;
 using ChatbotApp.Utilities;
 
@@ -20,16 +21,16 @@ namespace ChatbotApp.Features
             // Adjusted path to match your project structure
             soundtrackDirectory = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "ChatbotApp", "Resources", "Soundtracks");
             soundtracks = new List<string>();
-            errorLogClient = new ErrorLogClient();
+            errorLogClient = ErrorLogClient.Instance; // Using the singleton instance
         }
 
-        public void InitializeSoundtracks()
+        public async Task InitializeSoundtracksAsync()
         {
             try
             {
                 if (!Directory.Exists(soundtrackDirectory))
                 {
-                    errorLogClient.AppendToErrorLog($"Soundtrack directory does not exist: {soundtrackDirectory}", "SoundtrackManager.cs");
+                    await errorLogClient.AppendToErrorLogAsync($"Soundtrack directory does not exist: {soundtrackDirectory}", "SoundtrackManager.cs");
                     return;
                 }
 
@@ -37,12 +38,16 @@ namespace ChatbotApp.Features
 
                 if (soundtracks.Count == 0)
                 {
-                    errorLogClient.AppendToErrorLog("No soundtracks found in the soundtrack directory.", "SoundtrackManager.cs");
+                    await errorLogClient.AppendToErrorLogAsync("No soundtracks found in the soundtrack directory.", "SoundtrackManager.cs");
+                }
+                else
+                {
+                    await errorLogClient.AppendToDebugLogAsync($"Loaded {soundtracks.Count} soundtracks.", "SoundtrackManager.cs");
                 }
             }
             catch (Exception ex)
             {
-                errorLogClient.AppendToErrorLog($"Error initializing soundtracks: {ex.Message}", "SoundtrackManager.cs");
+                await errorLogClient.AppendToErrorLogAsync($"Error initializing soundtracks: {ex.Message}", "SoundtrackManager.cs");
             }
         }
 
@@ -58,13 +63,13 @@ namespace ChatbotApp.Features
             return soundtrackNames;
         }
 
-        public void PlaySoundtrack(string soundtrackName)
+        public async Task PlaySoundtrackAsync(string soundtrackName)
         {
             var filePath = Path.Combine(soundtrackDirectory, soundtrackName);
 
             if (!File.Exists(filePath))
             {
-                errorLogClient.AppendToErrorLog($"Soundtrack file not found: {filePath}", "SoundtrackManager.cs");
+                await errorLogClient.AppendToErrorLogAsync($"Soundtrack file not found: {filePath}", "SoundtrackManager.cs");
                 return;
             }
 
@@ -75,22 +80,23 @@ namespace ChatbotApp.Features
                 audioFile = new AudioFileReader(filePath);
                 outputDevice = new WaveOutEvent();
                 outputDevice.Init(audioFile);
+                outputDevice.Volume = 1.0f; // Set the volume to max
                 outputDevice.Play();
 
-                errorLogClient.AppendToDebugLog($"Playing soundtrack: {soundtrackName}", "SoundtrackManager.cs");
+                await errorLogClient.AppendToDebugLogAsync($"Playing soundtrack: {soundtrackName}", "SoundtrackManager.cs");
             }
             catch (Exception ex)
             {
-                errorLogClient.AppendToErrorLog($"Error playing soundtrack: {ex.Message}", "SoundtrackManager.cs");
+                await errorLogClient.AppendToErrorLogAsync($"Error playing soundtrack: {ex.Message}", "SoundtrackManager.cs");
             }
         }
 
-        public void PausePlayback()
+        public async Task PausePlaybackAsync()
         {
             if (outputDevice?.PlaybackState == PlaybackState.Playing)
             {
                 outputDevice.Pause();
-                errorLogClient.AppendToDebugLog("Playback paused.", "SoundtrackManager.cs");
+                await errorLogClient.AppendToDebugLogAsync("Playback paused.", "SoundtrackManager.cs");
             }
         }
 

@@ -206,5 +206,76 @@ also don't know what is considered to be a long script as the longest scipt I ha
     - Have not deleted the original MainForm [DansbyChatBotApp.cs] for reference purpose, Almost there! 
     * DISCLAIMER TO SELF * - This list does not encompass all work for the base of the V1.1 to be complete this is an imediate priority list for the next coding session, much more work and implements/refactoring to be done. This is to get the base up and running to perform unit testing for polish!!!!
 
-# 12.29.24 - 
-- 
+# 1.4.25 - 3:06 AM
+- SUMMARY of Current State : Made great progress in the refactor in today's session, I made the NLP Pipeline pretty modular and got the MainForm.cs UI to a visible and barely functional state. I think the backend is pretty solid at this point and the main focus is on testing, debugging, and error fixing to get it running. After that is complete I am going to add in two more forms (1st a Main Menu and 2nd a UI form for better management of the intents so I can avoid going into the codebase). I had ChatGBT write me up a priority To-Do list for the next session and am pasting it below (yes yes I know thats super lazy to not write myself but I am TIREDDD and its 3AM!!!!)
+
+- 🔧 Priority 1: UI Debugging & Integration
+    - Fix UI component setup (buttons, text boxes, dropdowns) in MainForm.cs to ensure all elements are properly initialized and working.
+    - Ensure event handlers like SendButton_Click, PlayButton_Click, and PauseButton_Click are fully functional.
+    - Fix UI freezes or unresponsiveness by ensuring async methods are properly awaited.
+    - Add a dashboard element to dynamically display recognized intents and responses for easier management.
+    - Test the cache refresh button functionality and fix any async issues related to vault cache refreshing.
+
+- 🔧 Priority 2: Refactoring the NLP Pipeline
+    - Complete the refactoring of the NLP pipeline into three distinct modules:
+    - Intent Recognition Module (IntentRecognizer.cs)
+    - Response Generation Module (ResponseGenerator.cs)
+    - Vault Query Module (VaultManager.cs)
+    - Combine predefined mappings and vault data into a centralized intent-response config file.
+    - Implement a tagging system to categorize intents into groups (e.g., greetings, utility, vault-related, tasks).
+
+- 🔧 Priority 3: Functional Testing
+    - Test intent recognition by typing various inputs into the chat interface.
+    - Ensure the ResponseGenerator correctly picks predefined responses or vault-based responses.
+    - Test vault search functionality to ensure Dansby can search notes in the Obsidian Vault and return meaningful results.
+    - Test soundtrack playback (play, pause, stop) using the SoundtrackManager.
+    - Perform stress tests to make sure Dansby handles large vaults and long sessions without crashing.
+
+- 🔧 Priority 4: Obsidian Vault Integration
+    - Implement a system to use the Obsidian Vault as "memory" by linking vault queries to the intent-response system.
+    - Improve the VaultManager to handle large vaults efficiently (consider lazy loading, caching strategies).
+    - Add a search mechanism that pulls relevant notes from the vault based on natural language queries.
+    - Ensure search results are displayed cleanly in the UI (either in the chat history or in a separate list).
+
+- 🔧 Priority 5: Backend Improvements
+    - Refactor async methods in the MainForm.cs to ensure non-blocking operations and smooth UI interactions.
+    - Optimize the autosave functionality in the AutosaveManager to run in the background without UI lag.
+    - Implement a graceful shutdown process in DansbyCore to clean up resources (e.g., stop timers, dispose of NAudio).
+    - Verify that error logging is consistent and that logs are concise but informative.
+
+- 🔧 Priority 6: UI Enhancements
+    - Add a status bar or loading indicator to the UI to display ongoing tasks (like vault searches or soundtrack loading).
+    - Improve visual styling of the form (adjust colors, fonts, and layout for a better user experience).
+    - Add a dropdown list or auto-suggestions for recognized commands and intents to make interactions easier.
+
+- 🧪 Testing Checklist
+
+    - Test all core modules:
+        - Intent Recognition Module
+        - Response Generation Module
+        - Vault Query Module
+
+    - Perform unit tests on:
+        - User authentication
+        - Vault search
+        - Soundtrack playback
+        - Error logging
+        - Ensure Dansby can handle unexpected inputs without crashing or freezing.
+        - Check that all error logs are meaningful and helpful for debugging.
+
+# 1.5.25 - 9:40 PM
+- Notes for Next Session: 
+    - TO-DO
+        - Test Slime Timer
+        - Set Up functionHoldings (More Functions)
+            - For openerrorlog
+            - summonslime
+            - Add More Tasks
+        - Intent Dashboard Form/Interaction
+        - Mainscreen Form/UI + User Credentials and Log In + Add a loading bar for start up for Aesthetics + thread time
+        - Add Volume Bar for soundtracks 
+        - Add intent calls to edit volume level
+        - Set up Vault Querries
+        - Fix delay for thread mutexs
+
+- What I got functional today -> Normal Intent mappings IntentRecognition -> Response Return , AutoSaveManager runs perfectly, SoundtrackManager run perfectly, Function calls through intent working... 

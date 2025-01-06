@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using ChatbotApp.Utilities;
+using System.Threading.Tasks;
 
 namespace ChatbotApp.Core
 {
     public class ResponseGenerator
     {
-        private readonly Dictionary<string, List<string>> responseMappings;
+        private Dictionary<string, List<string>> responseMappings;
         private readonly ErrorLogClient errorLogClient;
 
         // Path to the response mappings JSON file
-        private string responseMappingsFile;
+        private readonly string responseMappingsFile;
 
         // Constructor
         public ResponseGenerator(ErrorLogClient errorLogClient, string responseMappingsFilePath = "ChatbotApp\\NLP_pipeline\\response_mappings.json")
@@ -20,43 +21,50 @@ namespace ChatbotApp.Core
             this.errorLogClient = errorLogClient;
             this.responseMappingsFile = responseMappingsFilePath;
 
-            // Load response mappings on initialization
-            responseMappings = LoadResponseMappings();
+            // Load the response mappings asynchronously during initialization
+            Task.Run(() => InitializeAsync()).Wait();
         }
 
-        // Load response mappings from JSON file
-        private Dictionary<string, List<string>> LoadResponseMappings()
+        // Async initialization method to load response mappings
+        private async Task InitializeAsync()
+        {
+            responseMappings = await LoadResponseMappings();
+            await errorLogClient.AppendToDebugLogAsync("Response mappings loaded successfully.", "ResponseGenerator.cs");
+        }
+
+        // Load response mappings from JSON file asynchronously
+        private async Task<Dictionary<string, List<string>>> LoadResponseMappings()
         {
             try
             {
                 if (File.Exists(responseMappingsFile))
                 {
-                    string json = File.ReadAllText(responseMappingsFile);
+                    string json = await File.ReadAllTextAsync(responseMappingsFile);
                     return JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(json) ?? new Dictionary<string, List<string>>();
                 }
                 else
                 {
-                    errorLogClient.AppendToErrorLog($"Response mappings file not found: {responseMappingsFile}", "ResponseGenerator.cs");
+                    await errorLogClient.AppendToErrorLogAsync($"Response mappings file not found: {responseMappingsFile}", "ResponseGenerator.cs");
                     return new Dictionary<string, List<string>>();
                 }
             }
             catch (Exception ex)
             {
-                errorLogClient.AppendToErrorLog($"Error loading response mappings: {ex.Message}", "ResponseGenerator.cs");
+                await errorLogClient.AppendToErrorLogAsync($"Error loading response mappings: {ex.Message}", "ResponseGenerator.cs");
                 return new Dictionary<string, List<string>>();
             }
         }
 
         // Generate a response based on intent
-        public string GenerateResponse(string intent, string userInput)
+        public async Task<string> GenerateResponseAsync(string intent, string userInput)
         {
             if (string.IsNullOrEmpty(intent))
             {
-                errorLogClient.AppendToErrorLog("Intent is null or empty.", "ResponseGenerator.cs");
+                await errorLogClient.AppendToErrorLogAsync("Intent is null or empty.", "ResponseGenerator.cs");
                 return "I'm not sure how to respond to that.";
             }
 
-            if (responseMappings.ContainsKey(intent))
+            if (responseMappings != null && responseMappings.ContainsKey(intent))
             {
                 List<string> possibleResponses = responseMappings[intent];
                 string selectedResponse = SelectRandomResponse(possibleResponses);
@@ -64,7 +72,7 @@ namespace ChatbotApp.Core
             }
             else
             {
-                errorLogClient.AppendToErrorLog($"No response mapping found for intent: {intent}", "ResponseGenerator.cs");
+                await errorLogClient.AppendToErrorLogAsync($"No response mapping found for intent: {intent}", "ResponseGenerator.cs");
                 return $"I'm not sure how to respond to that intent: {intent}.";
             }
         }
@@ -83,38 +91,38 @@ namespace ChatbotApp.Core
         }
 
         // Add a new response mapping dynamically
-        public void AddResponseMapping(string intent, List<string> responses)
+        public async Task AddResponseMappingAsync(string intent, List<string> responses)
         {
             if (string.IsNullOrEmpty(intent) || responses == null || responses.Count == 0)
             {
-                errorLogClient.AppendToErrorLog("Invalid intent or responses provided for AddResponseMapping.", "ResponseGenerator.cs");
+                await errorLogClient.AppendToErrorLogAsync("Invalid intent or responses provided for AddResponseMapping.", "ResponseGenerator.cs");
                 return;
             }
 
-            if (!responseMappings.ContainsKey(intent))
-            {
-                responseMappings[intent] = responses;
-            }
-            else
+            if (responseMappings.ContainsKey(intent))
             {
                 responseMappings[intent].AddRange(responses);
             }
+            else
+            {
+                responseMappings[intent] = responses;
+            }
 
-            SaveResponseMappings();
+            await SaveResponseMappingsAsync();
         }
 
-        // Save response mappings to JSON file
-        private void SaveResponseMappings()
+        // Save response mappings to JSON file asynchronously
+        private async Task SaveResponseMappingsAsync()
         {
             try
             {
                 string json = JsonConvert.SerializeObject(responseMappings, Formatting.Indented);
-                File.WriteAllText(responseMappingsFile, json);
-                errorLogClient.AppendToDebugLog("Response mappings saved successfully.", "ResponseGenerator.cs");
+                await File.WriteAllTextAsync(responseMappingsFile, json);
+                await errorLogClient.AppendToDebugLogAsync("Response mappings saved successfully.", "ResponseGenerator.cs");
             }
             catch (Exception ex)
             {
-                errorLogClient.AppendToErrorLog($"Error saving response mappings: {ex.Message}", "ResponseGenerator.cs");
+                await errorLogClient.AppendToErrorLogAsync($"Error saving response mappings: {ex.Message}", "ResponseGenerator.cs");
             }
         }
 
@@ -123,11 +131,14 @@ namespace ChatbotApp.Core
         {
             List<string> taggedResponses = new List<string>();
 
-            foreach (var mapping in responseMappings)
+            if (responseMappings != null)
             {
-                if (mapping.Key.Contains(tag))
+                foreach (var mapping in responseMappings)
                 {
-                    taggedResponses.AddRange(mapping.Value);
+                    if (mapping.Key.Contains(tag, StringComparison.OrdinalIgnoreCase))
+                    {
+                        taggedResponses.AddRange(mapping.Value);
+                    }
                 }
             }
 
