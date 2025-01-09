@@ -67,7 +67,12 @@
           { "Utterance": "how are you?", "Tokens": ["how", "are", "you"] },
           { "Utterance": "just checking up on you", "Tokens": ["just", "checking", "up", "on", "you"] },
           { "Utterance": "comment ça va?", "Tokens": ["comment", "ça", "va"] },
-          { "Utterance": "how r you?", "Tokens": ["how", "r","you"]}
+          { "Utterance": "how r you?", "Tokens": ["how", "r","you"]},
+          { "Utterance": "how is your day", "Tokens": ["how", "is", "your", "day"]},
+          { "Utterance": "hows your day", "Tokens": ["hows", "your", "day"]},
+          { "Utterance": "how is your day going", "Tokens": ["how", "is", "your", "day", "going"]},
+          { "Utterance": "how is your day", "Tokens": ["how", "is", "your", "day"]}
+        
         ]
     },
     {
@@ -204,18 +209,12 @@
         ]
     },
     {
-        "Name": "missyouaffection",
-        "Tags": ["social", "affection"],
-        "Examples": [
-        { "Utterance": "miss you", "Tokens": ["miss", "you"] }
-        ]
-    },
-    {
         "Name": "usermissedyou",
         "Tags": ["social", "affection"],
         "Examples": [
         { "Utterance": "I missed you", "Tokens": ["I", "missed", "you"] },
-        { "Utterance": "i missed you", "Tokens": ["i", "missed", "you"] }
+        { "Utterance": "i missed you", "Tokens": ["i", "missed", "you"] },
+        { "Utterance": "miss you", "Tokens": ["miss", "you"] }
         ]
     },
     {
