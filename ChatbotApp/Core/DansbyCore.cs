@@ -79,7 +79,7 @@ namespace ChatbotApp.Core
             try
             {
                 // Recognize the intent from user input
-                string intent = await intentRecognizer.RecognizeIntentAsync(userInput);
+                string intent = intentRecognizer.RecognizeIntent(userInput);
                 await errorLogClient.AppendToDebugLogAsync($"Recognized intent: {intent}", "DansbyCore.cs");
 
                 // Check if the intent matches a function in Function.cs
@@ -91,7 +91,7 @@ namespace ChatbotApp.Core
                 }
 
                 // If no function matches, fall back to generating a response
-                string response = await responseGenerator.GenerateResponseAsync(intent, userInput);
+                string response = responseGenerator.GenerateResponse(intent, userInput);
                 await errorLogClient.AppendToDebugLogAsync($"Response generated from recognized intent: {response}.", "DansbyCore.cs");
 
                 return response;

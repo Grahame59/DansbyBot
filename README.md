@@ -279,3 +279,25 @@ also don't know what is considered to be a long script as the longest scipt I ha
         - Fix delay for thread mutexs
 
 - What I got functional today -> Normal Intent mappings IntentRecognition -> Response Return , AutoSaveManager runs perfectly, SoundtrackManager run perfectly, Function calls through intent working... 
+
+# 1.13.25 - 6:54 PM
+- Completed in this session so far:
+    - Added functional calls to "openerrorlog" and "forcesavelorehaven" in the function holdings class
+    - Added a Batch file for the openerrorlog call to be localized and not break upon a different machine
+    - Added the Intent mappings for these function calls
+    - Fixed the delay for the threads by using _ = instead of await (partial fix)
+    - Added some small intent additions 
+    - Fixed the ASCII Bubble letter for the Dansby called name intent...
+    - Played around with a MainScreenForm.cs and set up the functionality for it. 
+    - Temporary Aesthetics for MainScreen just playing around currently...
+
+    - TEMP LIST TO-DO IN NEXT SESSION:
+        - Fix slime speed and etc... (Not doing today)
+        - Intent Dashboard Form/Interaction
+        - Add Volume Bar for soundtracks 
+        - Add intent calls to edit volume level
+        - Set up Vault Querries
+        - More Intent Matching and adding
+        - More MainScreen refinement and additions
+        - make switchable backgrounds for mainScreen possible
+        - Pick an aesthetic for MainScreen background + Logo (MainScreen Title)

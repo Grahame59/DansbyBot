@@ -14,8 +14,11 @@ namespace ChatbotApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            var mainForm = new MainForm();
-            Application.Run(mainForm);
+            var mainScreenForm = new MainScreenForm();
+            Application.Run(mainScreenForm);
+
+            //var mainForm = new MainForm();
+            //Application.Run(mainForm);
         }
     }
 }

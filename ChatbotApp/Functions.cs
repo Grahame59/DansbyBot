@@ -11,6 +11,8 @@ using ChatbotApp;
 using ChatbotApp.UserData;
 using ChatbotApp.Utilities;
 using ChatbotApp.Features;
+using System.Diagnostics;
+using ChatbotApp.Core;
 
 namespace Functions
 {
@@ -86,6 +88,15 @@ namespace Functions
                     case "searchvault":
                         string searchResult = await SearchVaultAsync(userInput);
                         return searchResult;
+
+                    case "openerrorlog":
+                        await OpenErrorLogForm();
+                        return "ErrorLogForm opened.";
+
+                    case "forcesavelorehaven":
+                        var autosaveManager = new AutosaveManager("E:\\Lorehaven\\autosave.bat", 300000);
+                        await autosaveManager.ExecuteAutosaveAsync();
+                        return "Obsidian Vault LoreHaven was commited and pushed.";
 
                     default:
                         return "Sorry, I don't recognize that command.";
@@ -206,6 +217,36 @@ namespace Functions
                 await errorLogClient.AppendToErrorLogAsync($"Error listing functions: {ex.Message}", "Functions.cs");
             }
         }
+
+        private async Task OpenErrorLogForm()
+        {
+            try
+            {
+                string errorLogFormBatchPath = "E:\\CODES\\DansbyBot\\Utilities\\StartErrorLog.bat";
+
+                if (File.Exists(errorLogFormBatchPath))
+                {
+                    ProcessStartInfo processInfo = new ProcessStartInfo
+                    {
+                        FileName = errorLogFormBatchPath,
+                        UseShellExecute = true,
+                        CreateNoWindow = true
+                    };
+
+                    Process process = Process.Start(processInfo);
+                    await process.WaitForExitAsync();  // Wait for the process to complete
+                }
+                else
+                {
+                    throw new FileNotFoundException($"Batch file not found at {errorLogFormBatchPath}");
+                }
+            }
+            catch (Exception ex)
+            {
+                await errorLogClient.AppendToErrorLogAsync($"Error running error log batch file: {ex.Message}", "Functions.cs");
+            }
+        }
+
 
         private string GetFunctionDescription(string functionName)
         {

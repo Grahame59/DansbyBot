@@ -69,7 +69,7 @@ namespace ChatbotApp
             }
         }
 
-        private async void InitializeComponent()
+        private void InitializeComponent()
         {
             // UI Controls Initialization
             inputTextBox = new TextBox
@@ -79,7 +79,7 @@ namespace ChatbotApp
                 BackColor = Color.FromArgb(88, 86, 91),
                 ForeColor = Color.White,
                 Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right
-                
+
             };
 
             // KeyClick Listener for input Textbox (key[ENTER] clicked == SendButton_Click)
@@ -110,7 +110,9 @@ namespace ChatbotApp
                 ReadOnly = true,
                 BackColor = Color.FromArgb(50, 50, 50),
                 ForeColor = Color.White,
-                Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right
+                Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                Font = new Font("Consolas", 8)
+
             };
 
             soundtrackComboBox = new ComboBox

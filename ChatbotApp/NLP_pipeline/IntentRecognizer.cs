@@ -26,11 +26,11 @@ namespace Intents
             try
             {
                 intents = await LoadIntentsAsync(configFilePath);
-                await errorLogClient.AppendToDebugLogAsync($"Successfully loaded intents from {configFilePath}.", "IntentRecognizer");
+                _= errorLogClient.AppendToDebugLogAsync($"Successfully loaded intents from {configFilePath}.", "IntentRecognizer");
             }
             catch (Exception ex)
             {
-                await errorLogClient.AppendToErrorLogAsync($"Error loading intents: {ex.Message}", "IntentRecognizer");
+                _= errorLogClient.AppendToErrorLogAsync($"Error loading intents: {ex.Message}", "IntentRecognizer");
                 intents = new List<Intent>();
             }
         }
@@ -40,7 +40,7 @@ namespace Intents
         {
             if (!File.Exists(filePath))
             {
-                await errorLogClient.AppendToErrorLogAsync($"Intent file not found at {filePath}.", "IntentRecognizer");
+                _ = errorLogClient.AppendToErrorLogAsync($"Intent file not found at {filePath}.", "IntentRecognizer");
                 return new List<Intent>();
             }
 
@@ -49,18 +49,18 @@ namespace Intents
         }
 
         // Recognize intent based on user input
-        public async Task<string> RecognizeIntentAsync(string userInput)
+        public string RecognizeIntent(string userInput)
         {
             if (string.IsNullOrWhiteSpace(userInput))
             {
-                await errorLogClient.AppendToDebugLogAsync("User input is empty or null.", "IntentRecognizer");
+                _ = errorLogClient.AppendToDebugLogAsync("User input is empty or null.", "IntentRecognizer");
                 return "unknown_intent";
             }
 
-            await errorLogClient.AppendToDebugLogAsync($"Recognizing intent for input: \"{userInput}\"", "IntentRecognizer");
+            _ = errorLogClient.AppendToDebugLogAsync($"Recognizing intent for input: \"{userInput}\"", "IntentRecognizer");
 
             var userTokens = tokenizer.Tokenize(userInput);
-            await errorLogClient.AppendToDebugLogAsync($"Tokenized input: {string.Join(", ", userTokens)}", "IntentRecognizer");
+            _ = errorLogClient.AppendToDebugLogAsync($"Tokenized input: {string.Join(", ", userTokens)}", "IntentRecognizer");
 
             foreach (var intent in intents)
             {
@@ -68,13 +68,13 @@ namespace Intents
                 {
                     if (IsMatch(userTokens, example.Tokens))
                     {
-                        await errorLogClient.AppendToDebugLogAsync($"Recognized intent: \"{intent.Name}\"", "IntentRecognizer");
+                        _ = errorLogClient.AppendToDebugLogAsync($"Recognized intent: \"{intent.Name}\"", "IntentRecognizer");
                         return intent.Name;
                     }
                 }
             }
 
-            await errorLogClient.AppendToDebugLogAsync("No matching intent found. Returning 'unknown_intent'.", "IntentRecognizer");
+            _ = errorLogClient.AppendToDebugLogAsync("No matching intent found. Returning 'unknown_intent'.", "IntentRecognizer");
             return "unknown_intent";
         }
 

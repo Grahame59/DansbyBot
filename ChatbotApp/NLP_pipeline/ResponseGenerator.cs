@@ -29,7 +29,7 @@ namespace ChatbotApp.Core
         private async Task InitializeAsync()
         {
             responseMappings = await LoadResponseMappings();
-            await errorLogClient.AppendToDebugLogAsync("Response mappings loaded successfully.", "ResponseGenerator.cs");
+            _= errorLogClient.AppendToDebugLogAsync("Response mappings loaded successfully.", "ResponseGenerator.cs");
         }
 
         // Load response mappings from JSON file asynchronously
@@ -44,23 +44,23 @@ namespace ChatbotApp.Core
                 }
                 else
                 {
-                    await errorLogClient.AppendToErrorLogAsync($"Response mappings file not found: {responseMappingsFile}", "ResponseGenerator.cs");
+                    _= errorLogClient.AppendToErrorLogAsync($"Response mappings file not found: {responseMappingsFile}", "ResponseGenerator.cs");
                     return new Dictionary<string, List<string>>();
                 }
             }
             catch (Exception ex)
             {
-                await errorLogClient.AppendToErrorLogAsync($"Error loading response mappings: {ex.Message}", "ResponseGenerator.cs");
+                _= errorLogClient.AppendToErrorLogAsync($"Error loading response mappings: {ex.Message}", "ResponseGenerator.cs");
                 return new Dictionary<string, List<string>>();
             }
         }
 
         // Generate a response based on intent
-        public async Task<string> GenerateResponseAsync(string intent, string userInput)
+        public string GenerateResponse(string intent, string userInput)
         {
             if (string.IsNullOrEmpty(intent))
             {
-                await errorLogClient.AppendToErrorLogAsync("Intent is null or empty.", "ResponseGenerator.cs");
+                _ = errorLogClient.AppendToErrorLogAsync("Intent is null or empty.", "ResponseGenerator.cs");
                 return "I'm not sure how to respond to that.";
             }
 
@@ -72,7 +72,7 @@ namespace ChatbotApp.Core
             }
             else
             {
-                await errorLogClient.AppendToErrorLogAsync($"No response mapping found for intent: {intent}", "ResponseGenerator.cs");
+                _ = errorLogClient.AppendToErrorLogAsync($"No response mapping found for intent: {intent}", "ResponseGenerator.cs");
                 return $"I'm not sure how to respond to that intent: {intent}.";
             }
         }
@@ -95,7 +95,7 @@ namespace ChatbotApp.Core
         {
             if (string.IsNullOrEmpty(intent) || responses == null || responses.Count == 0)
             {
-                await errorLogClient.AppendToErrorLogAsync("Invalid intent or responses provided for AddResponseMapping.", "ResponseGenerator.cs");
+                _= errorLogClient.AppendToErrorLogAsync("Invalid intent or responses provided for AddResponseMapping.", "ResponseGenerator.cs");
                 return;
             }
 
@@ -118,11 +118,11 @@ namespace ChatbotApp.Core
             {
                 string json = JsonConvert.SerializeObject(responseMappings, Formatting.Indented);
                 await File.WriteAllTextAsync(responseMappingsFile, json);
-                await errorLogClient.AppendToDebugLogAsync("Response mappings saved successfully.", "ResponseGenerator.cs");
+                _= errorLogClient.AppendToDebugLogAsync("Response mappings saved successfully.", "ResponseGenerator.cs");
             }
             catch (Exception ex)
             {
-                await errorLogClient.AppendToErrorLogAsync($"Error saving response mappings: {ex.Message}", "ResponseGenerator.cs");
+                _= errorLogClient.AppendToErrorLogAsync($"Error saving response mappings: {ex.Message}", "ResponseGenerator.cs");
             }
         }
 
