@@ -48,7 +48,7 @@ namespace ChatbotApp
         {
             try
             {
-                AppendToChatHistory("Welcome to your chat interface. I am Dansby. How can I assist you?");
+                AppendToChatHistory("Welcome to your chat interface. I am Dansby. How can I assist you?", Color.Purple);
                 await dansbyCore.InitializeAsync();
 
                 // Load soundtracks into the ComboBox
@@ -159,6 +159,10 @@ namespace ChatbotApp
             this.Text = "DansbyChatBot";
             this.BackColor = Color.FromArgb(25, 25, 25);
 
+            // Background Image
+            //this.BackgroundImage = Image.FromFile("ChatbotApp\\Resources\\MainScreenComponents\\Background10.png");
+            //this.BackgroundImageLayout = ImageLayout.Stretch;
+
         }
 
         private void InitializeRefreshCacheButton()
@@ -184,7 +188,7 @@ namespace ChatbotApp
 
             if (string.IsNullOrEmpty(userInput))
             {
-                AppendToChatHistory("Dansby: Please enter a message.");
+                AppendToChatHistory("Dansby: Please enter a message.", Color.Purple);
                 return;
             }
 
@@ -192,7 +196,7 @@ namespace ChatbotApp
             inputTextBox.Clear();
 
             string response = await dansbyCore.ProcessUserInputAsync(userInput);
-            AppendToChatHistory($"Dansby: {response}");
+            AppendToChatHistory($"Dansby: {response}", Color.Purple);
         }
 
         private async Task PlayButton_Click(object sender, EventArgs e)
@@ -217,11 +221,11 @@ namespace ChatbotApp
             {
                 lastSlimeSummonTime = DateTime.Now;
                 await dansbyCore.SummonSlimeAsync(chatRichTextBox);
-                AppendToChatHistory("Dansby: A slime appeared!");
+                AppendToChatHistory("Dansby: A slime appeared!", Color.Purple);
             }
         }
 
-        public void AppendToChatHistory(string message)
+        public void AppendToChatHistory(string message, Color? color = null)
         {
             if (chatRichTextBox.InvokeRequired)
             {

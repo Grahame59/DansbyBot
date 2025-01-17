@@ -30,7 +30,7 @@ namespace ChatbotApp
             this.BackColor = Color.FromArgb(30, 30, 30);
 
             // Background Image
-            this.BackgroundImage = Image.FromFile("ChatbotApp\\Resources\\MainScreenComponents\\Background5.png");
+            this.BackgroundImage = Image.FromFile("ChatbotApp\\Resources\\MainScreenComponents\\Background10.png");
             this.BackgroundImageLayout = ImageLayout.Stretch;
 
             // Logo PictureBox
@@ -38,7 +38,7 @@ namespace ChatbotApp
             {
                 Location = new Point(150, 40),
                 Size = new Size(500, 150),
-                Image = Image.FromFile("ChatbotApp\\Resources\\MainScreenComponents\\DansbyLogo1Transparent.png"),
+                Image = Image.FromFile("ChatbotApp\\Resources\\MainScreenComponents\\DansbyLogo2Transparent.png"),
                 SizeMode = PictureBoxSizeMode.Zoom,
                 BackColor = Color.Transparent, // Ensure the logo background is transparent
                 Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right
