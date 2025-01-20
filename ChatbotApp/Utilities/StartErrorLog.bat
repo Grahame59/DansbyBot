@@ -1,18 +1,32 @@
-@echo off 
-:: Batch file to quickly start ErrorLogger w/o going into the ide.
-:: WIP
+@echo off
+:: Batch file to quickly start ErrorLogger without going into the IDE.
+:: WIP - Dynamic Path Detection
 
-:: Change directory to the location of the project (the folder containing the .csproj file).
-cd /d "E:\CODES\ErrorLogger"
+:: Check if the project exists on E:
+if exist "E:\CODES\ErrorLogger" (
+    cd /d "E:\CODES\ErrorLogger"
+    goto Build
+)
 
-:: Build the project.
+:: Check if the project exists on C:
+if exist "C:\CODES\ErrorLogger" (
+    cd /d "C:\CODES\ErrorLogger"
+    goto Build
+)
+
+:: If the directory is not found, display an error and exit
+echo ErrorLogger project directory not found on either E: or C:.
+exit /b 1
+
+:Build
+:: Build the project
 dotnet build
 
-:: Run the application if the build was successful.
+:: Check if the build was successful
 if %errorlevel% neq 0 (
     echo Build failed. Please check the errors above.
     exit /b %errorlevel%
-) 
+)
 
-:: Run the application.
+:: Run the application
 dotnet run

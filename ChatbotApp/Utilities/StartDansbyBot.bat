@@ -1,18 +1,32 @@
-@echo off 
+@echo off
 :: Batch file to quickly start DansbyBot without going into the IDE.
-:: WIP
+:: WIP - Dynamic Path Detection
 
-:: Change directory to the location of the project (the folder containing the .csproj file).
-cd /d "E:\CODES\DansbyBot"
+:: Check if the project exists on E:
+if exist "E:\CODES\DansbyBot" (
+    cd /d "E:\CODES\DansbyBot"
+    goto Build
+)
 
-:: Build the project.
+:: Check if the project exists on C:
+if exist "C:\CODES\DansbyBot" (
+    cd /d "C:\CODES\DansbyBot"
+    goto Build
+)
+
+:: If the directory is not found, display an error and exit
+echo DansbyBot project directory not found on either E: or C:.
+exit /b 1
+
+:Build
+:: Build the project
 dotnet build
 
-:: Run the application if the build was successful.
+:: Check if the build was successful
 if %errorlevel% neq 0 (
     echo Build failed. Please check the errors above.
     exit /b %errorlevel%
-) 
+)
 
-:: Run the application.
+:: Run the application
 dotnet run
