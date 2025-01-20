@@ -34,7 +34,7 @@ public class ErrorLogClient
         {
             using (var client = new TcpClient())
             {
-                await client.ConnectAsync("localhost", 5000);
+                await client.ConnectAsync("192.168.1.38", 5000);
 
                 using (var stream = client.GetStream())
                 {
@@ -69,7 +69,7 @@ public class ErrorLogClient
     {
         try
         {
-            using (var client = new TcpClient("localhost", 5000))
+            using (var client = new TcpClient("192.168.1.38", 5000))
             {
                 using (var stream = client.GetStream())
                 {
