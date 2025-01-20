@@ -6,6 +6,7 @@ using ChatbotApp.Utilities;
 using Intents;
 using ChatbotApp.Features;
 using Functions;
+using System.IO;
 
 namespace ChatbotApp.Core
 {
@@ -25,15 +26,37 @@ namespace ChatbotApp.Core
         {
             errorLogClient = ErrorLogClient.Instance;
 
+            // Determine the base path dynamically
+            string basePath = GetBasePath();
+
             // Initialize Managers
             intentRecognizer = new IntentRecognizer();
             responseGenerator = new ResponseGenerator(errorLogClient);
             soundtrackManager = new SoundtrackManager();
             animationManager = new AnimationManager();
-            autosaveManager = new AutosaveManager("E:\\Lorehaven\\autosave.bat");
-            vaultManager = new VaultManager("E:\\Lorehaven\\gitconnect");
+            autosaveManager = new AutosaveManager(Path.Combine(basePath, "autosave.bat"));
+            vaultManager = new VaultManager(Path.Combine(basePath, "gitconnect"));
             functionHoldings = new functionHoldings(mainForm);
 
+        }
+
+        // Helper method to determine the base path
+        private string GetBasePath()
+        {
+            // Check if the directory exists on E: drive
+            if (Directory.Exists(@"E:\Lorehaven"))
+            {
+                return @"E:\Lorehaven";
+            }
+
+            // Check if the directory exists on C: drive
+            if (Directory.Exists(@"C:\Lorehaven"))
+            {
+                return @"C:\Lorehaven";
+            }
+
+            // If neither exists, throw an exception
+            throw new DirectoryNotFoundException("Lorehaven directory not found on either E: or C: drive.");
         }
 
         // Async initialization to be called from MainForm
