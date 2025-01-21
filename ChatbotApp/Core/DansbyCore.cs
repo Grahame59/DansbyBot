@@ -46,13 +46,13 @@ namespace ChatbotApp.Core
             // Check if the directory exists on E: drive
             if (Directory.Exists(@"E:\Lorehaven"))
             {
-                return @"E:\Lorehaven";
+                return @"C:\Lorehaven"; 
             }
 
             // Check if the directory exists on C: drive
-            if (Directory.Exists(@"C:\Lorehaven"))
+            else if (Directory.Exists(@"C:\Lorehaven"))
             {
-                return @"C:\Lorehaven";
+                return @"E:\Lorehaven";
             }
 
             // If neither exists, throw an exception
