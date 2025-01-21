@@ -71,12 +71,12 @@
           { "Utterance": "just checking up on you", "Tokens": ["just", "checking", "up", "on", "you"] },
           { "Utterance": "comment ça va?", "Tokens": ["comment", "ça", "va"] },
           { "Utterance": "how r you?", "Tokens": ["how", "r","you"]},
-          { "Utterance": "how is your day", "Tokens": ["how", "is", "your", "day"]},
           { "Utterance": "hows your day", "Tokens": ["hows", "your", "day"]},
           { "Utterance": "how is your day going", "Tokens": ["how", "is", "your", "day", "going"]},
           { "Utterance": "how is your day", "Tokens": ["how", "is", "your", "day"]},
           { "Utterance": "how are u", "Tokens": ["how", "are", "u"] },
-          { "Utterance": "how are u?", "Tokens": ["how", "are", "u"] }
+          { "Utterance": "how are u?", "Tokens": ["how", "are", "u"] },
+          { "Utterance": "how r u", "Tokens": ["how", "r", "u"] }
 
         
         ]
@@ -160,7 +160,8 @@
         "Examples": [
           { "Utterance": "I love you", "Tokens": ["i", "love", "you"] },
           { "Utterance": "you are awesome", "Tokens": ["you", "are", "awesome"] },
-          { "Utterance": "i <3 you", "Tokens": ["i", "<3", "you"] }
+          { "Utterance": "i <3 you", "Tokens": ["i", "<3", "you"] },
+          { "Utterance": "I love u", "Tokens": ["i", "love", "u"] }
 
         ]
     },                              
@@ -267,7 +268,8 @@
         { "Utterance": "danssby", "Tokens": ["danssby"] },
         { "Utterance": "damsby", "Tokens": ["damsby"] },
         { "Utterance": "dasnby", "Tokens": ["dasnby"] },
-        { "Utterance": "dansbsy", "Tokens": ["dansbsy"] }
+        { "Utterance": "dansbsy", "Tokens": ["dansbsy"] },
+        { "Utterance": "dnasby", "Tokens": ["dnasby"] }
     ]
     },        
     {
