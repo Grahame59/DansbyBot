@@ -1358,24 +1358,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kjgbu\\.nuget\\packages\\": {}
+    "C:\\Users\\Kj Grahame\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CODES\\DansbyBot\\DansbyBot.csproj",
+      "projectUniqueName": "E:\\CODES\\DansbyBot\\DansbyBot.csproj",
       "projectName": "DansbyBot",
-      "projectPath": "C:\\CODES\\DansbyBot\\DansbyBot.csproj",
-      "packagesPath": "C:\\Users\\kjgbu\\.nuget\\packages\\",
-      "outputPath": "C:\\CODES\\DansbyBot\\obj\\",
+      "projectPath": "E:\\CODES\\DansbyBot\\DansbyBot.csproj",
+      "packagesPath": "C:\\Users\\Kj Grahame\\.nuget\\packages\\",
+      "outputPath": "E:\\CODES\\DansbyBot\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\kjgbu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Kj Grahame\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1388,6 +1396,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1464,7 +1477,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
