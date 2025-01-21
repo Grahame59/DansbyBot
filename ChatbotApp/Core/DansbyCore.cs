@@ -50,7 +50,7 @@ namespace ChatbotApp.Core
             }
 
             // Check if the directory exists on C: drive
-            else if (Directory.Exists(@"C:\Lorehaven"))
+            if (Directory.Exists(@"C:\Lorehaven"))
             {
                 return @"E:\Lorehaven";
             }
