@@ -1,18 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Newtonsoft.Json;
-using System.Threading;
 using System.Windows.Forms;
-using System.Linq;
 using System.Threading.Tasks;
-using static ErrorLogClient;
 using ChatbotApp;
-using ChatbotApp.UserData;
 using ChatbotApp.Utilities;
 using ChatbotApp.Features;
 using System.Diagnostics;
-using ChatbotApp.Core;
+using System.Drawing;
 
 namespace Functions
 {
@@ -32,7 +27,7 @@ namespace Functions
             {
                 // Shutdown message
                 string exitMessage = "DANSBY: I feel so cold... don't leave me creator... goodbye";
-                mainForm.AppendToChatHistory(exitMessage);
+                mainForm.AppendToChatHistory(exitMessage, Color.MediumPurple);
                 MessageBox.Show(" -> SUCCESSFULLY EXITING DANSBYCHATBOT");
 
                 errorLogClient.AppendToDebugLog("Application is exiting.", "Functions.cs");
@@ -53,7 +48,7 @@ namespace Functions
                 string formattedDateTime = now.ToString("MMMM dd, yyyy hh:mm:ss tt");
 
                 string response = $"Dansby: The current date and time is {formattedDateTime}, and it's a {now.DayOfWeek}.";
-                mainForm.AppendToChatHistory(response);
+                mainForm.AppendToChatHistory(response, Color.MediumPurple);
 
                 errorLogClient.AppendToDebugLog("Fetched current date and time.", "Functions.cs");
             }
@@ -119,7 +114,7 @@ namespace Functions
                 string formattedTime = now.ToString("hh:mm:ss tt");
 
                 string response = $"Dansby: The time is {formattedTime}.";
-                mainForm.AppendToChatHistory(response);
+                mainForm.AppendToChatHistory(response, Color.MediumPurple);
 
                 errorLogClient.AppendToDebugLog("Fetched current time.", "Functions.cs");
             }
@@ -137,7 +132,7 @@ namespace Functions
                 string formattedDate = now.ToString("MMMM dd, yyyy");
 
                 string response = $"Dansby: The current date is {formattedDate}.";
-                mainForm.AppendToChatHistory(response);
+                mainForm.AppendToChatHistory(response, Color.MediumPurple);
 
                 errorLogClient.AppendToDebugLog("Fetched current date.", "Functions.cs");
             }
@@ -154,7 +149,7 @@ namespace Functions
                 string dayOfWeek = DateTime.Now.DayOfWeek.ToString();
 
                 string response = $"Dansby: Today is a {dayOfWeek}.";
-                mainForm.AppendToChatHistory(response);
+                mainForm.AppendToChatHistory(response, Color.MediumPurple);
 
                 errorLogClient.AppendToDebugLog("Fetched day of the week.", "Functions.cs");
             }
@@ -174,7 +169,7 @@ namespace Functions
                 if (searchResults.Count > 0)
                 {
                     string response = $"Dansby: Found {searchResults.Count} matching files.";
-                    mainForm.AppendToChatHistory(response);
+                    mainForm.AppendToChatHistory(response, Color.MediumPurple);
 
                     foreach (string result in searchResults)
                     {
@@ -200,7 +195,7 @@ namespace Functions
             try
             {
                 string introMessage = "Dansby: Available Functions I can perform currently:";
-                mainForm.AppendToChatHistory(introMessage);
+                mainForm.AppendToChatHistory(introMessage, Color.MediumPurple);
 
                 var methods = typeof(functionHoldings).GetMethods(System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.DeclaredOnly);
                 foreach (var method in methods)
@@ -209,7 +204,7 @@ namespace Functions
                     string functionDescription = GetFunctionDescription(functionName);
 
                     string message = $"- {functionName}: {functionDescription}";
-                    mainForm.AppendToChatHistory(message);
+                    mainForm.AppendToChatHistory(message, Color.MediumPurple);
                 }
 
                 await errorLogClient.AppendToDebugLogAsync("Listed all available functions.", "Functions.cs");
@@ -224,7 +219,8 @@ namespace Functions
         {
             try
             {
-                string errorLogFormBatchPath = "E:\\CODES\\DansbyBot\\Utilities\\StartErrorLog.bat";
+                // Possible Path correction to be done here dynamically. 
+                string errorLogFormBatchPath = "CODES\\DansbyBot\\Utilities\\StartErrorLog.bat";
 
                 if (File.Exists(errorLogFormBatchPath))
                 {
