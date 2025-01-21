@@ -48,7 +48,7 @@ namespace ChatbotApp
         {
             try
             {
-                AppendToChatHistory("Welcome to your chat interface. I am Dansby. How can I assist you?", Color.Purple);
+                AppendToChatHistory("Welcome to your chat interface. I am Dansby. How can I assist you?", Color.MediumPurple);
                 await dansbyCore.InitializeAsync();
 
                 // Load soundtracks into the ComboBox
@@ -188,7 +188,7 @@ namespace ChatbotApp
 
             if (string.IsNullOrEmpty(userInput))
             {
-                AppendToChatHistory("Dansby: Please enter a message.", Color.Purple);
+                AppendToChatHistory("Dansby: Please enter a message.", Color.MediumPurple);
                 return;
             }
 
@@ -196,7 +196,7 @@ namespace ChatbotApp
             inputTextBox.Clear();
 
             string response = await dansbyCore.ProcessUserInputAsync(userInput);
-            AppendToChatHistory($"Dansby: {response}", Color.Purple);
+            AppendToChatHistory($"Dansby: {response}", Color.MediumPurple);
         }
 
         private async Task PlayButton_Click(object sender, EventArgs e)
@@ -221,7 +221,7 @@ namespace ChatbotApp
             {
                 lastSlimeSummonTime = DateTime.Now;
                 await dansbyCore.SummonSlimeAsync(chatRichTextBox);
-                AppendToChatHistory("Dansby: A slime appeared!", Color.Purple);
+                AppendToChatHistory("Dansby: A slime appeared!", Color.MediumPurple);
             }
         }
 
@@ -229,15 +229,28 @@ namespace ChatbotApp
         {
             if (chatRichTextBox.InvokeRequired)
             {
-                chatRichTextBox.Invoke(new Action(() => AppendToChatHistory(message)));
+                chatRichTextBox.Invoke(new Action(() => AppendToChatHistory(message, color)));
             }
             else
             {
+                int start = chatRichTextBox.TextLength;
                 chatRichTextBox.AppendText(message + Environment.NewLine);
+                int end = chatRichTextBox.TextLength;
+
+                // Apply color if provided
+                if (color.HasValue)
+                {
+                    chatRichTextBox.Select(start, end - start);
+                    chatRichTextBox.SelectionColor = color.Value;
+                }
+
+                // Reset selection and scroll to the caret
                 chatRichTextBox.SelectionStart = chatRichTextBox.Text.Length;
+                chatRichTextBox.SelectionLength = 0;
                 chatRichTextBox.ScrollToCaret();
             }
         }
+
 
         protected override async void OnFormClosing(FormClosingEventArgs e)
         {
