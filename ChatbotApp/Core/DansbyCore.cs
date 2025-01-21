@@ -70,7 +70,7 @@ namespace ChatbotApp.Core
                 await soundtrackManager.InitializeSoundtracksAsync();
                 await autosaveManager.StartAutosaveAsync();
 
-                await errorLogClient.AppendToDebugLogAsync("DansbyCore managers initialized successfully.", "DansbyCore.cs");
+                _ = errorLogClient.AppendToDebugLogAsync("DansbyCore managers initialized successfully.", "DansbyCore.cs");
             }
             catch (Exception ex)
             {
@@ -97,7 +97,7 @@ namespace ChatbotApp.Core
         {
             if (string.IsNullOrWhiteSpace(userInput))
             {
-                await errorLogClient.AppendToDebugLogAsync("Received empty user input.", "DansbyCore.cs");
+                _ = errorLogClient.AppendToDebugLogAsync("Received empty user input.", "DansbyCore.cs");
                 return "Please say something!";
             }
 
@@ -105,19 +105,19 @@ namespace ChatbotApp.Core
             {
                 // Recognize the intent from user input
                 string intent = intentRecognizer.RecognizeIntent(userInput);
-                await errorLogClient.AppendToDebugLogAsync($"Recognized intent: {intent}", "DansbyCore.cs");
+                _ = errorLogClient.AppendToDebugLogAsync($"Recognized intent: {intent}", "DansbyCore.cs");
 
                 // Check if the intent matches a function in Function.cs
                 var functionResponse = await functionHoldings.ExecuteFunctionAsync(intent, userInput);
                 if (functionResponse != "Sorry, I don't recognize that command.")
                 {
-                    await errorLogClient.AppendToDebugLogAsync($"Function executed for intent: {intent}", "DansbyCore.cs");
+                    _ = errorLogClient.AppendToDebugLogAsync($"Function executed for intent: {intent}", "DansbyCore.cs");
                     return functionResponse;
                 }
 
                 // If no function matches, fall back to generating a response
                 string response = responseGenerator.GenerateResponse(intent, userInput);
-                await errorLogClient.AppendToDebugLogAsync($"Response generated from recognized intent: {response}.", "DansbyCore.cs");
+                _ = errorLogClient.AppendToDebugLogAsync($"Response generated from recognized intent: {response}.", "DansbyCore.cs");
 
                 return response;
             }
@@ -149,6 +149,7 @@ namespace ChatbotApp.Core
         {
             try
             {
+                // Play button Doesn't remember or save the state of the song (Resets song to beginning)
                 await soundtrackManager.PlaySoundtrackAsync(soundtrackName);
                 await errorLogClient.AppendToDebugLogAsync($"Playing soundtrack: {soundtrackName}", "DansbyCore.cs");
             }

@@ -44,6 +44,7 @@ namespace ChatbotApp.Utilities
         {
             try
             {
+                // Add futute way to pull .png and *.png's 
                 var files = Directory.GetFiles(vaultPath, "*.md", SearchOption.AllDirectories);
 
                 foreach (var file in files)
@@ -52,7 +53,7 @@ namespace ChatbotApp.Utilities
                     fileCache[file] = content;
                 }
 
-                await errorLogClient.AppendToDebugLogAsync("Vault cache loaded successfully.", "VaultManager");
+                _ = errorLogClient.AppendToDebugLogAsync("Vault cache loaded successfully.", "VaultManager");
             }
             catch (Exception ex)
             {
@@ -69,14 +70,14 @@ namespace ChatbotApp.Utilities
         {
             try
             {
-                await errorLogClient.AppendToDebugLogAsync($"Searching vault for keyword: {keyword}", "VaultManager");
+                _ = errorLogClient.AppendToDebugLogAsync($"Searching vault for keyword: {keyword}", "VaultManager");
 
                 var matchingFiles = fileCache
                     .Where(file => file.Value.Contains(keyword, StringComparison.OrdinalIgnoreCase))
                     .Select(file => file.Key)
                     .ToList();
 
-                await errorLogClient.AppendToDebugLogAsync($"Search complete. {matchingFiles.Count} files matched.", "VaultManager");
+                _ = errorLogClient.AppendToDebugLogAsync($"Search complete. {matchingFiles.Count} files matched.", "VaultManager");
                 return matchingFiles;
             }
             catch (Exception ex)
@@ -97,12 +98,12 @@ namespace ChatbotApp.Utilities
             {
                 if (fileCache.ContainsKey(filePath))
                 {
-                    await errorLogClient.AppendToDebugLogAsync($"Fetching cached content for file: {filePath}", "VaultManager");
+                    _ = errorLogClient.AppendToDebugLogAsync($"Fetching cached content for file: {filePath}", "VaultManager");
                     return fileCache[filePath];
                 }
                 else
                 {
-                    await errorLogClient.AppendToErrorLogAsync($"File not found in cache: {filePath}", "VaultManager");
+                    _ = errorLogClient.AppendToErrorLogAsync($"File not found in cache: {filePath}", "VaultManager");
                     return null;
                 }
             }

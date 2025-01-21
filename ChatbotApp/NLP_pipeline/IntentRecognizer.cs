@@ -94,6 +94,7 @@ namespace Intents
                 userIndex++;
             }
 
+            // Edit this to have a weight or partial match so case match is around 80% ?? 
             return exampleIndex == exampleTokens.Count;
         }
     }
