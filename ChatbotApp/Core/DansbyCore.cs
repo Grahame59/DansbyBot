@@ -43,21 +43,24 @@ namespace ChatbotApp.Core
         // Helper method to determine the base path
         private string GetBasePath()
         {
-            // Check if the directory exists on E: drive
+            Console.WriteLine("Checking if E:\\Lorehaven exists...");
             if (Directory.Exists(@"E:\Lorehaven"))
             {
-                return @"C:\Lorehaven"; 
-            }
-
-            // Check if the directory exists on C: drive
-            if (Directory.Exists(@"C:\Lorehaven"))
-            {
+                Console.WriteLine("E:\\Lorehaven found. Returning E:\\Lorehaven.");
                 return @"E:\Lorehaven";
             }
 
-            // If neither exists, throw an exception
+            Console.WriteLine("Checking if C:\\Lorehaven exists...");
+            if (Directory.Exists(@"C:\Lorehaven"))
+            {
+                Console.WriteLine("C:\\Lorehaven found. Returning C:\\Lorehaven.");
+                return @"C:\Lorehaven";
+            }
+
+            Console.WriteLine("Neither E:\\Lorehaven nor C:\\Lorehaven was found.");
             throw new DirectoryNotFoundException("Lorehaven directory not found on either E: or C: drive.");
         }
+
 
         // Async initialization to be called from MainForm
         public async Task InitializeAsync()
