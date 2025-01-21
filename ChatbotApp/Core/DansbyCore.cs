@@ -61,7 +61,6 @@ namespace ChatbotApp.Core
             throw new DirectoryNotFoundException("Lorehaven directory not found on either E: or C: drive.");
         }
 
-
         // Async initialization to be called from MainForm
         public async Task InitializeAsync()
         {
