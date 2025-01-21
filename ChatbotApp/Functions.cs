@@ -95,7 +95,9 @@ namespace Functions
 
                     case "forcesavelorehaven":
                         var autosaveManager = new AutosaveManager("E:\\Lorehaven\\autosave.bat", 300000);
+                        var autosaveManager2 = new AutosaveManager("C:\\Lorehaven\autosave.bat", 300000);
                         await autosaveManager.ExecuteAutosaveAsync();
+                        await autosaveManager2.ExecuteAutosaveAsync();
                         return "Obsidian Vault LoreHaven was commited and pushed.";
 
                     default:
