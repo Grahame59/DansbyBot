@@ -58,13 +58,14 @@ namespace ChatbotApp.Features
         {
             try
             {
+                await errorLogClient.AppendToDebugLogAsync($"Checking autosave script path: {autosaveScriptPath}", "AutosaveManager.cs");
+
                 if (string.IsNullOrEmpty(autosaveScriptPath) || !System.IO.File.Exists(autosaveScriptPath))
                 {
                     await errorLogClient.AppendToErrorLogAsync($"Autosave script not found: {autosaveScriptPath}", "AutosaveManager.cs");
                     return;
                 }
 
-                // Run the autosave script asynchronously
                 var process = new Process
                 {
                     StartInfo = new ProcessStartInfo
@@ -84,6 +85,7 @@ namespace ChatbotApp.Features
                 await errorLogClient.AppendToErrorLogAsync($"Error during autosave execution: {ex.Message}", "AutosaveManager.cs");
             }
         }
+
 
         /// <summary>
         /// Disposes the autosave timer.
