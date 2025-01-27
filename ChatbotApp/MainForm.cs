@@ -22,7 +22,9 @@ namespace ChatbotApp
         private ComboBox soundtrackComboBox;
         private RichTextBox chatRichTextBox;
         private Button returnToMainScreenButton;
-
+        private Panel intentPanel;
+        private Splitter intentSplitter;
+        private Button intentTabButton;
 
         public MainForm()
         {
@@ -162,6 +164,29 @@ namespace ChatbotApp
             returnToMainScreenButton.Click += ReturnToMainScreenButton_Click;
             returnToMainScreenButton.BringToFront();
 
+            //--- Pannel UI Components for IntentEditorManagement ----
+
+            intentPanel = new Panel // Sliding Pannel for Intents - Acts as a sub form of sorts
+            {
+                Width = 300,
+                Dock = DockStyle.Right,
+                Visible = false,
+                BackColor = Color.FromArgb(88,86,91)
+            };
+
+            intentSplitter = new Splitter 
+            {
+                Dock = DockStyle.Right
+            };
+
+            intentTabButton = new Button //Button to Connect an Event for Keyboard Input -> "Tab"
+            {
+                Text = "Edit Intent Mappings",
+                Dock = DockStyle.Left
+            };
+
+            //--------------------------------------------------------
+
             // Adding controls to the form
             this.Controls.Add(inputTextBox);
             this.Controls.Add(sendButton);
@@ -170,6 +195,9 @@ namespace ChatbotApp
             this.Controls.Add(playButton);
             this.Controls.Add(pauseButton);
             this.Controls.Add(returnToMainScreenButton);
+            this.Controls.Add(intentPanel);
+            this.Controls.Add(intentSplitter);
+            this.Controls.Add(intentTabButton);
 
             this.ClientSize = new Size(900, 580);
             this.Text = "DansbyChatBot";
@@ -280,6 +308,34 @@ namespace ChatbotApp
             }
         }
 
+        // --- Functions for the UI for IntentManagement --------
+        public void ToggleSlidingPanel(Panel panel)
+        {
+            if (panel.Visible)
+            {
+                // Hide the panel
+                panel.Visible = false;
+                panel.Width = 0;
+            }
+            else
+            {
+                // Show the panel
+                panel.Visible = true;
+                panel.Width = 300; // Set the desired width
+            }
+        }
+
+        public void InitializeUIBoard(Panel panel)
+        {
+            
+            // ** Need to plan the components out to sastify the connection between Intent -> response and Intent -> All the utterances 
+            // so it would maybe be a screen of intents in buttons that clicked upon expand into a 2 tile screen -> (1 would be repsonses , 
+            // and 2 would be utterances + maybe tags ?? ) Possibly dock buttons on top of the sliding panel that woild have add, delete edit ?? 
+            // save and button would also be needed + autosaving and autoloading ?? Have to think about all of this backend + frontend......
+        }
+
+        // ------------------------------------------------------
+        
 
         protected override async void OnFormClosing(FormClosingEventArgs e)
         {

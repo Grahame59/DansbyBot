@@ -307,3 +307,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
 - Added Jaccard Simularity Into the IsMatch function in IntentRecognizer.cs to add partial matching to intent mappings.
 - Added a github based PictureBox that has an event attached to act as button that directs to my github in the bottom right of my MainScreenForm.cs. 
 - Added a button that returns to MainScreen and as of now closes all processes, but can change to maintain background services... THe code to do this is commented out with details. 
+
+# 1.27.25 - 4:23 pm
+- Left off by adding all the components for the new Intent Ui in MainForm.cs and also added the toggleSlidingPanel() function.. Need to figure out the backend logic + the Init function for all the actual intent Ui Form components. NEED to make sure when I do the backend logic i make it write to the json properly -> stay in the category + proper formatting (Super Important)... 
