@@ -21,6 +21,8 @@ namespace ChatbotApp
         private Button refreshCacheButton;
         private ComboBox soundtrackComboBox;
         private RichTextBox chatRichTextBox;
+        private Button returnToMainScreenButton;
+
 
         public MainForm()
         {
@@ -147,6 +149,19 @@ namespace ChatbotApp
             };
             pauseButton.Click += async (sender, e) => await PauseButton_Click(sender, e);
 
+            returnToMainScreenButton = new Button
+            {
+                Location = new Point(732, 10), // Adjust location as needed
+                Size = new Size(120, 25),
+                Text = "Main Screen",
+                BackColor = Color.FromArgb(88, 86, 91),
+                ForeColor = Color.White,
+                Anchor = AnchorStyles.Top | AnchorStyles.Left
+        
+            };
+            returnToMainScreenButton.Click += ReturnToMainScreenButton_Click;
+            returnToMainScreenButton.BringToFront();
+
             // Adding controls to the form
             this.Controls.Add(inputTextBox);
             this.Controls.Add(sendButton);
@@ -154,6 +169,7 @@ namespace ChatbotApp
             this.Controls.Add(soundtrackComboBox);
             this.Controls.Add(playButton);
             this.Controls.Add(pauseButton);
+            this.Controls.Add(returnToMainScreenButton);
 
             this.ClientSize = new Size(900, 580);
             this.Text = "DansbyChatBot";
@@ -211,6 +227,19 @@ namespace ChatbotApp
         private async Task PauseButton_Click(object sender, EventArgs e)
         {
             await dansbyCore.PausePlaybackAsync();
+        }
+
+        // Event handler to return to MainScreenForm
+        private void ReturnToMainScreenButton_Click(object sender, EventArgs e)
+        {
+            MainScreenForm mainScreenForm = new MainScreenForm();
+
+            // Option 1: Retain background processes
+            //this.Hide(); // Hide MainForm
+            mainScreenForm.Show();
+
+            // Option 2: Shut down services if needed
+            this.Close();
         }
 
         private async Task CheckAndSummonSlimeAsync()

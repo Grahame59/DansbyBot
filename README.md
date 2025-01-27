@@ -301,3 +301,9 @@ also don't know what is considered to be a long script as the longest scipt I ha
         - More MainScreen refinement and additions
         - make switchable backgrounds for mainScreen possible
         - Pick an aesthetic for MainScreen background + Logo (MainScreen Title)
+
+
+# 1.26.24 - 8:15pm
+- Added Jaccard Simularity Into the IsMatch function in IntentRecognizer.cs to add partial matching to intent mappings.
+- Added a github based PictureBox that has an event attached to act as button that directs to my github in the bottom right of my MainScreenForm.cs. 
+- Added a button that returns to MainScreen and as of now closes all processes, but can change to maintain background services... THe code to do this is commented out with details. 

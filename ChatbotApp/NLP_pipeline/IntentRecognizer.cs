@@ -66,7 +66,7 @@ namespace Intents
             {
                 foreach (var example in intent.Examples)
                 {
-                    if (IsMatch(userTokens, example.Tokens))
+                    if (IsMatch(userTokens, example.Tokens, 0.8)) //80% Threshold match for partial matching
                     {
                         _ = errorLogClient.AppendToDebugLogAsync($"Recognized intent: \"{intent.Name}\"", "IntentRecognizer");
                         return intent.Name;
@@ -78,26 +78,40 @@ namespace Intents
             return "unknown_intent";
         }
 
-        // Check if tokens match
-        private bool IsMatch(List<string> userTokens, List<string> exampleTokens)
+        // Check if tokens match with partial similarity
+        private bool IsMatch(List<string> userTokens, List<string> exampleTokens, double threshold = 0.8)
         {
-            // Check if all tokens from the example are found in the user's tokens, in the same order
-            int userIndex = 0;
-            int exampleIndex = 0;
+            // Calculate Jaccard similarity
+            int intersectionCount = 0;
+            HashSet<string> userTokenSet = new HashSet<string>(userTokens, StringComparer.OrdinalIgnoreCase);
+            HashSet<string> exampleTokenSet = new HashSet<string>(exampleTokens, StringComparer.OrdinalIgnoreCase);
 
-            while (userIndex < userTokens.Count && exampleIndex < exampleTokens.Count)
+            foreach (var token in exampleTokenSet)
             {
-                if (userTokens[userIndex].Equals(exampleTokens[exampleIndex], StringComparison.OrdinalIgnoreCase))
+                if (userTokenSet.Contains(token))
                 {
-                    exampleIndex++;
+                    intersectionCount++;
                 }
-                userIndex++;
             }
 
-            // Edit this to have a weight or partial match so case match is around 80% ?? 
-            return exampleIndex == exampleTokens.Count;
+            int unionCount = userTokenSet.Count + exampleTokenSet.Count - intersectionCount;
+
+            // Avoid division by zero
+            if (unionCount == 0)
+            {
+                return false;
+            }
+
+            double similarity = (double)intersectionCount / unionCount;
+
+            // Debug log for similarity score
+            _ = errorLogClient.AppendToDebugLogAsync($"Similarity score: {similarity:F2}", "IntentRecognizer");
+
+            // Return true if similarity meets or exceeds the threshold
+            return similarity >= threshold;
         }
     }
+
 
     public class Intent
     {
@@ -112,3 +126,4 @@ namespace Intents
         public List<string> Tokens { get; set; }
     }
 }
+

@@ -76,8 +76,8 @@
           { "Utterance": "how is your day", "Tokens": ["how", "is", "your", "day"]},
           { "Utterance": "how are u", "Tokens": ["how", "are", "u"] },
           { "Utterance": "how are u?", "Tokens": ["how", "are", "u"] },
-          { "Utterance": "how r u", "Tokens": ["how", "r", "u"] }
-
+          { "Utterance": "how r u", "Tokens": ["how", "r", "u"] },
+          { "Utterance": "How are you doing", "Tokens": ["how", "are", "you", "doing"]}
         
         ]
     },

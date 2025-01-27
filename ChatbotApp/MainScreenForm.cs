@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChatbotApp.UserData;
+using System.Diagnostics;
 
 namespace ChatbotApp
 {
@@ -15,6 +16,7 @@ namespace ChatbotApp
         private Button guestLoginButton;
         private Button enterChatButton;
         private PictureBox logoPictureBox;
+        private PictureBox github;
         private readonly UserManager userManager = new UserManager();
     
         public MainScreenForm()
@@ -121,8 +123,38 @@ namespace ChatbotApp
             };
             this.Controls.Add(loadingBar);
             loadingBar.BringToFront();
+
+            // GitHub Logo PictureBox
+            github = new PictureBox
+            {
+                Location = new Point(725, 510), // Adjust location as needed
+                Size = new Size(40, 40), // Set size based on the logo dimensions
+                Image = Image.FromFile("ChatbotApp\\Resources\\Github-Logo.png"), 
+                SizeMode = PictureBoxSizeMode.Zoom, // Ensures the image fits the PictureBox
+                Cursor = Cursors.Hand,
+                BackColor = Color.Transparent // Ensures no background color
+            };
+            github.Click += GitHub_Click; // Attach click event
+            this.Controls.Add(github);
+            github.BringToFront();
         }
 
+        // GitHub Click Event Handler
+        private void GitHub_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = "https://github.com/Grahame59", 
+                    UseShellExecute = true // Opens in the default browser
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Failed to open GitHub: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         // Login Button Click Handler
         private async Task LoginButton_Click(string username, string password)
