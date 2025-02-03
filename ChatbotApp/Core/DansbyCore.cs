@@ -35,6 +35,8 @@ namespace ChatbotApp.Core
             soundtrackManager = new SoundtrackManager();
             animationManager = new AnimationManager();
             autosaveManager = new AutosaveManager(Path.Combine(basePath, "autosave.bat"));
+            GlobalAutosaveManager = autosaveManager;
+            
             vaultManager = new VaultManager(Path.Combine(basePath, "gitconnect"));
             functionHoldings = new functionHoldings(mainForm);
 
@@ -206,5 +208,7 @@ namespace ChatbotApp.Core
                 await errorLogClient.AppendToErrorLogAsync($"Error during shutdown: {ex.Message}", "DansbyCore.cs");
             }
         }
+        public static AutosaveManager GlobalAutosaveManager { get; private set; }
+
     }
 }

@@ -8,6 +8,7 @@ using ChatbotApp.Utilities;
 using ChatbotApp.Features;
 using System.Diagnostics;
 using System.Drawing;
+using ChatbotApp.Core;
 
 namespace Functions
 {
@@ -89,11 +90,19 @@ namespace Functions
                         return "ErrorLogForm opened.";
 
                     case "forcesavelorehaven":
-                        var autosaveManager = new AutosaveManager("E:\\Lorehaven\\autosave.bat", 300000);
-                        var autosaveManager2 = new AutosaveManager("C:\\Lorehaven\autosave.bat", 300000);
-                        await autosaveManager.ExecuteAutosaveAsync();
-                        await autosaveManager2.ExecuteAutosaveAsync();
-                        return "Obsidian Vault LoreHaven was commited and pushed.";
+                        if (Directory.Exists(@"E:\\Lorehaven"))
+                        {
+                            var autosaveManager = new AutosaveManager("E:\\Lorehaven\\autosave.bat", 300000);
+                            _= autosaveManager.ExecuteAutosaveAsync();
+                            return "Obsidian Vault LoreHaven was commited and pushed.";
+                        }
+                        if (Directory.Exists("@C:\\Lorehaven"))
+                        {
+                            var autosaveManager2 = new AutosaveManager("C:\\Lorehaven\autosave.bat", 300000);
+                            _= autosaveManager2.ExecuteAutosaveAsync();
+                            return "Obsidian Vault LoreHaven was commited and pushed.";
+                        }
+                        return "Could not find the directory for Lorehaven";
 
                     default:
                         return "Sorry, I don't recognize that command.";
@@ -103,6 +112,22 @@ namespace Functions
             {
                 await errorLogClient.AppendToErrorLogAsync($"Error executing function for intent {intent}: {ex.Message}", "Functions.cs");
                 return "An error occurred while processing your request.";
+            }
+        }
+
+        private void PauseAutosaveTimer()
+        {
+            try
+            {
+                if (Directory.Exists(@"E:\Lorehaven") || Directory.Exists(@"C:\Lorehaven"))
+                {
+                    _= DansbyCore.GlobalAutosaveManager.StopAutosaveAsync();
+                    errorLogClient.AppendToDebugLog("Debug: Autosave timer stopped", "Function.cs");
+                }
+            }
+            catch (Exception ex)
+            {
+                errorLogClient.AppendToErrorLog($"Error stopping autosave timer: {ex.Message}", "Functions.cs");
             }
         }
 
@@ -163,6 +188,7 @@ namespace Functions
         {
             try
             {
+                //---------EDIT PATH 
                 VaultManager vaultManager = new VaultManager("E:\\Lorehaven\\gitconnect");
                 List<string> searchResults = await vaultManager.SearchVaultAsync(keyword);
 

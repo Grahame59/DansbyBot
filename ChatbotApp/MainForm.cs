@@ -1,4 +1,5 @@
 using System;
+using System.DirectoryServices.ActiveDirectory;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -173,7 +174,7 @@ namespace ChatbotApp
                 Visible = false,
                 BackColor = Color.FromArgb(88,86,91)
             };
-
+            
             intentSplitter = new Splitter 
             {
                 Dock = DockStyle.Right
@@ -181,8 +182,24 @@ namespace ChatbotApp
 
             intentTabButton = new Button //Button to Connect an Event for Keyboard Input -> "Tab"
             {
-                Text = "Edit Intent Mappings",
-                Dock = DockStyle.Left
+                Text = "->",
+                Location = new Point(10,100),
+                Size = new Size(30,50),
+                BackColor = Color.FromArgb(88, 86, 91),
+                ForeColor = Color.White,
+                Anchor = AnchorStyles.Top | AnchorStyles.Left
+                
+            };
+            intentTabButton.Click += async (sender, e) => await ToggleSlidingPanel(intentPanel, e);
+
+            // KeyClick Listener for input Textbox (key[F9] clicked == ToggleSlidingPanel)
+            inputTextBox.KeyDown += async (object sender, KeyEventArgs e) =>
+            {
+                if (e.KeyCode == Keys.F9) // works only if in inputTextBox -> Could add more KeyDown for shortcuts
+                {
+                    e.SuppressKeyPress = true; // Prevent the default 'ding' sound
+                    await ToggleSlidingPanel(intentPanel, e);
+                }
             };
 
             //--------------------------------------------------------
@@ -202,6 +219,7 @@ namespace ChatbotApp
             this.ClientSize = new Size(900, 580);
             this.Text = "DansbyChatBot";
             this.BackColor = Color.FromArgb(25, 25, 25);
+            intentPanel.BringToFront();
 
             // Background Image
             //this.BackgroundImage = Image.FromFile("ChatbotApp\\Resources\\MainScreenComponents\\Background10.png");
@@ -309,7 +327,7 @@ namespace ChatbotApp
         }
 
         // --- Functions for the UI for IntentManagement --------
-        public void ToggleSlidingPanel(Panel panel)
+        private async Task ToggleSlidingPanel(Panel panel, EventArgs e)
         {
             if (panel.Visible)
             {
@@ -321,7 +339,7 @@ namespace ChatbotApp
             {
                 // Show the panel
                 panel.Visible = true;
-                panel.Width = 300; // Set the desired width
+                panel.Width = 500; // Set the desired width
             }
         }
 
