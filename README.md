@@ -313,4 +313,4 @@ also don't know what is considered to be a long script as the longest scipt I ha
 
 # 2.3.25 - 11:42pm 
 - Added a gloabl call for autosaveManager in DansbyCore, This was the easiest way to add a call to Functions.cs to use StopAutosaveTimerAsync and reference the same instance. Still have to test but I have to go to class now.... Should eventually be a Singleton Pattern b/c I only ever want 1 singular timer for the autosave going and all references to be to that timer. Could and Should also rework the ForceSaveLorehaven method to just run the batchfile off the primary instance instead of starting a new instance of a timer, **{FIX THIS IN THE FUTURE , POOR CODE <-----------}**
-
+- Need to finish the UI intent Dashboard back-end + Ui components and setup as well !!! Going to push the code now even though its not fully ready for deployment as of this time because I documented the issues.
