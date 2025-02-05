@@ -96,13 +96,17 @@ namespace Functions
                             _= autosaveManager.ExecuteAutosaveAsync();
                             return "Obsidian Vault LoreHaven was commited and pushed.";
                         }
-                        if (Directory.Exists("@C:\\Lorehaven"))
+                        if (Directory.Exists(@"C:\\Lorehaven"))
                         {
                             var autosaveManager2 = new AutosaveManager("C:\\Lorehaven\autosave.bat", 300000);
                             _= autosaveManager2.ExecuteAutosaveAsync();
                             return "Obsidian Vault LoreHaven was commited and pushed.";
                         }
                         return "Could not find the directory for Lorehaven";
+
+                    case "pauseautosavetimer":
+                        PauseAutosaveTimer();
+                        return "Autosave Timer Paused!";
 
                     default:
                         return "Sorry, I don't recognize that command.";
@@ -276,12 +280,14 @@ namespace Functions
         {
             return functionName switch
             {
-                "PerformExitDansby" => "This function exits the application.",
-                "GetTime" => "This function gives the current time of your time zone.",
-                "GetDate" => "This function gives you the current date.",
-                "GetDayOfTheWeek" => "This function gives you the day of the week.",
-                "SearchVaultAsync" => "This function searches your vault for matching keywords.",
-                "ListAllFunctionsAsync" => "This function lists all the available functions Dansby can complete.",
+                "performexitdansby" => "This function exits the application.",
+                "gettime" => "This function gives the current time of your time zone.",
+                "getdate" => "This function gives you the current date.",
+                "getdayoftheweek" => "This function gives you the day of the week.",
+                "searchvaultasync" => "This function searches your vault for matching keywords.",
+                "listallfunctionsasync" => "This function lists all the available functions Dansby can complete.",
+                "pauseautosavetimer" => "This function pauses the autosave timer for the batch file that saves Lorehaven Vault",
+                //Have to Add in searchvault when its fully implemented!
                 _ => "No description available.",
             };
         }

@@ -227,6 +227,14 @@
         ]
     },
     {
+        "Name": "pauseautosavetimer",
+        "Tags": ["system", "functional", "information"],
+        "Examples": [
+            {"Utterance": "pause autosave timer", "Tokens": ["pause", "autosave", "timer"] },
+            {"Utterance": "pause autosavetimer", "Tokens": ["pause", "autosavetimer"] }
+        ]
+    },
+    {
         "Name": "usercurrenttaskcodingondansby",
         "Tags": ["system", "interaction"],
         "Examples": [

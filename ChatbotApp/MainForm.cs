@@ -159,7 +159,7 @@ namespace ChatbotApp
                 Text = "Main Screen",
                 BackColor = Color.FromArgb(88, 86, 91),
                 ForeColor = Color.White,
-                Anchor = AnchorStyles.Top | AnchorStyles.Left
+                Anchor = AnchorStyles.Top | AnchorStyles.Left 
         
             };
             returnToMainScreenButton.Click += ReturnToMainScreenButton_Click;
@@ -292,6 +292,7 @@ namespace ChatbotApp
         {
             TimeSpan cooldown = TimeSpan.FromMinutes(4); // Adjust cooldown duration as needed
 
+            //Make Slime = .BringToFront()
             if (DateTime.Now - lastSlimeSummonTime >= cooldown && dansbyCore.ShouldSummonSlime())
             {
                 lastSlimeSummonTime = DateTime.Now;
