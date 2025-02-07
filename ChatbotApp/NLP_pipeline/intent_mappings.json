@@ -231,7 +231,9 @@
         "Tags": ["system", "functional", "information"],
         "Examples": [
             {"Utterance": "pause autosave timer", "Tokens": ["pause", "autosave", "timer"] },
-            {"Utterance": "pause autosavetimer", "Tokens": ["pause", "autosavetimer"] }
+            {"Utterance": "pause autosavetimer", "Tokens": ["pause", "autosavetimer"] },
+            {"Utterance": "pause autosave", "Tokens": ["pause", "autosave"] },
+            {"Utterance": "please pause the autosave timer", "Tokens": ["please", "pause", "the", "autosave", "timer"] }
         ]
     },
     {

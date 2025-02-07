@@ -60,7 +60,7 @@ namespace ChatbotApp.Features
             };
 
             richTextBox.Parent.Controls.Add(spritePictureBox);
-            spritePictureBox.SendToBack();
+            spritePictureBox.BringToFront();
 
             StartSlimeAnimation();
         }
@@ -82,7 +82,7 @@ namespace ChatbotApp.Features
         {
             if (!isJumping)
             {
-                spriteX += 3;
+                spriteX += 5;
 
                 if (spriteX > 900)
                 {
@@ -95,8 +95,8 @@ namespace ChatbotApp.Features
                 string animation = action switch
                 {
                     <= 20 => "attack",
-                    <= 50 => "jump",
-                    > 60 and <= 65 => "die",
+                    <= 30 => "jump",
+                    > 40 and <= 45 => "die",
                     _ => "running"
                 };
 
@@ -155,7 +155,7 @@ namespace ChatbotApp.Features
 
             isJumping = true;
             int peakY = groundY - 50;
-            spriteX += 2;
+            spriteX += 4;
 
             jumpTimer = new Timer { Interval = 50 };
             jumpTimer.Tick += (sender, e) =>
