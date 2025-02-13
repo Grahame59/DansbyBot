@@ -14,6 +14,8 @@
 8. [Process Automation for Batch Files](#8-process-automation-for-batch-files)
 9. [DevLog.md](#9-devlogmd)
 
+![Dansby Header](ChatbotApp/Resources/ReadMeScreenShots/DansbyBubbleLetters.png)
+
 --------------------------------------------------
 
 ## 1. Overview
