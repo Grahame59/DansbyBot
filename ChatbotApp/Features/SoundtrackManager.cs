@@ -100,6 +100,27 @@ namespace ChatbotApp.Features
             }
         }
 
+        public async Task EditVolumeOfSoundtracks(float volume)
+        {
+            if (outputDevice == null)
+            {
+                await errorLogClient.AppendToErrorLogAsync("No active playback device. Cannot adjust volume.", "SoundtrackManager.cs");
+                return;
+            }
+
+            // Ensure volume is clamped between 0.0 and 1.0
+            volume = Math.Clamp(volume, 0.0f, 1.0f);
+
+            outputDevice.Volume = volume;
+            await errorLogClient.AppendToDebugLogAsync($"Volume set to {volume * 100:F0}%", "SoundtrackManager.cs");
+        }
+
+        public float GetCurrentVolume()
+        {
+            return outputDevice?.Volume ?? 1.0f; // Default to max volume if no audio is playing
+        }
+
+
         public void StopPlayback()
         {
             if (outputDevice?.PlaybackState == PlaybackState.Playing)

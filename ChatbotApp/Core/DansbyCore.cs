@@ -14,7 +14,7 @@ namespace ChatbotApp.Core
     {
         private readonly IntentRecognizer intentRecognizer;
         private readonly ResponseGenerator responseGenerator;
-        private readonly SoundtrackManager soundtrackManager;
+        public static SoundtrackManager soundtrackManager {get; private set;} = new SoundtrackManager();
         private readonly AnimationManager animationManager;
         private readonly AutosaveManager autosaveManager;
         private readonly VaultManager vaultManager;
@@ -72,7 +72,7 @@ namespace ChatbotApp.Core
                 await soundtrackManager.InitializeSoundtracksAsync();
                 await autosaveManager.StartAutosaveAsync();
 
-                _ = errorLogClient.AppendToDebugLogAsync("DansbyCore managers initialized successfully.", "DansbyCore.cs");
+                await errorLogClient.AppendToDebugLogAsync("DansbyCore managers initialized successfully.", "DansbyCore.cs");
             }
             catch (Exception ex)
             {

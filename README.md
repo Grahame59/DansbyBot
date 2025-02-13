@@ -314,3 +314,8 @@ also don't know what is considered to be a long script as the longest scipt I ha
 # 2.3.25 - 11:42pm 
 - Added a gloabl call for autosaveManager in DansbyCore, This was the easiest way to add a call to Functions.cs to use StopAutosaveTimerAsync and reference the same instance. Still have to test but I have to go to class now.... Should eventually be a Singleton Pattern b/c I only ever want 1 singular timer for the autosave going and all references to be to that timer. Could and Should also rework the ForceSaveLorehaven method to just run the batchfile off the primary instance instead of starting a new instance of a timer, **{FIX THIS IN THE FUTURE , POOR CODE <-----------}**
 - Need to finish the UI intent Dashboard back-end + Ui components and setup as well !!! Going to push the code now even though its not fully ready for deployment as of this time because I documented the issues.
+
+# 2.12.2025 - 7:05pm 
+- First task I addressed was fixing the Jaccard Similairity and I lowered the threshold to a 50% match. I also set up if else statements to filter out the debug statement to the errorlogger so it only prints if it meets the threshold condition as well as a else statement that prints a basic "Didn't meet threshold, no match" statement. 
+- Fixed the Anchoring for the github link button on the MainScreenForm.cs
+- Set up Volume edit intent calls and set it all up with the core and IntentRecognizer.cs... Was going to add a UI bar for the volume edit but I think I will hold off on that for now.

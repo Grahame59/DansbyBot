@@ -9,6 +9,7 @@ using ChatbotApp.Features;
 using System.Diagnostics;
 using System.Drawing;
 using ChatbotApp.Core;
+using System.Text.RegularExpressions; //For SoundtrackManager calls...
 
 namespace Functions
 {
@@ -108,6 +109,10 @@ namespace Functions
                         PauseAutosaveTimer();
                         return "Autosave Timer Paused!";
 
+                    case "handlevolumeintent":
+                        await HandleVolumeIntent(userInput);
+                        return "Volume Edited!";
+
                     default:
                         return "Sorry, I don't recognize that command.";
                 }
@@ -118,6 +123,42 @@ namespace Functions
                 return "An error occurred while processing your request.";
             }
         }
+
+        public async Task HandleVolumeIntent(string command)
+        {
+            if (DansbyCore.soundtrackManager == null)
+            {
+                await errorLogClient.AppendToErrorLogAsync("SoundtrackManager instance is null.", "Function.cs");
+                return;
+            }
+
+            float currentVolume = DansbyCore.soundtrackManager.GetCurrentVolume();
+            float newVolume = currentVolume;
+
+            if (command.Contains("increase"))
+            {
+                newVolume += 0.1f; // Increase by 10%
+            }
+            else if (command.Contains("decrease"))
+            {
+                newVolume -= 0.1f; // Decrease by 10%
+            }
+            else if (command.Contains("volume"))
+            {
+                // Extract percentage (e.g., "Set volume to 50%")
+                var match = Regex.Match(command, @"\d+");
+                if (match.Success && int.TryParse(match.Value, out int volumePercentage))
+                {
+                    newVolume = volumePercentage / 100f; // Convert to 0.0 - 1.0 scale
+                }
+            }
+
+            // Ensure the volume stays between 0 and 1
+            newVolume = Math.Clamp(newVolume, 0.0f, 1.0f);
+
+            await DansbyCore.soundtrackManager.EditVolumeOfSoundtracks(newVolume);
+        }
+
 
         private void PauseAutosaveTimer()
         {
@@ -287,6 +328,7 @@ namespace Functions
                 "searchvaultasync" => "This function searches your vault for matching keywords.",
                 "listallfunctionsasync" => "This function lists all the available functions Dansby can complete.",
                 "pauseautosavetimer" => "This function pauses the autosave timer for the batch file that saves Lorehaven Vault",
+                "handlevolumeintent" => "This function edits the volume of the soundtracks.",
                 //Have to Add in searchvault when its fully implemented!
                 _ => "No description available.",
             };

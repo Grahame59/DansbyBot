@@ -132,7 +132,8 @@ namespace ChatbotApp
                 Image = Image.FromFile("ChatbotApp\\Resources\\Github-Logo.png"), 
                 SizeMode = PictureBoxSizeMode.Zoom, // Ensures the image fits the PictureBox
                 Cursor = Cursors.Hand,
-                BackColor = Color.Transparent // Ensures no background color
+                BackColor = Color.Transparent, // Ensures no background color
+                Anchor = AnchorStyles.Bottom | AnchorStyles.Right
             };
             github.Click += GitHub_Click; // Attach click event
             this.Controls.Add(github);

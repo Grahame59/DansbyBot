@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using Tokenization;
 using ChatbotApp.Utilities;
 using System.Threading.Tasks;
+using System.Windows.Forms.VisualStyles;
 
 namespace Intents
 {
@@ -26,11 +27,11 @@ namespace Intents
             try
             {
                 intents = await LoadIntentsAsync(configFilePath);
-                _= errorLogClient.AppendToDebugLogAsync($"Successfully loaded intents from {configFilePath}.", "IntentRecognizer");
+                _= errorLogClient.AppendToDebugLogAsync($"Successfully loaded intents from {configFilePath}.", "IntentRecognizer.cs");
             }
             catch (Exception ex)
             {
-                _= errorLogClient.AppendToErrorLogAsync($"Error loading intents: {ex.Message}", "IntentRecognizer");
+                _= errorLogClient.AppendToErrorLogAsync($"Error loading intents: {ex.Message}", "IntentRecognizer.cs");
                 intents = new List<Intent>();
             }
         }
@@ -40,7 +41,7 @@ namespace Intents
         {
             if (!File.Exists(filePath))
             {
-                _ = errorLogClient.AppendToErrorLogAsync($"Intent file not found at {filePath}.", "IntentRecognizer");
+                _ = errorLogClient.AppendToErrorLogAsync($"Intent file not found at {filePath}.", "IntentRecognizer.cs");
                 return new List<Intent>();
             }
 
@@ -53,28 +54,28 @@ namespace Intents
         {
             if (string.IsNullOrWhiteSpace(userInput))
             {
-                _ = errorLogClient.AppendToDebugLogAsync("User input is empty or null.", "IntentRecognizer");
+                _ = errorLogClient.AppendToDebugLogAsync("User input is empty or null.", "IntentRecognizer.cs");
                 return "unknown_intent";
             }
 
-            _ = errorLogClient.AppendToDebugLogAsync($"Recognizing intent for input: \"{userInput}\"", "IntentRecognizer");
+            _ = errorLogClient.AppendToDebugLogAsync($"Recognizing intent for input: \"{userInput}\"", "IntentRecognizer.cs");
 
             var userTokens = tokenizer.Tokenize(userInput);
-            _ = errorLogClient.AppendToDebugLogAsync($"Tokenized input: {string.Join(", ", userTokens)}", "IntentRecognizer");
+            _ = errorLogClient.AppendToDebugLogAsync($"Tokenized input: {string.Join(", ", userTokens)}", "IntentRecognizer.cs");
 
             foreach (var intent in intents)
             {
                 foreach (var example in intent.Examples)
                 {
-                    if (IsMatch(userTokens, example.Tokens, 0.8)) //80% Threshold match for partial matching
+                    if (IsMatch(userTokens, example.Tokens, 0.5)) //50% Threshold match for partial matching
                     {
-                        _ = errorLogClient.AppendToDebugLogAsync($"Recognized intent: \"{intent.Name}\"", "IntentRecognizer");
+                        _ = errorLogClient.AppendToDebugLogAsync($"Recognized intent: \"{intent.Name}\"", "IntentRecognizer.cs");
                         return intent.Name;
                     }
                 }
             }
 
-            _ = errorLogClient.AppendToDebugLogAsync("No matching intent found. Returning 'unknown_intent'.", "IntentRecognizer");
+            _ = errorLogClient.AppendToDebugLogAsync("No matching intent found. Returning 'unknown_intent'.", "IntentRecognizer.cs");
             return "unknown_intent";
         }
 
@@ -86,11 +87,11 @@ namespace Intents
             HashSet<string> userTokenSet = new HashSet<string>(userTokens, StringComparer.OrdinalIgnoreCase);
             HashSet<string> exampleTokenSet = new HashSet<string>(exampleTokens, StringComparer.OrdinalIgnoreCase);
 
-            foreach (var token in exampleTokenSet)
+            foreach (var token in exampleTokenSet) // Compares token for token.
             {
                 if (userTokenSet.Contains(token))
                 {
-                    intersectionCount++;
+                    intersectionCount++; // Increments to get a numerical comparison match.
                 }
             }
 
@@ -104,9 +105,17 @@ namespace Intents
 
             double similarity = (double)intersectionCount / unionCount;
 
-            // Debug log for similarity score
-            _ = errorLogClient.AppendToDebugLogAsync($"Similarity score: {similarity:F2}", "IntentRecognizer");
+            string logMessage;
+            if (similarity >= threshold )
+            {
+                logMessage = $"Matched! Similarity score: {similarity:F2}";
+            } else
+            {
+                logMessage = "No match: Similarity score did not surpass the threshold.";
 
+            }
+            _= errorLogClient.AppendToDebugLogAsync(logMessage, "IntentRecognizer.cs");
+            
             // Return true if similarity meets or exceeds the threshold
             return similarity >= threshold;
         }

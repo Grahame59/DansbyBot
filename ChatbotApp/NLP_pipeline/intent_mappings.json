@@ -11,7 +11,8 @@
             { "Utterance": "yo", "Tokens": ["yo"] },
             { "Utterance": "yooo", "Tokens": ["yooo"] },
             { "Utterance": "ayooo", "Tokens": ["ayooo"] },
-            { "Utterance": "howdy", "Tokens": ["howdy"] }
+            { "Utterance": "howdy", "Tokens": ["howdy"] },
+            { "Utterance": "hey buddy", "Tokens": ["hey", "buddy"] }
         ]
     },
     {
@@ -235,6 +236,17 @@
             {"Utterance": "pause autosave", "Tokens": ["pause", "autosave"] },
             {"Utterance": "please pause the autosave timer", "Tokens": ["please", "pause", "the", "autosave", "timer"] }
         ]
+    },
+    {
+        "Name": "handlevolumeintent",
+        "Tags":["system","functional","information"],
+        "Examples":[
+            {"Utterance": "decrease the volume", "Tokens": ["decrease", "the", "volume"] },
+            {"Utterance": "increase the volume", "Tokens": ["increase", "the", "volume"] },
+            {"Utterance": "set volume to", "Tokens": ["set", "volume", "to"] },
+            {"Utterance": "change volume to", "Tokens": ["change", "volume", "to"] }
+        ]
+
     },
     {
         "Name": "usercurrenttaskcodingondansby",
