@@ -113,6 +113,10 @@ namespace Functions
                         await HandleVolumeIntent(userInput);
                         return "Volume Edited!";
 
+                    case "listallfunctions":
+                        await ListAllFunctionsAsync();
+                        return "Listed all functions";
+
                     default:
                         return "Sorry, I don't recognize that command.";
                 }
@@ -268,13 +272,14 @@ namespace Functions
                 string introMessage = "Dansby: Available Functions I can perform currently:";
                 mainForm.AppendToChatHistory(introMessage, Color.MediumPurple);
 
-                var methods = typeof(functionHoldings).GetMethods(System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.DeclaredOnly);
+                var methods = typeof(functionHoldings).GetMethods(System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | 
+                System.Reflection.BindingFlags.DeclaredOnly | System.Reflection.BindingFlags.NonPublic);
                 foreach (var method in methods)
                 {
-                    string functionName = method.Name;
+                    string functionName = method.Name.ToLower();
                     string functionDescription = GetFunctionDescription(functionName);
 
-                    string message = $"- {functionName}: {functionDescription}";
+                    string message = $"- {method.Name}: {functionDescription}";
                     mainForm.AppendToChatHistory(message, Color.MediumPurple);
                 }
 
@@ -316,22 +321,25 @@ namespace Functions
             }
         }
 
-
         private string GetFunctionDescription(string functionName)
         {
-            return functionName switch
+            return functionName.ToLower() switch
             {
                 "performexitdansby" => "This function exits the application.",
-                "gettime" => "This function gives the current time of your time zone.",
-                "getdate" => "This function gives you the current date.",
-                "getdayoftheweek" => "This function gives you the day of the week.",
-                "searchvaultasync" => "This function searches your vault for matching keywords.",
-                "listallfunctionsasync" => "This function lists all the available functions Dansby can complete.",
-                "pauseautosavetimer" => "This function pauses the autosave timer for the batch file that saves Lorehaven Vault",
+                "getcurrentdatetime" => "This function retrieves the current date and time.",
+                "executefunctionasync" => "Handles execution of requested functions asynchronously.",
                 "handlevolumeintent" => "This function edits the volume of the soundtracks.",
-                //Have to Add in searchvault when its fully implemented!
+                "listallfunctionsasync" => "This function lists all the available functions Dansby can complete.",
+                "gettime" => "This function retrieves the current time of your time zone.",
+                "getdate" => "This function retrieves the current date.",
+                "getdayoftheweek" => "This function retrieves the current day of the week.",
+                "searchvaultasync" => "This function searches your vault for matching keywords.",
+                "pauseautosavetimer" => "This function pauses the autosave timer for the batch file that saves the Lorehaven Vault (My Personal Notes Vault <- Exclusive to me w/o setup).",
+                "openerrorlogform" => "This function opens the ErrorLog form to display logged events. (My Logging Project)",
+                "forcesavelorehaven" => "This function forces a Git commit and push of the Lorehaven Vault.",
                 _ => "No description available.",
             };
         }
+
     }
 }
