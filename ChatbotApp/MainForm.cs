@@ -23,7 +23,7 @@ namespace ChatbotApp
         private ComboBox soundtrackComboBox;
         private RichTextBox chatRichTextBox;
         private Button returnToMainScreenButton;
-        private Panel intentPanel;
+        public Panel intentPanel;
         private Splitter intentSplitter;
         private Button intentTabButton;
 
@@ -54,7 +54,7 @@ namespace ChatbotApp
             try
             {
                 AppendToChatHistory("Welcome to your chat interface. I am Dansby. How can I assist you?", Color.MediumPurple);
-                await dansbyCore.InitializeAsync();
+                await dansbyCore.InitializeAsync(); //Initializes all the Managers from Core...
 
                 // Load soundtracks into the ComboBox
                 var trackNames = await dansbyCore.GetSoundtrackNamesAsync();
@@ -76,7 +76,28 @@ namespace ChatbotApp
 
         private void InitializeComponent()
         {
-            // UI Controls Initialization
+
+            // -------------------- KeyListener ------------------
+            this.KeyPreview = true; // Allow MainForm to capture keys ***** <---- !Important
+
+            this.KeyDown += async (object sender, KeyEventArgs e) =>
+            {
+                if (e.KeyCode == Keys.F9)
+                {
+                    e.SuppressKeyPress = true; // Prevent "ding" sound
+                    await ToggleSlidingPanel(intentPanel, e);
+                }
+
+                // KeyClick Listener for input Textbox (key[ENTER] clicked == SendButton_Click)
+                if (e.KeyCode == Keys.Enter)
+                {
+                    e.SuppressKeyPress = true; // Prevent the default 'ding' sound
+                    await SendButton_Click(sender, EventArgs.Empty);
+                }
+            };
+            // -------------------- End of Key Listener ------------------
+
+            // ------------------ UI Controls Initialization -------------------------
             inputTextBox = new TextBox
             {
                 Location = new Point(35, 190),
@@ -85,16 +106,6 @@ namespace ChatbotApp
                 ForeColor = Color.White,
                 Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right
 
-            };
-
-            // KeyClick Listener for input Textbox (key[ENTER] clicked == SendButton_Click)
-            inputTextBox.KeyDown += async (object sender, KeyEventArgs e) =>
-            {
-                if (e.KeyCode == Keys.Enter)
-                {
-                    e.SuppressKeyPress = true; // Prevent the default 'ding' sound
-                    await SendButton_Click(sender, EventArgs.Empty);
-                }
             };
 
             sendButton = new Button
@@ -165,19 +176,20 @@ namespace ChatbotApp
             returnToMainScreenButton.Click += ReturnToMainScreenButton_Click;
             returnToMainScreenButton.BringToFront();
 
-            //--- Pannel UI Components for IntentEditorManagement ----
+            //------------------ Pannel UI Components for IntentEditorManagement -----------------------
 
             intentPanel = new Panel // Sliding Pannel for Intents - Acts as a sub form of sorts
             {
-                Width = 300,
-                Dock = DockStyle.Right,
+                Dock = DockStyle.Fill,
+                MinimumSize = new Size(700, 0),
                 Visible = false,
-                BackColor = Color.FromArgb(88,86,91)
+                BackColor = Color.FromArgb(25, 25, 25)
             };
             
             intentSplitter = new Splitter 
             {
                 Dock = DockStyle.Right
+                
             };
 
             intentTabButton = new Button //Button to Connect an Event for Keyboard Input -> "Tab"
@@ -192,17 +204,7 @@ namespace ChatbotApp
             };
             intentTabButton.Click += async (sender, e) => await ToggleSlidingPanel(intentPanel, e);
 
-            // KeyClick Listener for input Textbox (key[F9] clicked == ToggleSlidingPanel)
-            inputTextBox.KeyDown += async (object sender, KeyEventArgs e) =>
-            {
-                if (e.KeyCode == Keys.F9) // works only if in inputTextBox -> Could add more KeyDown for shortcuts
-                {
-                    e.SuppressKeyPress = true; // Prevent the default 'ding' sound
-                    await ToggleSlidingPanel(intentPanel, e);
-                }
-            };
-
-            //--------------------------------------------------------
+            //-------------------------------------------------------- End of IntentPanelUI
 
             // Adding controls to the form
             this.Controls.Add(inputTextBox);

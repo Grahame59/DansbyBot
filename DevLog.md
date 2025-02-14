@@ -320,3 +320,24 @@ also don't know what is considered to be a long script as the longest scipt I ha
 - Fixed the Anchoring for the github link button on the MainScreenForm.cs
 - Set up Volume edit intent calls and set it all up with the core and IntentRecognizer.cs... Was going to add a UI bar for the volume edit but I think I will hold off on that for now.
 - FINALLY wrote some documentation for the project... 
+
+# 2.14.25 - 11:30 PM
+- Completed in this session:
+    - Implemented the Intent Editing Panel UI with two separate panes for:
+        - intent_mappings.json (Utterances)
+        - response_mappings.json (Responses)
+    - Ensured that clicking an intent button hides the grid layout and displays the relevant JSON data.
+    - Added a centered intent label displaying the currently selected intent.
+    - Implemented dynamic resizing for both panels when the window is resized.
+    - Converted utterance and response data into properly formatted JSON textboxes with monospaced font for better readability.
+    - Adjusted button styling, colors, and layout for better aesthetics.
+- Issues & TO-DO for Next Session:
+    - Fix JSON Syntax Highlighter:
+        - The ApplyJsonSyntaxHighlighting() function isn't properly applying colors (Orange for keys, Yellow for strings). Needs debugging.
+    - Remove the middle gap:
+        - The space between the left and right panels still exists even after removing the splitter. Need to manually adjust positioning.
+    - Visibility Fix for Labels:
+        - The "intent_mappings.json" and "response_mappings.json" labels aren't showing up properly. Might remove them if they aren’t needed.
+    - Implement Real-Time Editing & Saving:
+        - Make JSON editable directly in the UI and auto-save changes in real time.
+        - Ensure proper formatting and structure validation before saving.

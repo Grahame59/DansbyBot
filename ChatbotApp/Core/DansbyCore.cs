@@ -20,6 +20,8 @@ namespace ChatbotApp.Core
         private readonly VaultManager vaultManager;
         private readonly ErrorLogClient errorLogClient;
         private readonly functionHoldings functionHoldings;
+        private readonly IntentEditorManager intentEditorManager;
+        public IntentEditorManager IntentEditor => intentEditorManager; //Getter to access w/o modifying directly
 
 
         public DansbyCore(MainForm mainForm)
@@ -39,6 +41,7 @@ namespace ChatbotApp.Core
             
             vaultManager = new VaultManager(Path.Combine(basePath, "gitconnect"));
             functionHoldings = new functionHoldings(mainForm);
+            intentEditorManager = new IntentEditorManager(mainForm.intentPanel);
 
         }
 
@@ -71,7 +74,7 @@ namespace ChatbotApp.Core
                 await intentRecognizer.InitializeAsync();
                 await soundtrackManager.InitializeSoundtracksAsync();
                 await autosaveManager.StartAutosaveAsync();
-
+                intentEditorManager.InitializeUI();
                 await errorLogClient.AppendToDebugLogAsync("DansbyCore managers initialized successfully.", "DansbyCore.cs");
             }
             catch (Exception ex)
