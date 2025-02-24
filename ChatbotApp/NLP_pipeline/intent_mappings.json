@@ -238,6 +238,20 @@
         ]
     },
     {
+        "Name": "resumeautosavetimer",
+        "Tags": ["system", "functional", "information"],
+        "Examples": [
+            {"Utterance": "resume autosave timer", "Tokens": ["resume", "autosave", "timer"] },
+            {"Utterance": "restart the autosave timer", "Tokens": ["restart", "the", "autosave", "timer"] },
+            {"Utterance": "resume autosavetimer", "Tokens": ["resume", "autosavetimer"] },
+            {"Utterance": "restart autosavetimer", "Tokens": ["restart", "autosavetimer"] },
+            {"Utterance": "resume autosave", "Tokens": ["resume", "autosave"] },
+            {"Utterance": "restart autosave", "Tokens": ["restart", "autosave"] },
+            {"Utterance": "please resume the autosave timer", "Tokens": ["please", "resume", "the", "autosave", "timer"] },
+            {"Utterance": "please restart the autosave timer", "Tokens": ["please", "restart", "the", "autosave", "timer"] }
+        ]
+    },
+    {
         "Name": "handlevolumeintent",
         "Tags":["system","functional","information"],
         "Examples":[

@@ -98,6 +98,10 @@ namespace Functions
                         PauseAutosaveTimer();
                         return "Autosave Timer Paused!";
 
+                    case "resumeautosavetimer":
+                        ResumeAutosaveTimer();
+                        return "Autosave Timer Started!";
+
                     case "handlevolumeintent":
                         await HandleVolumeIntent(userInput);
                         return "Volume Edited!";
@@ -198,6 +202,22 @@ namespace Functions
             catch (Exception ex)
             {
                 errorLogClient.AppendToErrorLog($"Error stopping autosave timer: {ex.Message}", "Functions.cs");
+            }
+        }
+
+        private void ResumeAutosaveTimer()
+        {
+            try
+            {
+                if(Directory.Exists(@"E:\Lorehaven") || Directory.Exists(@"C:\Lorehaven"))
+                {
+                    _= DansbyCore.GlobalAutosaveManager.StartAutosaveAsync();
+                    errorLogClient.AppendToDebugLog("Debug: Autosave Timer started", "Functions.cs");
+                }
+            }
+            catch (Exception ex)
+            {
+                errorLogClient.AppendToErrorLog($"Error starting autosave timer: {ex.Message}", "Functions.cs");
             }
         }
 
@@ -357,6 +377,7 @@ namespace Functions
                 "searchvaultasync" => "This function searches your vault for matching keywords.",
                 "pauseautosavetimer" => "This function pauses the autosave timer for the batch file that saves the Lorehaven Vault (My Personal Notes Vault <- Exclusive to me w/o setup).",
                 "openerrorlogform" => "This function opens the ErrorLog form to display logged events. (My Logging Project)",
+                "resumeautosavetimer" => "This function starts the autosave timer for the batch file that saves the Lorehaven vault (My Personal Notes Vault <- Exclusive to me w/o setup)",
                 "forcesavelorehaven" => "This function forces a Git commit and push of the Lorehaven Vault.",
                 _ => "No description available.",
             };

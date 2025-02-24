@@ -341,3 +341,6 @@ also don't know what is considered to be a long script as the longest scipt I ha
     - Implement Real-Time Editing & Saving:
         - Make JSON editable directly in the UI and auto-save changes in real time.
         - Ensure proper formatting and structure validation before saving.
+
+# 02.24.2025 - 9:15 am
+- Added a new ActionIntent to restart the autosavetimer form the Global Var Instance.. This runs a StartAutosaveTimer() from the AutosaveManager.cs so therefore it does not have any current state checking such that if the timer is already initialized and running (This happens upon start up) and I need to test how it reacts and probably add the state condition in for that... As well as when it is paused It just stops and when it is resumed it is started again so pause and resume are not true in name -> Did this in class just little add on for robustness.... Pushing to Git now...
