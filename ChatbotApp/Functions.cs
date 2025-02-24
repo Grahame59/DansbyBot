@@ -91,18 +91,7 @@ namespace Functions
                         return "ErrorLogForm opened.";
 
                     case "forcesavelorehaven":
-                        if (Directory.Exists(@"E:\\Lorehaven"))
-                        {
-                            var autosaveManager = new AutosaveManager("E:\\Lorehaven\\autosave.bat", 300000);
-                            _= autosaveManager.ExecuteAutosaveAsync();
-                            return "Obsidian Vault LoreHaven was commited and pushed.";
-                        }
-                        if (Directory.Exists(@"C:\\Lorehaven"))
-                        {
-                            var autosaveManager2 = new AutosaveManager("C:\\Lorehaven\autosave.bat", 300000);
-                            _= autosaveManager2.ExecuteAutosaveAsync();
-                            return "Obsidian Vault LoreHaven was commited and pushed.";
-                        }
+                        await SaveLorehaven();
                         return "Could not find the directory for Lorehaven";
 
                     case "pauseautosavetimer":
@@ -163,6 +152,38 @@ namespace Functions
             await DansbyCore.soundtrackManager.EditVolumeOfSoundtracks(newVolume);
         }
 
+
+        private async Task SaveLorehaven()
+        {
+            try
+            {
+                string lorehavenPath = Directory.Exists(@"E:\Lorehaven") ? @"E:\Lorehaven" :
+                                    Directory.Exists(@"C:\Lorehaven") ? @"C:\Lorehaven" : null;
+
+                if (lorehavenPath != null)
+                {
+                    string autosavePath = Path.Combine(lorehavenPath, "autosave.bat");
+
+                    if (File.Exists(autosavePath))
+                    {
+                        var autosaveManager = new AutosaveManager(autosavePath, 300000);
+                        await autosaveManager.ExecuteAutosaveAsync();
+                    }
+                    else
+                    {
+                        await errorLogClient.AppendToDebugLogAsync($"Autosave script not found: {autosavePath}", "Functions.cs");
+                    }
+                }
+                else
+                {
+                    await errorLogClient.AppendToDebugLogAsync("Lorehaven directory not found on E: or C:", "Functions.cs");
+                }
+            }
+            catch (Exception ex)
+            {
+                await errorLogClient.AppendToDebugLogAsync($"Error in SaveLorehaven: {ex.Message}", "Functions.cs");
+            }
+        }
 
         private void PauseAutosaveTimer()
         {
