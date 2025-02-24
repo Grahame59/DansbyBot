@@ -342,5 +342,12 @@ also don't know what is considered to be a long script as the longest scipt I ha
         - Make JSON editable directly in the UI and auto-save changes in real time.
         - Ensure proper formatting and structure validation before saving.
 
-# 02.24.2025 - 9:15 am
+# 02.24.2025 - 9:15 am #1
 - Added a new ActionIntent to restart the autosavetimer form the Global Var Instance.. This runs a StartAutosaveTimer() from the AutosaveManager.cs so therefore it does not have any current state checking such that if the timer is already initialized and running (This happens upon start up) and I need to test how it reacts and probably add the state condition in for that... As well as when it is paused It just stops and when it is resumed it is started again so pause and resume are not true in name -> Did this in class just little add on for robustness.... Pushing to Git now...
+
+# 02.24.2025 - 9:36 am #2
+- I upped Jaccard Similiarity threshold to 80% -> when I was typing resume autosave timer B/c of the closeness in Utterance to pause autosave timer it was pausing... 
+- Need to Check :
+    - If pause autosave timer pauses in all instances
+    - When I ran the newly refactored ForceSaveLorehaven() through the intent call in the RichTextBox, It ran successfully, even with the lack of a TCP conection to send the logs, but it returned "Directory not Found" after running for some reason...
+    - Need to Look at past 2 DevLog Entries ^^^^
