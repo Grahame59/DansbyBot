@@ -144,5 +144,18 @@ namespace ChatbotApp.Core
 
             return taggedResponses;
         }
+
+        public async Task ReloadResponsesAsync()
+        {
+            try
+            {
+                responseMappings = await LoadResponseMappings();
+                _= errorLogClient.AppendToDebugLogAsync("Responses reloaded successfully.", "ResponseGenerator.cs");
+            }
+            catch (Exception ex)
+            {
+                _= errorLogClient.AppendToErrorLogAsync($"Error reloading responses: {ex.Message}", "ResponseGenerator.cs");
+            }
+        }
     }
 }

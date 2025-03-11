@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
-using Intents;
-using Newtonsoft.Json;
 using System.Linq;
+using System.Text.Json;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using ChatbotApp.Core;
 
 namespace ChatbotApp.Features
 {
@@ -19,20 +19,29 @@ namespace ChatbotApp.Features
         private readonly ErrorLogClient errorLogger;
         private FlowLayoutPanel gridLayout;
         private Label intentTitleLabel;
-        private Label utteranceLabel;
-        private Label responseLabel;
+        private readonly JsonFileHandler jsonFileHandler;
+        private IntentMapping currentIntent;
+        private RichTextBox utterancesTextBox, responsesTextBox;
+        private System.Timers.Timer autoSaveTimer;
+        private readonly DansbyCore dansbyCore;
 
 
-        private const string IntentFilePath = "ChatbotApp/NLP_pipeline/intent_mappings.json";
-        private const string ResponseFilePath = "ChatbotApp/NLP_pipeline/response_mappings.json";
-
-        public IntentEditorManager(Panel panel)
+        public IntentEditorManager(Panel panel, DansbyCore dansbyCore)
         {
+            this.dansbyCore = dansbyCore; // Store the DansbyCore instance
             intentPanel = panel;
             errorLogger = ErrorLogClient.Instance;
+            jsonFileHandler = new JsonFileHandler();
             intentButtons = new Dictionary<string, Button>();
+
             InitializeUI();
             AttachResizeListener();
+
+            // Initialize AutoSave Timer
+            autoSaveTimer = new System.Timers.Timer(3500);
+            autoSaveTimer.Elapsed += AutoSaveTriggered;
+            autoSaveTimer.AutoReset = false; // Prevent repeated saves
+            autoSaveTimer.Enabled = true;
         }
 
         public void InitializeUI()
@@ -95,65 +104,28 @@ namespace ChatbotApp.Features
                 Visible = false
             };
 
-            // Utterance Label (Above Left Pane)
-            utteranceLabel = new Label
-            {
-                Text = "intent_mappings.json",
-                Font = new Font("Consolas", 10, FontStyle.Bold),
-                ForeColor = Color.White,
-                TextAlign = ContentAlignment.MiddleCenter,
-                Dock = DockStyle.Top,
-                Height = 25,
-                Visible = false
-            };
-
-            // Response Label (Above Right Pane)
-            responseLabel = new Label
-            {
-                Text = "response_mappings.json",
-                Font = new Font("Consolas", 10, FontStyle.Bold),
-                ForeColor = Color.White,
-                TextAlign = ContentAlignment.MiddleCenter,
-                Dock = DockStyle.Top,
-                Height = 25,
-                Visible = false
-            };
-
-            leftPane.Controls.Add(utteranceLabel);
-            rightPane.Controls.Add(responseLabel);
             intentPanel.Controls.Add(intentTitleLabel);
             intentPanel.Controls.Add(returnButton);
             intentPanel.Controls.Add(leftPane);
             intentPanel.Controls.Add(rightPane);
             intentPanel.Controls.Add(gridLayout);
 
-            LoadIntentButtons();
+            _= Task.Run(() => LoadIntentButtonsAsync());
         }
 
-        public async void LoadIntentButtons()
+        public async Task LoadIntentButtonsAsync()
         {
             try
             {
                 await errorLogger.AppendToDebugLogAsync("Loading intent buttons...", "IntentEditorManager.cs");
 
-                if (!File.Exists(IntentFilePath))
-                {
-                    await errorLogger.AppendToErrorLogAsync($"Intent file not found: {IntentFilePath}", "IntentEditorManager.cs");
-                    return;
-                }
-
-                string json = await File.ReadAllTextAsync(IntentFilePath);
-                var intents = JsonConvert.DeserializeObject<List<IntentMapping>>(json);
-
-                if (intents == null || intents.Count == 0)
-                {
-                    await errorLogger.AppendToErrorLogAsync("No intents found in intent_mappings.json.", "IntentEditorManager.cs");
-                    return;
-                }
+                // Loads the Intents from the (Utterances Not responses yet) 
+                var intents = await jsonFileHandler.LoadIntentsAsync();
 
                 gridLayout.Controls.Clear();
                 intentButtons.Clear();
 
+                // Populates the buttons with the intents and their names/info
                 foreach (var intent in intents)
                 {
                     Button intentButton = new Button
@@ -167,10 +139,10 @@ namespace ChatbotApp.Features
                         Margin = new Padding(10)
                     };
 
-                    intentButton.Click += (s, e) =>
+                    intentButton.Click += async (s, e) =>
                     {
                         gridLayout.Visible = false;
-                        LoadIntentDetails(intent);
+                        await LoadIntentDetails(intent);
                     };
 
                     intentButtons[intent.Name] = intentButton;
@@ -183,17 +155,18 @@ namespace ChatbotApp.Features
             }
         }
 
-        private void LoadIntentDetails(IntentMapping intent)
+        private async Task LoadIntentDetails(IntentMapping intent)
         {
+            currentIntent = intent; // Store the currently selected intent
 
+            // Updates the UI header for the selected Intent Details
             intentTitleLabel.Text = $"Intent: {intent.Name}";
             intentTitleLabel.Visible = true;
-            utteranceLabel.Visible = true;
-            responseLabel.Visible = true;
             leftPane.Visible = true;
             rightPane.Visible = true;
             returnButton.Visible = true;
 
+            // Clear Previous Intent Details
             leftPane.Controls.Clear();
             rightPane.Controls.Clear();
 
@@ -216,20 +189,18 @@ namespace ChatbotApp.Features
 
             returnButton.BringToFront();  // Ensure it's always visible
 
-            string utteranceJSON = "[\n  " +
-                        string.Join(",\n  ", intent.Examples.Select(ex => 
-                        $"{{ \"Utterance\": \"{ex.Utterance}\", \"Tokens\": [{string.Join(", ", ex.Tokens.Select(t => $"\"{t}\""))}] }}")) 
-                        + "\n]";
+            string utteranceJSON = JsonSerializer.Serialize(intent.Examples, new JsonSerializerOptions { WriteIndented = true });
 
             // --- Utterance TextBox ---
-            RichTextBox utterancesTextBox = new RichTextBox
+            utterancesTextBox = new RichTextBox
             {
                 Text =  utteranceJSON,
                 Multiline = true,
+                AcceptsTab = true,
+                WordWrap = true,
                 Size = new Size(leftPane.Width - 20, leftPane.Height - 20),
                 Location = new Point(10, 10),
                 ScrollBars = RichTextBoxScrollBars.Both,
-                WordWrap = false,
                 BackColor = Color.FromArgb(88, 86, 91),
                 ForeColor = Color.White,
                 Font = new Font("Consolas", 8),
@@ -237,18 +208,18 @@ namespace ChatbotApp.Features
                 Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right // Resizes properly
             };
             leftPane.Controls.Add(utterancesTextBox);
-            ApplyJsonSyntaxHighlighting(utterancesTextBox);
 
+            var responses = await jsonFileHandler.LoadResponsesAsync();
+            responses.TryGetValue(intent.Name, out var responseList);
+            string responseJSON = JsonSerializer.Serialize(responseList ?? new List<string>(), new JsonSerializerOptions { WriteIndented = true });
+            
             // --- Response TextBox ---
-            string responseJson = File.Exists(ResponseFilePath) ? File.ReadAllText(ResponseFilePath) : "{}";
-            var responsesDict = JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(responseJson) ?? new Dictionary<string, List<string>>();
-            List<string> responseList = responsesDict.ContainsKey(intent.Name) ? responsesDict[intent.Name] : new List<string> { "No response available" };
-            string responseFormattedJson = JsonConvert.SerializeObject(responseList, Formatting.Indented);
-
-            RichTextBox responsesTextBox = new RichTextBox
+            responsesTextBox = new RichTextBox
             {
-                Text = responseFormattedJson,
+                Text = responseJSON,
                 Multiline = true,
+                AcceptsTab = true,
+                WordWrap = true,
                 Size = new Size(rightPane.Width - 20, rightPane.Height - 20),
                 Location = new Point(10, 10),
                 ScrollBars = RichTextBoxScrollBars.Both,
@@ -259,7 +230,17 @@ namespace ChatbotApp.Features
                 Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right // Resizes properly
             };
             rightPane.Controls.Add(responsesTextBox);
+
+            // Decode any escaped characters before displaying the JSON
+            utterancesTextBox.Text = System.Web.HttpUtility.HtmlDecode(utteranceJSON);
+            responsesTextBox.Text = System.Web.HttpUtility.HtmlDecode(responseJSON);
+
             ApplyJsonSyntaxHighlighting(responsesTextBox);
+            ApplyJsonSyntaxHighlighting(utterancesTextBox);
+
+            // Attach autosave listener
+            utterancesTextBox.TextChanged += HandleJsonEdit;
+            responsesTextBox.TextChanged += HandleJsonEdit;
         }
 
         private void ShowIntentList()
@@ -269,45 +250,112 @@ namespace ChatbotApp.Features
             returnButton.Visible = false;
             gridLayout.Visible = true;
             intentTitleLabel.Visible = false;
-            utteranceLabel.Visible = false;
-            responseLabel.Visible = false;
         }
         
+        // Edits the Utterance/Responses Examples and makes them colorful similiar to a JSON file format
         private void ApplyJsonSyntaxHighlighting(RichTextBox textBox)
         {
-            textBox.SuspendLayout(); // Pause UI updates
+            // 🔹 Preserve cursor position before making changes
+            int cursorPosition = textBox.SelectionStart;
+
+            // 🔹 Suspend layout updates to avoid flickering
+            textBox.SuspendLayout();
             textBox.SelectAll();
-            textBox.SelectionColor = Color.LightGray; // Default color
+            textBox.SelectionColor = Color.White; // Reset to default
             textBox.DeselectAll();
 
             string jsonText = textBox.Text;
 
-            // Regex for keys (Orange)
-            var regexKey = new Regex(@"""(\w+)""(?=\s*:)"); 
-            // Regex for string values (Light Yellow)
-            var regexString = new Regex(@"""([^""\\]*(?:\\.[^""\\]*)*)"""); 
+            // 🔹 Define Regular Expressions for JSON elements
+            var regexKey = new Regex(@"""(.*?)""(?=\s*:)", RegexOptions.Compiled); // Keys (Orange)
+            var regexString = new Regex(@":\s*""(.*?)""", RegexOptions.Compiled); // String values (Yellow)
+            var regexNumber = new Regex(@":\s*([\d\.\-]+)", RegexOptions.Compiled); // Numbers (Light Blue)
+            var regexBool = new Regex(@":\s*(true|false)", RegexOptions.Compiled | RegexOptions.IgnoreCase); // Boolean values (Green)
+            var regexNull = new Regex(@":\s*null", RegexOptions.Compiled | RegexOptions.IgnoreCase); // Null values (Gray)
+            
+            // 🔹 Apply Colors to JSON elements
+            ApplyColoring(textBox, regexKey, Color.Orange); // Keys
+            ApplyColoring(textBox, regexString, Color.LightGoldenrodYellow); // String Values
+            ApplyColoring(textBox, regexNumber, Color.LightSkyBlue); // Numbers
+            ApplyColoring(textBox, regexBool, Color.LightGreen); // Booleans
+            ApplyColoring(textBox, regexNull, Color.Gray); // Null values
 
-            // Apply Orange to JSON Keys
-            foreach (Match match in regexKey.Matches(jsonText))
-            {
-                textBox.Select(match.Index, match.Length);
-                textBox.SelectionColor = Color.Orange;
-            }
-
-            // Apply Light Yellow to String Values
-            foreach (Match match in regexString.Matches(jsonText))
-            {
-                textBox.Select(match.Index, match.Length);
-                textBox.SelectionColor = Color.LightGoldenrodYellow;
-            }
-
-            textBox.SelectionStart = textBox.Text.Length; // Move cursor to end
-            textBox.SelectionColor = Color.White; // Reset to default for new text
+            // 🔹 Restore cursor position
+            textBox.SelectionStart = cursorPosition;
+            textBox.SelectionLength = 0;
+            textBox.SelectionColor = Color.White; // Reset color
             textBox.ResumeLayout(); // Resume UI updates
         }
 
+        // Helper function to apply regex-based syntax coloring
+        private void ApplyColoring(RichTextBox textBox, Regex regex, Color color)
+        {
+            foreach (Match match in regex.Matches(textBox.Text))
+            {
+                textBox.Select(match.Index, match.Length);
+                textBox.SelectionColor = color;
+            }
+        }
 
+        private async Task SaveCurrentIntentChanges()
+        {
+            if (currentIntent == null) return; // No intent is currently loaded
 
+            try
+            {
+                // Extract updated utterances from the text box
+                string updatedUtterancesJson = utterancesTextBox.Text.Trim();
+                var updatedExamples = JsonSerializer.Deserialize<List<ExampleUtterance>>(updatedUtterancesJson)
+                                        ?? new List<ExampleUtterance>();
+
+                // Extract updated responses from the text box
+                string updatedResponsesJson = responsesTextBox.Text.Trim();
+                var updatedResponses = JsonSerializer.Deserialize<List<string>>(updatedResponsesJson)
+                                        ?? new List<string>();
+
+                // Update IntentMappings.json
+                var allIntents = await jsonFileHandler.LoadIntentsAsync();
+                var intentToUpdate = allIntents.FirstOrDefault(i => i.Name == currentIntent.Name);
+                if (intentToUpdate != null)
+                {
+                    intentToUpdate.Examples = updatedExamples;
+                    await jsonFileHandler.SaveIntentsAsync(allIntents);
+                }
+
+                // Update ResponseMappings.json
+                var allResponses = await jsonFileHandler.LoadResponsesAsync();
+                if (updatedResponses.Count > 0)
+                {
+                    allResponses[currentIntent.Name] = updatedResponses;
+                    await jsonFileHandler.SaveResponsesAsync(allResponses);
+                }
+
+                // Reload new data into DansbyCore after saving!
+                await dansbyCore.ReloadIntentAndResponseDataAsync();
+                await errorLogger.AppendToDebugLogAsync($"✅ Saved and reloaded changes for intent: {currentIntent.Name}", "IntentEditorManager.cs");
+            }
+            catch (Exception ex)
+            {
+                await errorLogger.AppendToErrorLogAsync($"❌ Error saving intent changes: {ex.Message}", "IntentEditorManager.cs");
+            }
+        }
+
+        private void HandleJsonEdit(object sender, EventArgs e)
+        {
+            if (autoSaveTimer != null)
+            {
+                autoSaveTimer.Stop();
+                autoSaveTimer.Start();
+            }
+        }
+
+        private async void AutoSaveTriggered(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            autoSaveTimer.Stop();
+            await SaveCurrentIntentChanges();
+        }
+
+        // Makes the form readjust to user resizing 
         private void AttachResizeListener()
         {
             intentPanel.Resize += (s, e) =>

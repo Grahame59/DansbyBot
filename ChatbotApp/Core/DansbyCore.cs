@@ -12,6 +12,7 @@ namespace ChatbotApp.Core
 {
     public class DansbyCore
     {
+        public static DansbyCore Instance {get; private set; }
         private readonly IntentRecognizer intentRecognizer;
         private readonly ResponseGenerator responseGenerator;
         public static SoundtrackManager soundtrackManager {get; private set;} = new SoundtrackManager();
@@ -26,6 +27,7 @@ namespace ChatbotApp.Core
 
         public DansbyCore(MainForm mainForm)
         {
+            Instance = this;
             errorLogClient = ErrorLogClient.Instance;
 
             // Determine the base path dynamically
@@ -41,7 +43,7 @@ namespace ChatbotApp.Core
             
             vaultManager = new VaultManager(Path.Combine(basePath, "gitconnect"));
             functionHoldings = new functionHoldings(mainForm);
-            intentEditorManager = new IntentEditorManager(mainForm.intentPanel);
+            intentEditorManager = new IntentEditorManager(mainForm.intentPanel, this);
 
         }
 
@@ -65,6 +67,14 @@ namespace ChatbotApp.Core
             Console.WriteLine("Neither E:\\Lorehaven nor C:\\Lorehaven was found.");
             throw new DirectoryNotFoundException("Lorehaven directory not found on either E: or C: drive.");
         }
+
+        // Add methods to reload intents and responses after updates
+        public async Task ReloadIntentAndResponseDataAsync()
+        {
+            await intentRecognizer.ReloadIntentsAsync();
+            await responseGenerator.ReloadResponsesAsync();
+        }
+
 
         // Async initialization to be called from MainForm
         public async Task InitializeAsync()
@@ -132,7 +142,6 @@ namespace ChatbotApp.Core
                 return "Sorry, something went wrong while processing your input.";
             }
         }
-
 
 
         // Async method for retrieving soundtrack names

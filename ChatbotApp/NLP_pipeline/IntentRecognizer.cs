@@ -119,7 +119,20 @@ namespace Intents
             // Return true if similarity meets or exceeds the threshold
             return similarity >= threshold;
         }
-    }
+
+            public async Task ReloadIntentsAsync()
+            {
+                try
+                {
+                    intents = await LoadIntentsAsync("ChatbotApp\\NLP_pipeline\\intent_mappings.json");
+                    _= errorLogClient.AppendToDebugLogAsync("Intents reloaded successfully.", "IntentRecognizer.cs");
+                }
+                catch (Exception ex)
+                {
+                    _= errorLogClient.AppendToErrorLogAsync($"Error reloading intents: {ex.Message}", "IntentRecognizer.cs");
+                }
+            }
+        }
 
 
     public class Intent

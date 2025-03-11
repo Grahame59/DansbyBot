@@ -351,3 +351,19 @@ also don't know what is considered to be a long script as the longest scipt I ha
     - If pause autosave timer pauses in all instances
     - When I ran the newly refactored ForceSaveLorehaven() through the intent call in the RichTextBox, It ran successfully, even with the lack of a TCP conection to send the logs, but it returned "Directory not Found" after running for some reason...
     - Need to Look at past 2 DevLog Entries ^^^^
+
+
+# 03.10.2025 - 11:04 Pm
+- Removed all the Utterance Labels and the Response Labels that were in the IntentEditorManager.cs ... Not needed... 
+- Refactored JsonFileHandler to ensure proper JSON formatting, saving, and validation.
+- Fixed JSON serialization issues so data structure remains consistent.
+- Implemented IntentEditorManager UI changes for loading, editing, and saving intent/response data.
+- Added auto-save functionality with a timer that saves after 3.5 seconds of inactivity.
+- Hooked up IntentEditorManager and JsonFileHandler properly to ensure they communicate correctly.
+- Fixed missing references (EX// currentIntent) so they are accessible in the necessary methods.
+- Implemented DansbyCore instance in IntentEditorManager for live updates to intents and responses. (Need to test)
+- Fixed apostrophe encoding issues (HtmlDecode) so JSON displays properly in the UI. (Need to test)
+- Refactored KeyDown event handling to prevent enter key conflicts when editing intents/responses. (Need to test)
+- Identified missing real-time JSON reloading logic in IntentRecognizer and ResponseGenerator. (Need to test)
+- Optimized focus handling logic to detect if any UI panel is focused, instead of checking specific textboxes. (Need to test)
+- Resolved DansbyCore.Instance missing reference error by modifying constructor and access patterns.

@@ -88,12 +88,18 @@ namespace ChatbotApp
                     await ToggleSlidingPanel(intentPanel, e);
                 }
 
-                // KeyClick Listener for input Textbox (key[ENTER] clicked == SendButton_Click)
-                if (e.KeyCode == Keys.Enter)
+                this.KeyDown += async (sender, e) =>
                 {
+                    // Allow Enter key in RichTextBoxes
+                    if (intentPanel.ContainsFocus)
+                    {
+                        return; // Do nothing if the focus is inside a RichTextBox
+                    }
+
                     e.SuppressKeyPress = true; // Prevent the default 'ding' sound
                     await SendButton_Click(sender, EventArgs.Empty);
-                }
+                };
+
             };
             // -------------------- End of Key Listener ------------------
 
