@@ -80,6 +80,7 @@ namespace ChatbotApp
             // -------------------- KeyListener ------------------
             this.KeyPreview = true; // Allow MainForm to capture keys ***** <---- !Important
 
+            // F9 Key to switch to Intent Panel
             this.KeyDown += async (object sender, KeyEventArgs e) =>
             {
                 if (e.KeyCode == Keys.F9)
@@ -87,20 +88,17 @@ namespace ChatbotApp
                     e.SuppressKeyPress = true; // Prevent "ding" sound
                     await ToggleSlidingPanel(intentPanel, e);
                 }
-
-                this.KeyDown += async (sender, e) =>
+        
+                // Allow Enter key in RichTextBoxes
+                if (e.KeyCode == Keys.Enter)
                 {
-                    // Allow Enter key in RichTextBoxes
-                    if (intentPanel.ContainsFocus)
-                    {
-                        return; // Do nothing if the focus is inside a RichTextBox
-                    }
-
                     e.SuppressKeyPress = true; // Prevent the default 'ding' sound
-                    await SendButton_Click(sender, EventArgs.Empty);
-                };
+                    await SendButton_Click(sender, EventArgs.Empty);                
+                }
 
             };
+
+            
             // -------------------- End of Key Listener ------------------
 
             // ------------------ UI Controls Initialization -------------------------

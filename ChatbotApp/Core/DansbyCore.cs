@@ -15,8 +15,9 @@ namespace ChatbotApp.Core
         public static DansbyCore Instance {get; private set; }
         private readonly IntentRecognizer intentRecognizer;
         private readonly ResponseGenerator responseGenerator;
-        public static SoundtrackManager soundtrackManager {get; private set;} = new SoundtrackManager();
+        public static SoundtrackManager soundtrackManager {get; private set;}
         private readonly AnimationManager animationManager;
+        private static readonly Random rng = new Random();
         private readonly AutosaveManager autosaveManager;
         private readonly VaultManager vaultManager;
         private readonly ErrorLogClient errorLogClient;
@@ -27,7 +28,11 @@ namespace ChatbotApp.Core
 
         public DansbyCore(MainForm mainForm)
         {
+            if (Instance != null)
+                throw new InvalidOperationException("Dansby Core is already Initialized");
+               
             Instance = this;
+
             errorLogClient = ErrorLogClient.Instance;
 
             // Determine the base path dynamically
@@ -190,7 +195,7 @@ namespace ChatbotApp.Core
         // Slime Animation Methods (UI-related logic stays in MainForm)
         public bool ShouldSummonSlime()
         {
-            return new Random().Next(1, 101) <= 10; // 10% chance
+            return rng.Next(1, 101) <= 10; // 10% chance
         }
 
         public async Task SummonSlimeAsync(RichTextBox chatRichTextBox)
