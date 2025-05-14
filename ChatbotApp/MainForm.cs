@@ -1,16 +1,13 @@
 using System;
-using System.DirectoryServices.ActiveDirectory;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChatbotApp.Core;
-using ChatbotApp.Utilities;
 
 namespace ChatbotApp
 {
     public partial class MainForm : Form
     {
-        private DateTime lastSlimeSummonTime = DateTime.MinValue;
         private readonly DansbyCore dansbyCore;
         private readonly ErrorLogClient errorLogClient;
 
@@ -19,7 +16,6 @@ namespace ChatbotApp
         private Button sendButton;
         private Button playButton;
         private Button pauseButton;
-        private Button refreshCacheButton;
         private ComboBox soundtrackComboBox;
         private RichTextBox chatRichTextBox;
         private Button returnToMainScreenButton;
@@ -64,8 +60,6 @@ namespace ChatbotApp
                 {
                     soundtrackComboBox.SelectedIndex = 0;
                 }
-
-                InitializeRefreshCacheButton();
             }
             catch (Exception ex)
             {
@@ -97,8 +91,6 @@ namespace ChatbotApp
                 }
 
             };
-
-            
             // -------------------- End of Key Listener ------------------
 
             // ------------------ UI Controls Initialization -------------------------
@@ -233,25 +225,8 @@ namespace ChatbotApp
 
         }
 
-        private void InitializeRefreshCacheButton()
-        {
-            refreshCacheButton = new Button
-            {
-                Location = new Point(520, 10),
-                Size = new Size(120, 25),
-                Text = "Refresh Cache",
-                BackColor = Color.FromArgb(88, 86, 91),
-                ForeColor = Color.White,
-                Anchor = AnchorStyles.Top | AnchorStyles.Left
-            };
-            refreshCacheButton.Click += async (sender, e) => await dansbyCore.RefreshVaultCacheAsync();
-
-            this.Controls.Add(refreshCacheButton);
-        }
-
         private async Task SendButton_Click(object sender, EventArgs e)
         {
-            await CheckAndSummonSlimeAsync();
             string userInput = inputTextBox.Text.Trim();
 
             if (string.IsNullOrEmpty(userInput))
@@ -284,27 +259,9 @@ namespace ChatbotApp
         // Event handler to return to MainScreenForm
         private void ReturnToMainScreenButton_Click(object sender, EventArgs e)
         {
-            MainScreenForm mainScreenForm = new MainScreenForm();
-
-            // Option 1: Retain background processes
-            //this.Hide(); // Hide MainForm
-            mainScreenForm.Show();
-
-            // Option 2: Shut down services if needed
-            this.Close();
-        }
-
-        private async Task CheckAndSummonSlimeAsync()
-        {
-            TimeSpan cooldown = TimeSpan.FromMinutes(4); // Adjust cooldown duration as needed
-
-            //Make Slime = .BringToFront()
-            if (DateTime.Now - lastSlimeSummonTime >= cooldown && dansbyCore.ShouldSummonSlime())
-            {
-                lastSlimeSummonTime = DateTime.Now;
-                await dansbyCore.SummonSlimeAsync(chatRichTextBox);
-                AppendToChatHistory("Dansby: A slime appeared!", Color.MediumPurple);
-            }
+            
+            Program.mainScreenForm.Show(); //Show mainScreenForm
+            this.Hide(); //hide MainForm
         }
 
         public void AppendToChatHistory(string message, Color? color = null)
@@ -349,18 +306,6 @@ namespace ChatbotApp
                 panel.Width = 500; // Set the desired width
             }
         }
-
-        public void InitializeUIBoard(Panel panel)
-        {
-            
-            // ** Need to plan the components out to sastify the connection between Intent -> response and Intent -> All the utterances 
-            // so it would maybe be a screen of intents in buttons that clicked upon expand into a 2 tile screen -> (1 would be repsonses , 
-            // and 2 would be utterances + maybe tags ?? ) Possibly dock buttons on top of the sliding panel that woild have add, delete edit ?? 
-            // save and button would also be needed + autosaving and autoloading ?? Have to think about all of this backend + frontend......
-        }
-
-        // ------------------------------------------------------
-        
 
         protected override async void OnFormClosing(FormClosingEventArgs e)
         {

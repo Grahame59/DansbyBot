@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using ChatbotApp.Utilities;
 using Intents;
 using ChatbotApp.Features;
@@ -16,15 +15,12 @@ namespace ChatbotApp.Core
         private readonly IntentRecognizer intentRecognizer;
         private readonly ResponseGenerator responseGenerator;
         public static SoundtrackManager soundtrackManager {get; private set;}
-        private readonly AnimationManager animationManager;
-        private static readonly Random rng = new Random();
         private readonly AutosaveManager autosaveManager;
         private readonly VaultManager vaultManager;
         private readonly ErrorLogClient errorLogClient;
         private readonly functionHoldings functionHoldings;
         private readonly IntentEditorManager intentEditorManager;
         public IntentEditorManager IntentEditor => intentEditorManager; //Getter to access w/o modifying directly
-
 
         public DansbyCore(MainForm mainForm)
         {
@@ -42,10 +38,8 @@ namespace ChatbotApp.Core
             intentRecognizer = new IntentRecognizer();
             responseGenerator = new ResponseGenerator(errorLogClient);
             soundtrackManager = new SoundtrackManager();
-            animationManager = new AnimationManager();
             autosaveManager = new AutosaveManager(Path.Combine(basePath, "autosave.bat"));
             GlobalAutosaveManager = autosaveManager;
-            
             vaultManager = new VaultManager(Path.Combine(basePath, "gitconnect"));
             functionHoldings = new functionHoldings(mainForm);
             intentEditorManager = new IntentEditorManager(mainForm.intentPanel, this);
@@ -80,7 +74,6 @@ namespace ChatbotApp.Core
             await responseGenerator.ReloadResponsesAsync();
         }
 
-
         // Async initialization to be called from MainForm
         public async Task InitializeAsync()
         {
@@ -95,20 +88,6 @@ namespace ChatbotApp.Core
             catch (Exception ex)
             {
                 await errorLogClient.AppendToErrorLogAsync($"Error during DansbyCore initialization: {ex.Message}", "DansbyCore.cs");
-            }
-        }
-
-        // Method to refresh the vault cache
-        public async Task RefreshVaultCacheAsync()
-        {
-            try
-            {
-                await vaultManager.RefreshCacheAsync();
-                await errorLogClient.AppendToDebugLogAsync("Vault cache refreshed successfully.", "DansbyCore.cs");
-            }
-            catch (Exception ex)
-            {
-                await errorLogClient.AppendToErrorLogAsync($"Error refreshing vault cache: {ex.Message}", "DansbyCore.cs");
             }
         }
 
@@ -147,7 +126,6 @@ namespace ChatbotApp.Core
                 return "Sorry, something went wrong while processing your input.";
             }
         }
-
 
         // Async method for retrieving soundtrack names
         public async Task<List<string>> GetSoundtrackNamesAsync()
@@ -192,26 +170,6 @@ namespace ChatbotApp.Core
             }
         }
 
-        // Slime Animation Methods (UI-related logic stays in MainForm)
-        public bool ShouldSummonSlime()
-        {
-            return rng.Next(1, 101) <= 10; // 10% chance
-        }
-
-        public async Task SummonSlimeAsync(RichTextBox chatRichTextBox)
-        {
-            try
-            {
-                animationManager.InitializeAnimation(chatRichTextBox);
-                await errorLogClient.AppendToDebugLogAsync("Slime summoned successfully.", "DansbyCore.cs");
-            }
-            catch (Exception ex)
-            {
-                await errorLogClient.AppendToErrorLogAsync($"Error summoning slime: {ex.Message}", "DansbyCore.cs");
-            }
-        }
-
-
         // Shutdown logic
         public async Task ShutdownAsync()
         {
@@ -226,6 +184,5 @@ namespace ChatbotApp.Core
             }
         }
         public static AutosaveManager GlobalAutosaveManager { get; private set; }
-
     }
 }

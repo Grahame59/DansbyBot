@@ -61,9 +61,23 @@
         ]
       },
       {
+        "Utterance": "hello buddy",
+        "Tokens": [
+          "hello",
+          "buddy"
+        ]
+      },
+      {
         "Utterance": "hey buddy",
         "Tokens": [
           "hey",
+          "buddy"
+        ]
+      },
+      {
+        "Utterance": "hi buddy",
+        "Tokens": [
+          "hi",
           "buddy"
         ]
       }

@@ -12,7 +12,7 @@ namespace ChatbotApp.Features
 {
     public class IntentEditorManager
     {
-        private Panel intentPanel;
+        private readonly Panel intentPanel;
         private Button returnButton;
         private Dictionary<string, Button> intentButtons;
         private Panel leftPane, rightPane;
@@ -41,7 +41,6 @@ namespace ChatbotApp.Features
             autoSaveTimer = new System.Timers.Timer(3500);
             autoSaveTimer.Elapsed += AutoSaveTriggered;
             autoSaveTimer.AutoReset = false; // Prevent repeated saves
-            autoSaveTimer.Enabled = true;
         }
 
         public void InitializeUI()
@@ -242,7 +241,7 @@ namespace ChatbotApp.Features
             utterancesTextBox.TextChanged += HandleJsonEdit;
             responsesTextBox.TextChanged += HandleJsonEdit;
         }
-
+        
         private void ShowIntentList()
         {
             leftPane.Visible = false;
@@ -255,10 +254,10 @@ namespace ChatbotApp.Features
         // Edits the Utterance/Responses Examples and makes them colorful similiar to a JSON file format
         private void ApplyJsonSyntaxHighlighting(RichTextBox textBox)
         {
-            // 🔹 Preserve cursor position before making changes
+            // Preserve cursor position before making changes
             int cursorPosition = textBox.SelectionStart;
 
-            // 🔹 Suspend layout updates to avoid flickering
+            // Suspend layout updates to avoid flickering
             textBox.SuspendLayout();
             textBox.SelectAll();
             textBox.SelectionColor = Color.White; // Reset to default
@@ -266,21 +265,21 @@ namespace ChatbotApp.Features
 
             string jsonText = textBox.Text;
 
-            // 🔹 Define Regular Expressions for JSON elements
+            // Define Regular Expressions for JSON elements
             var regexKey = new Regex(@"""(.*?)""(?=\s*:)", RegexOptions.Compiled); // Keys (Orange)
             var regexString = new Regex(@":\s*""(.*?)""", RegexOptions.Compiled); // String values (Yellow)
             var regexNumber = new Regex(@":\s*([\d\.\-]+)", RegexOptions.Compiled); // Numbers (Light Blue)
             var regexBool = new Regex(@":\s*(true|false)", RegexOptions.Compiled | RegexOptions.IgnoreCase); // Boolean values (Green)
             var regexNull = new Regex(@":\s*null", RegexOptions.Compiled | RegexOptions.IgnoreCase); // Null values (Gray)
             
-            // 🔹 Apply Colors to JSON elements
+            // Apply Colors to JSON elements
             ApplyColoring(textBox, regexKey, Color.Orange); // Keys
             ApplyColoring(textBox, regexString, Color.LightGoldenrodYellow); // String Values
             ApplyColoring(textBox, regexNumber, Color.LightSkyBlue); // Numbers
             ApplyColoring(textBox, regexBool, Color.LightGreen); // Booleans
             ApplyColoring(textBox, regexNull, Color.Gray); // Null values
 
-            // 🔹 Restore cursor position
+            // Restore cursor position
             textBox.SelectionStart = cursorPosition;
             textBox.SelectionLength = 0;
             textBox.SelectionColor = Color.White; // Reset color
@@ -305,12 +304,14 @@ namespace ChatbotApp.Features
             {
                 // Extract updated utterances from the text box
                 string updatedUtterancesJson = utterancesTextBox.Text.Trim();
-                var updatedExamples = JsonSerializer.Deserialize<List<ExampleUtterance>>(updatedUtterancesJson)
+                var updatedExamples = JsonSerializer
+                                        .Deserialize<List<ExampleUtterance>>(updatedUtterancesJson)
                                         ?? new List<ExampleUtterance>();
 
                 // Extract updated responses from the text box
                 string updatedResponsesJson = responsesTextBox.Text.Trim();
-                var updatedResponses = JsonSerializer.Deserialize<List<string>>(updatedResponsesJson)
+                var updatedResponses = JsonSerializer
+                                        .Deserialize<List<string>>(updatedResponsesJson)
                                         ?? new List<string>();
 
                 // Update IntentMappings.json

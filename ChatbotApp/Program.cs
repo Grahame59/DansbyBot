@@ -1,10 +1,12 @@
 using System;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace ChatbotApp
 {
     static class Program
     {
+        public static MainScreenForm mainScreenForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -14,7 +16,7 @@ namespace ChatbotApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            var mainScreenForm = new MainScreenForm();
+            mainScreenForm = new MainScreenForm();
             Application.Run(mainScreenForm);
 
             //var mainForm = new MainForm();

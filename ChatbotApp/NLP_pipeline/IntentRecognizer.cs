@@ -67,7 +67,7 @@ namespace Intents
             {
                 foreach (var example in intent.Examples)
                 {
-                    if (IsMatch(userTokens, example.Tokens, 0.8)) //80% Threshold match for partial matching
+                    if (IsMatch(userTokens, example.Tokens, 0.65)) //65% Threshold match for partial matching
                     {
                         _ = errorLogClient.AppendToDebugLogAsync($"Recognized intent: \"{intent.Name}\"", "IntentRecognizer.cs");
                         return intent.Name;

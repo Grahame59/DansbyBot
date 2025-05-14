@@ -2,7 +2,6 @@ using System;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ChatbotApp.UserData;
 using System.Diagnostics;
 
 namespace ChatbotApp
@@ -10,14 +9,14 @@ namespace ChatbotApp
     public partial class MainScreenForm : Form
     {
         private ProgressBar loadingBar;
-        private TextBox usernameBox;
-        private TextBox passwordBox;
-        private Button loginButton;
         private Button guestLoginButton;
         private Button enterChatButton;
         private PictureBox logoPictureBox;
         private PictureBox github;
-        private readonly UserManager userManager = new UserManager();
+        private Timer progressTimer;
+        private int progressValue = 0;
+        private static bool mainFormInitSuccess = false;
+        private static MainForm mainForm;
     
         public MainScreenForm()
         {
@@ -25,6 +24,7 @@ namespace ChatbotApp
         }
         private void InitializeComponent()
         {
+
             // Form Properties
             this.Text = "Dansby Login";
             this.Size = new Size(800, 600);
@@ -47,43 +47,6 @@ namespace ChatbotApp
             };
             this.Controls.Add(logoPictureBox);
 
-            // Username TextBox
-            usernameBox = new TextBox
-            {
-                Location = new Point(240, 150),
-                Size = new Size(300, 35),
-                PlaceholderText = "Enter Username",
-                Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right
-            };
-            this.Controls.Add(usernameBox);
-            usernameBox.BringToFront();
-
-            // Password TextBox
-            passwordBox = new TextBox
-            {
-                Location = new Point(240, 180),
-                Size = new Size(300, 35),
-                UseSystemPasswordChar = true,
-                PlaceholderText = "Enter Password",
-                Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right
-            };
-            this.Controls.Add(passwordBox);
-            passwordBox.BringToFront();
-
-            // Login Button
-            loginButton = new Button
-            {
-                Location = new Point(240, 220),
-                Size = new Size(300, 35),
-                Text = "Login",
-                BackColor = Color.FromArgb(70, 70, 70),
-                ForeColor = Color.White,
-                Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right
-            };
-            loginButton.Click += async (sender, e) => await LoginButton_Click(usernameBox.Text, passwordBox.Text);
-            this.Controls.Add(loginButton);
-            loginButton.BringToFront();
-
             // Guest Login Button
             guestLoginButton = new Button
             {
@@ -98,25 +61,10 @@ namespace ChatbotApp
             this.Controls.Add(guestLoginButton);
             guestLoginButton.BringToFront();
 
-            // Enter Chat Button (Hidden initially)
-            enterChatButton = new Button
-            {
-                Location = new Point(240, 300),
-                Size = new Size(300, 35),
-                Text = "Enter Chat",
-                BackColor = Color.FromArgb(50, 50, 50),
-                ForeColor = Color.White,
-                Visible = false,
-                Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right
-            };
-            enterChatButton.Click += EnterChatButton_Click;
-            this.Controls.Add(enterChatButton);
-            enterChatButton.BringToFront();
-
             // Loading Bar (ProgressBar)
             loadingBar = new ProgressBar
             {
-                Location = new Point(150, 350),
+                Location = new Point(240, 220),
                 Size = new Size(300, 20),
                 Visible = false,
                 Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right
@@ -157,51 +105,48 @@ namespace ChatbotApp
             }
         }
 
-        // Login Button Click Handler
-        private async Task LoginButton_Click(string username, string password)
-        {
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
-            {
-                MessageBox.Show("Please enter both username and password.", "Error");
-                return;
-            }
-
-            loadingBar.Visible = true;
-
-            // Simulate loading with a delay
-            for (int i = 0; i <= 100; i += 10)
-            {
-                loadingBar.Value = i;
-                await Task.Delay(100);
-            }
-
-            // Validate credentials
-            if (await userManager.ValidateUserAsync(username, password))
-            {
-                //MessageBox.Show("Login Successful!", "Welcome");
-                loadingBar.Visible = false;
-                enterChatButton.Visible = true;
-            }
-            else
-            {
-                loadingBar.Visible = false;
-                MessageBox.Show("Invalid credentials. Please try again.", "Error");
-            }
-        }
-
         // Guest Login Button Click Handler
         private void GuestLoginButton_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Continuing as Guest...", "Guest Login");
-            enterChatButton.Visible = true;
+            progressValue = 0;
+            loadingBar.Value = 0;
+            loadingBar.Visible = true;
+            loadingBar.Style = ProgressBarStyle.Blocks;
+            guestLoginButton.Enabled = false;
+
+            progressTimer = new Timer();
+            progressTimer.Interval = 50; // 20 steps over 2 seconds
+            progressTimer.Tick += ProgressTimer_Tick;
+            progressTimer.Start();
         }
 
-        // Enter Chat Button Click Handler
-        private void EnterChatButton_Click(object sender, EventArgs e)
+        private void ProgressTimer_Tick(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
-            this.Hide();
+            progressValue += 5;
+            if (progressValue >= 100)
+            {
+                progressTimer.Stop();
+                loadingBar.Visible = false;
+                guestLoginButton.Enabled = true;
+
+                //Proceed to MainForm after progress is completed
+                if (!mainFormInitSuccess)
+                {
+                    mainForm = new MainForm();
+                    mainForm.Show();
+                    this.Hide();
+                    mainFormInitSuccess = true;
+                }
+                else 
+                {
+                    mainForm.Show();
+                    this.Hide();
+                }
+            }
+            else 
+            {
+                loadingBar.Value = progressValue;
+            }
         }
     }
 }

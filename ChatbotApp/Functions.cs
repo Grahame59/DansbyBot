@@ -17,7 +17,6 @@ namespace Functions
     {
         private MainForm mainForm;
         private ErrorLogClient errorLogClient = new ErrorLogClient();
-
         public functionHoldings(MainForm mainForm)
         {
             this.mainForm = mainForm;
@@ -82,10 +81,6 @@ namespace Functions
                         GetDayOfTheWeek();
                         return "Day of the week fetched.";
 
-                    case "searchvault":
-                        string searchResult = await SearchVaultAsync(userInput);
-                        return searchResult;
-
                     case "openerrorlog":
                         await OpenErrorLogForm();
                         return "ErrorLogForm opened.";
@@ -120,7 +115,6 @@ namespace Functions
                 return "An error occurred while processing your request.";
             }
         }
-
         public async Task HandleVolumeIntent(string command)
         {
             if (DansbyCore.soundtrackManager == null)
@@ -155,7 +149,6 @@ namespace Functions
 
             await DansbyCore.soundtrackManager.EditVolumeOfSoundtracks(newVolume);
         }
-
 
         private async Task SaveLorehaven()
         {
@@ -274,38 +267,6 @@ namespace Functions
             }
         }
 
-        private async Task<string> SearchVaultAsync(string keyword)
-        {
-            try
-            {
-                //---------EDIT PATH 
-                VaultManager vaultManager = new VaultManager("E:\\Lorehaven\\gitconnect");
-                List<string> searchResults = await vaultManager.SearchVaultAsync(keyword);
-
-                if (searchResults.Count > 0)
-                {
-                    string response = $"Dansby: Found {searchResults.Count} matching files.";
-                    mainForm.AppendToChatHistory(response, Color.MediumPurple);
-
-                    foreach (string result in searchResults)
-                    {
-                        mainForm.AppendToChatHistory(result);
-                    }
-
-                    return response;
-                }
-                else
-                {
-                    return "Dansby: No matches found in the vault.";
-                }
-            }
-            catch (Exception ex)
-            {
-                await errorLogClient.AppendToErrorLogAsync($"Error searching vault: {ex.Message}", "Functions.cs");
-                return "An error occurred while searching the vault.";
-            }
-        }
-
         public async Task ListAllFunctionsAsync()
         {
             try
@@ -337,15 +298,14 @@ namespace Functions
             try
             {
                 // Possible Path correction to be done here dynamically. 
-                string errorLogFormBatchPath = "CODES\\DansbyBot\\Utilities\\StartErrorLog.bat";
+                string errorLogFormBatchPath = "DansbyBot\\Utilities\\StartErrorLog.bat";
 
                 if (File.Exists(errorLogFormBatchPath))
                 {
                     ProcessStartInfo processInfo = new ProcessStartInfo
                     {
                         FileName = errorLogFormBatchPath,
-                        UseShellExecute = true,
-                        CreateNoWindow = true
+                        UseShellExecute = true
                     };
 
                     Process process = Process.Start(processInfo);
@@ -374,7 +334,6 @@ namespace Functions
                 "gettime" => "This function retrieves the current time of your time zone.",
                 "getdate" => "This function retrieves the current date.",
                 "getdayoftheweek" => "This function retrieves the current day of the week.",
-                "searchvaultasync" => "This function searches your vault for matching keywords.",
                 "pauseautosavetimer" => "This function pauses the autosave timer for the batch file that saves the Lorehaven Vault (My Personal Notes Vault <- Exclusive to me w/o setup).",
                 "openerrorlogform" => "This function opens the ErrorLog form to display logged events. (My Logging Project)",
                 "resumeautosavetimer" => "This function starts the autosave timer for the batch file that saves the Lorehaven vault (My Personal Notes Vault <- Exclusive to me w/o setup)",
